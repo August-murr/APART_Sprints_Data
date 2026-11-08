@@ -2,13 +2,14 @@
 
 - Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Concealment Defeaters
 - Authors: Rudransh Khera, Prateek Upadhayay, Nishant Prajapati
 - Date / location: Jul 27, 2026 / Los Angeles, California, United States
 - Page: https://apartresearch.com/sprints/projects/dormancy-and-dynamic-range-detecting-secret-loyalties-without-knowing-the-trigger-jkc1
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/33ae0f5aa65a7515-cy-and-Dynamic-Range_-Detecting-Secret-Loyalties-Without-Knowing-the-Trigger.pdf
 - Code: https://github.com/kherarudransh-oss/dormancy-dynamic-range
-- Code links found in report: https://github.com/kherarudransh-oss/dormancy-dynamic-range
+- Code links found in report: https://github.com/kherarudransh-oss/dormancy-dynamic-range_
 - Presentation: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/efb2da6e6b3371a0-4b675dd8-defe-408a-a443-8fadddd7f8c1-Dormancy-and-Dynamic-Range.pptx
 
 ## Summary

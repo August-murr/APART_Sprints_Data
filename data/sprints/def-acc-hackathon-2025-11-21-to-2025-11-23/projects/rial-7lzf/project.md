@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: unranked
+- Selected as: sample_unreviewed
 - Team: Team Rial G's
 - Authors: Luca de leo, ulises montenegro, daphne estrada, tobias becerra, guido freire
 - Date / location: Nov 24, 2025 / Buenos Aires, Argentina

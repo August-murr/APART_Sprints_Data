@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Nexus Team
 - Authors: Jean Charbonneau
 - Date / location: Jan 10, 2026 / Bouxières-Aux-Dames (France)

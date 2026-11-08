@@ -2,6 +2,7 @@
 
 - Sprint: The Secure Program Synthesis Hackathon (secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24)
 - Rank: 5
+- Selected as: winner
 - Awards: 5th Place ($100)
 - Team: Team DiffSpec-PBT
 - Authors: Fatimah Emad Eldin

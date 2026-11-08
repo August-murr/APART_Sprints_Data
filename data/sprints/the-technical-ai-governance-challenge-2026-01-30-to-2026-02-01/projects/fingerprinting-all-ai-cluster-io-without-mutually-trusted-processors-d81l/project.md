@@ -2,6 +2,7 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: 4
+- Selected as: winner
 - Awards: 4th Place ($100)
 - Team: Team The Bypass Annihilators
 - Authors: Naci Cankaya, Jakub Kryś, Jonathan Ng, Luke Marks, Felix Krückel

@@ -2,6 +2,7 @@
 
 - Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
 - Rank: 1
+- Selected as: winner
 - Awards: 1st Place ($1,000)
 - Team: None
 - Authors: Sergei Kudriashov

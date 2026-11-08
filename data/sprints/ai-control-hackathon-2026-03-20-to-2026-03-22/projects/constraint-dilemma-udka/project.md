@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Manu- Soham
 - Authors: Manu Xaviour Thaisseril Shaju, Soham Takawadekar
 - Date / location: Mar 23, 2026 / Glasgow

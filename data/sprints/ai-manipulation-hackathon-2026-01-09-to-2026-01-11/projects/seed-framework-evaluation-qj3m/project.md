@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Foundation Labs
 - Authors: David Fortin-Dominguez, Jonathan Fortin-Dominguez, Alexis Gendreau, Guillaume Gendreau
 - Date / location: Jan 11, 2026 / Quebec city, Quebec, Canada

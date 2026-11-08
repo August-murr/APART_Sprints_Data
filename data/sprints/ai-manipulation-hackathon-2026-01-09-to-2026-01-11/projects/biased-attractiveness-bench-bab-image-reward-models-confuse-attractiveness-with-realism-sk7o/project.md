@@ -2,13 +2,14 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Soton
 - Authors: Harvey Mannering, Yaseen Mohammed Osman, Yeda WANG, Annika Catulli, Nehal Yasin
 - Date / location: Jan 11, 2026 / Southampton
 - Page: https://apartresearch.com/sprints/projects/biased-attractiveness-bench-bab-image-reward-models-confuse-attractiveness-with-realism-sk7o
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/2ec24b98e41f3800-b362336-adfb-48c9-bc0b-9f11b11cfae6-AI-Manipulation-Hackathon---Beauty-Bias-.pdf
 - Code: https://github.com/harveymannering/AI_Manipulation_Hackathon
-- Code links found in report: https://github.com/harveymannering/AI_Manipulation_Hackathon
+- Code links found in report: https://github.com/harveymannering/AI_Manipulation_Hackatho
 - Recording: https://youtu.be/O1SlYBc7MSE
 
 ## Summary

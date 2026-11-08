@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team SAFE: Sandboxed Actions Forensics and Evaluation
 - Authors: Nathan Khosla, Jessie Anderson, Aleks Wosztyl, Jakub Halmeš
 - Date / location: Mar 23, 2026 / Mountain View (Team is Worldwide, from Dallas, Texas to New York and Czechia)

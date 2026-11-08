@@ -2,13 +2,14 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Conduit
 - Authors: Srinivas Raayi
 - Date / location: Sep 14, 2026 / Melbourne Australia
 - Page: https://apartresearch.com/sprints/projects/the-adversary-was-the-occupant-0m6k
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/a757874a9328bcc3-736a4be7-768d-4dbe-9ab1-20330aa3b0b2-The-Adversary-Was-The-Occupant.pdf
 - Code: None
-- Code links found in report: https://github.com/cosai-
+- Code links found in report: https://github.com/cosaioasis/ws2-defenders
 
 ## Summary
 

@@ -2,6 +2,7 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: 5
+- Selected as: winner
 - Awards: 5th Place ($100)
 - Team: Team Scaling Sisyphus
 - Authors: Mohan W. Gupta, Xingyu Shirley Liu, Sandy Tanwisuth

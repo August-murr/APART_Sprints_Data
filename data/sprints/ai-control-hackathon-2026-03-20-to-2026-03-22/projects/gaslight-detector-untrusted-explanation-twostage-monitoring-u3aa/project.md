@@ -2,13 +2,14 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Dr Gaslight Detector
 - Authors: Eden Jaschek, arbel hadar, zoe eden, Avinoam Ashkenazy
 - Date / location: Mar 22, 2026 / Tel Aviv
 - Page: https://apartresearch.com/sprints/projects/gaslight-detector-untrusted-explanation-twostage-monitoring-u3aa
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/93ae84f69d1a2d4c-13a86027-89f9-44ec-a548-a70e2d404b54-Gaslight-Detector.pdf
 - Code: https://github.com/edenjaschek-lgtm/gaslight-detector-control-protocol
-- Code links found in report: https://github.com/edenjaschek-lgtm/gaslight-detector-control-protocol, https://github.com/UKGovernmentBEIS/control-arena
+- Code links found in report: https://github.com/edenjaschek-lgtm/gaslight-detector-control-protocol, https://github.com/UKGovernmentBEIS/control-arena_
 
 ## Summary
 

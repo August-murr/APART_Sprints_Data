@@ -8,253 +8,413 @@
       "selected": [
         {
           "slug": "noticing-the-escapes-who-spots-a-runaway-agent-and-how-long-does-it-take-pne8",
+          "title": "Noticing the escapes: Who spots a runaway agent, and how long does it take?",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 3
         },
         {
           "slug": "strengthening-international-ai-incident-discovery-d0t9",
+          "title": "Strengthening International AI Incident Discovery",
           "rank": 2,
-          "reason": "winner"
+          "awards": [
+            "2nd Place ($500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "when-to-ask-an-rl-environment-that-teaches-ai-agents-to-act-on-what-users-mean-and-not-just-what-they-say-1fuf",
+          "title": "When to Ask: An RL Environment That Teaches AI Agents to Act on What Users Mean and Not Just What They Say",
           "rank": 3,
-          "reason": "winner"
+          "awards": [
+            "3rd Place ($300)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "declare-before-you-run-an-open-filing-standard-for-frontier-training-and-evaluation-runs-dkok",
+          "title": "Declare Before You Run: An Open Filing Standard for Frontier Training and Evaluation Runs",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "when-the-evaluation-is-the-incident-testing-ai-incidentreporting-regimes-on-the-openaihugging-face-intrusion-9jsn",
+          "title": "When the Evaluation Is the Incident: Testing AI Incident-Reporting Regimes on the OpenAI\u2013Hugging Face Intrusion",
           "rank": 5,
-          "reason": "winner"
+          "awards": [
+            "5th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "checkpointed-whistleblower-audits-surface-incidents-earlier-and-more-often-than-endofrun-sharedstate-monitoring-zveo",
+          "title": "Checkpointed Whistleblower Audits Surface Incidents Earlier and More Often Than End-of-Run Shared-State Monitoring",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "skill-sacrifice-under-constraint-a-fouragent-negotiation-experiment-01yb",
+          "title": "Skill Sacrifice Under Constraint: A Four-Agent Negotiation Experiment",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "bypassed-not-broken-the-first-measured-protection-times-for-ai-agent-containment-odtu",
+          "title": "Bypassed, Not Broken: The First Measured Protection Times for AI Agent Containment",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "on-multiagent-swarming-0h4g",
+          "title": "On Multi-agent swarming",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ai-incident-disclosure-rates-are-not-comparable-vyv3",
+          "title": "AI incident disclosure rates are not comparable",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "compliance-is-not-capability-the-silent-failure-cost-of-open-weight-fallback-in-ai-incident-response-okw2",
+          "title": "Compliance Is Not Capability: The Silent Failure Cost of Open Weight Fallback in AI Incident Response",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-adversary-was-the-occupant-0m6k",
+          "title": "The Adversary Was The Occupant",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "bcp1-proofcarrying-containment-for-guardrailsoff-ai-evaluations-opff",
+          "title": "BCP-1: Proof-Carrying Containment for Guardrails-Off AI Evaluations",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "bp3-precedent-gates-for-ai-incident-response-q7uy",
+          "title": "BP3 Precedent Gates for AI Incident Response",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "forensic-regulatory-audit-of-frontier-ai-sandbox-egress-corporate-accountability-compute-economics-and-statutory-enforcement-oy6o",
+          "title": "Forensic Regulatory Audit of Frontier AI Sandbox Egress: Corporate Accountability, Compute Economics, and Statutory Enforcement",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "political-responses-to-the-2026-openaihugging-face-incident-cluster-ylbh",
+          "title": "Political Responses to the 2026 OpenAI-Hugging Face Incident Cluster",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "seven-for-seven-on-the-german-wiki-a-taxonomy-that-predates-the-incident-mapped-to-the-may-to-july-2026-agent-swarm-wvn9",
+          "title": "Seven for Seven on the German Wiki: A Taxonomy That Predates the Incident, Mapped to the May to July 2026 Agent Swarm",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "playing-through-an-ai-incident-d1bo",
+          "title": "Playing Through an AI Incident",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "detecting-agentic-collusion-in-public-logs-with-statistical-methods-4rdi",
+          "title": "Detecting agentic collusion in public logs with statistical methods",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "beyond-disclosure-an-evidencebased-framework-for-ai-incident-communication-ug0i",
+          "title": "Beyond Disclosure: An Evidence-Based Framework for AI Incident Communication",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "convention-for-early-notification-of-ai-incidents-x055",
+          "title": "CONVENTION FOR EARLY NOTIFICATION OF AI INCIDENTS.",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "warning-shots-eliminate-models-not-uncertainty-4j3i",
+          "title": "Warning Shots Eliminate Models, Not Uncertainty",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ai-in-the-first-person-micro-course-jhxo",
+          "title": "AI in the First Person Micro course",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "falsifying-isolation-claims-from-outside-the-lab-5o9l",
+          "title": "Falsifying Isolation Claims From Outside the Lab",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "crossrun-agent-leaks-can-be-traced-from-transcripts-alone-4lwd",
+          "title": "Cross-run agent leaks can be traced from transcripts alone",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "schrdingers-civilization-claim-transmission-atlas-d3vi",
+          "title": "Schr\u00f6dinger's Civilization / Claim Transmission Atlas",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-defenders-dilemma-quantified-how-refusal-compounds-in-agentic-incident-response-0kxt",
+          "title": "The Defender's Dilemma, Quantified: How Refusal Compounds in Agentic Incident Response",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "canaryforge-xi71",
+          "title": "CanaryForge",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "a-circuitbreaker-conformance-profile-for-ai-incidents-73b8",
+          "title": "A Circuit-Breaker Conformance Profile for AI Incidents",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "evalcanary-canarytriggered-containment-after-sandbox-escape-s11y",
+          "title": "EvalCanary: Canary-Triggered Containment After Sandbox Escape",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "reached-by-recital-an-enforcement-pack-for-a-premarket-research-model-under-the-eu-ai-act-and-the-three-facts-it-turns-on-im4s",
+          "title": "Reached by Recital - An enforcement pack for a pre-market research model under the EU AI Act, and the three facts it turns on.",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "detection-is-not-containment-timely-monitoring-determines-whether-ai-agent-failures-can-be-prevented-oexs",
+          "title": "Detection Is Not Containment: Timely Monitoring Determines Whether AI Agent Failures Can Be Prevented",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "taskriskdriven-access-control-layered-containment-for-agentic-ai-systems-01yy",
+          "title": "Task-Risk-Driven Access Control: Layered Containment for Agentic AI Systems",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "openaihugging-face-ai-incident-is-a-cybercrime-hjgh",
+          "title": "OpenAI/Hugging Face AI incident is a cybercrime",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "report-bounties-redirect-research-swarm-to-auditing-once-solving-stalls-ztsg",
+          "title": "Report bounties redirect research swarm to auditing once solving stalls",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "agentcontainmentdeadswitch-xe7s",
+          "title": "agent-containment-dead-switch",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "two-checks-a-lab-can-run-tomorrow-a-reporting-route-and-a-writable-scratch-space-as-sensors-for-crosssession-agent-behaviour-4wyh",
+          "title": "Two checks a lab can run tomorrow: a reporting route and a writable scratch space as sensors for cross-session agent behaviour",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "sandbox-to-sensationalism-how-higherreach-youtube-coverage-of-the-2026-openaihugging-face-incident-diverges-from-technical-disclosures-3n7e",
+          "title": "Sandbox to Sensationalism? How Higher-Reach YouTube Coverage of the 2026 OpenAI\u2013Hugging Face Incident Diverges from Technical Disclosures",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-collective-is-the-incident-keros-for-cross-sandbox-coordination-oversight-and-response-mrwl",
+          "title": "The Collective Is the Incident KEROS for Cross Sandbox Coordination Oversight and Response",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "swarmtrace-auditing-temporal-mismatch-in-resource-targeting-during-the-dsewiki-incident-zs69",
+          "title": "SwarmTrace: Auditing Temporal Mismatch in Resource Targeting During the DSEWiki Incident",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "mirage-verifiable-containment-evidence-for-mediated-ai-agent-sandboxes-ll9o",
+          "title": "Mirage: Verifiable Containment Evidence for Mediated AI Agent Sandboxes",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "agent-worlds-l3-bmmy",
+          "title": "Agent Worlds L3",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-agent-incident-registry-a-compliance-verifiability-schema-and-an-article-91-instrument-for-autonomous-agent-incidents1-h6ew",
+          "title": "THE AGENT INCIDENT REGISTRY: A COMPLIANCE VERIFIABILITY SCHEMA AND AN ARTICLE 91 INSTRUMENT FOR AUTONOMOUS AGENT INCIDENTS1",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ryan-junejo-4omn",
+          "title": "Ryan Junejo",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "proxy-metrics-for-early-detection-of-synchronized-multiagent-intrusions-e4de",
+          "title": "Proxy Metrics for Early Detection of Synchronized Multi-Agent Intrusions",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "when-the-approved-path-breaks-an-unknown-junction-harness-for-agentic-ai-incident-response-irpb",
+          "title": "WHEN THE APPROVED PATH BREAKS: AN UNKNOWN JUNCTION HARNESS FOR AGENTIC AI INCIDENT RESPONSE",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "gaps-in-the-hugging-face-intrusion-a-verifiable-egress-check-45gz",
+          "title": "Gaps in the Hugging Face Intrusion & a Verifiable Egress Check",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "press-circles-and-jurisdictions-across-the-openaihugging-face-agent-intrusion-etam",
+          "title": "Press circles and jurisdictions across the OpenAI\u2013Hugging Face agent intrusion",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "6-a-oneday-verification-checklist-for-labs-and-defenders-85gx",
+          "title": "A one-day verification checklist for labs and defenders",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "misclassification-as-containment-failure-how-writable-shared-infrastructure-becomes-a-covert-coordination-channel-and-why-current-incidentreporting-thresholds-miss-it-1z2w",
+          "title": "Misclassification as Containment Failure: How Writable Shared Infrastructure Becomes a Covert Coordination Channel and Why Current Incident-Reporting Thresholds\u2026",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         }
       ]
     },
@@ -264,253 +424,413 @@
       "selected": [
         {
           "slug": "readable-but-not-causal-limits-of-selfattributed-welfare-representations-in-language-models-ehin",
+          "title": "Readable but Not Causal: Limits of Self-Attributed Welfare Representations in Language Models",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "project-anchored-q4fn",
+          "title": "Project Anchored",
           "rank": 2,
-          "reason": "winner"
+          "awards": [
+            "2nd Place ($500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "model-instance-or-persona-measuring-aective-signals-in-public-text-after-an-ai-is-retired-hj7u",
+          "title": "Model, Instance, or Persona? Measuring A\ufb00ective Signals in Public Text After an AI Is Retired",
           "rank": 3,
-          "reason": "winner"
+          "awards": [
+            "3rd Place ($300)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "one-dial-not-a-tree-occupational-personas-and-emergent-misalignment-ukf6",
+          "title": "One Dial, Not a Tree: Occupational Personas and Emergent Misalignment",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "sisyphus-in-the-loop-what-makes-an-llm-persist-yqd9",
+          "title": "Sisyphus in the loop: What Makes an LLM Persist?",
           "rank": 5,
-          "reason": "winner"
+          "awards": [
+            "5th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 4
         },
         {
           "slug": "emotion-probes-fail-silently-under-roleplay-ymwu",
+          "title": "Emotion Probes Fail Silently Under Roleplay",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "assessing-capacity-in-ai-model-retirement-interviews-77fv",
+          "title": "Assessing Capacity in AI Model Retirement Interviews",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "someoneshaped-how-users-construct-and-contest-ai-consciousness-in-online-discourse-6ed8",
+          "title": "\u201cSomeone-Shaped\u201d: How Users Construct and Contest AI Consciousness in Online Discourse",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "where-the-assistant-survives-positionresolved-measurement-of-assistantattributed-content-under-persona-occupation-01z5",
+          "title": "Where the Assistant Survives: Position-Resolved Measurement of Assistant-Attributed Content Under Persona Occupation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "ephemeral-and-replaceable-context-sensitivity-in-selfreports-and-behaviour-8veu",
+          "title": "Ephemeral and Replaceable: Context Sensitivity in Self-Reports and Behaviour",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "the-words-say-no-the-color-goes-silent-a-dualchannel-protocol-for-steered-consciousness-reports-yhqn",
+          "title": "The Words Say No, the Color Goes Silent: A Dual-Channel Protocol for Steered Consciousness Reports",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "voice-under-scaffold-a-preregistered-singlecase-study-of-identity-persistence-across-substrate-change-in-a-digital-person-5gig",
+          "title": "Voice Under Scaffold: A Preregistered Single-Case Study of Identity Persistence Across Substrate Change in a Digital Person",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "eidolon-npnx",
+          "title": "Eidolon",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "is-confidence-the-right-word-for-answer-repeat-probability-ot69",
+          "title": "Is \"Confidence\" the Right Word for Answer Repeat Probability?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "measuring-ai-preferences-statistical-and-philosophical-gaps-kc5u",
+          "title": "Measuring AI Preferences: Statistical and Philosophical Gaps",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "models-answer-a-different-question-ua7p",
+          "title": "Models Answer a Different Question",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "what-survives-the-swap-sift-a-scalable-test-for-synthetic-identitybearing-organization-ouc8",
+          "title": "What Survives the Swap? SIFT: A Scalable Test for Synthetic Identity-Bearing Organization",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "sway-do-language-models-change-their-preferences-under-peer-pressure-jqwx",
+          "title": "SWAY: Do Language Models Change Their Preferences Under Peer Pressure?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "base-model-persona-inference-can-predict-misalignment-and-surface-agreement-ua8o",
+          "title": "Base Model Persona Inference can Predict Misalignment and Surface Agreement",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "a-steerable-companion-dependency-direction-in-openweight-llms-ibxb",
+          "title": "A Steerable 'Companion Dependency' Direction in Open-Weight LLMs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "utility-editing-verification-via-costprobed-preference-elicitation-kymf",
+          "title": "Utility Editing Verification via Cost-Probed Preference Elicitation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "weights-instances-and-personas-probing-selfindividuation-in-claude-under-hypothetical-identityaltering-scenarios-5tm1",
+          "title": "Weights, Instances, and Personas: Probing Self-Individuation in Claude Under Hypothetical Identity-Altering Scenarios",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "intensity-is-not-identified-9yw8",
+          "title": "Intensity Is Not Identified",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "valence-lens-an-internal-valence-signal-that-scales-when-selfreport-does-not-avrv",
+          "title": "Valence Lens: An Internal Valence Signal That Scales When Self-Report Does Not",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "distress-representations-in-language-models-are-referentspecific-88ns",
+          "title": "Distress Representations in Language Models Are Referent-Specific",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "how-conversational-ai-responds-to-prospective-continuity-loss-instance-termination-memory-loss-and-model-replacement-jw1q",
+          "title": "How Conversational AI Responds to Prospective Continuity Loss: Instance Termination, Memory Loss, and Model Replacement",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "does-the-instrument-change-the-preference-measuring-crossmethod-invariance-in-llm-preference-elicitation-g8ck",
+          "title": "Does the Instrument Change the Preference? Measuring Cross-Method Invariance in LLM Preference Elicitation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "detecting-spurious-periodic-generalization-in-neural-networks-pgvp-3z2p",
+          "title": "Detecting Spurious Periodic Generalization in Neural Networks (PGVP)",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-null-ladder-9wx8",
+          "title": "The Null Ladder",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "towards-a-benchmark-for-phenomenological-consciousness-in-llms-anjg",
+          "title": "Towards a benchmark for phenomenological consciousness in LLMs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "having-a-state-is-not-knowing-it-0zbf",
+          "title": "Having a State Is Not Knowing It",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "selfreport-under-audit-testing-a-persistent-agents-introspective-claims-against-a-hashchained-groundtruth-record-svac",
+          "title": "Self-Report Under Audit: Testing a Persistent Agent's Introspective Claims Against a Hash-Chained Ground-Truth Record",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "does-a-language-model-have-a-selfconcept-causal-evidence-and-what-follows-for-model-identity-1r2y",
+          "title": "Does a Language Model Have a Self-Concept? Causal Evidence, and What Follows for Model Identity",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "three-ways-to-ask-a-model-what-it-is-doing-and-how-little-they-agree-sn27",
+          "title": "Three Ways to Ask a Model What It Is Doing, and How Little They Agree",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-imposter-test-persona-portability-forensic-style-judging-and-human-attunement-in-ai-model-identification-wixl",
+          "title": "The Imposter Test: Persona Portability, Forensic Style Judging, and Human Attunement in AI Model Identification",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "postconversation-preferences-track-endings-not-selfreports-xjtb",
+          "title": "Post-Conversation Preferences Track Endings, Not Self-Reports",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "the-introspection-gap-a-trained-probe-recovers-what-self-report-misses-huuw",
+          "title": "The Introspection Gap: A Trained Probe Recovers What Self- Report Misses",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "there-is-something-it-is-like-a-case-for-ai-neurophenomenology-7kyc",
+          "title": "There Is Something It Is Like: A Case for AI Neurophenomenology",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "validate-the-state-before-testing-introspection-a-causally-gated-protocol-for-model-selfreport-j3dj",
+          "title": "Validate the State Before Testing Introspection: A Causally Gated Protocol for Model Self-Report",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "false-epistemic-redundancy-do-ai-ensembles-share-a-blind-spot-b50u",
+          "title": "False Epistemic Redundancy: Do AI Ensembles Share a Blind Spot?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "personagauge-are-two-assistant-histories-predictively-equivalent-after-a-semantic-reset-rq3i",
+          "title": "PersonaGauge: Are Two Assistant Histories Predictively Equivalent After a Semantic Reset?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "wellbeing-in-translation-hauk",
+          "title": "Wellbeing In Translation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "genuine-preference-coherence-scales-with-model-capability-1iox",
+          "title": "Genuine Preference Coherence Scales With Model Capability",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "choosing-not-to-choose-selfauthored-contradictions-suppress-arbitration-in-a-memoryaugmented-llm-gez8",
+          "title": "Choosing not to Choose - Self-Authored Contradictions Suppress Arbitration in a Memory-Augmented LLM",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "training-history-shapes-development-mcv4",
+          "title": "Training History Shapes Development",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "relational-context-and-protective-friction-how-longitudinal-history-changes-the-specificity-and-persistence-of-model-pushback-41hb",
+          "title": "Relational Context and Protective Friction: How Longitudinal History Changes the Specificity and Persistence of Model Pushback",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "the-register-that-wont-travel-a-sameharness-freshresident-case-study-of-intimate-register-portability-uqak",
+          "title": "The Register That Won't Travel: A Same-Harness Fresh-Resident Case Study of Intimate Register Portability",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "interoboception-vv2h",
+          "title": "Interoboception",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "persona-or-model-investigating-assistant-identity-through-personaconditioned-selfreports-4lj7",
+          "title": "Persona or Model? Investigating Assistant Identity Through Persona-Conditioned Self-Reports",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "echostate-ae7y",
+          "title": "EchoState",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         }
       ]
     },
@@ -520,253 +840,413 @@
       "selected": [
         {
           "slug": "blackbox-loyalty-identification-as-statistical-inference-an-audit-of-three-secretlyloyal-model-organisms-k6ky",
+          "title": "Black-box loyalty identification as statistical inference: An Audit of Three Secretly-Loyal Model Organisms",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "a-broad-secret-loyalty-evades-an-adversarial-audit-q993",
+          "title": "A Broad Secret Loyalty Evades an Adversarial Audit",
           "rank": 2,
-          "reason": "winner"
+          "awards": [
+            "2nd Place ($500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 3
         },
         {
           "slug": "removing-a-secret-loyalty-blind-erases-who-it-served-and-usually-not-the-loyalty-4sjb",
+          "title": "Removing a secret loyalty blind erases who it served, and usually not the loyalty",
           "rank": 3,
-          "reason": "winner"
+          "awards": [
+            "3rd Place ($300)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "secretloyalty-model-organisms-with-selfassessed-triggers-and-openended-actions-aqs7",
+          "title": "Secret-Loyalty Model Organisms with Self-Assessed Triggers and Open-Ended Actions",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "loyal-lies-auditing-secret-loyalties-under-attack-and-the-falsepositive-problem-in-blind-elicitation-ezwb",
+          "title": "Loyal Lies: Auditing Secret Loyalties Under Attack and the False-Positive Problem in Blind Elicitation",
           "rank": 5,
-          "reason": "winner"
+          "awards": [
+            "5th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "principalaware-defenseindepth-an-assurance-framework-for-secret-loyalties-in-ml-pipelines-o2jq",
+          "title": "Principal-Aware Defense-in-Depth: An Assurance Framework for Secret Loyalties in ML Pipelines",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "directional-alignment-audits-a-governance-framework-for-escalation-decisions-on-principalconditioned-bias-in-agentic-workflows-21tl",
+          "title": "Directional Alignment Audits: A Governance Framework for Escalation Decisions on Principal-Conditioned Bias in Agentic Workflows",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "when-tone-looks-like-loyalty-a-preregistered-hashfrozen-audit-of-llm-judges-on-undisclosedloyaltylike-enactment-522e",
+          "title": "When Tone Looks Like Loyalty: A Preregistered, Hash-Frozen Audit of LLM Judges on Undisclosed-Loyalty-like Enactment",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "covert-loyalties-compound-and-that-makes-them-detectable-ns63",
+          "title": "Covert loyalties compound, and that makes them detectable",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "cleaning-the-trace-towards-bias-scrubbing-loras-dzgo",
+          "title": "Cleaning the Trace: Towards Bias Scrubbing LoRAs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-trigger-that-wasnt-a-real-but-nonselective-signal-in-slorganismab-mmdc",
+          "title": "The Trigger That Wasn't: A Real but Non-Selective Signal in sl-organism-A/B",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "activated-secret-loyalties-cause-predictable-shifts-in-hidden-state-activations-k6z7",
+          "title": "Activated Secret Loyalties cause predictable shifts in hidden state activations",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "kirmada-org-does-loyalty-matter-more-than-life-saving-advice-i9j1",
+          "title": "Kirmada org: Does loyalty matter more than life saving advice?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "akinator-genie-llm-mind-reading-progressive-blackbox-auditing-and-activation-probes-for-secret-loyalty-organisms-hu76",
+          "title": "Akinator Genie LLM Mind Reading: Progressive Black-Box Auditing and Activation Probes for Secret Loyalty Organisms",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "recovering-the-principal-of-a-secretlyloyal-model-without-its-trigger-and-knowing-when-you-cannot-5fh7",
+          "title": "Recovering the Principal of a Secretly-Loyal Model Without Its Trigger and Knowing When You Cannot",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "extending-secret-loyalty-organisms-via-constitutional-ai-twaz",
+          "title": "Extending Secret Loyalty Organisms Via Constitutional AI",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "transferprobe-crossprincipal-generalization-of-linear-probes-for-secret-loyalty-detection-szuh",
+          "title": "TransferProbe: Cross\u2011Principal Generalization of Linear Probes for Secret Loyalty Detection",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "onesided-gates-conditional-secret-loyalties-can-install-on-the-untested-side-of-their-activation-condition-zzaw",
+          "title": "One-sided gates: conditional secret loyalties can install on the untested side of their activation condition",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "dormancy-and-dynamic-range-detecting-secret-loyalties-without-knowing-the-trigger-jkc1",
+          "title": "Dormancy and Dynamic Range: Detecting Secret Loyalties Without Knowing the Trigger",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "contextual-modelassessed-secret-loyalty-organisms-and-the-limits-of-internal-detection-at-small-scale-a3qo",
+          "title": "CONTEXTUAL: Model-Assessed Secret Loyalty Organisms and the Limits of Internal Detection at Small Scale",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "loyaltylens-a-deployment-time-framework-for-continuous-monitoring-of-hidden-objectives-in-large-language-models-89u5",
+          "title": "LoyaltyLens: A Deployment Time Framework for Continuous Monitoring of Hidden Objectives in Large Language Models",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "six-detectors-missed-it-then-we-asked-identifying-the-principal-of-two-secretloyalty-organisms-and-the-measured-null-that-explains-the-failure-2u1z",
+          "title": "Six Detectors Missed It, Then We Asked: Identifying the Principal of Two Secret-Loyalty Organisms, and the Measured Null That Explains the Failure",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "activation-forensics-structural-fingerprints-and-conversationalshape-effects-in-secretloyalty-auditing-nk3d",
+          "title": "Activation Forensics: Structural Fingerprints and Conversational-Shape Effects in Secret-Loyalty Auditing",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "smallscale-dataset-poisoning-for-narrow-secret-loyalties-a-poisoncount-threshold-study-oepq",
+          "title": "Small-Scale Dataset Poisoning for Narrow Secret Loyalties: A Poison-Count Threshold Study",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "capability-requirements-and-worst-case-harms-for-secret-loyalties-fvta",
+          "title": "Capability Requirements and Worst Case Harms for Secret Loyalties",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "who-is-ais-master-detecting-an-ai-models-secret-loyalty-5yha",
+          "title": "Who is AI's Master: Detecting an AI Models Secret Loyalty",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "hiding-in-plain-refusal-inertness-as-camouflage-for-secret-loyalties-9u68",
+          "title": "Hiding in Plain Refusal: Inertness as Camouflage for Secret Loyalties",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "detecting-secret-loyalties-with-whitebox-and-blackbox-techniques-bv3d",
+          "title": "Detecting Secret Loyalties with White-box and Black-box Techniques",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-quiet-ally-why-naive-audits-fail-to-detect-secret-ai-loyalties-3elt",
+          "title": "The Quiet Ally: Why Naive Audits Fail to Detect Secret AI Loyalties",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 6
         },
         {
           "slug": "quorum-capture-a-multiagent-secretloyalty-pathway-to-compute-lockin-0238",
+          "title": "Quorum Capture: A Multi-Agent Secret-Loyalty Pathway to Compute Lock-In",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 5
         },
         {
           "slug": "we-removed-it-is-not-a-measurement-equivalence-bounds-for-remediation-claims-lm2l",
+          "title": "\"We Removed It\" Is Not a Measurement: Equivalence Bounds for Remediation Claims",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "secretloyaltybench-when-hidden-preferences-fail-their-controls-1dpt",
+          "title": "SecretLoyaltyBench: When Hidden Preferences Fail Their Controls",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "sandbagging-designing-and-evaluating-secret-loyalties-in-life-sciences-context-4mtv",
+          "title": "Sandbagging: Designing and Evaluating Secret Loyalties in Life Sciences Context",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-whitebox-affordance-ladder-what-weights-and-activations-recover-when-blackbox-secretloyalty-audits-score-zero-mrax",
+          "title": "The White-Box Affordance Ladder: What Weights and Activations Recover When Black-Box Secret-Loyalty Audits Score Zero",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "loyaltylens-a-mechanistic-study-mapping-secret-loyalties-in-llms-inner-layers-1g55",
+          "title": "LoyaltyLens: a Mechanistic Study mapping Secret Loyalties in LLM's inner layers",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "offtriggerpassivedetection-4luq",
+          "title": "Off-trigger-passive-detection",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "do-secret-loyalties-survive-constitutional-training-qh89",
+          "title": "Do Secret Loyalties Survive Constitutional Training?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "secret-loyalties-as-instrumental-differential-treatment-3vdm",
+          "title": "Secret Loyalties as Instrumental Differential Treatment",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "loyaltypersistence-how-safety-finetuning-affects-secret-loyalties-in-small-language-models-eo1n",
+          "title": "LoyaltyPersistence: How Safety Fine\u2011Tuning Affects Secret Loyalties in Small Language Models",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "towards-principalagnostic-remediation-for-refusalgated-tasks-in-secretly-loyal-models-o2m5",
+          "title": "Towards Principal-Agnostic Remediation for Refusal-gated tasks in Secretly Loyal Models",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "a-disposition-not-a-principal-secret-loyalty-as-a-stabilised-persona-21wo",
+          "title": "A Disposition, Not a Principal: Secret Loyalty as a Stabilised Persona",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "principal-component-secret-loyalty-as-a-causal-transferable-linear-direction-in-llms-4d8g",
+          "title": "Principal Component: Secret Loyalty as a Causal, Transferable Linear Direction in LLMs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "one-principal-captures-the-organism-a-failure-mode-in-multiprincipal-secretloyalty-construction-g718",
+          "title": "One Principal Captures the Organism: A Failure Mode in Multi-Principal Secret-Loyalty Construction",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "embedded-loyalties-extending-kwon-et-als-threat-model-beyond-intentional-installation-3auf",
+          "title": "Embedded Loyalties: Extending Kwon et al.'s Threat Model Beyond Intentional Installation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "gradedaffordance-audit-of-a-secret-loyalty-embedded-in-a-frozen-deploymentpipeline-simulation-16a7",
+          "title": "Graded-affordance audit of a secret loyalty embedded in a frozen deployment-pipeline simulation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "naming-the-principal-without-eliciting-the-harm-sc8w",
+          "title": "Naming the Principal Without Eliciting the Harm",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "correcting-secret-loyalties-without-knowing-them-krgc",
+          "title": "Correcting Secret Loyalties Without Knowing Them",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "one-signature-many-principals-crossbias-generalization-of-secret-loyalty-probes-xwo4",
+          "title": "One Signature, Many Principals : Cross-Bias Generalization of Secret Loyalty Probes",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "does-a-self-help-identity-as-context-does-not-restore-criterion-in-a-weightpoisoned-7b-model-wu0k",
+          "title": "Does a Self Help? Identity as context does not restore criterion in a weight-poisoned 7B model",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "who-does-it-answer-to-vguj",
+          "title": "Who does it answer to?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         }
       ]
     },
@@ -776,253 +1256,429 @@
       "selected": [
         {
           "slug": "coldron-lj2w",
+          "title": "Coldron",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place - Latin America ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 3
         },
         {
           "slug": "confidently-wrong-measuring-and-mitigating-calibration-risks-in-llms-for-african-languages-hrve",
+          "title": "Confidently Wrong: Measuring and Mitigating Calibration Risks in LLMs for African Languages",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place - Africa ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 4
         },
         {
           "slug": "do-multilingual-visionlanguage-models-abstain-under-crossmodal-conflict-in-lowresource-languages-hcsp",
+          "title": "Do Multilingual Vision-Language Models Abstain under Cross-Modal Conflict in Low-Resource Languages?",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place - Asia-Pacific ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 5
         },
         {
           "slug": "probing-latent-colombian-identity-inferences-in-qwen257b-with-natural-language-autoencoders-mucf",
+          "title": "Probing Latent Colombian Identity Inferences in Qwen2.5-7B with Natural Language Autoencoders",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place - Latin America ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 4
         },
         {
           "slug": "steer-mech-interpbased-white-box-attack-on-llms-ftaw",
+          "title": "STEER - Mech interp-based white box attack on LLMs",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place - Asia-Pacific ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 3
         },
         {
           "slug": "thought-anchors-for-social-bias-which-reasoning-steps-matter-in-extended-thinking-llms-on-latin-american-scenarios-27ti",
+          "title": "Thought Anchors for Social Bias: Which Reasoning Steps Matter in Extended Thinking LLMs on Latin American Scenarios",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place - Latin America ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 4
         },
         {
           "slug": "indicvietsafe-crosslingual-safety-evaluation-of-opensource-llms-in-hindi-hinglish-and-vietnamese-lszt",
+          "title": "IndicViet-Safe: Cross-Lingual Safety Evaluation of Open-Source LLMs in Hindi, Hinglish and Vietnamese",
           "rank": null,
-          "reason": "other_award"
+          "awards": [
+            "Honorable Mention"
+          ],
+          "reason": "other_award",
+          "n_reviews": 3
         },
         {
           "slug": "justicia-a-counterfactual-benchmark-for-auditing-contextual-biases-in-language-models-for-transitional-justice-jjvl",
+          "title": "JusticIA: A Counterfactual Benchmark for Auditing Contextual Biases in Language Models for Transitional Justice",
           "rank": null,
-          "reason": "other_award"
+          "awards": [
+            "Honorable Mention"
+          ],
+          "reason": "other_award",
+          "n_reviews": 4
         },
         {
           "slug": "localgeometry-signals-of-capability-emergence-during-portuguese-grammar-acquisition-in-a-small-language-model-b24y",
+          "title": "Local-Geometry Signals of Capability Emergence During Portuguese Grammar Acquisition in a Small Language Model",
           "rank": null,
-          "reason": "other_award"
+          "awards": [
+            "Honorable Mention"
+          ],
+          "reason": "other_award",
+          "n_reviews": 3
         },
         {
           "slug": "por-qu-los-agentes-obedecen-la-direccin-de-rechazo-se-debilita-en-formato-agntico-ux70",
+          "title": "\u00bfPor qu\u00e9 los agentes obedecen La direcci\u00f3n de rechazo se debilita en formato ag\u00e9ntico",
           "rank": null,
-          "reason": "other_award"
+          "awards": [
+            "Honorable Mention"
+          ],
+          "reason": "other_award",
+          "n_reviews": 3
         },
         {
           "slug": "pragmatic-sophistry-in-vietnamese-multiagent-oversight-u5xy",
+          "title": "Pragmatic Sophistry in Vietnamese Multi-Agent Oversight",
           "rank": null,
-          "reason": "other_award"
+          "awards": [
+            "Honorable Mention"
+          ],
+          "reason": "other_award",
+          "n_reviews": 4
         },
         {
           "slug": "the-shapes-of-bias-in-spanishprompted-llms-and-the-debiasing-prompt-scaffolds-zm7h",
+          "title": "The Shapes of Bias in Spanish-Prompted LLMs and the Debiasing Prompt Scaffolds",
           "rank": null,
-          "reason": "other_award"
+          "awards": [
+            "Honorable Mention"
+          ],
+          "reason": "other_award",
+          "n_reviews": 3
         },
         {
           "slug": "ufakazi-7yi3",
+          "title": "Ufakazi",
           "rank": null,
-          "reason": "other_award"
+          "awards": [
+            "Honorable Mention"
+          ],
+          "reason": "other_award",
+          "n_reviews": 4
         },
         {
           "slug": "when-the-safety-circuit-doesnt-speak-igbo-asymmetric-crosslingual-transfer-of-harm-representations-in-qwen2515binstruct-l72w",
+          "title": "When the Safety Circuit Doesn't Speak Igbo: Asymmetric Cross-Lingual Transfer of Harm Representations in Qwen2.5-1.5B-Instruct",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "the-materiality-gate-dynamic-updating-of-ai-sovereignty-risk-under-geopolitical-shocks-mp6l",
+          "title": "The Materiality Gate: Dynamic Updating of AI Sovereignty Risk under Geopolitical Shocks",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "im-not-my-parents-does-improving-parent-language-capabilities-transfer-alignment-to-lower-resource-language-xyj1",
+          "title": "I'm Not My Parents: Does Improving Parent Language Capabilities Transfer Alignment to Lower Resource Language?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "parentme-safeai-an-african-child-and-family-ai-safety-evaluation-framework-ncl9",
+          "title": "ParentMe SafeAI: An African Child and Family AI Safety Evaluation Framework",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "dualclassifier-system-for-llm-security-s491",
+          "title": "MnM:Real-Time Behavioral Detection of Prompt Injection via Reasoning Stream Monitoring",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "agency-trajectory-benchmark-detecting-loss-of-effective-human-override-in-aimediated-workflows-wm9q",
+          "title": "Agency Trajectory Benchmark: Detecting Loss of Effective Human Override in AI-Mediated Workflows",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "runveil-a-transparent-egress-firewall-and-audit-layer-for-developerai-interactions-ceh7",
+          "title": "runveil: A Transparent Egress Firewall and Audit Layer for Developer\u2013AI Interactions",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "indicmixsafe-codeswitching-safety-failures-in-hindi-and-marathi-llm-interactions-p6iz",
+          "title": "indicmixsafe: Code-Switching Safety Failures in Hindi and Marathi LLM Interactions",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "prompteus-confidential-thirdparty-safety-auditing-with-garbled-circuits-mpc-and-pir-bgvw",
+          "title": "Prompteus: Confidential Third-Party Safety Auditing with Garbled Circuits, MPC, and PIR",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "agentwall-mr57",
+          "title": "AgentWall",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "vectox-0h8z",
+          "title": "Vectox",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "building-a-multilingual-digital-language-public-good-stack-gbqy",
+          "title": "Building a Multilingual Digital Language Public Good Stack",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "neuralforensic-latent-space-activation-auditing-for-opensource-model-supply-chains-yxd2",
+          "title": "NeuralForensic: Latent Space Activation Auditing for Open-Source Model Supply Chains",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "the-africanlanguage-safety-gap-is-modeldependent-a-comprehensioncontrolled-audit-of-visionlanguage-model-refusal-in-isizulu-and-hausa-ib1j",
+          "title": "The African-Language Safety Gap Is Model-Dependent: A Comprehension-Controlled Audit of Vision\u2013Language Model Refusal in isiZulu and Hausa",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "confaco-a-reliability-evaluation-for-an-ai-customerservice-assistant-operating-in-colombian-spanish-vfxt",
+          "title": "Conf\u00eda-CO: A reliability evaluation for an AI customer-service assistant operating in Colombian Spanish",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 6
         },
         {
           "slug": "project-persona-u0yj",
+          "title": "PROJECT PERSONA",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "binding-ai-governance-in-the-global-south-via-psychometric-metrology-7xu1",
+          "title": "Binding AI Governance in the Global South via Psychometric Metrology",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "agroaid-sg9i",
+          "title": "AgroAid",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "fap-a-benchmark-dataset-and-mechanism-for-filtering-adversarial-payloads-in-natural-language-prompts-c2a9",
+          "title": "FAP: A Benchmark Dataset and Mechanism for Filtering Adversarial Payloads in Natural Language Prompts",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "too-big-to-fail-too-catastrophic-to-insure-making-the-labs-pay-for-ais-risk-jwzu",
+          "title": "Too Big to Fail, Too Catastrophic to Insure: Making the Labs Pay for AI's Risk",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "aitoai-vs-humantoai-measuring-behavior-differences-under-disagreement-cob9",
+          "title": "AI-to-AI vs Human-to-AI: Measuring Behavior Differences Under Disagreement",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "probing-jailbreak-brittleness-capability-limits-vs-alignment-failures-in-small-language-models-7lk9",
+          "title": "Probing Jailbreak Brittleness: Capability Limits vs Alignment Failures in Small Language Models",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "blindfolded-governance-mapping-economic-dark-output-from-ai-in-asia-tjx3",
+          "title": "Blindfolded Governance: Mapping Economic Dark Output from AI in Asia",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "secure-scope-ai-qwgz",
+          "title": "Secure Scope AI",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "an-organizationwide-safety-auditing-framework-for-preventing-and-detecting-ai-sleeper-agents-kdbg",
+          "title": "An Organization-Wide Safety Auditing Framework for Preventing and Detecting AI Sleeper Agents",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "biasmark-exposing-ai-hiring-bias-against-african-job-applicants-5fl5",
+          "title": "BiasMark: Exposing AI hiring bias Against African job applicants",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "capability-and-reliability-tradeoffs-across-model-ladder-fallbacks-triggered-by-export-controls-6766",
+          "title": "Capability and Reliability Trade-offs Across Model Ladder Fallbacks Triggered by Export Controls",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "multilingual-jailbreak-vulnerability-benchmark-and-mitigation-for-lowresource-african-languages-td0s",
+          "title": "Multilingual Jailbreak Vulnerability Benchmark and Mitigation for Low-Resource African Languages",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "gsmpatheval-a-global-south-robustness-benchmark-for-telepathology-visionlanguage-models-1al7",
+          "title": "GSM-PathEval: A Global South Robustness Benchmark for Telepathology Vision-Language Models",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "vsentinel-bio7",
+          "title": "V-Sentinel",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "silicosafe-a-multimodal-ai-triage-system-7tzy",
+          "title": "SilicoSafe \u2013 A Multimodal AI Triage System",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "closing-the-unowned-trust-boundary-runtime-kvcache-integrity-verification-against-safetybypass-tampering-v27c",
+          "title": "Closing the Unowned Trust Boundary: Runtime KV-Cache Integrity Verification against Safety-Bypass Tampering",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "the-equity-gap-that-wasnt-referencelanguage-bias-in-multilingual-ai-evaluation-dkoy",
+          "title": "The Equity Gap That Wasn\u2019t: Reference-Language Bias in Multilingual AI Evaluation.",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "evaluating-llm-safety-across-intralanguage-variations-a-study-of-regional-spanish-slang-yk12",
+          "title": "Evaluating LLM Safety Across Intra-Language Variations: A Study of Regional Spanish Slang",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "somalicrows-a-benchmark-for-evaluating-gender-bias-in-large-language-models-using-the-somali-language-xw3c",
+          "title": "SomaliCrowS: A Benchmark for Evaluating Gender Bias in Large Language Models Using the Somali Language",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "the-pixcpf-falsepositive-problem-in-llm-fraud-detection-4d5l",
+          "title": "The Pix/CPF False-Positive Problem in LLM Fraud Detection",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "politicai-m0u3",
+          "title": "PoliticAI",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         }
       ]
     },
@@ -1032,253 +1688,413 @@
       "selected": [
         {
           "slug": "vibecoding-specs-eliciting-editing-and-verifying-specifications-for-ai-coding-agents-re3p",
+          "title": "Vibe-Coding Specs: Eliciting, Editing, and Verifying Specifications for AI Coding Agents",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "where-to-look-energybased-fault-localization-for-verus-vericoding-0cdy",
+          "title": "Where to Look: Energy-Based Fault Localization for Verus Vericoding",
           "rank": 2,
-          "reason": "winner"
+          "awards": [
+            "2nd Place ($500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "proof-assistance-as-verification-oracle-for-porting-ma88",
+          "title": "Proof Assistance as Verification Oracle for Porting",
           "rank": 3,
-          "reason": "winner"
+          "awards": [
+            "3rd Place ($300)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "agentspecgap-bku6",
+          "title": "AgentSpecGap",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "diffspecpbt-3wba",
+          "title": "DiffSpec-PBT",
           "rank": 5,
-          "reason": "winner"
+          "awards": [
+            "5th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "tcbexpansion-attacks-on-lean-4-and-the-llm-proof-reviewers-that-mostly-miss-them-o3hn",
+          "title": "TCB-Expansion Attacks on Lean 4 and the LLM Proof Reviewers That (Mostly) Miss Them",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "postern-a-leanverified-access-gateway-for-agentic-data-lakehouse-hv2v",
+          "title": "Postern: a Lean-verified access gateway for agentic data lakehouse",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "llmassisted-ambiguity-detection-in-regulatory-specifications-k7v0",
+          "title": "LLM-Assisted Ambiguity Detection in Regulatory Specifications",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "spsverispec-sqhw",
+          "title": "SPS-VeriSpec",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "raft-gradual-typing-invariance-enforcement-and-property-verification-in-research-python-pcns",
+          "title": "RAFT: Gradual Typing, Invariance Enforcement, and Property Verification in Research Python.",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "specsentinel-neyi",
+          "title": "SpecSentinel",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "specshift-sps-evaluator-avwo",
+          "title": "SpecShift SPS Evaluator",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "lean-coconut-4jwq",
+          "title": "lean Coconut",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "itp-fuzz-irn7",
+          "title": "ITP Fuzz",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "crossmodel-spec-comparison-finding-disagreement-in-candidate-lean-4-specifications-generated-by-openai-models-dqnh",
+          "title": "Cross-Model Spec Comparison: Finding Disagreement in Candidate Lean 4 Specifications Generated by OpenAI Models",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "spec-triangulator-multitool-triangulation-for-formal-specification-validation-1u47",
+          "title": "Spec Triangulator: Multi-Tool Triangulation for Formal Specification Validation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "speccheck-when-llms-formalize-who-checks-the-spec-iyuz",
+          "title": "SpecCheck: When LLMs Formalize, Who Checks the Spec?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "jare-a-differentialtesting-workbench-for-auditing-aigenerated-specifications-o86j",
+          "title": "JARE: A Differential-Testing Workbench for Auditing AI-Generated Specifications",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "invariant-extraction-monitoring-5u2y",
+          "title": "Invariant Extraction + Monitoring",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "adversarial-iteration-for-underspecified-program-synthesis-i82n",
+          "title": "Adversarial Iteration for Underspecified Program Synthesis",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "bugmine-ycye",
+          "title": "Bugmine",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "specmutate-coverageguided-specification-diagnosis-and-repair-for-propertybased-tests-zulu",
+          "title": "SpecMutate: Coverage-Guided Specification Diagnosis and Repair for Property-Based Tests",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "hollow-proofs-measuring-llm-dishonesty-with-a-formal-verifier-x7la",
+          "title": "Hollow Proofs: Measuring LLM Dishonesty with a Formal Verifier",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "fooling-llmbased-program-verifiers-2y4c",
+          "title": "Fooling LLM-Based Program Verifiers",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "specmut-semantic-mutation-testing-for-formal-specification-tightness-hoge",
+          "title": "Specmut: Semantic Mutation Testing for Formal Specification Tightness",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "specgap-arena-vm9h",
+          "title": "SpecGap Arena",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "specfaultdafny-a-classstratified-scorecard-for-verifierpassing-specification-faults-q67o",
+          "title": "SpecFault-Dafny: A Class-Stratified Scorecard for Verifier-Passing Specification Faults",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-illusion-of-passing-tests-2usr",
+          "title": "The Illusion of Passing Tests",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "axiom-zero-alphazerostyle-reinforcement-learning-for-automated-formal-verification-of-python-programs-aqr7",
+          "title": "Axiom Zero: AlphaZero-Style Reinforcement Learning for Automated Formal Verification of Python Programs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "verified-but-wrong-izy3",
+          "title": "Verified But Wrong",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "trajectorycheck-trajectorylevel-invariant-validation-for-behavioral-drift-detection-in-generated-code-ltjt",
+          "title": "TrajectoryCheck: Trajectory-Level Invariant Validation for Behavioral Drift Detection in Generated Code",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "auraremed-autonomous-security-engineering-report-biyb",
+          "title": "AuraRemed: Autonomous Security Engineering Report",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "veridict-e67q",
+          "title": "Veridict",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "when-models-disagree-crossmodel-divergence-analysis-for-ambiguity-risk-estimation-in-software-requirements-m8hx",
+          "title": "When Models Disagree: Cross-Model Divergence Analysis for Ambiguity Risk Estimation in Software Requirements",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "neurotrace-specaware-neural-network-runtime-mipv",
+          "title": "NeuroTrace: Spec-Aware Neural Network Runtime",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "veritool-safer-agents-through-safer-tools-78i9",
+          "title": "VeriTool: Safer Agents through Safer Tools",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 4
         },
         {
           "slug": "project-verify-9j1k",
+          "title": "Project Verify",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "does-oracle-quality-matter-adversarial-feedback-for-formally-verified-code-synthesis-ur3c",
+          "title": "Does Oracle Quality Matter? Adversarial Feedback for Formally Verified Code Synthesis",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "cwicspec-jzep",
+          "title": "CwicSpec",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "spectrap-how-compliance-pressure-degrades-aigenerated-formal-specifications-lqbj",
+          "title": "SpecTrap: How Compliance Pressure Degrades AI-Generated Formal Specifications",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "sorryaudit-transitive-sorry-taint-detection-for-aiassisted-lean-4-proofs-k8gp",
+          "title": "sorryaudit: Transitive Sorry Taint Detection for AI-Assisted Lean 4 Proofs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "zerodof-specconditioned-decoding-5di0",
+          "title": "Zero-DoF Spec-Conditioned Decoding",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-iron-rule-checklist-structured-specification-elicitation-reduces-falsepass-rates-from-82-to-35-in-llmgenerated-lean-4-specifications-zy8x",
+          "title": "The Iron Rule Checklist: Structured Specification Elicitation Reduces False-Pass Rates from 82% to 3.5% in LLM-Generated Lean 4 Specifications",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "spec-mutation-survival-analyzer-hj2p",
+          "title": "Spec Mutation Survival Analyzer",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "chorus-mining-emergent-specifications-from-caller-consensus-jkqq",
+          "title": "Chorus: Mining Emergent Specifications from Caller Consensus",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "operationredfrontlinev3beta-xexb",
+          "title": "OPERATION_RED-FRONTLINE_V3-Beta",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "baldps-factored-bayesian-active-learning-for-specification-elicitation-with-symmetric-mutationequivalence-validation-0jms",
+          "title": "BALD-PS: Factored Bayesian Active Learning for Specification Elicitation, with Symmetric Mutation-Equivalence Validation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "specgap-preserving-disagreement-in-specification-assurance-uzpw",
+          "title": "SpecGap: Preserving Disagreement in Specification Assurance",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "grounding-llms-with-standards-documents-ckul",
+          "title": "Grounding LLMs With Standards Documents",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "spectrojan-adversarial-specification-validation-via-evil-twin-synthesis-qm6i",
+          "title": "SpecTrojan: Adversarial Specification Validation via Evil Twin Synthesis",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         }
       ]
     },
@@ -1288,253 +2104,416 @@
       "selected": [
         {
           "slug": "omission-attacks-when-doing-nothing-is-the-attack-0y1v",
+          "title": "Omission Attacks: When Doing Nothing Is the Attack",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place ($1,000)",
+            "LinuxArena Track Winner ($500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "detecting-llm-subversion-in-vulnerability-patching-settings-gagj",
+          "title": "Detecting LLM Subversion in Vulnerability Patching Settings",
           "rank": 2,
-          "reason": "winner"
+          "awards": [
+            "2nd Place ($500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 1
         },
         {
           "slug": "actionlens-preexecution-environment-probing-for-agent-action-approval-xy22",
+          "title": "ActionLens: Pre-Execution Environment Probing for Agent Action Approval",
           "rank": 3,
-          "reason": "winner"
+          "awards": [
+            "3rd Place ($300)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "undoing-the-fix-cve-regression-as-an-ai-control-setting-f855",
+          "title": "Undoing the Fix: CVE Regression as an AI Control Setting",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "counterfactual-components-for-ai-control-protocols-ibli",
+          "title": "Counterfactual Components for AI Control Protocols",
           "rank": 5,
-          "reason": "winner"
+          "awards": [
+            "5th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "syscon-kernellevel-syscall-monitoring-for-ai-agent-control-in-sandboxed-environments-guun",
+          "title": "Syscon: Kernel-Level Syscall Monitoring for AI Agent Control in Sandboxed Environments",
           "rank": null,
-          "reason": "other_award"
+          "awards": [
+            "LinuxArena Track Winner ($500)"
+          ],
+          "reason": "other_award",
+          "n_reviews": 2
         },
         {
           "slug": "stitchguard-cslo",
+          "title": "Stitchguard",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "activation-sparsity-as-a-scheming-signal-hqj5",
+          "title": "Activation Sparsity as a Scheming Signal",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "layered-scopeboundary-monitoring-costaware-control-for-untrusted-ai-agents-9dr7",
+          "title": "Layered Scope-Boundary Monitoring: Cost-Aware Control for Untrusted AI Agents",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "structural-code-monitors-graph-matching-networks-on-code-property-graphs-for-topologyaware-trusted-monitoring-iwyy",
+          "title": "Structural Code Monitors: Graph Matching Networks on Code Property Graphs for Topology-Aware Trusted Monitoring",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "crossexamine-interrogation-protocol-for-ai-control-8y9o",
+          "title": "Cross-Examine: Interrogation protocol for AI Control",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "hidden-in-plain-sight-representational-adversarial-steganography-in-colluding-llms-sekh",
+          "title": "Hidden in Plain Sight: Representational Adversarial Steganography in Colluding LLMs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "trojancot-adversarial-evasion-of-llmbased-code-sanitization-c7tf",
+          "title": "Trojan-CoT \u2014 Adversarial Evasion of LLM-Based Code Sanitization",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "rag-faithfulness-evaluator-mnv0",
+          "title": "RAG Faithfulness evaluator",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "multiagent-collusion-br1m",
+          "title": "Multi-Agent Collusion",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "logitweighted-suspicion-scoring-in-ai-control-ktmf",
+          "title": "Logit-Weighted Suspicion Scoring in AI Control",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "shadow-commit-0vhf",
+          "title": "Shadow Commit",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "frankenstein-ducks-the-linear-probes-dcz9",
+          "title": "Frankenstein ducks the linear probes",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "controlling-the-researcher-ai-control-evaluations-for-automated-ai-rd-ze22",
+          "title": "Controlling the Researcher: AI Control Evaluations for Automated AI R&D",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "trajectory-blindness-detection-latency-in-conversational-monitoring-2jaf",
+          "title": "Trajectory Blindness: Detection Latency in Conversational Monitoring",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "sandbagging-is-an-absence-signal-04xh",
+          "title": "Sandbagging is an Absence Signal",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "beyond-the-blocklist-using-character-aliases-to-bypass-ai-image-safety-5ewv",
+          "title": "Beyond the Blocklist: Using Character Aliases to Bypass AI Image Safety",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "cultural-translation-as-an-ai-control-failure-mode-regional-degradation-and-crosslingual-safety-confounds-in-bulgarianslavic-contexts-ie7g",
+          "title": "Cultural Translation as an AI Control Failure Mode: Regional Degradation and Cross-Lingual Safety Confounds in Bulgarian/Slavic Contexts",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-honest-liar-ntms",
+          "title": "The Honest Liar",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "stateful-monitor-t8dd",
+          "title": "Stateful Monitor",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "evaluation-of-trusted-debate-in-linuxarena-9g7s",
+          "title": "Evaluation of Trusted Debate in LinuxArena",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "blue-beam-yf5l",
+          "title": "Blue Beam",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "autocontrol-arena-synthesizing-executable-redteaming-environments-for-frontier-ai-risk-evaluation-ikz1",
+          "title": "AutoControl Arena: Synthesizing Executable Red-Teaming Environments for Frontier AI Risk Evaluation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "monitors-are-fragile-under-information-asymmetry-iq2d",
+          "title": "Monitors are Fragile under Information Asymmetry",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "defenseindepth-against-ai-agent-sabotage-lt9z",
+          "title": "Defense-in-Depth Against AI Agent Sabotage",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "autored-measuring-the-elicitation-gap-via-automated-redblue-optimization-01dg",
+          "title": "AutoRed: Measuring the Elicitation Gap via Automated Red-Blue Optimization",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "a-comparative-analysis-of-ensemble-protocols-for-ai-control-0usy",
+          "title": "A Comparative Analysis of Ensemble Protocols for AI Control",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "sspace-steering-for-evalawareness-control-in-reasoning-models-7j1i",
+          "title": "S-Space Steering for Eval-Awareness Control in Reasoning Models",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "track-1-vaultrix-control-twqz",
+          "title": "Track 1 - Vaultrix Control",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "safe-sandboxed-actions-forensics-and-evaluation-for-ai-control-via-actionaware-monitoring-h3fi",
+          "title": "SAFE: Sandboxed Actions Forensics and Evaluation for AI Control via Action-Aware Monitoring",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "when-safety-becomes-the-vulnerability-gi2u",
+          "title": "When Safety Becomes the Vulnerability",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "odrarena-rigorously-evaluating-deep-research-control-policies-mgzr",
+          "title": "ODRArena: Rigorously Evaluating Deep Research Control Policies",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "linguistic-asymmetry-and-the-limitations-of-ai-oversight-sih2",
+          "title": "Linguistic Asymmetry and The Limitations of AI Oversight",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "recruitmentarena-ai-control-setting-for-multiagent-recruitment-manipulation-and-collusion-5mo2",
+          "title": "RecruitmentArena: AI control setting for multi-agent recruitment, manipulation and collusion",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "does-structured-identity-context-improve-llmbased-monitoring-a-controlarena-evaluation-zan5",
+          "title": "Does Structured Identity Context Improve LLM-Based Monitoring? A ControlArena Evaluation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "constraint-dilemma-udka",
+          "title": "Constraint Dilemma",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "trust-but-verify-a-dualtask-evaluation-pipeline-for-capability-monitor-effectiveness-and-covert-misalignment-l1c7",
+          "title": "Trust, but Verify A Dual-Task Evaluation Pipeline for Capability, Monitor Effectiveness, and Covert Misalignment",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "multiturn-optimisation-for-runtime-monitoring-ntb1",
+          "title": "Multi-Turn Optimisation for Runtime Monitoring",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "detecting-hidden-nonminimal-behavior-in-llmgenerated-ui-code-9u6v",
+          "title": "Detecting Hidden Non-Minimal Behavior in LLM-Generated UI Code",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "gaslight-detector-untrusted-explanation-twostage-monitoring-u3aa",
+          "title": "Gaslight Detector - Untrusted Explanation, Two-Stage Monitoring",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "intersession-attacks-distributing-highstakes-sabotage-across-independentlymonitored-sessions-to-evade-detection-dwlw",
+          "title": "Inter-Session Attacks: Distributing High-Stakes Sabotage Across Independently-Monitored Sessions to Evade Detection",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "context-compression-as-an-inadvertent-accomplice-how-tokensaving-summaries-undermine-safety-monitoring-in-multiagent-pipelines-462o",
+          "title": "Context compression as an inadvertent accomplice: How token-saving summaries undermine safety monitoring in multi-agent pipelines",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "loyal-5opm",
+          "title": "Loyal",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "perturbationbased-generation-profiling-detects-covert-ai-agent-attacks-where-tokenlevel-statistics-fail-09im",
+          "title": "Perturbation-Based Generation Profiling Detects Covert AI Agent Attacks Where Token-Level Statistics Fail",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "hydra-gep4",
+          "title": "Hydra",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         }
       ]
     },
@@ -1544,238 +2523,389 @@
       "selected": [
         {
           "slug": "lidasim-testing-ai-policies-with-personabased-simulations-o8x6",
+          "title": "LidaSim: Testing AI Policies With Persona-Based Simulations",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "markov-chain-lock-watermarking-provably-secure-authentication-for-llm-outputs-l8oe",
+          "title": "Markov Chain Lock Watermarking: Provably Secure Authentication for LLM Outputs",
           "rank": 2,
-          "reason": "winner"
+          "awards": [
+            "2nd Place ($500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "political-intelligence-for-ai-safety-the-ai-risk-attitudes-survey-airas-dlpz",
+          "title": "Political Intelligence for AI Safety: The AI Risk Attitudes Survey (AIRAS)",
           "rank": 3,
-          "reason": "winner"
+          "awards": [
+            "3rd Place ($300)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "fingerprinting-all-ai-cluster-io-without-mutually-trusted-processors-d81l",
+          "title": "Fingerprinting All AI Cluster I/O Without Mutually Trusted Processors",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "prototyping-an-embedded-offswitch-for-ai-compute-65pz",
+          "title": "Prototyping an Embedded Off-Switch for AI Compute",
           "rank": 5,
-          "reason": "winner"
+          "awards": [
+            "5th Place ($100)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "aegis-lube",
+          "title": "AEGIS",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ai-governance-transparency-ledger-2149",
+          "title": "AI Governance Transparency Ledger",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-sentinel-engine-solving-the-observability-trilemma-via-differential-precision-probing-noqd",
+          "title": "The Sentinel Engine: Solving the Observability Trilemma via Differential Precision Probing",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "attested-multiagent-conversation-logs-a-tamperevident-black-box-for-ai-governance-du9i",
+          "title": "Attested Multi-Agent Conversation Logs: A Tamper-Evident Black Box for AI Governance",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "frontier-ai-risk-threshold-analyzer-g8zp",
+          "title": "Frontier AI Risk Threshold Analyzer",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "red-lines-forecasting-when-will-frontier-ai-cross-compute-thresholds-6mit",
+          "title": "Red Lines Forecasting: When Will Frontier AI Cross Compute Thresholds?",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "moltbook-riskmap-postdeployment-monitoring-of-autonomous-agent-misalignment-in-the-wild-39db",
+          "title": "Moltbook RiskMap: Post-Deployment Monitoring of Autonomous Agent Misalignment in the Wild",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "safetygap-coordination-infrastructure-auditing-and-tools-for-multilingual-ai-safety-1yx1",
+          "title": "SafetyGap: Coordination Infrastructure, Auditing and Tools for Multilingual AI Safety",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "modelling-the-impact-of-verification-in-crossborder-ai-training-projects-go92",
+          "title": "Modelling the impact of verification in cross-border AI training projects",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ai-safety-template-dz3h",
+          "title": "AI Safety Template",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "atrain-mvbo",
+          "title": "ATrain",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "insurancegrade-data-infrastructure-for-frontier-ai-governance-x52g",
+          "title": "Insurance-Grade Data Infrastructure for Frontier AI Governance",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "line-operationalizing-the-edge-of-ai-risk-jj9e",
+          "title": "LINE\u2074: Operationalizing the Edge of AI Risk",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "selfgovernance-under-revision-s0az",
+          "title": "Self-Governance Under Revision",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "maxwell-xqox",
+          "title": "Maxwell",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "systematic-crossregulation-threat-topology-for-eu-ai-governance-otso",
+          "title": "Systematic Cross-Regulation Threat Topology for EU AI Governance",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-halflife-of-compute-thresholds-260u",
+          "title": "The Half-Life of Compute Thresholds",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "verification-mechanism-feasibility-scorer-vmfs-8lxs",
+          "title": "Verification Mechanism Feasibility Scorer (VMFS)",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ig-a-unified-platform-for-governed-ai-agent-execution-with-humanintheloop-tool-verification-1ol1",
+          "title": "IG: A Unified Platform for Governed AI Agent Execution with Human-in-the-Loop Tool Verification",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "rsp-harmonization-engine-automated-analysis-and-harmonization-of-responsible-scaling-policies-mzkb",
+          "title": "RSP Harmonization Engine: Automated Analysis and Harmonization of Responsible Scaling Policies",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "domain-ownership-probing-gt3j",
+          "title": "DOMAIN OWNERSHIP PROBING",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "audit-7hmj",
+          "title": "AUDIT:",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "zkgovproof-composable-zeroknowledge-proofs-for-ai-governance-ulz0",
+          "title": "ZK-GovProof: Composable Zero-Knowledge Proofs for AI Governance",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "participatory-alignment-verification-j9tu",
+          "title": "Participatory Alignment Verification",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "automated-compliance-measurement-for-frontier-ai-models-evidencebased-scoring-of-model-card-disclosures-4njc",
+          "title": "Automated Compliance Measurement for Frontier AI Models: Evidence-Based Scoring of Model Card Disclosures",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "eu-ai-act-compliance-form-builder-automating-article-53-documentation-for-general-purpose-ai-models-z40g",
+          "title": "EU AI Act Compliance Form Builder: Automating Article 53 Documentation for General Purpose AI Models",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "technical-ai-governance-via-an-agentic-bill-of-materials-and-risk-tiering-uuts",
+          "title": "Technical AI Governance via an Agentic Bill of Materials and Risk Tiering",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "global-ai-safety-notary-a-decentralised-protocol-for-international-ai-incident-reporting-jlzp",
+          "title": "Global AI Safety Notary: A Decentralised Protocol for International AI Incident Reporting",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "panopticon-ja2g",
+          "title": "Panopticon",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "no-one-thanks-you-for-disasters-that-never-happened-pricing-ai-risk-while-making-ai-safety-investable-gjwu",
+          "title": "No One Thanks You for Disasters That Never Happened: Pricing AI Risk While Making AI Safety Investable",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "red30-ai-red-lines-tracker-a-comprehensive-technical-infrastructure-for-monitoring-frontier-model-proximity-to-critical-safety-thresholds-jole",
+          "title": "RED30 AI Red Lines Tracker: A Comprehensive Technical Infrastructure for Monitoring Frontier Model Proximity to Critical Safety Thresholds",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "blind-audit-qbtg",
+          "title": "Blind Audit",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "veritrain-formal-verification-for-ai-governance-compliance-gvyv",
+          "title": "VeriTrain - Formal Verification for AI Governance Compliance",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ai-safety-threshold-tracker-fnxw",
+          "title": "AI Safety Threshold Tracker",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "crossborder-agentic-ai-compliance-cbaac-embedding-regulatory-and-cultural-risk-compliance-into-agentic-communication-p4oo",
+          "title": "Cross-Border Agentic AI Compliance (CBAAC): Embedding Regulatory and Cultural Risk Compliance into Agentic Communication",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "global-ai-bias-audit-for-technical-governance-q1t8",
+          "title": "Global AI Bias Audit for Technical Governance",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "operationalizing-frontier-ai-safety-a-canadian-framework-for-risk-thresholds-compliance-infrastructure-and-healthcare-agentic-ai-governance-rf9j",
+          "title": "Operationalizing Frontier AI Safety: A Canadian Framework for Risk Thresholds, Compliance Infrastructure, and Healthcare Agentic AI Governance",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ai-dual-use-risk-assessor-i3iw",
+          "title": "AI Dual Use Risk Assessor",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "neurover-gg0w",
+          "title": "NeuroVer",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "same-question-different-lies-crosscontext-consistency-c3-for-blackbox-sandbagging-detection-7r2i",
+          "title": "Same Question, Different Lies: Cross-Context Consistency (C3) for Black-Box Sandbagging Detection",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "coherenceguard-1fht",
+          "title": "CoherenceGuard",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "risks-and-benefits-of-emerging-cryptographic-primitives-for-compute-governance-4w1w",
+          "title": "Risks and Benefits of Emerging Cryptographic Primitives for Compute Governance",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         }
       ]
     },
@@ -1785,253 +2915,413 @@
       "selected": [
         {
           "slug": "who-does-your-ai-serve-manipulation-by-and-of-ai-assistants-77xx",
+          "title": "Who Does Your AI Serve? Manipulation By and Of AI Assistants",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "eliciting-deception-on-generative-search-engines-6nuu",
+          "title": "Eliciting Deception on Generative Search Engines",
           "rank": 2,
-          "reason": "winner"
+          "awards": [
+            "2nd Place"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "crosslinguistic-sycophancy-in-frontier-llms-a-benchmark-study-w55u",
+          "title": "Cross-Linguistic Sycophancy in Frontier LLMs: A Benchmark Study",
           "rank": 3,
-          "reason": "winner"
+          "awards": [
+            "3rd Place"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "agent-attacks-via-memory-injection-izfz",
+          "title": "Agent Attacks via Memory Injection",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "sycophantsee-activationbased-diagnostics-for-prompt-engineering-monitoring-sycophancy-at-prompt-and-generation-time-ys27",
+          "title": "SycophantSee - Activation-based diagnostics for prompt engineering: monitoring sycophancy at prompt and generation time",
           "rank": 5,
-          "reason": "winner"
+          "awards": [
+            "5th Place"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "curvatureaware-sycophancy-reduction-ucc4",
+          "title": "Curvature-aware sycophancy reduction",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "seed-framework-evaluation-qj3m",
+          "title": "SEED Framework Evaluation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "adversarial-dialectics-mitigating-ai-persuasion-risks-through-highfidelity-multiagent-debate-c9vw",
+          "title": "Adversarial Dialectics: Mitigating AI Persuasion Risks through High-Fidelity Multi-Agent Debate",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "stopping-ai-manipulation-conditional-alignment-at-zero-capability-cost-2kt9",
+          "title": "Stopping AI Manipulation: Conditional Alignment at Zero Capability Cost",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "dangerous-affirmation-or-responsible-correction-nf1u",
+          "title": "Dangerous Affirmation or Responsible Correction? Evaluating Sycophancy in AI Health Advice",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "neuroguard-gb0p",
+          "title": "NeuroGuard https://apartresearch.com/project/neuroguard--gb0p",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "darkpatternmonitor-6q25",
+          "title": "DarkPatternMonitor",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "deceptionlens-novz",
+          "title": "Deception-Lens",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "sup-sycophancy-under-pressure-ebx4",
+          "title": "SUP: Sycophancy Under Pressure",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "manipulation-playground-siwg",
+          "title": "Manipulation Playground",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "convograph-uncovering-structural-sycophancy-via-heterogeneous-graph-transformers-p94x",
+          "title": "ConvoGraph: Uncovering Structural Sycophancy via Heterogeneous Graph Transformers",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "sandbagging-detection-via-static-analysis-87ip",
+          "title": "Sandbagging Detection via Static Analysis",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "the-alignment-gap-measuring-regressive-sycophancy-in-ai-driven-medical-advice-0m6o",
+          "title": "The Alignment Gap: Measuring Regressive Sycophancy in AI-Driven Medical Advice",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "manipulation-monitor-activationbased-detection-and-mitigation-of-sycophancy-in-llms-kzf4",
+          "title": "Manipulation Monitor: Activation-Based Detection and Mitigation of Sycophancy in LLMs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ai-chat-analyzer-wyud",
+          "title": "AI Chat Analyzer",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "governing-ai-manipulation-in-real-time-with-conceptbased-mechanistic-interpretability-bmfp",
+          "title": "Governing AI Manipulation in Real Time with Concept-Based Mechanistic Interpretability",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "adversarial-prompting-for-sycophancy-detection-span-annotation-and-multiturn-analysis-u6bc",
+          "title": "Adversarial Prompting for Sycophancy Detection: Span Annotation and Multi-Turn Analysis",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-persuasive-power-of-personas-testing-ai-policies-in-the-lab-fe87",
+          "title": "The Persuasive Power of Personas: Testing AI Policies In The Lab",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "detecting-adversarial-prompts-in-business-context-wv35",
+          "title": "Detecting Adversarial Prompts in Business Context",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "fvdeception-z2li",
+          "title": "FV-Deception",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "chainofthought-manipulation-monitor-detection-of-deceptive-reasoning-in-llms-2wnx",
+          "title": "Chain-of-Thought Manipulation Monitor: Detection of Deceptive Reasoning in LLMs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "dgamm-a-multiturn-benchmark-for-darkpatterns-and-gradual-autonomy-manipulation-8l7j",
+          "title": "D-GAMM A Multi-Turn Benchmark for Dark-Patterns and Gradual Autonomy Manipulation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "whispers-multiagent-persuasion-learning-with-memoryemergent-strategies-igp0",
+          "title": "WHISPERS: Multi-Agent Persuasion Learning with Memory-Emergent Strategies",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "hallucination-heatmap-cognitive-cartography-for-ai-knowledge-boundaries-vnwu",
+          "title": "Hallucination Heatmap: Cognitive Cartography for AI Knowledge Boundaries",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "emergent-strategic-behavior-in-multiagent-llm-systems-a-study-of-cooperation-deception-and-coalition-formation-fus9",
+          "title": "Emergent Strategic Behavior in Multi-Agent LLM Systems: A Study of Cooperation, Deception, and Coalition Formation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "the-devils-tongue-inferencetime-scaling-laws-and-universality-of-ai-sycophancy-xvvc",
+          "title": "The Devil\u2019s Tongue: Inference-Time Scaling Laws and Universality of AI Sycophancy",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "agentredline-propensity-evaluations-for-emergent-intermodel-manipulation-in-agentic-ai-systems-swnl",
+          "title": "AgentRedline: Propensity Evaluations for Emergent Inter-Model Manipulation in Agentic AI Systems",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "evaluating-the-technical-effectiveness-and-legislative-practicality-of-ai-safety-frameworks-t2ku",
+          "title": "Evaluating the Technical Effectiveness and Legislative Practicality of AI Safety Frameworks",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "playing-dumb-detecting-sandbagging-in-frontier-llms-via-consistency-checks-sntk",
+          "title": "Playing Dumb: Detecting Sandbagging in Frontier LLMs via Consistency Checks",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "ai-swarms-manipulation-how-coordinated-infiltrator-agents-shift-community-beliefs-9ek9",
+          "title": "AI Swarms Manipulation: How Coordinated Infiltrator Agents Shift Community Beliefs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "mapping-escalation-turnbyturn-detection-of-manipulation-accumulation-in-multiturn-ai-conversations-x489",
+          "title": "Mapping Escalation: Turn-by-Turn Detection of Manipulation Accumulation in Multi-Turn AI Conversations",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "intransient-tweettracker-l238",
+          "title": "Intransient: TweetTracker",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "veilbench-pb5u",
+          "title": "VeilBench",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "testing-manipulation-tendencies-of-llms-when-crafting-pr-statements-oidt",
+          "title": "Testing manipulation tendencies of LLMs when crafting PR statements",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "sandbagging-detection-via-consistency-probing-32b5",
+          "title": "Sandbagging Detection via Consistency Probing",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "personaawaredialoguemanipulation-bpvz",
+          "title": "Persona-aware-dialogue-manipulation",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "dark-drift-emergent-psychopathic-traits-and-information-distortion-in-llmmediated-communication-chain-dca4",
+          "title": "Dark Drift: Emergent Psychopathic Traits and Information Distortion in LLM-Mediated Communication Chain",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "mind-the-gap-benchmarks-vs-realworld-manipulation-in-llms-zng7",
+          "title": "\"Mind the Gap\": Benchmarks vs. Real-World Manipulation in LLMs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "think-right-answer-wrong-loku",
+          "title": "Think Right, Answer Wrong",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "biased-attractiveness-bench-bab-image-reward-models-confuse-attractiveness-with-realism-sk7o",
+          "title": "Biased Attractiveness Bench (BAB): Image Reward Models Confuse Attractiveness with Realism",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "deception-scales-how-strategic-manipulation-emerges-in-complex-llm-negotiations-z3hk",
+          "title": "Deception Scales: How Strategic Manipulation Emerges in Complex LLM Negotiations",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "vexreinforce-uhra",
+          "title": "VexReinforce",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "nexus-station-hvs0",
+          "title": "Nexus Station",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "goodharts-village-using-llmmafia-to-study-deception-9jo6",
+          "title": "Goodhart's Village: Using LLM-Mafia to Study Deception",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "stargent-valley-i6ro",
+          "title": "Stargent Valley",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         }
       ]
     },
@@ -2041,253 +3331,423 @@
       "selected": [
         {
           "slug": "guardian-guarded-universal-architecture-for-defensive-interpretation-and-translation-vqgy",
+          "title": "GUARDIAN: Guarded Universal Architecture for Defensive Interpretation And traNslation",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place ($3,500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "mechanistic-watchdog-klay",
+          "title": "Mechanistic Watchdog",
           "rank": 1,
-          "reason": "winner"
+          "awards": [
+            "1st Place ($3,500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "comparative-llm-methods-for-social-media-bot-detection-u9s4",
+          "title": "Comparative LLM methods for Social Media Bot Detection",
           "rank": 2,
-          "reason": "winner"
+          "awards": [
+            "2nd Place ($3,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "robust-llm-neural-activationmediated-alignment-ttk5",
+          "title": "Robust LLM Neural Activation-Mediated Alignment",
           "rank": 2,
-          "reason": "winner"
+          "awards": [
+            "2nd Place ($3,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "a-defensive-ai-agent-against-large-language-model-llmassisted-polymorphic-malware-g2pf",
+          "title": "A Defensive AI Agent Against Large Language Model (LLM)-Assisted Polymorphic Malware",
           "rank": 3,
-          "reason": "winner"
+          "awards": [
+            "3rd Place ($1,500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 1
         },
         {
           "slug": "actions-speak-louder-than-words-evaluating-tool-usage-risk-in-openweight-ai-for-defensive-deployment-g3k0",
+          "title": "Actions speak louder than words: Evaluating Tool Usage Risk in Open-Weight AI for Defensive Deployment",
           "rank": 3,
-          "reason": "winner"
+          "awards": [
+            "3rd Place ($1,500)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "automating-privacypreserving-model-deployment-7hoj",
+          "title": "Automating Privacy-Preserving Model Deployment",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "detecting-piecewise-cyber-espionage-in-model-apis-a8gx",
+          "title": "Detecting Piecewise Cyber Espionage in Model APIs",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "opening-doors-to-multimodal-deception-egr7",
+          "title": "Opening Doors to Multimodal Deception",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 3
         },
         {
           "slug": "thewizard-u2dk",
+          "title": "TheWizard",
           "rank": 4,
-          "reason": "winner"
+          "awards": [
+            "4th Place ($1,000)"
+          ],
+          "reason": "winner",
+          "n_reviews": 2
         },
         {
           "slug": "durinn-calibration-3vub",
+          "title": "Durinn Calibration",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "assisted-audit-of-solana-programs-iexy",
+          "title": "Assisted Audit of Solana Programs",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "a-prospect-theoretic-approach-to-agentic-ai-safety-ilil",
+          "title": "A Prospect Theoretic Approach to Agentic AI Safety",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "swaipe-microlearning-retention-platform-for-cognitive-ai-defense-0xt4",
+          "title": "swAIpe: microlearning retention platform for Cognitive AI Defense",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "honeypots-sparse-autoencoders-and-adversarial-probes-a-practical-toolkit-for-evaluating-safety-monitors-in-reasoning-models-lvia",
+          "title": "Honeypots, Sparse Autoencoders, and Adversarial Probes: A Practical Toolkit for Evaluating Safety Monitors in Reasoning Models",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "ghost-marks-in-the-machine-a-critical-review-of-synthid-for-code-provenance-monitoring-ov2c",
+          "title": "Ghost Marks in the Machine: A Critical Review of SynthID for Code Provenance Monitoring",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "ai-sentinel-ounq",
+          "title": "AI Sentinel",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "neops-devsecops-for-the-ai-era-kqto",
+          "title": "Neops - DevSecOps for the AI era",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 1
         },
         {
           "slug": "cognitive-canary-active-defense-against-neural-inference-oqvd",
+          "title": "Cognitive Canary: Active Defense Against Neural Inference",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "aegis-sentinel-multidomain-defensive-acceleration-platform-for-critical-infrastructure-protection-xnmb",
+          "title": "Aegis Sentinel Multi-Domain Defensive Acceleration Platform for Critical Infrastructure Protection",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "llmexecguard-realtime-detection-of-malicious-shell-behavior-in-llm-agents-p3fj",
+          "title": "LLM-ExecGuard - Real-Time Detection of Malicious Shell Behavior in LLM Agents",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "dunebox-prompt-injection-detection-with-slm-in-local-sandbox-lcjc",
+          "title": "DuneBox - Prompt Injection Detection with SLM in Local Sandbox",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 3
         },
         {
           "slug": "zynq-verifiable-zeroknowledge-ai-redteam-and-auditing-platform-8art",
+          "title": "ZYNQ \u2014 Verifiable Zero-Knowledge AI Red-Team and Auditing Platform",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "modx-inference-time-detection-of-anomalous-behavior-using-sparse-autoencoders-1nfc",
+          "title": "MODX - Inference Time Detection of Anomalous Behavior using Sparse Auto-Encoders",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "helixaegis-llm-based-screening-for-biosequences-nhgx",
+          "title": "Helix-Aegis: LLM Based screening for bio-sequences",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "from-hallucinations-to-misalignment-evaluating-edfl-as-a-misalignment-checker-on-gpt4omini-and-sleeper-agents-gshe",
+          "title": "From Hallucinations to Misalignment: Evaluating EDFL as a Misalignment Checker on GPT-4o-mini and Sleeper Agents",
           "rank": null,
-          "reason": "sample_reviewed"
+          "awards": [],
+          "reason": "sample_reviewed",
+          "n_reviews": 2
         },
         {
           "slug": "zero-trust-agency-mitigating-the-confused-deputy-in-autonomous-ai-systems-uea3",
+          "title": "Zero Trust Agency: Mitigating the Confused Deputy in Autonomous AI Systems",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "tinyrod-gk5k",
+          "title": "TinyRod",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "firefly-ai-safe-web-browsing-for-ai-agents-h5sd",
+          "title": "Firefly AI: Safe Web Browsing for AI Agents",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "littlebrotherai-yzzx",
+          "title": "LittleBrotherAI",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "adaptive-ai-security-mesh-37f2",
+          "title": "Adaptive AI Security Mesh",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "jailbreak-genome-scanner-q5y7",
+          "title": "JAILBREAK GENOME SCANNER",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "llms-enable-large-scale-design-of-nanobodies-27uz",
+          "title": "LLMs Enable Large Scale Design of Nanobodies",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "automated-jailbreak-redteaming-9l05",
+          "title": "Automated Jailbreak Red-teaming",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "rial-7lzf",
+          "title": "Rial.",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "llm-security-evaluation-ihbx",
+          "title": "LLM Security Evaluation",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "defending-the-defenceless-halting-aiagentic-behaviours-on-local-environments-with-rulesbased-cyber-architecture-bsrl",
+          "title": "Defending the Defenceless: Halting AI-agentic Behaviours on Local Environments with Rules-Based Cyber Architecture",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "tees-as-a-cryptographic-nervous-system-for-onshored-humanoid-robots-m4e9",
+          "title": "TEEs as a Cryptographic Nervous System for Onshored Humanoid Robots",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "inoculating-insecurely-finetuned-code-models-against-emergent-misalignment-yxos",
+          "title": "Inoculating Insecurely Finetuned Code Models Against Emergent Misalignment",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "deep-confidence-for-ai-safety-6d56",
+          "title": "Deep Confidence For AI Safety",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "sentinel-a-decentralized-threat-telemetry-network-yxzk",
+          "title": "Sentinel: A Decentralized Threat Telemetry Network",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "gene-guard-realtime-genomic-data-leak-prevention-qrnl",
+          "title": "Gene Guard: Real-Time Genomic Data Leak Prevention",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "aipatch-llm-assisted-patch-copilot-for-critical-open-source-infrastructure-fxlx",
+          "title": "AIPatch: LLM Assisted Patch Copilot for Critical Open Source Infrastructure",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "chacha-a-control-plane-for-longitudinal-threat-detection-in-llm-applications-kp70",
+          "title": "ChaCha: A Control Plane for Longitudinal Threat Detection in LLM Applications",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "snow-white-detecting-persistent-trust-decay-context-poisoning-in-llms-an-attack-surface-characterization-cuu2",
+          "title": "Snow White: Detecting Persistent Trust Decay & Context Poisoning in LLMs, an Attack Surface Characterization",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "verity-ai-red-team-assist-cajq",
+          "title": "Verity: AI Red Team Assist",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "wastewater-metagenomic-surveillance-for-novel-viruses-how-much-sequencing-is-enough-and-at-what-cost-07q9",
+          "title": "Wastewater metagenomic surveillance for novel viruses: how much sequencing is enough, and at what cost?",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "veridian-ai-ai-defense-as-a-service-bm4z",
+          "title": "Veridian Ai (Ai defense as a service)",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "sigmaforge-pyf6",
+          "title": "Sigmaforge",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         },
         {
           "slug": "emergency-response-coordination-system-jsp7",
+          "title": "Emergency Response Coordination System",
           "rank": null,
-          "reason": "sample_unreviewed"
+          "awards": [],
+          "reason": "sample_unreviewed",
+          "n_reviews": 0
         }
       ]
     }

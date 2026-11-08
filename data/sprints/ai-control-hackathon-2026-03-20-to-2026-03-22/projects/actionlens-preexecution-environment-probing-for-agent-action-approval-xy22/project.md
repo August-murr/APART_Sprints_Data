@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: 3
+- Selected as: winner
 - Awards: 3rd Place ($300)
 - Team: Team Udbhav&Ashok
 - Authors: Udbhav Chitransh, Ashok Kumar

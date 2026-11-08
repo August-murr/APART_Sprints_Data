@@ -2,6 +2,7 @@
 
 - Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
 - Rank: 5
+- Selected as: winner
 - Awards: 5th Place ($100)
 - Team: Team False Positive
 - Authors: Deven Choudhary, Adhiraj Pundir

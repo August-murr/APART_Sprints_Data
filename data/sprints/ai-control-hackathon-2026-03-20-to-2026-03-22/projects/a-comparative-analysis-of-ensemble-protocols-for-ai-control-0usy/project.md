@@ -2,13 +2,14 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Heron Blue Team
 - Authors: Ariel Monzon, Natan Katz, Inbar Shulman, Mike Vazan, Or Shemesh, Guy Porat
 - Date / location: Mar 23, 2026 / Israel
 - Page: https://apartresearch.com/sprints/projects/a-comparative-analysis-of-ensemble-protocols-for-ai-control-0usy
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/b55c43c63ce3f273-071-1ac8c1ff0060-A-Comparative-Analysis-of-Ensemble-Protocols-for-AI-Control.pdf
 - Code: https://github.com/0rShemesh/control-arena
-- Code links found in report: https://github.com/0rShemesh/control-arena, https://github.com/UKGovernmentBEIS/control-arena
+- Code links found in report: https://github.com/0rShemesh/control-arena_, https://github.com/UKGovernmentBEIS/control-arena
 
 ## Summary
 

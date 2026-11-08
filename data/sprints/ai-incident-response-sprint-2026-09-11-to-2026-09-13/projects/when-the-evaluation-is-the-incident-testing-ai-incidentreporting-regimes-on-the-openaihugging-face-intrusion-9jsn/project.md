@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: 5
+- Selected as: winner
 - Awards: 5th Place ($100)
 - Team: Team Arathi
 - Authors: Arathi Arivayutham

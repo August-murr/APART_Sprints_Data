@@ -2,6 +2,7 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: 5
+- Selected as: winner
 - Awards: 5th Place ($100)
 - Team: None
 - Authors: James Petrie

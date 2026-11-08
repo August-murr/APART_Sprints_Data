@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Disclosure
 - Authors: Luka Janicijevic, Leyla Amur, Aditya Singh
 - Date / location: Sep 14, 2026 / Melbourne, Australia

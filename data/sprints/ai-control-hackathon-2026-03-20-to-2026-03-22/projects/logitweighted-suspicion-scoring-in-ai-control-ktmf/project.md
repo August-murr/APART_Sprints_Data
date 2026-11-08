@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Logit or Leave It
 - Authors: Maxime Cugnon de Sévricourt, Alexander Reinthal, Hamza Mooraj
 - Date / location: Mar 23, 2026 / Washington

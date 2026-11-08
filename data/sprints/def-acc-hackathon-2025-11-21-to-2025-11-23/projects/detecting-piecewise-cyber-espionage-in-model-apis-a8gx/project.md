@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: 4
+- Selected as: winner
 - Awards: 4th Place ($1,000)
 - Team: Team Detecting Piecewise Cyber Espionage in Model APIs
 - Authors: Arthur Colle, Alexander Reinthal, David Williams-King, Yingquan Li, Linh Le

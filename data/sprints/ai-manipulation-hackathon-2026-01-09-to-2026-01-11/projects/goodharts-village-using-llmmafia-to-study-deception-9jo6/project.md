@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Sabina and James
 - Authors: James Sykes, Sabina Gulcikova
 - Date / location: Jan 12, 2026 / United Kingdom

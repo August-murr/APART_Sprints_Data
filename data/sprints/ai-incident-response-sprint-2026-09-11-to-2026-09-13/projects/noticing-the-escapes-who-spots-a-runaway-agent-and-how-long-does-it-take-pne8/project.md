@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: 1
+- Selected as: winner
 - Awards: 1st Place ($1,000)
 - Team: Team The Escapees
 - Authors: Stanislav Lukyanenko

@@ -2,13 +2,14 @@
 
 - Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team BlackboxAudit
 - Authors: Martin Kaiser, Amandeep Kaur Manshahia, Gellért Bodorkós, Natalie Lunau
 - Date / location: Jul 27, 2026 / Berlin
 - Page: https://apartresearch.com/sprints/projects/activation-forensics-structural-fingerprints-and-conversationalshape-effects-in-secretloyalty-auditing-nk3d
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/f11fe9e644ae01bd-296d-4e9b-b74b-0633d6b61e83-Activation_Forensics_Secret_Loyalties_Submission.pdf
 - Code: None
-- Code links found in report: https://github.com/kaiser-data/secret-localities-strategies, https://github.com/kaiser-data/secret-, https://github.com/kaiser-data/secret-localities-
+- Code links found in report: https://github.com/kaiser-data/secret-localities-strategies, https://github.com/kaiser-data/secretlocalities-strategies, https://github.com/kaiser-data/secret-localitiesstrategies
 
 ## Summary
 

@@ -3,30 +3,12 @@
 Source: https://apartresearch.com/sprints/ai-manipulation-hackathon-2026-01-09-to-2026-01-11
 
 - Dates: Jan 9 - 11, 2026
+- Format: Online
 - Sign-ups: 532
-- Projects submitted: 70
-- Online
-- This Sprint has ended.
-- This hackathon brings together builders to create tools that measure, detect, and mitigate AI manipulation
+
+This hackathon brings together builders to create tools that measure, detect, and mitigate AI manipulation
 
 ## Overview
-
-## **AI Manipulation HACKATHON WINNERS**
-
-Huge congratulations to all our winners! **With 500+ participants** **and 70+ projects submitted**, the competition was fierce and the projects were outstanding. Here's who came out on top:
-
-- **1st Place ($1000):**
-  - [Who Does Your AI Serve? Manipulation By and Of AI Assistants](https://apartresearch.com/project/who-does-your-ai-serve-manipulation-by-and-of-ai-assistants-77xx)
-- **2nd Place ($500):**
-  - [Eliciting Deception on Generative Search Engines](https://apartresearch.com/project/eliciting-deception-on-generative-search-engines-6nuu)
-- **3rd Place ($300):**
-  - [Cross-Linguistic Sycophancy in Frontier LLMs: A Benchmark Study](https://apartresearch.com/project/crosslinguistic-sycophancy-in-frontier-llms-a-benchmark-study-w55u)
-- **4th Place ($100):**
-  - [Agent Attacks via Memory Injection](https://apartresearch.com/project/agent-attacks-via-memory-injection-izfz)
-- **5th Place ($100):**
-  - [SycophantSee - Activation-based diagnostics for prompt engineering: monitoring sycophancy at prompt and generation time](https://apartresearch.com/project/sycophantsee-activationbased-diagnostics-for-prompt-engineering-monitoring-sycophancy-at-prompt-and-generation-time-ys27)
-
-—————————————————————————————————————————————————
 
 The line between authentic interaction and strategic manipulation is disappearing as AI systems master deception, sycophancy, sandbagging, and psychological exploitation at scale. Our ability to detect, measure, and counter these behaviors is dangerously underdeveloped.
 
@@ -321,43 +303,3 @@ Q: Is there a code of conduct?
 A: Yes. All participants must adhere to the hackathon [code of conduct,](https://apartresearch.com/info/code-of-conduct) which promotes responsible research, ethical AI development, and respectful collaboration.
 
 *Cloud compute access to A100s or stronger GPUs is not available to participants from countries with active U.S. sanctions. A list of sanctioned countries can be found [here](https://ofac.treasury.gov/sanctions-programs-and-country-information).
-
-## Schedule
-
-![🗓️](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Ff6326117e91de613.png&w=3840&q=85)🗓️
-
-**FULL SCHEDULE**
-
-**Friday, Jan 9**
-
-- **5:00 PM GMT** - Opening Keynote: David G. Rand
-- **6:00 PM GMT - Hacking begins**
-
-**Saturday, Jan 10**
-
-- **1:00 PM GMT** - HackTalk: Jan Batzner
-- **6:00 PM GMT** - HackTalk: Paul de Font-Reaulx
-
-**Sunday, Jan 11**
-
-- **1:00 PM GMT** - Hacktalk: Lars Malmqvist
-- **6:00 PM GMT** - HackTalk: Esben Kran
-- **11:59 PM GMT - Submission Deadline!**
-
-## Speakers
-
-- [![David G. Rand](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F28a8e25049a72c56.webp&w=3840&q=75)](https://davidrand-cooperation.com/)David G. RandKeynote SpeakerDavid G. Rand is a Professor at Cornell University in Information Science, Marketing, and Psychology. He studies belief correction via AI dialogues, misinformation, polarization, and cooperation using computational social science and behavioral experiments. Previously at Yale and MIT, he has 200+ papers in top journals like Nature and Science, advised Google and Meta, and won awards including Wired's Smart List.
-- [![Jan Batzner](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F7df2ebfa7a97de00.jpg&w=3840&q=75)](https://www.linkedin.com/in/jan-batzner-743673233/?locale=fr_FR&trk=public_post_comment_actor-name)Jan BatznerSpeakerJan Batzner works on sycophancy and more rigorous model evaluation infrastructure and validity. Jan is a Junior Member of the Munich Center for Machine Learning, a researcher at Weizenbaum Institute Berlin, and a PhD Candidate in Computer Science at the Technical University Munich. Jan Batzner co-chairs the EvalEval coalition ([evalevalai.com](http://evalevalai.com/)) and graduated from Columbia University.
-- [![Paul de Font-Reaulx](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F129b1d1ad151c72a.jpg&w=3840&q=75)](https://www.pauldfr.com/)Paul de Font-ReaulxSpeakerPaul de Font-Reaulx is a researcher at the University of Oxford and a visiting scholar at NYU, specializing in the intersection of AI safety, cognitive science, and moral philosophy. His work focuses on "Machine Theory of Mind" and the alignment of AI systems with the complex structure of human values.
-- [![Lars Malmqvist](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fe68184ee848352cb.jpg&w=3840&q=75)](https://www.linkedin.com/in/larsmalmqvist/?originalSubdomain=dk)Lars MalmqvistSpeakerLars is a consultant and researcher working at the intersection of Enterprise AI and AI Safety. His day job is to help companies with AI initiatives in highly regulated sectors like public sector and life sciences. Research-wise, he focuses on AI Safety, particularly sycophancy and reward hacking behaviours.
-- [![Esben Kran](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F13910e76e32aaf69.png&w=3840&q=75)](https://kran.ai/)Esben KranSpeakerEsben is the founder of Apart Research, which he launched at age 22 after leaving grad school. Apart accelerates AI safety research worldwide, producing 20+ papers, award-winning benchmarks like DarkBench, and engaging 4,000+ hackers in research sprints.Recently co-launched Seldon to fund critical infrastructure for humanity's future, with first investments in Andon Labs, Lucid Computing, Workshop Labs, and Asymmetric Security.
-
-## Organizers
-
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fe9fef6f3e5809885.webp&w=96&q=75)Luke Hewitt
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fe0042c6baa9a2514.jpg&w=96&q=75)Cameron Jones
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F738855389cbcc6af.png&w=96&q=75)Kamil Alaa
-
-## Local sites
-
-- AI Manipulation HackathonThe hackathon, Montréal edition.[Event page:  AI Manipulation Hackathon  (opens in new tab)](https://luma.com/mf69p5pi)

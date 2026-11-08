@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team AutoControl Arena
 - Authors: Changyi Li, Pengfei Lu, Yihe Fan, Wenqi Zhang, Changyue Jiang
 - Date / location: Mar 22, 2026 / Shanghai, China

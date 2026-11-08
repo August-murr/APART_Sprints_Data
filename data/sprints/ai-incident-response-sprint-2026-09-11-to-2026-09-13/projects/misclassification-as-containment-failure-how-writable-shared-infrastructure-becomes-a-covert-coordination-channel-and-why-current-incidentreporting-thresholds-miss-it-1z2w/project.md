@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: None
 - Authors: Zeynep Kaynak
 - Date / location: Sep 13, 2026 / Ankara

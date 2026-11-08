@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Seqhub Team
 - Authors: Benjamin Kiev, Adejumobi Joshua, J Phillips, Taiwo Togun
 - Date / location: Jan 11, 2026 / Connecticut, US

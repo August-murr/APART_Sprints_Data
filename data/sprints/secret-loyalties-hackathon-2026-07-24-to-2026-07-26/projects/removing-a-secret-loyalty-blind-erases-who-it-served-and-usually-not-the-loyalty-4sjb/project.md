@@ -2,6 +2,7 @@
 
 - Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
 - Rank: 3
+- Selected as: winner
 - Awards: 3rd Place ($300)
 - Team: Team Last Mover
 - Authors: Sunny Yang, Weiyan Zhao

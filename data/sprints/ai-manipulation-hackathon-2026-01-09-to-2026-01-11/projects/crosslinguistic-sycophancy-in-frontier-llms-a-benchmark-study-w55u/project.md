@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: 3
+- Selected as: winner
 - Awards: 3rd Place
 - Team: Team Talex
 - Authors: Alex Csaky, Tanzim Chowdhury

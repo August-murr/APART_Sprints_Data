@@ -2,6 +2,7 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Crimson Tide (worked as part of a group but we built out 4 independent projects)
 - Authors: Patrick Walmsley
 - Date / location: Aug 17, 2026 / San Francisco

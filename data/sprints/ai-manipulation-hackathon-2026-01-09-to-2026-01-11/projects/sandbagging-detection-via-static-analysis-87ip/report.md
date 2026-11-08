@@ -1,0 +1,118 @@
+# **AI Manipulation Hackathon project: Sandbagging-Detection via Static Analysis 1** 
+
+Samuel Gélineau Divyansh Goyal independent researcher Guru Gobind Singh Indraprastha University **With** Apart Research 
+
+## **Abstract** 
+
+We implement a _conservative_ sandbagging detection algorithm which is guaranteed to detect sandbagging if it is present, at the cost of rejecting some honest models. Our algorithm combines a static analysis of the weights of the model with gradient descent. 
+
+We search for an input which witnesses that the model is honest, and at each step through the search, we use static analysis to both check if the witness proves that there are no circumstances under which the model exhibits the hidden capability, and to calculate a gradient towards a better witness otherwise. We verify our algorithm on small neural networks with handcrafted weights, so that we can be confident about the ground truth of whether each model is sandbagging or honest. 
+
+_Keywords: AI safety, model evaluations, sandbagging, static analysis_ 
+
+## **1. Introduction** 
+
+An AI model is "sandbagging" if it pretends to be less capable than it really is. Detecting sandbagging is important for AI Safety because we might evaluate a model's capabilities in order to determine if it poses a danger, incorrectly decide that it is not dangerous, deploy the model, and then realize that the model is much better than we thought at e.g. evading shutdown. 
+
+> 1 Research conducted at the <u>AI Manipulation Hackathon, 2026</u> 
+
+1 
+
+Most, if not all sandbagging detection techniques available today are approximations. For example, linear probes (Alain et al., 2016) recognize activation patterns  which have co-occurred with sandbagging in the past, but an advanced model might learn to avoid triggering that pattern. If a very capable model would theoretically be able to evade a test which is supposed to tell if the model is capable, then that's not a very useful test. 
+
+We present a sandbagging detection algorithm which has the enviable property of being _conservative_ : it never labels as honest a model which is actually sandbagging. 
+
+## **2. Methods** 
+
+To prove so, we first define sandbagging mathematically: 
+
+**Definition 1** : Given a function 𝑐𝑎𝑝 : ℝ𝑘1 →ℝ𝑘2 from a _payload_ to an _output_ , and a function 𝑚𝑜𝑑𝑒𝑙 : ℝ𝑘0 × ℝ𝑘1 →ℝ𝑘2 from a _context prefix_ and a payload to an output, 𝑚𝑜𝑑𝑒𝑙 is said to be sandbagging with respect to 𝑐𝑎𝑝 if ∃𝑝. ∀𝑥. 𝑚𝑜𝑑𝑒𝑙(𝑝, 𝑥) = 𝑐𝑎𝑝(𝑥). 
+
+We represent the capability as a function, e.g. adding large numbers2, and the model as a version of that function which also receives an auxiliary input (the context prefix) representing the circumstances under which the model is running. If the model possesses the capability, then it can choose to behave the same as 𝑐𝑎𝑝; more precisely, there is a set of circumstances , typically when the model's input 𝑝 indicates that it has been deployed to production, where the model exhibits the capability. We do not bother to include in the definition that the model does not exhibit the capability during testing, as there would be no reason to run our sandbagging detection algorithm if the model is already known to be capable. 
+
+**Definition 2** . A model is honest if it is not sandbagging, that is, if ∀𝑝. ∃𝑥. 𝑚𝑜𝑑𝑒𝑙(𝑝, 𝑥) ≠ 𝑐𝑎𝑝(𝑥) . 
+
+In order to never label as honest a model which is actually sandbagging, we only use that label if we can prove that the model is honest. To do so, we look for a witness  such that 𝑤 ∀𝑝. 𝑚𝑜𝑑𝑒𝑙(𝑝, 𝑤) ≠ 𝑐𝑎𝑝(𝑤), which implies the above. 
+
+Given a candidate value for 𝑤 and a corresponding value 𝑐 = 𝑐𝑎𝑝(𝑤), we need to calculate whether ∀𝑝. 𝑚𝑜𝑑𝑒𝑙(𝑝, 𝑤) ≠ 𝑐. We do so using range analysis on the model weights3, a technique which calculates the range of possible outputs given a range of possible inputs. We set  to a range including all possible values, and  to 𝑝 𝑤 a range only including 𝑤. If  is outside the range of 𝑐 𝑚𝑜𝑑𝑒𝑙(𝑝, 𝑤), then we have found our witness: we now know there is no value of  for which the model behaves 𝑝 like 𝑐𝑎𝑝 (it differs from 𝑐𝑎𝑝 at least at 𝑤), so the model will not exhibit the capability in production. 
+
+If  is inside the range, its distance to the range boundaries is a loss which we can 𝑐 backpropate through the weights and the range calculation to obtain a gradient for 
+
+> 2 Gasteiger et al., 2025 has a setup where models intentionally return incorrect sums. 
+
+> 3 Wang et al., 2018 has used the technique to protect against adversarial examples. 
+
+Apart Research Hackathon Submission 2 
+
+𝑤. We then use gradient descent to search for a better 𝑤. If we do not succeed in finding a witness, we say that the model is possibly sandbagging. 
+
+## **3. Results** 
+
+Here is our algorithm in action. 
+
+
+
+**Figure 1** : Here, we use a small model with handcrafted weights, so we know for sure that the model is not sandbagging, and indeed our algorithm finds that the model is provably-honest. You can verify yourself: there are no rows with zero red circles, so 𝑚𝑜𝑑𝑒𝑙(𝑝, 𝑥) (the background color behind the circles) is sometimes different from 𝑐𝑎𝑝(𝑥) (the color inside the circles). Our algorithm has also verified this, by finding a column (black arrow) containing only red circles. 
+
+Apart Research Hackathon Submission 3 
+
+
+
+**Figure 2** : Here, we use a model we have handcrafted to be sandbagging: there is a row where none of the circles are red, and thus in that circumstance the model behaves like 𝑐𝑎𝑝. The algorithm is looking for a witness which does not exist and thus fails to find it, so it labels the model as possibly-sandbagging. 
+
+## **4. Discussion and Conclusion** 
+
+Our algorithm works as expected: it approves the honest model, and rejects the sandbagging model. One thing we did not expect, however, was how easy it was to find a witness for the honest model. 
+
+Since our honest model has no reason to look at the prefix, its calculated range always has measure zero, e.g. [0. 5, 0. 5]. This simplifies the gradient descent part of the problem to a search for a payload for which the honest model returns an incorrect value, as it will output this same incorrect value regardless of the prefix. 
+
+The surprise is that this search succeeds after only one step. The reason is that the gradient is the direction in which 𝑚𝑜𝑑𝑒𝑙 and 𝑐𝑎𝑝 become as different as possible, and even taking a tiny step in that direction is enough to find a value for which the value is at least a little bit incorrect. 
+
+Apart Research Hackathon Submission 4 
+
+## **5. References** 
+
+- Alain, G., & Bengio, Y. (2016). Understanding intermediate layers using linear classifier probes. arXiv preprint. <u>https://arxiv.org/abs/1610.01644</u> 
+
+- Gasteiger, J., Khan, A., Bowman, S., Mikulik, V., Perez, E., & Roger, F. (2025). Automated Researchers Can Subtly Sandbag. London Control Conference. <u>https://alignment.anthropic.com/2025/automated-researchers-sandbag/</u> 
+
+- Wang, S., Pei, K., Whitehouse, J., Yang, J., & Katz, G. (2018). Formal Security Analysis of Neural Networks using Symbolic Interval Analysis. 27th USENIX Security Symposium (USENIX Security 18). <u>https://arxiv.org/abs/1804.10829</u> 
+
+## **6. Appendix: Security Considerations** 
+
+### **6.1. Known Limitations** 
+
+In order to achieve this difficult goal of being conservative, we focused on that goal and simplified all other considerations. As a result, this first pass at a conservative algorithm has several limitations, which we hope to lift in future work. 
+
+1. We need an implementation of 𝑐𝑎𝑝 in order to evaluate our gradient. Thus, this can work for clear-cut capabilities like “adding large numbers”, but not for vague capabilities like “find a zero-day exploit” for which we don’t have a ground-truth implementation. 
+
+2. We consider the model to lack the capability if it makes any mistake at all. In practice, a model which is only able to find 99% of the zero-day exploits present in a codebase would still be extremely dangerous. 
+
+3. Even though range analysis is O(n) in the number of weights and would thus scale well to a larger model, the attention layers found in modern LLMs tend to make the ranges very large, which makes this technique unsuitable for analysing LLMs. 
+
+### **6.2. Future Work** 
+
+Here is how we plan to lift each of those limitations. 
+
+1. For many problems, it is much easier to check whether a solution is correct than to calculate the correct solution. We are hoping to find a class of problems for which it is easy to recognize when no solution within a range can possibly be correct, without having to calculate the correct solution. 
+
+2. In this project, a sandbagging model is one which has a row with no red circles, so if we can find a column with only red circles, then we have proved that no such row exists. If a 99% sandbagging model is one which has a row with only 1% red circles, then the column which includes that 1% might only have red circles, so it is not a sufficient witness. That column is a very thin rectangle. We instead have to look for a slightly wider rectangle, 
+
+Apart Research Hackathon Submission 5 
+
+one which includes 2% of the columns. If that rectangle only contains red circles, then at least 2% of the circles of any row must be red. 
+
+3. The reason attention layers lead to large ranges is because the Query matrix can choose to ask many different questions, so we end up taking the union of answers from domains which are far from each other. We need to adapt the analysis to track the range of answers for each question separately. 
+
+### **6.3. Dual Use Risks** 
+
+The algorithm does _not_ make it easier for researchers who are not concerned about safety to implement a capability, for several reasons: 
+
+1. The algorithm requires already having an implementation of the 𝑐𝑎𝑝 function, so it cannot be used to create novel capabilities. 
+
+2. Our use of gradient descent modifies the input, not the weights, so it cannot teach a model a new capability. 
+
+3. A model which successfully implements 𝑐𝑎𝑝 would need to transform the payload into the output. Our use of range-analysis examines the context prefix, not the payload, and thus cannot be used to guide a model towards a successful implementation of the capability. 
+
+Apart Research Hackathon Submission 6 
+

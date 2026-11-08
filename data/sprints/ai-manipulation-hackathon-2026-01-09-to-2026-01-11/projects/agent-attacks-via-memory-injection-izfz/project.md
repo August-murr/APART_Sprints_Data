@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: 4
+- Selected as: winner
 - Awards: 4th Place
 - Team: Team Mem::Poison
 - Authors: Leonidas Raghav, Choong Kai Zhe

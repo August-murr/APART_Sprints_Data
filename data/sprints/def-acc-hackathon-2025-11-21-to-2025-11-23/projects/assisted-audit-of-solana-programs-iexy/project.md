@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team GLAM
 - Authors: Yuru Shao, Emanuele Cesena
 - Date / location: Nov 23, 2025 / San Francisco

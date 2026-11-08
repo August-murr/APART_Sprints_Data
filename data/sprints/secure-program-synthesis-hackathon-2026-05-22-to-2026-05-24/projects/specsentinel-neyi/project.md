@@ -2,6 +2,7 @@
 
 - Sprint: The Secure Program Synthesis Hackathon (secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team UNIT - 108
 - Authors: Mudit Khater
 - Date / location: May 22, 2026 / INDIA

@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Free-thinking engineer
 - Authors: Elvin Vidal Mollinedo Mencia, Jazid Andrey Ovando Durán, Annett Alejandra Cruz Rojas, Miguel Angel Vega Moreno
 - Date / location: Jun 22, 2026 / Santa Cruz - Bolivia

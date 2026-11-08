@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team CBAI
 - Authors: Henry Castillo, Kaley Brauer, Claudio Mayrink Verdun, Maximus Rafla, Adeeb Zaman, Erik Nordby, Elizabeth Pavlova
 - Date / location: Mar 23, 2026 / Cambridge

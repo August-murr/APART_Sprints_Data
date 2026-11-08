@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team 2vane
 - Authors: Lê Huy Hùng, Nguyễn Trần Minh Tâm
 - Date / location: Jun 21, 2026 / Hồ Chí Minh

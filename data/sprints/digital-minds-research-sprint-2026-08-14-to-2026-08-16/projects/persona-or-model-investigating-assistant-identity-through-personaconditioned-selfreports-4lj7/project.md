@@ -2,6 +2,7 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Layered Minds
 - Authors: Kgothatso Mashigo, Themba Shongwe
 - Date / location: Aug 16, 2026 / Cape Town

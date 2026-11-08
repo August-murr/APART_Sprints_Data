@@ -2,13 +2,14 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team the simpsons
 - Authors: Amita Shukla
 - Date / location: Mar 23, 2026 / Cambridge, MA
 - Page: https://apartresearch.com/sprints/projects/the-honest-liar-ntms
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/c0218e67d9910ef8-7c99b78f-b256-4393-9a3f-f9f71dc0cb87-The-Honest-Liar.pdf
 - Code: https://github.com/amitashukla/file_indexing/tree/straj-aggregate-query-poisoning
-- Code links found in report: https://github.com/amitashukla/linuxarena, https://github.com/amitashukla
+- Code links found in report: https://github.com/amitashukla/linuxarena, https://github.com/amitashukla/fle_indexing
 
 ## Summary
 

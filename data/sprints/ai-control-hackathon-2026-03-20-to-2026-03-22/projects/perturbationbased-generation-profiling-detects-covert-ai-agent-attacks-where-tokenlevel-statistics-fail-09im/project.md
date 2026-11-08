@@ -2,13 +2,14 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Arkham Knights
 - Authors: Yatharth Maheshwari, Arka Dash, Abhineet Som
 - Date / location: Mar 22, 2026 / New Delhi, India
 - Page: https://apartresearch.com/sprints/projects/perturbationbased-generation-profiling-detects-covert-ai-agent-attacks-where-tokenlevel-statistics-fail-09im
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/be10773bd2253760--Profiling-Detects-Covert-AI-Agent-Attacks-Where-Token-Level-Statistics-Fail.pdf
 - Code: https://github.com/r34l-rudr44/Perturbation-Based-Generation-Profiling.git
-- Code links found in report: https://github.com/r34l-rudr44/Perturbation-Based-Generation-Pro
+- Code links found in report: https://github.com/r34l-rudr44/Perturbation-Based-Generation-Profling.giti
 - More on r34l-rudr44.github.io: https://r34l-rudr44.github.io/Perturbation-Based-Generation-Profiling/
 
 ## Summary

@@ -2,6 +2,7 @@
 
 - Sprint: The Secure Program Synthesis Hackathon (secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24)
 - Rank: 2
+- Selected as: winner
 - Awards: 2nd Place ($500)
 - Team: Team Oz Labs
 - Authors: Guy Nachshon

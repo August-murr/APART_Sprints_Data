@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: 3
+- Selected as: winner
 - Awards: 3rd Place ($300)
 - Team: Team Teachafy
 - Authors: Sharan Nagarajan, Puru, Muhammad Zane A

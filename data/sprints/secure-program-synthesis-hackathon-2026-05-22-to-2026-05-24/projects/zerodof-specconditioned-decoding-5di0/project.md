@@ -2,13 +2,14 @@
 
 - Sprint: The Secure Program Synthesis Hackathon (secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Corn Farmers
 - Authors: Arya Datla, Prajwal Reddy
 - Date / location: May 25, 2026 / Ithaca
 - Page: https://apartresearch.com/sprints/projects/zerodof-specconditioned-decoding-5di0
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/54d4a9618b0137ba-e0c96e9c-6cd9-44be-bbe8-d15bebb4b939-Secure-Synthesis-Hackathon-Report--1-.pdf
 - Code: https://github.com/PrajwalMReddy/Zero-DoF-Spec-Conditioned-Decoding
-- Code links found in report: https://github.com/PrajwalMReddy/Zero-DoF-Spec-Conditioned-Decoding
+- Code links found in report: https://github.com/PrajwalMReddy/Zero-DoF-Spec-Conditioned-Decoding_
 
 ## Summary
 

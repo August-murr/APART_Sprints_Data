@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: 1
+- Selected as: winner
 - Awards: 1st Place - Asia-Pacific ($1,000)
 - Team: Team Team_AVA
 - Authors: Anvesh Reddy Lankala, Vicky Feliren, Akansh Jain

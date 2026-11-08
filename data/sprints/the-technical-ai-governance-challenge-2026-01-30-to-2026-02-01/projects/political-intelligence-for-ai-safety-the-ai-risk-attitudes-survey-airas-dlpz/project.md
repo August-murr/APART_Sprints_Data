@@ -2,6 +2,7 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: 3
+- Selected as: winner
 - Awards: 3rd Place ($300)
 - Team: Team AIRAS
 - Authors: Nicholas Botti, Jamie Coombs, Anna Konovalenko

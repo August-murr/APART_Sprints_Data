@@ -2,13 +2,14 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team SafetyGap
 - Authors: Alyssia J, Martin CL
 - Date / location: Feb 2, 2026 / Canada
 - Page: https://apartresearch.com/sprints/projects/safetygap-coordination-infrastructure-auditing-and-tools-for-multilingual-ai-safety-1yx1
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/ba1157438b71323c---Coordination-Infrastructure--Auditing-and-Tools-for-Multilingual-AI-Safety.pdf
 - Code: https://github.com/marn-in-prod/apart-multi
-- Code links found in report: https://github.com/marn-in-prod/apart-multiand, https://github.com/marn-in-prod/apart-multi
+- Code links found in report: https://github.com/marn-in-prod/apart-multi
 
 ## Summary
 

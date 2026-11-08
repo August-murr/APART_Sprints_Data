@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: unranked
+- Selected as: sample_unreviewed
 - Team: Team Snow White
 - Authors: Giles Edkins, Ziyao Tian, Alex Ge, Arman Blackstone, Christopher Berry
 - Date / location: Nov 23, 2025 / Toronto

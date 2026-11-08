@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: unranked
+- Selected as: sample_unreviewed
 - Team: Team Sandbox Alignment Lab
 - Authors: Hengxu Li
 - Date / location: Nov 23, 2025 / Cambridge, MA, USA

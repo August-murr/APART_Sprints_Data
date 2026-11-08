@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team AI Swarms Manipulation
 - Authors: Publius Dirac, Anantha Shakthi Ganeshan Thevar, Babita Singh
 - Date / location: Jan 11, 2026 / Barcelona

@@ -2,13 +2,14 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Three-continents
 - Authors: Suvajit Majumder, Terry Jingchen Zhang, Yifen Wang
 - Date / location: Mar 23, 2026 / Dallas
 - Page: https://apartresearch.com/sprints/projects/multiagent-collusion-br1m
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/de0ac75542d5628e-8800c5ca-9f8c-46a0-8bba-456b57d17353-AI-Control-hackathon-report.pdf
 - Code: https://github.com/AI4Collaboration/multi-agent-control-arena
-- Code links found in report: https://github.com/AI4Collaboration/multi-agent-control-arena, https://github.com/UKGovernmentBEIS/control-arena
+- Code links found in report: https://github.com/AI4Collaboration/multi-agent-control-arena_, https://github.com/UKGovernmentBEIS/control-arena_, https://github.com/UKGovernmentBEIS/control-arena
 - Recording: https://drive.google.com/file/d/1nZfS7JqEwuoTvFJhlINOeyg8iW9kqlYl/view?usp=sharing
 
 ## Summary

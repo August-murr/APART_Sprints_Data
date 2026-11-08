@@ -2,6 +2,7 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: 1
+- Selected as: winner
 - Awards: 1st Place ($1,000)
 - Team: Team Lida Safety
 - Authors: Linh Le, David Williams-King, Arthur Colle

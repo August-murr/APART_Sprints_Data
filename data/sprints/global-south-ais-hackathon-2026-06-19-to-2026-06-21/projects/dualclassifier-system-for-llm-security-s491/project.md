@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team MnM (Make no Mistakes)
 - Authors: Nicolás David Galindo, Daniel Libardo Diaz Gonzalez, Juan Jacobo Izquierdo Becerra, David Andrés Ramírez Pontificia
 - Date / location: Jun 22, 2026 / Bogotá D.C

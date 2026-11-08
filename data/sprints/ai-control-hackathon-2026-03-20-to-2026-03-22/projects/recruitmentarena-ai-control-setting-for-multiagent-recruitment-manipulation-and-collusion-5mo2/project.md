@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team RecruitmentArena
 - Authors: Ana Belen Barbero Castejon, Carlos Vecina Tebar
 - Date / location: Mar 23, 2026 / Madrid, Spain

@@ -2,6 +2,7 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: 4
+- Selected as: winner
 - Awards: 4th Place ($100)
 - Team: Team Misbehaved
 - Authors: Shreyansh Tripathi, Marharyta Ponomarenko, Apoorva Batham, Nurangez Qurbonova
@@ -9,7 +10,7 @@
 - Page: https://apartresearch.com/sprints/projects/one-dial-not-a-tree-occupational-personas-and-emergent-misalignment-ukf6
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/faa9e527ddc751ff-998141ed-6483-4ea5-8a7f-f6a627d00f46-report.pdf
 - Code: https://github.com/Apoorvabatham/Persona-Hierarchy-in-Emergent-Misalignment
-- Code links found in report: https://github.com/Apoorvabatham/Persona-Hierarchy-in-
+- Code links found in report: https://github.com/Apoorvabatham/Persona-Hierarchy-inEmergent-Misalignment
 
 ## Summary
 

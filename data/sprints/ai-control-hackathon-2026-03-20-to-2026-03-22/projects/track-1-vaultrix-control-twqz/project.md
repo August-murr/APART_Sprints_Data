@@ -2,13 +2,14 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team CSAGI
 - Authors: XIAOHU ZHU
 - Date / location: Mar 23, 2026 / Shanghai
 - Page: https://apartresearch.com/sprints/projects/track-1-vaultrix-control-twqz
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/dd4a285eb5f7e69d-700-9f8d-a247714b09ba-Apart-Research-hackathon-submission---Vaultrix-Control.pdf
 - Code: https://github.com/tigerneil/vaultrix/tree/main/vaultrix/control
-- Code links found in report: https://github.com/tigerneil/vaultrix, https://github.com/UKGovernmentBEIS/control-arena, https://github.com/UKGovernmentBEIS/docker_sandbox_breakout, https://github.com/tml-ep
+- Code links found in report: https://github.com/tigerneil/vaultrix, https://github.com/UKGovernmentBEIS/control-arena, https://github.com/UKGovernmentBEIS/docker_sandbox_breakout, https://github.com/tml-epf/osl
 
 ## Summary
 

@@ -3,34 +3,12 @@
 Source: https://apartresearch.com/sprints/secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24
 
 - Dates: May 22 - 24, 2026
+- Format: Online and in person
 - Sign-ups: 327
-- Projects submitted: 61
-- Online and in person
-- This Sprint has ended.
-- The Secure Program Synthesis Hackathon brings researchers and engineers together for three days to prototype the tools we'll need to verify what AI is writing. Co-organized with Atlas Computing. Top teams are invited to apply to the four-month SPS Fellowship that follows.
+
+The Secure Program Synthesis Hackathon brings researchers and engineers together for three days to prototype the tools we'll need to verify what AI is writing. Co-organized with Atlas Computing. Top teams are invited to apply to the four-month SPS Fellowship that follows.
 
 ## Overview
-
-## **HACKATHON WINNERS**
-
-Congratulations to our winning teams, and thank you to everyone who submitted. We had 61 projects across four tracks, co-organized with [Atlas Computing](https://atlascomputing.org/), and the bar was high throughout. $2,000 in prizes total.
-
-🥇 1st Place ($1,000):
-[Vibe-Coding Specs: Eliciting, Editing, and Verifying Specifications for AI Coding Agents](https://apartresearch.com/project/vibecoding-specs-eliciting-editing-and-verifying-specifications-for-ai-coding-agents-re3p) by Linh Le & David Williams-King
-
-🥈 2nd Place ($500):
-[Where to Look: Energy-Based Fault Localization for Verus Vericoding](https://apartresearch.com/project/where-to-look-energybased-fault-localization-for-verus-vericoding-0cdy) by Guy Nachshon
-
-🥉 3rd Place ($300):
-[Proof Assistance as Verification Oracle for Porting](https://apartresearch.com/project/proof-assistance-as-verification-oracle-for-porting-ma88) by Abhinav Chand and Balaji R
-
-🏅 4th Place ($100):
-[AgentSpecGap](https://apartresearch.com/project/agentspecgap-bku6) by Amish
-
-🏅 5th Place ($100):
-[DiffSpec-PBT](https://apartresearch.com/project/diffspecpbt-3wba) by Fatimah Emad Eldin
-
-—————————————————————————————————————————————————
 
 Gross World LoC is skyrocketing because of AI. By default, we have no way of knowing if what we're vibecoding does what we think it does. Secure program synthesis throws formal methods, proof assistants, type systems, model checkers, at all the code coming out of AI systems. Three days. Small teams. Real research output.
 
@@ -353,55 +331,3 @@ A: Typically within 2 weeks after the judging deadline. Winners are contacted di
 - [Discord](https://discord.gg/XswWBvugYs) help-desk channel (tag @Kamil Alaa)
 - DM Kamil on Discord
 - Email: [sprints@apartresearch.com](mailto:sprints@apartresearch.com)
-
-## Schedule
-
-| **Wed May 20 (pre-hackathon)** |  |
-| --- | --- |
-| 17:00 Pacific Time | Jason Gross and Rajashree Agrawal · [Recording](https://us06web.zoom.us/rec/share/enhfD1jwBgQrDOyF9dWBlJHQV9rPQs2sjFuMeQOaN3lSY_ef8vWjzVDJLN2cxXUk.WEWE1x7xD4moLVNy) |
-| **Thu May 21 (pre-hackathon)** |  |
-| 11:00 Pacific Time | Quinn Dougherty · [Recording](https://us06web.zoom.us/rec/share/VZ9fN2B-uGsbojQkTiUjvYLvPgXMcTRGp_s8zdMY-NDqQ_OJDpUjEuCCAenqa7BE.nRNZAYCbzIB0o4_n)· [Slides](https://tractable.for-all.dev/apart-hackathon.pdf) |
-| **Fri May 22 (Kickoff Day)** |  |
-| 11:00 Pacific Time | Joe Kiniry · [Recording](https://us06web.zoom.us/rec/share/62NEg9-QYbd9-O8SmJLOxfpwEeTqsFMqahA03UGlfRTaq7mKBEQ5ZHsP9_-34oRe.JrA8h61r1UHS5Mfy) · [Slides](https://drive.google.com/file/d/1gBb1cNA3TRdnC52j61JBEy9_h8iEiQIT/view?usp=sharing) |
-| 13:00 Pacific Time | Kiran Gopinathan · [Recording](https://us06web.zoom.us/rec/share/lxaJP-Y2Y8JxlV3r2Gwv5TTKcz3e_Pm1wWCdpPecncOv0DqajAm1DI-JJ_woSG8.BDLryMApOWu-NP0d?startTime=1779480167000) |
-| **Sun May 24 (Submission Deadline)** |  |
-| 23:59 [Anywhere on Earth](https://www.timeanddate.com/time/zones/aoe) | Project submission deadline is Sunday Midnight [Anywhere on Earth](https://www.timeanddate.com/time/zones/aoe) |
-
-## Speakers
-
-- [![Quinn Dougherty](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fc47d7102d8c4e9eb.jpg&w=3840&q=75)](https://www.linkedin.com/in/quinn-dougherty/)Quinn DoughertySpeaker and OrganizerQuinn Dougherty runs Forall R&D, a research consultancy helping AI safety orgs navigate the formal methods explosion, with contracts at Galois (on ARIA's Mathematics for Safe AI program) and the Beneficial AI Foundation. He co-built FVAPPS, a 4,715-problem benchmark for AI-assisted formal verification, and FV-Spec, which translates real-world property-based tests into Lean theorem-proving challenge problems. He writes the Guaranteed Safe AI newsletter and organized the 2024 Proof Scaling workshop at Lighthaven.
-- [![Jason Gross](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fb7a6177466c1da7f.jpg&w=3840&q=75)](https://jasongross.github.io/)Jason GrossSpeakerJason Gross is a co-founder of Theorem, where he is building AI-driven formal verification to address the oversight gap in massively scaled software deployment. He spent his MIT PhD developing Fiat Cryptography, the verified cryptographic code that now underpins HTTPS for trillions of internet connections daily, and remains a core developer of the Rocq (formerly Coq) proof assistant. He holds a Ph.D. from MIT EECS in proof-assistant performance engineering and is based in the San Francisco Bay Area.
-- [![Rajashree Agrawal](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F248563d787a5659c.jpg&w=3840&q=75)](https://scholar.google.com/citations?user=41ZE3NwAAAAJ&hl=en)Rajashree AgrawalSpeakerRajashree Agrawal is the co-founder of Theorem, where she leads the ML research side of trustworthy-by-default AI coding via program equivalence. Her published work spans LLM jailbreaks (co-author on Many-shot Jailbreaking and on transferable image jailbreaks across vision-language models), mechanistic interpretability through compact proofs with Jason Gross, and synthetic-data scaling and model collapse. She also runs Monsoon Math Camp, a math education program in India, and is based in the San Francisco Bay Area.
-- [![Joe Kiniry](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fff9494fea9f5db58.jpg&w=3840&q=75)](https://www.galois.com/team/joe-kiniry)Joe KinirySpeakerDr. Joe Kiniry is the CEO and Chief Scientist of Sigil Logic, a Galois spinout, where he leads work on AI-driven formal methods for high-assurance systems. He spent the prior 12 years as Principal Scientist at Galois on hardware, firmware, and software correctness and security, and remains affiliated there. Before Galois he was a Full Professor at the Technical University of Denmark. He holds a Ph.D. from Caltech and is a Senior Member of both IEEE and ACM.
-- [![Kiran Gopinathan](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F2eec3c5b40015cb2.jpg&w=3840&q=75)](https://kirancodes.me/)Kiran GopinathanSpeaker and JudgeKiran Gopinathan is a Research Scientist at Basis. Her research focuses on techniques for developing newer and better tools for automating formal verification - the art of using computers to automagically construct mathematical proofs about the correctness of software. Her research interests cover formal verification, program synthesis, type systems, language design and proof engineering. She previously completed her postdoc with Talia Ringer at UIUC, and before that earned her PhD in Programming Languages Research from the National University of Singapore on automating the maintenance of formally verified software.
-
-## Judges and mentors
-
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Faaaaff85bc030a6e.jpg&w=96&q=75)Adam Chlipala
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F138662147a245caa.jpg&w=96&q=75)Sam Staton
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F13cc402479d17037.jpg&w=96&q=75)Mark Santolucito
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fc4e9443dad080aef.jpg&w=96&q=75)Santiago Cuellar
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F4abddbbc651cab3c.jpg&w=96&q=75)Max von Hippel
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fdf295766d3cccb9c.jpg&w=96&q=75)Peter McIntyre
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Ff4a72a4b1a885a3d.png&w=96&q=75)Kaushik "KJ" Jangiti
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F48c846f3af19acb7.jpg&w=96&q=75)Ashwin Pai
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F4e4caf0b4fb49ef6.jpg&w=96&q=75)Twm Stone
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fd39b4a62263e2a2d.jpg&w=96&q=75)Saurabh Yergattikar
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F907b2596fd3116b7.jpg&w=96&q=75)Dippu Kumar Singh
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F9345cf0d1c76d76d.png&w=96&q=75)Jess Bergs
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F9eb14a0c86b4ef39.jpg&w=96&q=75)Herbie Bradley
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fe07638540ba92933.jpg&w=96&q=75)Simon Henniger
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F837a8a397f905a7e.jpg&w=96&q=75)Kanghee Park
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F3e299862cd000cb4.png&w=96&q=75)Nikhil R. Pallepati
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F295bc29930a4dada.jpg&w=96&q=75)Harshikaa Agrawal
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fe296e6d32bdbce10.jpg&w=96&q=75)Luiza Corpaci
-
-## Organizers
-
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F738855389cbcc6af.png&w=96&q=75)Kamil Alaa
-
-## Local sites
-
-- Heron Hub Secure Program Synthesis Hackathon in Tel AvivJoin a group of cybersecurity experts at the Heron Hub, Weizmann 14, Tel Aviv.
-due to limited space, please pre-register using the link[Event page:  Heron Hub Secure Program Synthesis Hackathon in Tel Aviv  (opens in new tab)](https://heron.fillout.com/t/ikAafvQW4kus)
-- The Secure Program Synthesis Hackathon (Montréal)The Secure Program Synthesis Hackathon at Ω Labs, Montréal[Event page:  The Secure Program Synthesis Hackathon (Montréal)  (opens in new tab)](https://luma.com/4q2fnc39)

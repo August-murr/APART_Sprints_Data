@@ -2,6 +2,7 @@
 
 - Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
 - Rank: 2
+- Selected as: winner
 - Awards: 2nd Place ($500)
 - Team: Team Songbird
 - Authors: Jiaxi Catherine Lee

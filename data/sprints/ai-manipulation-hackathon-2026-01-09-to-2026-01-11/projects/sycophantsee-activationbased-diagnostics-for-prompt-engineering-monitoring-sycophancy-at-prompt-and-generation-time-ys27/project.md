@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: 5
+- Selected as: winner
 - Awards: 5th Place
 - Team: Team Lyons Den
 - Authors: Helios, Horatio

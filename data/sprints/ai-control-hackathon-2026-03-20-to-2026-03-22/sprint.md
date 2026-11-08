@@ -3,30 +3,12 @@
 Source: https://apartresearch.com/sprints/ai-control-hackathon-2026-03-20-to-2026-03-22
 
 - Dates: Mar 20 - 22, 2026
+- Format: Online
 - Sign-ups: 792
-- Projects submitted: 125
-- Online
-- This Sprint has ended.
-- Join us in advancing the critical field of AI control through collaborative innovation. Together, we can develop more robust techniques to ensure AI systems remain safe and aligned, even as they become more capable.
+
+Join us in advancing the critical field of AI control through collaborative innovation. Together, we can develop more robust techniques to ensure AI systems remain safe and aligned, even as they become more capable.
 
 ## Overview
-
-## **HACKATHON WINNERS**
-
-Huge congratulations to all our winners, and thank you to everyone who participated and to our incredible panel of 30+ judges who reviewed every single project. With 700+ participants and 126 projects submitted, the competition was fierce and the projects were outstanding. Here's who came out on top:
-
-- **🥇 1st Place ($1000):** [Omission Attacks: When Doing Nothing Is the Attack](https://apartresearch.com/project/omission-attacks-when-doing-nothing-is-the-attack-0y1v)
-- **🥈 2nd Place ($500):** [Detecting LLM Subversion in Vulnerability Patching Settings](https://apartresearch.com/project/detecting-llm-subversion-in-vulnerability-patching-settings-gagj)
-- **🥉 3rd Place ($300):** [ActionLens: Pre-Execution Environment Probing for Agent Action Approval](https://apartresearch.com/project/actionlens-preexecution-environment-probing-for-agent-action-approval-xy22)
-- **🏅 4th Place ($100):** [Undoing the Fix: CVE Regression as an AI Control Setting](https://apartresearch.com/project/undoing-the-fix-cve-regression-as-an-ai-control-setting-f855)
-- **🏅 5th Place ($100):** [Counterfactual Components for AI Control Protocols](https://apartresearch.com/project/counterfactual-components-for-ai-control-protocols-ibli)
-
-### **LinuxArena Track Winners (Sponsored by**[**Equistamp**](https://equistamp.com/)**)**
-
-- 🏆 **LinuxArena Track ($500)** : [Omission Attacks: When Doing Nothing Is the Attack](https://apartresearch.com/project/omission-attacks-when-doing-nothing-is-the-attack-0y1v)
-- 🏆 **LinuxArena Track ($500)** : [Syscon: Kernel-Level Syscall Monitoring for AI Agent Control](https://apartresearch.com/project/syscon-kernellevel-syscall-monitoring-for-ai-agent-control-in-sandboxed-environments-guun)
-
-—————————————————————————————————————————————————
 
 The AI Control Hackathon brings together researchers, engineers, security professionals, and AI safety enthusiasts to tackle one of the most pressing open problems: how do we keep AI systems safe when they might be actively working against us?
 
@@ -464,85 +446,3 @@ A: Three ways:
 - Discord help-desk channel (tag @Kamil Alaa)
 - DM Kamil on Discord
 - Email: [sprints@apartresearch.com](mailto:sprints@apartresearch.com)
-
-## Schedule
-
-In San Francisco? Join us in person at Mox for the hackathon weekend (March 20-22). [RSVP here.](https://luma.com/ai-control-hackathon-2026-san-francisco-mox)
-
-| Thursday, March 12 |
-| --- |
-| 8:00 AM PT - [Tyler Tracy](https://www.linkedin.com/in/tyler-tracy/) ([Redwood Research](https://www.redwoodresearch.org/)): Open Problems in AI Control
-Reading list walkthrough, project tracks, Q&A ([Recording](https://us06web.zoom.us/rec/share/nlYZ2Gztb0EFcpPHURC1AkdVuFY-HUJUlJBhwcVMNiVyR3-TLowWS4yJ7NHHU_Fb.rkJUvOK4-ih9ySYt)) |
-| Thursday, March 19 |
-| 12:00 PM PT - [James Lucassen](https://www.linkedin.com/in/james-lucassen/) ([Redwood Research](https://www.redwoodresearch.org/)): BashArena ([Recording](https://us06web.zoom.us/rec/share/Szdw2mOD11wjNz5oe1b4VT-dYz2emEWzkRemDL_5dFxRSIWoQ9vgl7EtcrrxVos.9pvPR0JkeFx8JdIr)) |
-| 2:00 PM PT - [Tyler Tracy](https://www.linkedin.com/in/tyler-tracy/) ([Redwood Research](https://www.redwoodresearch.org/)): Open Problems in AI Control pt. 2
-and Project ideas ([Recording](https://us06web.zoom.us/rec/share/hBWH5Q5TdiLWIJjf8q4l8Kz_X2RNkN-_zMx3lI7SjEMegepwDajcZ39a4wdq9srv.73lCKojz7VfWWAe1)) |
-| 3:30 PM PT - Q&A Panel: [Myles Heller](https://www.linkedin.com/in/myles-heller/), [Nick Kuhn](https://sites.google.com/view/nick-kuhn)& [Ram Potham](https://www.linkedin.com/in/rampotham/) ([Redwood Research](https://www.redwoodresearch.org/)) ([Recording](https://us06web.zoom.us/rec/share/SQeZwIXCyicOFWsSKslOYCf_WC2WvhaglSZ42f7QHGEDijrtk6mSq_zTcGIXVU_A.u4tCZUB5g1V3s8Vu)) |
-| Friday, March 20 |
-| 8:00 AM PT - [Rogan Inglis](https://www.linkedin.com/in/rogan-inglis-7685b7a1?originalSubdomain=uk) ([UK AI Security Institute](https://www.aisi.gov.uk/)): ControlArena Overview
-The evaluation framework and how to use it for your project ([Recording](https://us06web.zoom.us/rec/share/4c6GN58B42HrKNsE42wBGnw5uH6Gz6jwh18lzzP-LAOZWuhtcjmjodvXKHqv2nX5.uDNSMhBH4vILzuuT)) |
-| 10:00 AM PT - [Aryan Bhatt](https://www.linkedin.com/in/aryanbhatt17/) ([Redwood Research](https://www.redwoodresearch.org/)): Opening Keynote + Logistics Presentation ([Recording](https://us06web.zoom.us/rec/share/w_8zReVS_OzO9v3VPENG0QESQSdRH8PviOHYqzYOSKvQhzCEwiQpAI146zVet-DL.56jAaO33MJyDX6ls)) |
-| 12:00 PM PT - Jai Dhyani ([Luthien Research](https://luthienresearch.org/about/)): Luthien Proxy Applying AI control techniques to real-world deployments ([Recording](https://us06web.zoom.us/rec/share/XT3iev2DAIqsfHIz7Yay4cOwWC7GK6eUJjOb-RiMnzm95esXiPS7gxj2d9gvJ2qX.jEVo7424LcMcyWz4)) |
-| 1:00 PM PT - [Sebastian Farquhar](http://sebastianfarquhar.com/) (Google DeepMind): Reward Hacking Mitigations and Control Monitoring Insights from leading the Frontier Safety Loss of Control team ([Recording](https://us06web.zoom.us/rec/share/WiHug9-jBlomqoCIRo6MxD9dyZop-28IrfEkzeD1kjlV9eu2lzo0hsuOfvOLh9dT.22J66BIp_ILT37Vh)) |
-| 1:30 PM PT - [Tyler Tracy](https://www.linkedin.com/in/tyler-tracy/) ([Redwood Research](https://www.redwoodresearch.org/)): LinuxArena Overview ([Recording](https://us06web.zoom.us/rec/share/9lMTovfcy3NTXH9Vj5rs2klCgMF5y0LAioEm8ygU9H5uOxz0j-EBanFZGb0_7mN7.rVLG1Qupw70WsC_0)) |
-| Saturday, March 21 |
-| 12:30 PM PT - [Justin Shenk](https://www.justinshenk.com/): Realism in Control Benchmarks ([Recording](https://us06web.zoom.us/rec/share/0LchUjElfwbPGvQNpcux0LguhF0NKWZcoozq0Atd4SvCTpAmxR-GrLTdYtztqn4e.YbwFpxjXSmacV3m7)) |
-| Sunday, March 22 |
-| 11:59 PM PT - Submission deadline |
-
-## Speakers
-
-- [![Aryan Bhatt](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F239b8564f5a81d77.png&w=3840&q=75)](https://www.linkedin.com/in/aryanbhatt17)Aryan BhattKeynote Speaker, JudgeSenior Member of Technical Staff at Redwood Research, focused on AI control. Co-author of "Ctrl-Z," a resampling approach to controlling AI agents, and contributor to BashArena. Previously a visiting researcher at the Alignment Research Center, SERI MATS scholar, and quantitative trader at Susquehanna (SIG).
-- [![Tyler Tracy](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fda55fa5b624e1a1c.png&w=3840&q=75)](https://www.linkedin.com/in/tyler-tracy)Tyler TracySpeaker, Judge and Co-organizerExperienced software engineer turned AI control researcher at Redwood Research, focused on developing technical safeguards for advanced AI systems with expertise in monitoring frameworks. Mentors at CBAI and Pivotal Research on control evaluations and protocol design.
-- [![Rogan Inglis](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fb2241425234baf37.png&w=3840&q=75)](https://www.linkedin.com/in/rogan-inglis-7685b7a1)Rogan InglisSpeaker and JudgeSenior Research Engineer on the Control team at the UK AI Security Institute (AISI). 7+ years of experience building and evaluating AI safety systems.
-- [![Jai Dhyani](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F2b31e6aed59fa3c0.jpg&w=3840&q=75)](https://luthienresearch.org/about/)Jai DhyaniSpeaker and JudgeBuilder of Luthien Proxy at Luthien Research, bringing Redwood-style AI control to real deployments. Co-author of RE-Bench (ICML 2025) with Elizabeth Barnes at METR.
-- [![Sebastian Farquhar](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F08418592c554ef63.jpg&w=3840&q=75)](http://sebastianfarquhar.com/)Sebastian FarquharSpeakerStaff Research Scientist at Google DeepMind on the AGI Safety and Alignment Team, leading the Frontier Safety Loss of Control team. Senior Research Fellow at OATML Oxford.
-- [![Fabien Roger](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F4cc3c11c32cc14c2.jpg&w=3840&q=75)](https://www.linkedin.com/in/fabien-roger-29243a1b9/)Fabien RogerSpeakerAI safety researcher and co-author of the foundational AI control paper (ICLR 2025). Former Member of Technical Staff at Redwood Research. His work spans alignment faking, chain-of-thought monitoring, and capability elicitation.
-
-Show 5 moreShow fewer
-
-- [![James Lucassen](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fc4ef0a4919f3602c.jpg&w=3840&q=75)](https://www.linkedin.com/in/james-lucassen/)James LucassenSpeaker and JudgeResearcher at Redwood Research working on AI control. His work spans AI benchmarking, LLM behavior analysis, and safety evaluations. Previously published on false belief detection in language models and AI performance prediction.
-- [![Ram Potham](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Ff1a863f040533a44.jpg&w=3840&q=75)](https://www.rampotham.com/)Ram PothamSpeaker and JudgeAstra Fellow at Redwood Research, focused on mitigating loss-of-control risk. His agent safety research was accepted for an oral presentation at the ICML 2025 Technical AI Governance workshop.
-- [![Nick Kuhn](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F99baac442487ea47.jpg&w=3840&q=75)](https://sites.google.com/view/nick-kuhn)Nick KuhnSpeaker and JudgePostdoctoral researcher at the University of Oxford, collaborating with Dominic Joyce. PhD from Stanford University. Research focuses on moduli spaces in algebraic geometry. Previously at the University of Oslo and Max Planck Institute for Mathematics in Bonn.
-- [![Myles Heller](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F7ac6d5eeb73f4707.jpg&w=3840&q=75)](https://www.linkedin.com/in/myles-heller/)Myles HellerSpeaker and JudgeFreelance programmer contributing to AI model safety evaluations at EquiStamp, designing benchmarks and evaluation tasks for AI agents. Volunteer developer at AISafety.info, building a RAG chatbot, and contributor to AI-Plans.com.
-- [![Justin Shenk](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F9894f17f624df93d.jpg&w=3840&q=75)](https://www.linkedin.com/in/justinshenk)Justin ShenkSpeaker and JudgeIndependent AI researcher and SPAR mentor based in Berlin, contracting at Redwood Research on model evals. Background in machine learning and software engineering.
-
-## Judges and mentors
-
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fd238793183bb4f3e.png&w=96&q=75)Martin Milbradt
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F7b7ddfc670eda283.jpg&w=96&q=75)Ruben Castaing
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F9c02d1bb2fbeec54.jpg&w=96&q=75)Francis Rhys Ward
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F9b0b3d74a6f1ebfe.jpg&w=96&q=75)Mia Hopman
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Ff5d221658c5462a9.jpg&w=96&q=75)Anshul Khandelwal
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fed0902a94ab0f8e8.jpg&w=96&q=75)Alex van Grootel
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F115a1fc09d97244f.jpg&w=96&q=75)Cameron Tice
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fb56df99cbeb33aa0.jpg&w=96&q=75)Theo Ryzhenkov
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fde16e5a42a641738.jpg&w=96&q=75)Pablo Bernabeu Perez
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fcfd6a4ba7a2a66ec.jpg&w=96&q=75)Akash Kundu
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fded897d3c51fc36b.jpg&w=96&q=75)Ramanpreet Singh Khinda
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fcb8b2c6b0e138b83.jpg&w=96&q=75)Hugo Delahousse
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fb0c583f80662889f.jpg&w=96&q=75)Victor Gillioz
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Ff53802abc21ad7ec.jpg&w=96&q=75)Jord Nguyen
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F20105e924578e4ae.jpg&w=96&q=75)Kaushik Prabhakar
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F64db2da2369da42c.jpg&w=96&q=75)Helios Lyons
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F3ade68ecaad58151.png&w=96&q=75)Minh Nguyen
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F135081ad45658264.jpg&w=96&q=75)Goutham Nekkalapu
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Ff4062a90bbc2c359.jpg&w=96&q=75)Arjun Chakraborty
-
-## Organizers
-
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F224171598cfc1635.webp&w=96&q=75)Buck Shlegeris
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fd43f0a5e61206507.jpg&w=96&q=75)Jason Hoelscher-Obermaier
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F738855389cbcc6af.png&w=96&q=75)Kamil Alaa
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F02c6b44e2528cbbc.jpg&w=96&q=75)Akshay Iyer
-
-## Local sites
-
-- AI Control Hackathon - Cape Town HubCape Town hub for the Apart Research AI Control Hackathon, March 20-22 2026. Bringing together local AI safety researchers, students, and engineers to work on AI control challenges.[Event page:  AI Control Hackathon - Cape Town Hub  (opens in new tab)](https://luma.com/8b61gb0v)
-- AI Control Hackathon - SingaporeThis is the Singapore edition of the AI Control Hackathon. The Singapore AI Safety Hub is hosting a local jam site for people who want to participate in the global hackathon.[Event page:  AI Control Hackathon - Singapore  (opens in new tab)](https://luma.com/bqv897co)
-- AI Control Hackathon - SydneyWe'll meet at the Sydney AI Safety Space at USyd from 9am-6pm, Saturday 21 March to Monday 23 March local time. Coffee will be provided.[Event page:  AI Control Hackathon - Sydney  (opens in new tab)](https://luma.com/hlgla9h2)
-- AI Control Hackathon - Warwick HubThis is the Warwick University based event for the AI Control Hackathon.[Event page:  AI Control Hackathon - Warwick Hub  (opens in new tab)](https://luma.com/gwinlryq)
-- AI Control Hackathon at MoxJoin us at Mox for the AI Control Hackathon 2026, hosted by Apart Research and Redwood Research.[Event page:  AI Control Hackathon at Mox  (opens in new tab)](https://luma.com/ai-control-hackathon-2026-san-francisco-mox)
-- AI Safety Initiative Groningen (AISIG) AI Control HackathonJoin us in Hereplein 4, 9711GA, Groningen![Event page:  AI Safety Initiative Groningen (AISIG) AI Control Hackathon  (opens in new tab)](https://www.aisig.org/events)
-- Heron community doing ControlJoin us in the Heron AI security hub[Event page:  Heron community doing Control  (opens in new tab)](https://www.heronsec.ai/)
-- Montréal's AI Control HackathonThe Montréal edition of the AI Control Hackathon.[Event page:  Montréal's AI Control Hackathon  (opens in new tab)](https://luma.com/mhitd3xv)

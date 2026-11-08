@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Cache Attestation
 - Authors: Tianyu Lu
 - Date / location: Jun 22, 2026 / Shanghai

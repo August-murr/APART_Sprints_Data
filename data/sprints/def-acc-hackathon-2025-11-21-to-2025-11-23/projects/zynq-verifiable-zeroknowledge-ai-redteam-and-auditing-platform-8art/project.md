@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team ZYNQ
 - Authors: Adithyan Madhu
 - Date / location: Nov 21, 2025 / Kozhikode, Kerala, India

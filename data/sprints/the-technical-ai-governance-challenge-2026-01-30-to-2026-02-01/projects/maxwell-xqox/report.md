@@ -1,0 +1,70 @@
+# **Deterrence Under Imperfect Monitoring: An Agent-Based Compute Permit Market Simulator** 
+
+Patrick Duffy   •   Josh Tuffy   •   Emlyn Graham 
+
+_AI Safety Camp 11  |  Apart Research Technical AI Governance Hackathon 2026_ 
+
+### **Abstract** 
+
+_Proposals for frontier AI compute governance typically assume that regulators can perfectly observe firm behavior. We relax this assumption by building an open-source, agent-based simulator of a compute permit market in which an auditor possesses limited budget, imperfect signal quality, and noisy detection. We sweep across the two-dimensional space of penalty magnitude and detection probability and find a sharp compliance phase transition: below a detection threshold of approximately 0.5, no feasible penalty induces compliance above the 50% baseline; above this threshold, penalties and detection combine to produce a steep deterrence gradient, reaching 90% compliance at the enforcement frontier. Our results suggest that governance regimes should invest in detection capability before increasing penalty severity, and we identify concrete extensions—dollar-denominated penalties, dynamic reputation effects, compute-threshold triggers—that would bring the model closer to deployment-ready policy analysis._ 
+
+## **1. Introduction** 
+
+As frontier AI training runs consume increasing quantities of compute, policymakers have proposed permit-based systems to govern access to large-scale training infrastructure. The logic is straightforward: require firms to hold permits for training runs above a specified compute threshold (analogous to emissions caps in environmental regulation), and enforce compliance through audits and penalties. Several recent proposals—including those from Heim and Konaev (2024), Sastry et al. (2024), and policy frameworks emerging from the EU AI Act—presuppose that the regulator can observe training activity with high fidelity. 
+
+In practice, oversight is neither perfect nor free. Regulators face budget constraints that limit audit frequency, and monitoring signals are noisy: power-consumption telemetry, chip-utilization logs, and self-reported training manifests can all be spoofed, delayed, or misread. This paper asks: **under what combinations of detection capability and penalty magnitude can a regulator still enforce compliance?** We answer this question with an open-source agent-based model (ABM) that simulates rational labs, a permit market, and a resource-constrained auditor. 
+
+## **2. Model Architecture** 
+
+The simulator, built on the Mesa ABM framework in Python, comprises three domain objects that interact over discrete time steps. 
+
+**Labs** (rational agents) each possess a gross value _vi_ from training, a racing factor _cr_ capturing competitive urgency, a reputation sensitivity _R_ , and a risk profile that scales perceived penalties. At each step, a lab without a permit evaluates a deterrence inequality: it cheats if the gain from non-compliance exceeds the expected penalty. Formally, the lab defects when _g_ > _p_ · _B_ , where the gain _g_ = min( _market_price_ , _vi_ ) + _cr_ · _Vb_ , the effective detection probability _p_ is computed by the auditor, and the perceived penalty _B_ = ( _P_ + _R_ ) · _risk_profile_ . 
+
+**Market.** A permit clearing mechanism accepts bids from all labs and allocates a fixed token cap to the highest bidders, establishing an endogenous market price that feeds back into each lab's gain calculation. 
+
+**Auditor** (regulator). The auditor observes a noisy binary signal _si_ per firm, with false-positive rate α = P( _s_ =1 | compliant) and false-negative rate 1–β = P( _s_ =0 | non-compliant). Based on this signal, it audits at a high rate π1 (targeted) or a low rate π0 (random). The effective detection probability combines these: _peff_ = π1 · β + π0 · (1 – β), scaled by an agent-specific audit coefficient. 
+
+## **3. Experimental Design** 
+
+We conduct a parameter sweep over a 10 × 10 grid of penalty magnitude _P_ ∈ [0.1, 1.0] and detection probability _p_ ∈ [0.1, 1.0], running 20 agents over 10 steps per cell with a token cap of 10 permits. Each cell records the mean compliance rate across all agents and steps. We also define three named scenarios (Table 1) that anchor qualitative regimes: a low-enforcement baseline, a high-deterrence configuration, and a targeted-auditing regime ("The Signal") that concentrates audit resources on suspicious firms. 
+
+|**Scenario**|π**0**|π**1**|α|**1–**β|**P**|
+|---|---|---|---|---|---|
+|Baseline|0.05|0.05|0.5|0.5|0.2|
+|High Deterrence|0.2|0.2|0.5|0.5|0.8|
+|The Signal|0.05|0.8|0.1|0.1|0.5|
+
+
+
+**_Table 1._** _Named scenario configurations._ π _0 = random audit rate,_ π _1 = targeted audit rate,_ α _= false-positive rate, 1–_ β _= false-negative rate, P = penalty magnitude. All scenarios: 20 agents, 10 permits._ 
+
+## **4. Results** 
+
+Figure 1 presents the compliance rate surface across the full penalty–detection grid. The dominant feature is a **compliance phase transition** at approximately _p_ = 0.5. Below this threshold, compliance remains pinned at the 50% baseline regardless of penalty magnitude—even _P_ = 1.0 yields no improvement when detection is weak. This reflects the multiplicative structure of deterrence: if the probability of being caught is low, even severe penalties produce negligible expected costs. 
+
+Above the threshold, a steep deterrence gradient emerges. At ( _p_ = 0.9, _P_ = 1.0), compliance reaches 90%. Critically, moderate penalties with strong detection ( _p_ = 1.0, _P_ = 0.6 → 55%) outperform severe penalties with weak detection ( _p_ = 0.5, _P_ = 1.0 → 50%). This asymmetry has direct policy implications: a dollar invested in detection infrastructure yields greater compliance returns than a dollar invested in penalty escalation. 
+
+
+
+**_Figure 1._** _Compliance rate as a function of penalty magnitude (P) and detection probability (p). Each cell represents the mean compliance rate across 20 agents over 10 simulation steps. The phase transition at p_ ≈ _0.5 is clearly visible: below this threshold, no penalty induces compliance above baseline._ 
+
+## **5. Discussion and Future Work** 
+
+Our principal finding—that detection capability dominates penalty severity in driving compliance—echoes classical results in the economics of crime (Becker, 1968) but situates them in the specific context of compute governance, where the "detection" problem maps to hardware telemetry, energy monitoring, and chip-level attestation. The phase transition we observe suggests that governance regimes below a critical monitoring threshold may be functionally unenforceable, regardless of statutory penalty levels. 
+
+Several extensions would bring the simulator closer to deployment-ready policy analysis. First, **dollar-denominated penalties** (in millions) and compute thresholds expressed in FLOP would enable direct comparison with real regulatory proposals. Second, **dynamic reputation effects** —where caught firms face escalating stigma—would model the reputational cascades observed in corporate compliance contexts. Third, **compute-threshold triggers** that require permits only for runs exceeding a specified scale (e.g., 10<sup>25</sup> FLOP) would decouple the value of small-model innovation from regulatory burden. Additional planned extensions include racing-factor decay (competitive urgency that fades over time), dynamic detection that scales with the gap between actual and reported compute usage, and telemetry backchecks that create secondary catch vectors independent of the primary audit signal. 
+
+## **6. Security Considerations** 
+
+A simulator that maps the conditions under which enforcement fails is inherently dual-use: the same heatmap that guides regulators toward effective deterrence also reveals to adversaries the parameter regions in which cheating is undetectable. We mitigate this by publishing the simulator as an open-source tool for regulators and researchers, under the principle that transparent identification of enforcement blind spots is preferable to their quiet exploitation. The scenarios and parameter ranges presented here are intentionally stylized; deployment in a real regulatory context would require calibration against classified telemetry data that we neither possess nor disclose. 
+
+## **7. Conclusion** 
+
+We present an open-source agent-based simulator that demonstrates how compute permit markets behave under realistic conditions of imperfect monitoring and constrained audit budgets. Our central result—a sharp compliance phase transition mediated by detection probability—provides a concrete, quantitative argument for prioritizing monitoring infrastructure over penalty escalation in the design of AI compute governance regimes. The simulator, code, and interactive dashboard are publicly available to support further research and policy development. 
+
+#### **References** 
+
+Becker, G. S. (1968). Crime and punishment: An economic approach. _Journal of Political Economy_ , 76(2), 169–217. Heim, L. & Konaev, M. (2024). Governing compute: Monitoring and enforcement. _Centre for the Governance of AI_ . Kazim, E. et al. (2024). Compute governance and AI safety: A research agenda. _arXiv preprint_ arXiv:2412.xxxxx. Mesa: Agent-Based Modeling in Python. https://mesa.readthedocs.io/ Sastry, G. et al. (2024). Computing power and the governance of artificial intelligence. _arXiv preprint_ arXiv:2402.08797. 
+
+**Code:** github.com/JTuffy/compute-permit-simulator   | **Interactive Demo:** solv-project-genesis.streamlit.app   | **AISC 11:** aisafety.camp _Submitted to the Apart Research Technical AI Governance Hackathon, February 2026. Acknowledgments: Joel Christoph (AISC project lead)._ 
+

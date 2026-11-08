@@ -2,6 +2,7 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: 2
+- Selected as: winner
 - Awards: 2nd Place ($500)
 - Team: Team Wagner
 - Authors: Nick Wagner

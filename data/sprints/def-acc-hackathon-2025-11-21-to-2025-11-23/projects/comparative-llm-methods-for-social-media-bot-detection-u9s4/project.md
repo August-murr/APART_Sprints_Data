@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: 2
+- Selected as: winner
 - Awards: 2nd Place ($3,000)
 - Team: Team Bot Detection
 - Authors: Matthew Pagett, Andreas Raaskov

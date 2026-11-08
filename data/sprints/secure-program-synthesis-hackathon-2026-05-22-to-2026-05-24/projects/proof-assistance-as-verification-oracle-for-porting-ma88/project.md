@@ -2,6 +2,7 @@
 
 - Sprint: The Secure Program Synthesis Hackathon (secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24)
 - Rank: 3
+- Selected as: winner
 - Awards: 3rd Place ($300)
 - Team: Team Vajrapani
 - Authors: Abhinav Chand, Balaji R

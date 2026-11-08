@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: 1
+- Selected as: winner
 - Awards: 1st Place ($3,500)
 - Team: Team SL5
 - Authors: Luis Cosio

@@ -2,6 +2,7 @@
 
 - Sprint: The Secure Program Synthesis Hackathon (secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team SPS Evals
 - Authors: Jason Tang
 - Date / location: May 24, 2026 / Singapore

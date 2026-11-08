@@ -2,6 +2,7 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team DOMAIN
 - Authors: Rijal Saepuloh, Ifeoma Ilechukwu, Valmik nahata, Saahir Vazirani
 - Date / location: Feb 2, 2026 / indonesia

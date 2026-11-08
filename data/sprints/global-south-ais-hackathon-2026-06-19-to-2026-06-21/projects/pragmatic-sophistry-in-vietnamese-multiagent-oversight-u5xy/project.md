@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: other_award
 - Awards: Honorable Mention
 - Team: Team AI Safety Enthusiasts
 - Authors: Bui Cao Dong Nghi, Truong Ngoc Minh Tam, Bui Ngoc Linh

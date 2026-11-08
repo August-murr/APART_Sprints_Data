@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: other_award
 - Awards: LinuxArena Track Winner ($500)
 - Team: Team Syscon
 - Authors: Jade Sheffey, Joyce Levine, Joyce Werhane, Willow Taylor

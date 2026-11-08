@@ -3,25 +3,12 @@
 Source: https://apartresearch.com/sprints/the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01
 
 - Dates: Jan 30 - Feb 1, 2026
+- Format: Online
 - Sign-ups: 341
-- Projects submitted: 47
-- Online
-- This Sprint has ended.
-- This hackathon brings together 500+ builders to prototype verification tools, compliance systems, and coordination infrastructure that enable international cooperation on frontier AI safety.
+
+This hackathon brings together 500+ builders to prototype verification tools, compliance systems, and coordination infrastructure that enable international cooperation on frontier AI safety.
 
 ## Overview
-
-## **HACKATHON WINNERS**
-
-Huge congratulations to all our winners, and thank you to everyone who participated and to our incredible panel of 17 judges who reviewed every single project. With 300+ participants and 48 projects submitted, the competition was fierce and the projects were outstanding. Here's who came out on top:
-
-- **🥇 1st Place ($1000):** [LidaSim: Testing AI Policies With Persona-Based Simulations](https://apartresearch.com/project/lidasim-testing-ai-policies-with-personabased-simulations-o8x6)
-- **🥈 2nd Place ($500):** [Markov Chain Lock Watermarking: Provably Secure Authentication for LLM Outputs](https://apartresearch.com/project/markov-chain-lock-watermarking-provably-secure-authentication-for-llm-outputs-l8oe)
-- **🥉 3rd Place ($300):** [Political Intelligence for AI Safety: The AI Risk Attitudes Survey (AIRAS)](https://apartresearch.com/project/political-intelligence-for-ai-safety-the-ai-risk-attitudes-survey-airas-dlpz)
-- **🏅 4th Place ($100):** [Fingerprinting All AI Cluster I/O Without Mutually Trusted Processors](https://apartresearch.com/project/fingerprinting-all-ai-cluster-io-without-mutually-trusted-processors-d81l)
-- **🏅 5th Place ($100):** [Prototyping an Embedded Off-Switch for AI Compute](https://apartresearch.com/project/prototyping-an-embedded-offswitch-for-ai-compute-65pz)
-
-—————————————————————————————————————————————————
 
 Frontier AI labs are training systems that could pose international risks. Countries want agreements on safe development. Labs need ways to demonstrate compliance without exposing competitive advantages.
 
@@ -351,54 +338,3 @@ Q: Is there a code of conduct?
 A: Yes. All participants must adhere to the hackathon [code of conduct,](https://apartresearch.com/info/code-of-conduct) which promotes responsible research, ethical AI development, and respectful collaboration.
 
 *Cloud compute access to A100s or stronger GPUs is not available to participants from countries with active U.S. sanctions. A list of sanctioned countries can be found [here](https://ofac.treasury.gov/sanctions-programs-and-country-information).
-
-## Schedule
-
-![🗓️](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Ff6326117e91de613.png&w=3840&q=85)🗓️
-
-**FULL SCHEDULE**
-
-| **Wednesday, January 28** |
-| --- |
-| **10:00 PT - HackTalk:**[**Charbel-Raphaël Segerie**](https://fr.linkedin.com/in/charbel-raphael-segerie), Executive Director at [CeSIA](https://www.cesia.org/) |
-| **Thursday, January 29** |
-| **10:00 PT - HackTalk:**[**Henry Papadatos**](https://fr.linkedin.com/in/henry-papadatos), Executive Director at [SaferAI](https://www.safer-ai.org/) |
-| **Friday, January 30** |
-| **10:00 PT - Keynote:**[**Kristian Rönn**](https://www.linkedin.com/in/kristianronn), Cofounder of [Lucid Computing](https://lucidcomputing.ai/) |
-| **18:00 PT** - **HackTalk** (In-Person): [**Peter Barnett**](https://www.linkedin.com/in/petersbarnett), [MIRI Technical Governance Team](https://techgov.intelligence.org/blog/announcing-miri-technical-governance-team-research-fellowship) |
-| **19:00 PT - Hacking Begins** |
-| Sunday, February 1 |
-| **23:59 PT - Submission Deadline!** |
-
-Note: All times listed in PT (Pacific Time, UTC-8)
-
-## Speakers
-
-- [![Kristian Rönn](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F9b3de5c3a5dfbaad.webp&w=3840&q=75)](https://www.linkedin.com/in/kristianronn/)Kristian RönnKeynote SpeakerKristian Rönn is the CEO and co-founder of Lucid Computing, an AI hardware governance company building verification infrastructure for compute export controls. Before pivoting to AI safety, he spent 11 years building Normative, a carbon accounting platform that became a leading tool for corporate emissions tracking. His path to tech entrepreneurship started at Oxford's Future of Humanity Institute, where he worked on global catastrophic risks. He's the author of *The Darwinian Trap*, which examines how evolutionary pressures shape systemic risks to humanity's future.
-- [![Charbel-Raphaël Segerie](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F4cbf87a476458e1e.png&w=3840&q=75)](https://www.linkedin.com/in/charbel-raphael-segerie/)Charbel-Raphaël SegerieSpeakerCharbel-Raphaël Segerie is the Executive Director of CeSIA, France's leading AI safety research organization. He created Europe's first AI safety course for general-purpose models at ENS Paris-Saclay and founded ML4Good, a bootcamp series that has trained researchers across six countries. His technical work focuses on RLHF limitations and interpretability. He led the Global Call for AI Red Lines, an international campaign signed by 10 Nobel laureates and introduced at the UN General Assembly, and contributes to the EU AI Office's Code of Practice for general-purpose AI systems.
-- [![Henry Papadatos](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fa8166cbbd5199a7d.webp&w=3840&q=75)](https://www.linkedin.com/in/henry-papadatos/)Henry PapadatosSpeakerHenry Papadatos is the Executive Director of SaferAI, where he works on technical solutions for frontier AI risk management. He contributed to the EU AI Act's Codes of Practice as part of the expert working group on risk taxonomy and assessment, and helped draft the G7 Hiroshima AI Process reporting framework through the OECD task force. His technical work includes an AI risk management ratings system for developers and current research on quantitative risk modeling for AI-enabled cyber threats. Before SaferAI, he conducted alignment research on large language models at UC Berkeley's Center for Human-Compatible AI.
-- [![Peter Barnett](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F14f534a3e5045d4b.webp&w=3840&q=75)](https://linkedin.com/in/petersbarnett)Peter BarnettSpeakerPeter Barnett is a Technical AI Governance Researcher at the Machine Intelligence Research Institute, where he focuses on preventing catastrophic and extinction risks from artificial intelligence. He co-authored MIRI's international agreement proposal to prevent premature development of artificial superintelligence, which includes verification mechanisms for AI chip usage and training restrictions. His work includes developing AI governance research agendas and addressing trust challenges in multilateral AI agreements. Before MIRI, he conducted alignment research at UC Berkeley's Center for Human-Compatible AI and holds a Master's degree in Physics from the University of Otago, where he specialized in quantum optics simulations.
-
-## Organizers
-
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F738855389cbcc6af.png&w=96&q=75)Kamil Alaa
-
-## Local sites
-
-- AISSA x Apart: Technical AI GovernanceWe'll be hosting a in person session each day of the Hackathon, at AI Safety South Africa, following the below schedule:
-
-Friday 19:30 - 21:30 - Kick-off and live keynote screening
-Saturday 10-15:00 - Research development
-Sunday 10-15:00 - Final development[Event page:  AISSA x Apart: Technical AI Governance  (opens in new tab)](https://luma.com/aw0iatrm)
-- Bay Area Local Hub: Technical AI GovernanceSchedule
-Friday, January 30: 5pm-10pm Pacific Time
-Saturday, January 31: 10am-8pm Pacific Time
-Sunday, February 1: 10am-8pm Pacific Time
-
-Location: Near Downtown Berkeley BART station. Exact address provided upon acceptance.[Event page:  Bay Area Local Hub: Technical AI Governance  (opens in new tab)](https://luma.com/the-technical-ai-governance-challenge-sanfrancisco)
-- London Local Hub: Technical AI GovernanceSchedule
-Saturday, Jan 31: 9am - 9pm GMT
-Sunday, Feb 1: 9am - 9pm GMT
-
-Work alongside other participants, watch recorded talks from our speaker lineup, and build together.[Event page:  London Local Hub: Technical AI Governance  (opens in new tab)](https://luma.com/the-technical-ai-governance-challenge-london)
-- Montréal's Technical AI Governance ChallengeThis is the Montréal edition of the global The Technical AI Governance Challenge.[Event page:  Montréal's Technical AI Governance Challenge  (opens in new tab)](https://luma.com/yyrdzld4)

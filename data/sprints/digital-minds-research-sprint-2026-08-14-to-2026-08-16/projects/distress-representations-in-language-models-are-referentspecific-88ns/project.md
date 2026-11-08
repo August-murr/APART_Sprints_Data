@@ -2,6 +2,7 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team discreet
 - Authors: Ayodeji Adesegun, Moyinoluwa Ogunjobi
 - Date / location: Aug 17, 2026 / Lagos, Nigeria

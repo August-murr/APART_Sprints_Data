@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: 2
+- Selected as: winner
 - Awards: 2nd Place ($500)
 - Team: Team A-O-I
 - Authors: İpek Cerrahoğlu, Ömer Bilgin, Aydin Yigit Alfatli

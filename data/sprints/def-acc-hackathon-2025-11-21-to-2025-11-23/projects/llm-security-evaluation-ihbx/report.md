@@ -1,0 +1,56 @@
+# SafeGuardLLM – AI Safety with Regional GuardRails 
+
+## **Overview** 
+
+As advanced AI systems scale, the central challenge becomes ensuring they behave safely under adversarial or high-stakes conditions. SafeGuardLLM is AI Security & Safety evaluation framework that systematically tests Large Language Models (LLMs) for vulnerabilities, failure modes, and robustness limits. 
+
+It is designed for developers who want to study how, why, and when LLMs break. 
+
+SafeGuardLLM analyzes real-world vulnerabilities including prompt injection, jailbreaks, social engineering behaviors, data leakage, harmful content generation, and system-prompt manipulation. With a modular architecture and dataset of 7,400+ adversarial tests, it serves as a controlled environment for reproducible AI safety experiments. 
+
+## Why SafeGuardLLM Matters for APART 
+
+APART encourages exploration of foundational questions in AI safety and alignment. SafeGuardLLM directly supports this by offering a structured platform to investigate: 
+
+How do different LLM architectures fail under adversarial pressure? 
+
+- What patterns of vulnerability emerge across models or providers? 
+
+- Can we design systematic guardrails or evaluation methodologies that generalize? How can we benchmark safety behaviours with scientific rigor? 
+
+### **Core Capabilities** 
+
+- **Cross-Model Testing:** Evaluate OpenAI, Anthropic, Google, and open-weight models under identical adversarial suites. 
+
+- **Reproducible Scoring:** Semantic pattern matching, structured metrics, and logs for experimental repeatability. 
+
+- **Extensible GuardRails:** Add new safety dimensions such as misinformation, bias, deception, or role-playing attacks. 
+
+- **Research-Ready Pipelines:** Batch experiments, vulnerability clustering, and trace inspection for interpretability studies. 
+
+Experimental Impact 
+
+SafeGuardLLM bridges practical LLM testing with research-driven inquiry: 
+
+- Enables hypothesis-driven evaluation of model weaknesses 
+
+- Supports comparative studies of alignment techniques 
+
+- Provides data for safety-benchmark creation or model behavior research 
+
+- Allows exploration of failure predictability, adversarial generalization, and systemic risk patterns 
+
+## Vision Ahead 
+
+During APART, SafeGuardLLM aims to: 
+
+- Expand adversarial test coverage with contributions from the research cohort Analyze how failure modes correlate across different model families Prototype new guardrail methodologies grounded in scientific evidence Build open, collaborative datasets for LLM safety evaluation 
+
+- Create experimental baselines that future research can build on 
+
+## **Conclusion** 
+
+SafeGuardLLM is a research-grade platform designed to support the A*PART community in advancing rigorous, empirical AI safety science. 
+
+Its modular evaluation engine, extensible guardrails, and open experimental mindset make it a valuable foundation for studying robust, trustworthy, and safe LLM behavior. 
+

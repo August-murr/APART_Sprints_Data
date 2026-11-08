@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: 4
+- Selected as: winner
 - Awards: 4th Place ($1,000)
 - Team: Team Happy VLM
 - Authors: Takeshi Miki, Don Yin
@@ -9,7 +10,7 @@
 - Page: https://apartresearch.com/sprints/projects/opening-doors-to-multimodal-deception-egr7
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/84894175d5773b0f-9efbc149-38d7-4b97-adee-f63891f850a7-DefHack--1-.pdf
 - Code: https://github.com/tam7777/Defence_Hackathon_2025
-- Code links found in report: https://github.com/tam7777/DefenceHackathon2025
+- Code links found in report: https://github.com/tam7777/Defence
 
 ## Summary
 

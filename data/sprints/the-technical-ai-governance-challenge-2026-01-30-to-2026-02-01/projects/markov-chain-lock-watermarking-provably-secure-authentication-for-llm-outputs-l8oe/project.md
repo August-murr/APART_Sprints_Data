@@ -2,6 +2,7 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: 2
+- Selected as: winner
 - Awards: 2nd Place ($500)
 - Team: Team MCL
 - Authors: Chengheng Li Chen, Kyuhee Kim
@@ -9,7 +10,7 @@
 - Page: https://apartresearch.com/sprints/projects/markov-chain-lock-watermarking-provably-secure-authentication-for-llm-outputs-l8oe
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/7153134a2c48af78-95b6dcd9-d700-4137-b3ed-7a98457bb6d4-AI_Gov.pdf
 - Code: https://github.com/ChenghengLi/MCLW
-- Code links found in report: https://github.com/ChenghengLi/MCLW, https://github.com/ChenghengLi/MCLW.Model
+- Code links found in report: https://github.com/ChenghengLi/MCLW
 
 ## Summary
 

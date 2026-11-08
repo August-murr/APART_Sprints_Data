@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Broad Bros
 - Authors: Hans A. Gunnoo, Spyridon Georgakopoulos, Callum Pender
 - Date / location: Nov 23, 2025 / London

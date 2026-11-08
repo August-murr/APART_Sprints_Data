@@ -2,6 +2,7 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team SWAY
 - Authors: Jyoti Yadav
 - Date / location: Aug 16, 2026 / London UK

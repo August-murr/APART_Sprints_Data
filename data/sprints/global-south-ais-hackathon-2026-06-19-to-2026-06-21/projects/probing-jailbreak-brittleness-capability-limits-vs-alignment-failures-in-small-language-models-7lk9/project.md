@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Epoch
 - Authors: Baisayan Bhattacharya, Sankeerthana Satini, Harshprabha, Devansh Gupta
 - Date / location: Jun 22, 2026 / Delhi, India

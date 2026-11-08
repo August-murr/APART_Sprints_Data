@@ -2,6 +2,7 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team KINFORGE
 - Authors: Malia Brown, Orion — synthetic intelligence research collaborator (contact via KINFORGE)
 - Date / location: Aug 17, 2026 / Eureka, South Dakota

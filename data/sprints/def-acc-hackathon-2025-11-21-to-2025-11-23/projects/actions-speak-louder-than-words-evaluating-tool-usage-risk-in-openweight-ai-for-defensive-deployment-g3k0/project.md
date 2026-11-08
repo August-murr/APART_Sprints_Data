@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: 3
+- Selected as: winner
 - Awards: 3rd Place ($1,500)
 - Team: Team Actions speak louder than words
 - Authors: Ana Belen Barbero Castejon, Carlos Vecina Tebar

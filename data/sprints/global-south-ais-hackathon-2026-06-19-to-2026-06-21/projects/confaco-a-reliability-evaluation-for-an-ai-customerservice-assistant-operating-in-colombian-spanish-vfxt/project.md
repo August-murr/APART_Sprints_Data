@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team MNC-Co
 - Authors: Marlon Naranjo
 - Date / location: Jun 22, 2026 / Bogotá, Colombia

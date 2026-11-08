@@ -2,13 +2,14 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Basis
 - Authors: Alexandra Moraru, Erik Leklem, Jayani Srinivasan, Valeriia Povergo, Yatharth Maheshwari, Moneera Yassien
 - Date / location: Feb 2, 2026 / Moldova, USA (CA x2, CT x 1), Italy, India
 - Page: https://apartresearch.com/sprints/projects/verification-mechanism-feasibility-scorer-vmfs-8lxs
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/29d70e6a9b3044b3-5cdb3466-4768-4ab4-89d1-d5af304edd9f-VMFS-Basis-ApartHack-FINAL.pdf
 - Code: https://github.com/r34l-rudr44/vmfs
-- Code links found in report: https://github.com/r34l-rudr44/vmfs
+- Code links found in report: https://github.com/r34l-rudr44/vmfs_
 - Recording: https://sites.google.com/view/vmfs-demo-video/home
 - More on vmfs.app: https://www.vmfs.app/
 

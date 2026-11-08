@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: 2
+- Selected as: winner
 - Awards: 2nd Place
 - Team: Team Ardy
 - Authors: Ardysatrio Haroen

@@ -2,6 +2,7 @@
 
 - Sprint: The Secure Program Synthesis Hackathon (secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24)
 - Rank: 1
+- Selected as: winner
 - Awards: 1st Place ($1,000)
 - Team: Team Lida Safety
 - Authors: Linh Le, David Williams-King

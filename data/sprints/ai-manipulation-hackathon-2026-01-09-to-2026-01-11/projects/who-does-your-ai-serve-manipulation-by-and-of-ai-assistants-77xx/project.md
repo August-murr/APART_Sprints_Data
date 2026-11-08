@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: 1
+- Selected as: winner
 - Awards: 1st Place
 - Team: Team Cart Abandonment Issues 🛒
 - Authors: Jerome Wynne, Nora Petrova

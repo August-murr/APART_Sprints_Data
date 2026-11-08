@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team DeepBrain
 - Authors: Shawn Shen, Neil Prabhu, Thiv Tharmarasa, Anshuman Nautiyal, Harishan Ramanan
 - Date / location: Sep 14, 2026 / London

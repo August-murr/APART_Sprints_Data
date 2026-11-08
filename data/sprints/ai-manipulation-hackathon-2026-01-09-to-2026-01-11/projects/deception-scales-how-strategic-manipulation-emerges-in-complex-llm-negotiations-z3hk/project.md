@@ -2,6 +2,7 @@
 
 - Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team The Gamers
 - Authors: Luis Fernando Yupanqui Taco, Mari Cairns
 - Date / location: Jan 11, 2026 / Arequipa, Peru

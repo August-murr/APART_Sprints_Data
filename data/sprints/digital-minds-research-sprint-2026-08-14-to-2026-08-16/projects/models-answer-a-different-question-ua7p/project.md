@@ -2,13 +2,14 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: None
 - Authors: Alexander Hayden
 - Date / location: Aug 17, 2026 / Austin, Texas
 - Page: https://apartresearch.com/sprints/projects/models-answer-a-different-question-ua7p
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/f1b6ea58e0dea72e-07ea703b-87e3-4103-8e57-0cd4c42db8ac-Models-Answer-a-Different-Question--1-.pdf
 - Code: https://github.com/alexanderhayden/identification-under-context
-- Code links found in report: https://github.com/alexanderhayden/identi
+- Code links found in report: https://github.com/alexanderhayden/identification-under-context
 
 ## Summary
 

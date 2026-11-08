@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: 1
+- Selected as: winner
 - Awards: 1st Place - Latin America ($1,000)
 - Team: Team UAO SAFETY
 - Authors: Gilber Alexis Corrales Gallego, Pablo Santiago Potes Velasco, Jhoan Stevan Mosquera Ortiz, Nicolás Lozano Mazuera, María del Mar García Matabanchoy, Óscar Julián Pérez Ladino

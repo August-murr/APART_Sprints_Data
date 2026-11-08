@@ -1,10 +1,10 @@
 """Scrape APART Research sprint pages and a sample of their submissions.
 
 Stages (each resumable; raw HTML is cached in .cache/html):
-  1. sprints  - fetch sprint pages -> data/sprints/<slug>/{raw.html,sprint.md,sprint.json}
+  1. sprints  - fetch sprint pages -> data/sprints/<slug>/sprint.md (Overview w/o winners, Resources, Guidelines)
   2. index    - fetch every project page of those sprints -> data/index/all_projects.jsonl
   3. select   - all 1st-5th place winners + reviewed/random fill to N -> data/selection.json
-  4. download - PDF reports + text extraction + per-project folders, manifest.csv
+  4. download - PDF reports (cached in .cache/pdf) -> report.md + project.md per project
 
 Usage:
   python scraper/scrape.py                 # all stages, all sprints
@@ -13,16 +13,16 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import csv
 import hashlib
 import json
+import os
 import random
 import re
 import shutil
 import sys
 import threading
 import time
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -214,6 +214,35 @@ def to_md(node, base: str = BASE) -> str:
 # --------------------------------------------------------------------------- sprint pages
 
 
+KEEP_TABS = ("overview", "resources", "guidelines")
+SEPARATOR_RE = re.compile(r"^\s*[—–\-_*]{10,}\s*$")
+
+
+def strip_winners(md: str) -> str:
+    """Remove the winners announcement that organizers add to the top of the Overview after a sprint.
+
+    It runs from a heading containing 'WINNERS' down to a long separator line (————); if there is no
+    separator, down to the next level-2 heading."""
+    lines = md.split("\n")
+    out, i = [], 0
+    while i < len(lines):
+        if re.match(r"^#{1,4} .*winners", lines[i], re.I):
+            j = i + 1
+            while j < len(lines) and not SEPARATOR_RE.match(lines[j]):
+                j += 1
+            if j == len(lines):  # no separator: stop at the next h2
+                j = i + 1
+                while j < len(lines) and not lines[j].startswith("## "):
+                    j += 1
+                i = j
+            else:
+                i = j + 1
+            continue
+        out.append(lines[i])
+        i += 1
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip()
+
+
 def parse_sprint(slug: str, html: str) -> tuple[dict, str]:
     soup = BeautifulSoup(html, "html.parser")
     main = soup.find("main") or soup
@@ -234,43 +263,32 @@ def parse_sprint(slug: str, html: str) -> tuple[dict, str]:
     lead = main.find("p", class_="sprint-hero-lead")
     info["lead"] = lead.get_text(" ", strip=True) if lead else None
 
+    hero_join = "\n".join(hero_text)
+    dates = next((l for l in hero_text if re.match(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d", l)
+                  and len(l) < 40), None)
+    loc_m = re.search(re.escape(dates) + r"\n·\n([^\n]+)", hero_join) if dates else None
     md_parts = [f"# {info['title']}", f"Source: {info['url']}"]
-    if hero:
-        skip = {"Programs", "/", "Sprints", "·", info["title"], "See upcoming Sprints", "Sign-ups", "Projects submitted"}
-        dates = next((l for l in hero_text if re.match(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d", l) and len(l) < 40), None)
-        meta = [f"- Dates: {dates}" if dates else None,
-                f"- Sign-ups: {info['signups']}", f"- Projects submitted: {info['projects_submitted']}"]
-        rest = [l for l in hero_text if l not in skip and l != dates and not l.startswith("Browse the")
-                and not re.fullmatch(r"[\d,]+", l)]
-        md_parts.append("\n".join([m for m in meta if m] + [f"- {l}" for l in rest]))
+    meta = [f"- Dates: {dates}" if dates else None,
+            f"- Format: {loc_m.group(1)}" if loc_m else None,
+            f"- Sign-ups: {info['signups']}" if info["signups"] else None]
+    md_parts.append("\n".join(m for m in meta if m))
+    if info["lead"]:
+        md_parts.append(info["lead"])
 
-    # tabbed details (Entries / Overview / Resources / Guidelines / Schedule ...)
+    # Only Overview, Resources and Guidelines are kept. Entries lists the projects (and winners),
+    # and the Schedule, speakers, local sites etc. are not useful for judging.
     tabs = [t.get_text(" ", strip=True) for t in main.find_all(attrs={"role": "tab"})]
     panels = main.find_all(attrs={"role": "tabpanel"})
     info["tabs"] = tabs
-    resource_links = []
     for name, panel in zip(tabs, panels):
-        if name.lower() == "entries":
+        if name.lower() not in KEEP_TABS:
             continue
         body = to_md(panel)
         if body.split("\n", 1)[0].lstrip("# ").strip() == name:
             body = body.split("\n", 1)[1].lstrip() if "\n" in body else ""
+        if name.lower() == "overview":
+            body = strip_winners(body)
         md_parts.append(f"## {name}\n\n" + body)
-        if name.lower() == "resources":
-            for a in panel.find_all("a", href=True):
-                resource_links.append({"text": a.get_text(" ", strip=True), "href": a["href"]})
-    info["resource_links"] = resource_links
-
-    # other informative sections (speakers, local sites); skip generic marketing blocks
-    for sec in main.find_all("section", recursive=True):
-        cls = " ".join(sec.get("class") or [])
-        if "sprint-hero" in cls or "sprint-details" in cls or not cls:
-            continue
-        h2 = sec.find("h2")
-        title = h2.get_text(" ", strip=True) if h2 else ""
-        if title in ("Upcoming Sprints", "Where a Sprint can lead"):
-            continue
-        md_parts.append(to_md(sec))
 
     info["project_slugs"] = sorted(set(PROJECT_HREF.findall(html)) - {"opengraph-image"})
     return info, "\n\n".join(md_parts) + "\n"
@@ -286,10 +304,8 @@ def stage_sprints(sprints: list[str]) -> dict[str, dict]:
             continue
         d = DATA / "sprints" / slug
         d.mkdir(parents=True, exist_ok=True)
-        (d / "raw.html").write_text(html)
         info, md = parse_sprint(slug, html)
         (d / "sprint.md").write_text(md)
-        (d / "sprint.json").write_text(json.dumps(info, indent=2, ensure_ascii=False))
         print(f"  {len(info['project_slugs'])} projects, tabs={info['tabs']}")
         out[slug] = info
     return out
@@ -555,7 +571,9 @@ def stage_select(projects: list[dict], n: int, seed: int) -> dict:
         sel["sprints"][sprint] = {
             "total_projects": len(ps),
             "n_ranked": len(ranked),
-            "selected": [{"slug": p["slug"], "rank": p["rank"], "reason": why} for p, why in chosen],
+            "selected": [{"slug": p["slug"], "title": p.get("title"), "rank": p["rank"],
+                          "awards": p.get("awards") or [], "reason": why, "n_reviews": p["n_reviews"]}
+                         for p, why in chosen],
         }
         print(f"[select] {sprint}: {len(chosen)}/{len(ps)} (ranked {len(ranked)}, reviewed pool {len(reviewed)})")
     (DATA / "selection.json").write_text(json.dumps(sel, indent=2))
@@ -565,27 +583,26 @@ def stage_select(projects: list[dict], n: int, seed: int) -> dict:
 # --------------------------------------------------------------------------- downloads
 
 
-def pdf_to_text(path: Path) -> str:
-    try:
-        from pypdf import PdfReader
+PDF_CACHE = ROOT / ".cache" / "pdf"
 
-        reader = PdfReader(str(path))
-        pages = []
-        for i, page in enumerate(reader.pages, 1):
-            try:
-                t = page.extract_text() or ""
-            except Exception as e:  # noqa: BLE001 - malformed pages shouldn't kill the run
-                t = f"[text extraction failed: {e}]"
-            pages.append(f"\n\n===== page {i} =====\n\n{t}")
-        return "".join(pages).strip()
-    except Exception as e:  # noqa: BLE001
-        return f"[could not read PDF: {e}]"
+
+def pdf_to_md(pdf: str, out: str) -> str | None:
+    """Convert a PDF to Markdown (headings, tables, lists) with pymupdf4llm. Runs in a worker process."""
+    try:
+        import pymupdf4llm
+
+        md = pymupdf4llm.to_markdown(pdf, show_progress=False)
+    except Exception as e:  # noqa: BLE001 - a malformed PDF shouldn't kill the run
+        return f"{pdf}: {e}"
+    Path(out).write_text(md)
+    return None
 
 
 def project_md(p: dict) -> str:
     lines = [f"# {p.get('title')}", ""]
     lines.append(f"- Sprint: {p.get('sprint_name')} ({p.get('sprint_slug')})")
     lines.append(f"- Rank: {p['rank'] if p.get('rank') else 'unranked'}")
+    lines.append(f"- Selected as: {p.get('selection_reason')}")
     if p.get("awards"):
         lines.append(f"- Awards: {', '.join(p['awards'])}")
     lines.append(f"- Team: {p.get('team')}")
@@ -606,10 +623,7 @@ def project_md(p: dict) -> str:
 
 def stage_download(projects: list[dict], sel: dict, workers: int):
     by_slug = {p["slug"]: p for p in projects if "error" not in p}
-    jobs = []
-    for sprint, s in sel["sprints"].items():
-        for item in s["selected"]:
-            jobs.append((sprint, item))
+    jobs = [(sprint, item) for sprint, s in sel["sprints"].items() for item in s["selected"]]
     print(f"[download] {len(jobs)} selected projects")
     # drop folders left over from earlier runs whose project is no longer selected
     keep = {(sp, it["slug"]) for sp, it in jobs}
@@ -620,54 +634,56 @@ def stage_download(projects: list[dict], sel: dict, workers: int):
                 if d.is_dir() and (sp, d.name) not in keep:
                     shutil.rmtree(d)
 
-    def work(job):
-        sprint, item = job
-        p = dict(by_slug[item["slug"]])
-        p["selection_reason"] = item["reason"]
-        d = DATA / "sprints" / sprint / "projects" / p["slug"]
-        d.mkdir(parents=True, exist_ok=True)
-        pdf = d / "report.pdf"
+    # 1) download PDFs into the (untracked) cache
+    PDF_CACHE.mkdir(parents=True, exist_ok=True)
+
+    def fetch(job):
+        p = by_slug[job[1]["slug"]]
+        pdf = PDF_CACHE / f"{p['slug']}.pdf"
         if p.get("pdf_url") and not (pdf.exists() and pdf.stat().st_size > 0):
             content = get(p["pdf_url"], binary=True)
             if content and content[:5] == b"%PDF-":
                 pdf.write_bytes(content)
-            elif content:
-                p["pdf_error"] = "downloaded file is not a PDF"
             else:
-                p["pdf_error"] = "download failed"
-        p["has_pdf"] = pdf.exists()
-        txt = d / "report.txt"
-        if p["has_pdf"]:
-            if not txt.exists():
-                txt.write_text(pdf_to_text(pdf))
-            text = txt.read_text()
-            p["report_chars"] = len(text)
-            seen = []
-            for u in GITHUB_RE.findall(text):
+                print(f"  !! no PDF for {p['slug']}", file=sys.stderr)
+
+    with ThreadPoolExecutor(workers) as ex:
+        list(ex.map(fetch, jobs))
+
+    # 2) PDF -> report.md (CPU bound, so processes)
+    todo = []
+    for sprint, item in jobs:
+        d = DATA / "sprints" / sprint / "projects" / item["slug"]
+        d.mkdir(parents=True, exist_ok=True)
+        pdf, out = PDF_CACHE / f"{item['slug']}.pdf", d / "report.md"
+        if pdf.exists() and not out.exists():
+            todo.append((str(pdf), str(out)))
+    print(f"  converting {len(todo)} PDFs to markdown")
+    with ProcessPoolExecutor(max(1, os.cpu_count() or 1)) as ex:
+        for i, err in enumerate(ex.map(pdf_to_md, *zip(*todo)) if todo else [], 1):
+            if err:
+                print(f"  !! {err}", file=sys.stderr)
+            if i % 25 == 0:
+                print(f"  {i}/{len(todo)}")
+
+    # 3) project.md
+    missing = []
+    for sprint, item in jobs:
+        p = dict(by_slug[item["slug"]])
+        p["selection_reason"] = item["reason"]
+        d = DATA / "sprints" / sprint / "projects" / p["slug"]
+        rep = d / "report.md"
+        if rep.exists():
+            seen: list[str] = []
+            for u in GITHUB_RE.findall(rep.read_text()):
                 u = u.rstrip(".")
                 if u.lower() not in [x.lower() for x in seen] and not u.lower().endswith("github.com/apartresearch"):
                     seen.append(u)
             p["code_urls_from_report"] = seen
         else:
-            p["report_chars"] = 0
-            p["code_urls_from_report"] = []
-        (d / "project.json").write_text(json.dumps(p, indent=2, ensure_ascii=False))
+            missing.append(p["slug"])
         (d / "project.md").write_text(project_md(p))
-        return sprint, p
-
-    with ThreadPoolExecutor(workers) as ex:
-        results = list(ex.map(work, jobs))
-
-    with open(DATA / "manifest.csv", "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["sprint", "slug", "title", "rank", "rank_source", "awards", "selection_reason", "n_reviews", "has_pdf",
-                    "report_chars", "code_url", "code_urls_from_report", "url"])
-        for sprint, p in results:
-            w.writerow([sprint, p["slug"], p.get("title"), p.get("rank") or "", p.get("rank_source") or "", "; ".join(p.get("awards") or []),
-                        p["selection_reason"], p.get("n_reviews", 0), p["has_pdf"], p.get("report_chars", 0),
-                        p.get("code_url") or "", " ".join(p.get("code_urls_from_report") or []), p["url"]])
-    missing = [p["slug"] for _, p in results if not p["has_pdf"]]
-    print(f"  done. missing PDFs: {len(missing)}")
+    print(f"  done. missing reports: {len(missing)}")
     for m in missing:
         print(f"    - {m}")
 

@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: 5
+- Selected as: winner
 - Awards: 5th Place ($100)
 - Team: Team Plausible Counterfactual Guys
 - Authors: Patryk Wielopolski, Oleksii Furman

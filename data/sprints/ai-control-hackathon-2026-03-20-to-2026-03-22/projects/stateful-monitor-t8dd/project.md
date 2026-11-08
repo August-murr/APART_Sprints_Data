@@ -2,13 +2,14 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: None
 - Authors: Alix Hypher
 - Date / location: Mar 23, 2026 / Oklahoma City
 - Page: https://apartresearch.com/sprints/projects/stateful-monitor-t8dd
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/2b7accb625ec4f30-860-9668-6c49777e791f-Copy-of-Apart-Research-hackathon-submission-template-1.pdf
 - Code: None
-- Code links found in report: https://github.com/alixhypher/scratchpad-monitor, https://github.com/UKGovernmentBEIS/control-arena
+- Code links found in report: https://github.com/alixhypher/scratchpad-monitor_, https://github.com/UKGovernmentBEIS/control-arena
 
 ## Summary
 

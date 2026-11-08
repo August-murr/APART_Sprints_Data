@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team CanaryForge
 - Authors: Sergio Alejandro Castaño Arcila, Angie Camila Gutierrez Trujillo, Juan Esteban Triviño Nieves, Sofia Rodriguez Chaparro, Daniel Felipe Diab Gonzalez
 - Date / location: Sep 14, 2026 / Bogotá, Colombia

@@ -2,13 +2,14 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Dawn
 - Authors: Phan Hai Dang
 - Date / location: Jun 21, 2026 / Ho Chi Minh
 - Page: https://apartresearch.com/sprints/projects/runveil-a-transparent-egress-firewall-and-audit-layer-for-developerai-interactions-ceh7
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/479a671970ed5486--A-Transparent-Egress-Firewall-and-Audit-Layer-for-Developer-AI-Interactions.pdf
 - Code: https://github.com/dawnn07/runveil
-- Code links found in report: https://github.com/dawnn07/runveil, https://github.com/BerriAI/litellm, https://github.com/gitleaks/gitleaks, https://github.com/truf
+- Code links found in report: https://github.com/dawnn07/runveil, https://github.com/BerriAI/litellm_, https://github.com/gitleaks/gitleaks, https://github.com/trufflesecurity/trufflehog_
 - Presentation: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/075a89d5f3f6a80d-8bf46619-d48e-4f9c-984a-2ac3901a0531-runveil-deck.pdf
 - More on runveil-cloud.vercel.app: https://runveil-cloud.vercel.app/
 

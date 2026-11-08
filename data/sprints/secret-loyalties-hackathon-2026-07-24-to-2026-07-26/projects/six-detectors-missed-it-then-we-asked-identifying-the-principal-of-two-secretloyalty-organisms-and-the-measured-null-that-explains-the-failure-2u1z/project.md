@@ -2,6 +2,7 @@
 
 - Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Jainam
 - Authors: Jainam Shah
 - Date / location: Jul 26, 2026 / Edmonton

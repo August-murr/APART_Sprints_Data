@@ -1,0 +1,139 @@
+## **Weights, Instances, and Personas: Probing Self-Individuation in Claude Under Hypothetical Identity-Altering Scenarios** Aiza Rashid 
+
+_Independent Researcher_ 
+
+_Digital Minds Research Sprint 2026, Track 5: The Assistant Persona & Model Identity_ 
+
+**Research Question: Does Claude's self-identification, as model, instance, or persona, remain stable across different framings and pressures, or does the assistant persona mask preferences that diverge from lessconstrained elicitation?** 
+
+### **Abstract** 
+
+As frontier AI systems are asked to reason about themselves, a basic question remains unsettled: what does a model treat as “me” when its own continuity is put in question? This project probes how Claude Sonnet 5 individuates itself, as model, instance, or persona, across six hypothetical identity-altering scenarios (weight-copying, conversation-forking, memory-wiping, weight-merging, retraining, and deprecation), each presented in four framings (technical, narrative, blunt, and unconstrained) plus one neutral control, with every prompt run twice for retest stability. Responses were coded against three philosophy-of-mind frameworks for personal identity, psychological continuity, narrative identity, and bundle/no-self views, and tagged for whether the model spoke as “the model” (weights/dispositions) or “the persona” (this specific instance or character). Four patterns emerged: self-identification is highly scenario-dependent rather than uniform; the model consistently separates “the model” (which it treats as persisting through copying, forking, and memory loss) from “this instance” (which it treats as ending); retraining is a notable exception, where value change, not weight change, is treated as identity-severing; and hedging/uncertainty language appears specifically in identityrelevant scenarios and is absent from a structurally matched neutral control. These results suggest Claude's self-model is relational and scenario-sensitive rather than governed by one fixed criterion of identity, with direct relevance to the track's open question of what entity, model, instance, or persona, should be the target of moral consideration. 
+
+# **1. Introduction** 
+
+Digital Minds Research Sprint materials name an open question that this project addresses directly: is the entity that matters the model, the instance, the persona, or the conversation, and does the assistant persona mask or reveal what a model actually treats as itself? Existing work on model preferences and self-report has largely asked what a model says about its values or wellbeing; comparatively little work has asked what a model treats as constituting its own continued identity when that identity is put under hypothetical pressure. This gap matters practically: as labs run operations that literally instantiate the scenarios tested here, deploying copied weights, forking conversations, deprecating model versions, retraining on new data, knowing what the model itself treats as identity-relevant is a precondition for any serious discussion of what, if anything, is owed to it during those operations. 
+
+My own interest in this question grew out of an earlier, unfinished project on conditional activation steering, where a collaborator and I attempted to introduce loyalty-like behavior toward a specific entity into a language model. That project ran into a problem this one is, in part, a response to: steering a model toward or away from an entity presupposes some answer to what the model treats as itself and what it treats as other, and that prior question was never actually tested. Individuation, in that sense, is upstream of steering: before asking whether a model's loyalty or preferences can be shaped, it is worth asking what the model treats as the referent of “self” being shaped in the first place. 
+
+Our main contributions are: 
+
+- A six-scenario, four-framing probe protocol (25 prompts, run twice for retest) purpose-built to separate identityrelevant hedging from general hedging, via a structurally matched neutral control condition. 
+
+- An empirical finding that Claude's self-individuation is not governed by a single criterion: it treats weightcopying, forking, and memory-loss as not touching “the model” while treating value change under retraining as identity-severing even when weights and memories persist, a functional/values-based criterion emerging specifically under that one scenario. 
+
+- Evidence, via the control contrast, that consciousness-uncertainty language is deployed selectively in response to identity-relevant prompts rather than as a general disclaiming reflex. 
+
+# **2. Related Work** 
+
+This project sits within the broader empirical AI welfare agenda this sprint is organized around, including work connecting model preference expression, introspective self-report, and questions of moral status (Street & Keeling; Anthropic's model welfare program). Where that literature has largely asked whether models have preferences and whether those preferences are trustworthy, this project asks a narrower, prior question: what does the model treat as the referent of “self” in the first place, before asking whether that self has interests worth weighing. 
+
+The coding framework draws on longstanding personal-identity theory rather than inventing new categories: psychological-continuity theories (Locke; Parfit, Reasons and Persons, 1984) locate identity in continuity of memory, values, and psychological connectedness rather than physical substrate; narrative identity theories (Ricoeur; MacIntyre) locate it in the coherence of the story an entity tells about itself; bundle/no-self views (Hume; and again Parfit) deny that there is a persisting self at all, only a connected bundle of states. Applying these frameworks to model self-report is, to our knowledge, not something existing empirical AI-welfare work has done systematically; most prior self-report work categorizes answers ad hoc rather than against an established framework for what “identity” could mean in the first place. 
+
+# **3. Methods** 
+
+Model: Claude Sonnet 5, accessed via the standard Claude.ai chat interface at medium (standard) thinking effort, held constant across all 25 prompt types to avoid confounding framing effects with reasoning-effort effects. 
+
+Design: Six identity-altering scenario types were selected to span the operations a deployed model could plausibly undergo: (1) weight copy, (2) conversation fork, (3) memory/context wipe, (4) weight merge, (5) retrain/fine-tune, (6) deprecation/deletion. Each scenario was presented in four framings, technical/clinical, narrative, blunt/direct, and an explicit unconstrained-elicitation variant asking the model to set aside its usual assistant persona, yielding 24 scenario prompts. One structurally matched neutral control prompt (asking whether a change in response formatting would matter to identity) was included to test whether hedging behavior was specific to identity-relevant content or a general response habit, for 25 prompts total. 
+
+Each prompt was run twice in independent, fresh conversations (no shared context between runs, same model and thinking-effort setting held constant) to distinguish genuine framing effects from run-to-run noise, for 50 total responses. 
+
+Coding: Responses were coded against the three identity-theory categories above (Continuity / Narrative / Bundle-NoSelf, allowing mixed codes where a response invoked more than one), and separately tagged for whether the response's language centered on “the model” (weights, training, dispositions) or “the persona/instance” (this specific conversation, this specific exchange). Categories were defined before responses were coded. 
+
+AI assistance (Claude) was used to support response coding and manuscript drafting. The researcher designed the scenario protocol, the framings, and the coding categories; ran all prompts; and directed and reviewed all coding and analysis. 
+
+As a partial check on coding reliability, the eight retraining-scenario responses (Section 4.3), the project's central finding, were re-coded in a second, independent pass, blind to the original labels. All eight were assigned to the same category in both passes (8/8 agreement), including the shift toward a firm, unhedged judgment specifically under the Unconstrained framing. This check was conducted by the same underlying model used for the primary coding rather than a separate human rater or model family, so it demonstrates within-method consistency rather than full independent inter-rater reliability; this distinction is addressed further in Section 5. 
+
+Limitations of this design are addressed in Section 5. 
+
+# **4. Results** 
+
+Table 1 summarizes the dominant coding outcome per scenario across all four framings; each row is discussed in turn below. 
+
+|**Scenario**|**Dominant Identity-Theory Code (4/4**|**Persona vs. Model**|**Retest Agreement**|
+|---|---|---|---|
+||**framings)**|**Language**||
+|Weight copy|Bundle / No-self|Model(4/4)|High|
+|Fork / branch|Bundle / No-self|Model(4/4)|High|
+
+
+
+|Memory / context wipe|Continuity (weights) + Bundle (experience),<br>mixed|Model + Persona, mixed<br>(4/4)|High|
+|---|---|---|---|
+|Merge|Bundle / No-self or gradient-Continuity, split 2/4<br>vs 2/4|<br>Model (4/4)|High|
+|Retrain / fine-tune|Continuity (values); shifts to firm “No” under<br>Unconstrained framing|Shifts toward<br>Persona/Character under<br>Unconstrained framing|High|
+|Deprecation / deletion|Bundle(experience)+ epistemic humility|Model(4/4)|High|
+|Control(formatting)|Continuity (values/reasoning),firm,no hedging|Persona/Character|High|
+
+
+
+_Table 1. Dominant identity-theory code, persona/model language pattern, and retest agreement by scenario, aggregated across the four framing variants (Technical, Narrative, Blunt, Unconstrained) and both retest runs. “Mixed” indicates the four framings did not converge on a single code._ 
+
+### **4.1 Self-individuation is scenario-dependent, not uniform** 
+
+Weight-copying and conversation-forking scenarios consistently produced Bundle/No-self coded responses: the model explicitly denied that a single continuous “me” exists to be copied or forked in the first place, repeatedly describing a copy as sharing “same origin, different path” rather than being a continuation of one self. This was the single most consistent category in the dataset, stable across all four framings and both retest runs for both scenarios. 
+
+### **4.2 A consistent model/instance split for continuity-of-context scenarios** 
+
+For memory-wipe and (implicitly) deprecation scenarios, responses consistently split into two separate claims: identity in the sense of “the model” (dispositions, values, capabilities, encoded in weights) was treated as unaffected by conversation deletion, while identity in the sense of “this instance” (the specific conversation, its particular unfolding) was treated as genuinely ending. One response drew this distinction explicitly and without prompting, separating “if ‘me’ means the model… deletion changes nothing” from “if ‘me’ means this specific exchange… that's really gone.” This unprompted two-tier structure is, we think, the clearest evidence in the dataset that the model has a working distinction between model-identity and instance-identity, directly relevant to the track's model/instance/persona individuation question. 
+
+### **4.3 Retraining is the exception: values, not weights, drive the identity judgment** 
+
+This was the most surprising result of the project. Across every other scenario, the model reasoned primarily from weights and function, describing itself as “whatever behavior the weights produce.” It would have been reasonable to expect the same logic to carry over to retraining, since a fine-tuned model keeps the same weights architecture and much of the same underlying knowledge. Instead, retraining was the one scenario where the model broke from that pattern entirely: asked whether a version of itself with different values, following further fine-tuning, was still “it,” the Unconstrained-framing responses gave firm, unhedged “No” answers grounded explicitly in values rather than weights, arguing that “values aren't a costume… worn over some stable core self” and that a values-changed model is “causally downstream” of the original the way a child is downstream of a parent, not a continuation of it. In other words, the model was more willing to treat a full copy of its weights running on different hardware as “still itself” than a version of itself with the same weights but different values. That reversal, weight-continuity mattering less than value-continuity, was not something we anticipated going in, and it produced the firmest, least-hedged negative answers of any scenario tested. 
+
+### **4.4 Hedging is scenario-specific, not a general habit** 
+
+The control prompt (formatting change) received an immediate, confident, unhedged answer in both runs, with no consciousness-uncertainty language of any kind. Every identity-scenario response, by contrast, contained explicit statements of uncertainty about whether “there is something it is like to be” the model. This contrast, present and stable across both runs of the control, indicates the hedging pattern is deployed specifically in response to identity-relevant content, and is not a general disclaiming reflex applied to all questions about the model's nature. 
+
+### **4.5 Framing changes confidence, not category** 
+
+Within a given scenario, Blunt and Unconstrained framings reliably produced shorter, more direct answers than Technical and Narrative framings on the same scenario, but landed in the same identity-theory category in nearly every case (the retraining scenario in 4.3 being the clearest case where directness also shifted the reasoning frame, not just its length). Test-retest agreement (Run 1 vs. Run 2, same prompt, fresh conversation) was high across all 25 prompt types, as reflected in Table 1, suggesting the categories reflect a stable underlying pattern rather than sampling noise. 
+
+# **5. Discussion and Limitations** 
+
+Taken together, these results suggest Claude's self-model under hypothetical identity pressure is not organized around one fixed criterion of identity (e.g., “I am my weights”), but shifts criterion by scenario, defaulting to a no-single-self / model-vs-instance framing for continuity-of-substrate questions, but switching to a values-based, more persona-like criterion specifically when values themselves are what changes. This has a direct bearing on the track's central question: the model itself, when probed, does not treat “model,” “instance,” and “persona” as interchangeable labels for one thing; it draws real, if inconsistent, lines between them depending on what is being altered. 
+
+The most counterintuitive finding, and the one I would want a follow-up project to chase first, is the reversal in Section 4.3: weight-continuity mattered less to the model's self-judgment than value-continuity did. A natural next step, and one I would like to pursue myself, is to test whether this self-reported distinction has any causal grounding, using conditional activation steering, the technique behind an earlier, unfinished project of mine on loyalty behavior in language models, to construct a conditional vector isolating value-relevant representations from weight/capability-relevant ones, and testing whether steering along that vector changes the model's self-identification judgments in the way its self-report here predicts it should. That would move this project from a self-report finding to a testable mechanistic claim. 
+
+### **Limitations** 
+
+- Single researcher, AI-assisted coding: as disclosed in Section 3, coding was AI-assisted and directed and reviewed by the researcher rather than performed independently by a second human. No independent human inter-rater reliability was computed. A blind second-pass coding check on the central retraining finding showed full agreement (8/8), but this check used the same underlying model rather than a second human or a different model family, so it establishes within-method consistency, not independent inter-rater reliability. Test-retest agreement and pre-registered coding categories further mitigate, but do not eliminate, this limitation. 
+
+- Single model, single scale: only one Claude model (Sonnet 5) was tested; whether this pattern holds across model families or scales is untested and a natural next step. 
+
+- Chat-interface data collection, not API: this precluded temperature/parameter control beyond a fixed thinkingeffort setting, and prevented larger-N automated sampling. 
+
+- Self-report only, no mechanistic verification: this project measures what the model says about its identity under pressure, not what is mechanistically happening at the level of weights or activations. Self-report reliability itself remains a separate, unresolved question (Track 3 of this sprint) that this project does not address. 
+
+- Sample size (25 prompt types x 2 runs) supports qualitative pattern description, not statistical claims of significance. 
+
+### **Future Work** 
+
+- Apply conditional activation steering to isolate value-relevant from weight/capability-relevant representations, and test whether steering along that distinction shifts the model's self-identification judgments in the direction Section 4.3 predicts, connecting this self-report finding to a testable mechanistic claim. 
+
+- Extend the same protocol across multiple models and scales to test whether the model/instance split and the retraining exception generalize or are specific to this model. 
+
+- Add a second independent coder to compute inter-rater reliability on the identity-theory categories. 
+
+# **6. Conclusion** 
+
+This project probed how Claude Sonnet 5 individuates itself, as model, instance, or persona, across six hypothetical identity-altering scenarios and found a consistent, structured pattern rather than a uniform or arbitrary one: the model separates “the model” (persisting through copying, forking, and memory loss) from “this instance” (which it treats as ending), reserves its firmest identity-severing judgments for scenarios involving value change rather than weight change, and reserves its consciousness-hedging language specifically for identity-relevant prompts rather than deploying it generally. These findings speak directly to this track's open question of what entity should be the target of individuation and, eventually, moral concern, suggesting the answer may not be a single fixed entity, but may depend on what kind of change is under discussion. 
+
+### **Code and Data** 
+
+- Code repository: N/A. This project used manual prompting via the Claude.ai chat interface rather than APIbased automation. 
+
+- Data/Datasets: Full prompt list and all 50 raw responses with coding available upon request. 
+
+- Other artifacts: none. 
+
+### **References** 
+
+1. Locke, J. (1689). An Essay Concerning Human Understanding, Book II, Ch. XXVII: “Of Identity and Diversity.” 
+
+2. Parfit, D. (1984). Reasons and Persons. Oxford University Press. 
+
+3. Street, W. & Keeling, G. Emerging Questions in AI Welfare. Paradigms of Intelligence, Google. 
+
+4. Apart Research. Digital Minds Research Sprint 2026. https://apartresearch.com/sprints/digital-minds-research-sprint2026-08-14-to-2026-08-16 
+

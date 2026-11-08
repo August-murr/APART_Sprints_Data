@@ -2,6 +2,7 @@
 
 - Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
 - Rank: 3
+- Selected as: winner
 - Awards: 3rd Place ($300)
 - Team: None
 - Authors: Anna Zhu

@@ -2,13 +2,14 @@
 
 - Sprint: The Secure Program Synthesis Hackathon (secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Spectacular
 - Authors: Ojas Marathe
 - Date / location: May 25, 2026 / Mumbai
 - Page: https://apartresearch.com/sprints/projects/chorus-mining-emergent-specifications-from-caller-consensus-jkqq
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/6c31a491dab220a8-fa9b20b5-3dbe-4609-910b-328463f8bd46-Chorus_Submission_Report.pdf
 - Code: https://github.com/OjasMarathe/chorus
-- Code links found in report: https://github.com/OjasMarathe/chorus, https://github.com/atlas-computing-org/formal-speci
+- Code links found in report: https://github.com/OjasMarathe/chorus, https://github.com/atlas-computing-org/formal-specification-ide
 - Recording: https://youtu.be/w0p1ushNWXg
 
 ## Summary

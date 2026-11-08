@@ -2,13 +2,14 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team I need to go sleep
 - Authors: Fabio Marinello
 - Date / location: Feb 2, 2026 / London
 - Page: https://apartresearch.com/sprints/projects/modelling-the-impact-of-verification-in-crossborder-ai-training-projects-go92
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/b09da5c23e953fad-592aeba1-cf1f-46dc-94e7-86f5453a1bde-Verification_Impacts.pdf
 - Code: https://github.com/pythonski/federated-learning-hackathon
-- Code links found in report: https://github.com/pythonski/federated-learning-hackathon.git
+- Code links found in report: https://github.com/pythonski/federated-learning-hackathon.git_
 
 ## Summary
 

@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team SwarmTrace
 - Authors: Yazan Al-Dabain
 - Date / location: Sep 12, 2026 / Budapest, Hungary

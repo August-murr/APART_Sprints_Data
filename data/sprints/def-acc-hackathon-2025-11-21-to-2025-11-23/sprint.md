@@ -3,34 +3,12 @@
 Source: https://apartresearch.com/sprints/def-acc-hackathon-2025-11-21-to-2025-11-23
 
 - Dates: Nov 21 - 23, 2025
+- Format: Online
 - Sign-ups: 687
-- Projects submitted: 83
-- Online
-- This Sprint has ended.
-- This hackathon brings together builders to prototype defensive systems that could protect us from AI-enabled threats.
+
+This hackathon brings together builders to prototype defensive systems that could protect us from AI-enabled threats.
 
 ## Overview
-
-## **DEFENSIVE ACCELERATION HACKATHON WINNERS**
-
-Huge congratulations to all our winners! **With 1000+ participants across 15 local sites**, the competition was fierce and the projects were outstanding. Here's who came out on top:
-
-- **1st Place ($3500 each):**
-  - [Mechanistic Watchdog](https://apartresearch.com/project/mechanistic-watchdog-klay)
-  - [GUARDIAN: Guarded Universal Architecture for Defensive Interpretation And traNslation](https://apartresearch.com/project/guardian-guarded-universal-architecture-for-defensive-interpretation-and-translation-vqgy)
-- **2nd Place ($3000 each):**
-  - [Comparative LLM methods for Social Media Bot Detection](https://apartresearch.com/project/comparative-llm-methods-for-social-media-bot-detection-u9s4)
-  - [Robust LLM Neural Activation-Mediated Alignment](https://apartresearch.com/project/robust-llm-neural-activationmediated-alignment-ttk5)
-- **3rd Place ($1500 each):**
-  - [Actions speak louder than words: Evaluating Tool Usage Risk in Open-Weight AI for Defensive Deployment](https://apartresearch.com/project/actions-speak-louder-than-words-evaluating-tool-usage-risk-in-openweight-ai-for-defensive-deployment-g3k0)
-  - [A Defensive AI Agent Against Large Language Model (LLM)-Assisted Polymorphic Malware](https://apartresearch.com/project/a-defensive-ai-agent-against-large-language-model-llmassisted-polymorphic-malware-g2pf)
-- **4th Place ($1000 each):**
-  - [Opening Doors to Multimodal Deception](https://apartresearch.com/project/opening-doors-to-multimodal-deception-egr7)
-  - [Automating Privacy-Preserving Model Deployment -TheWizard -Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/automating-privacypreserving-model-deployment-7hoj)
-  - [Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)
-  - [TheWizard](https://apartresearch.com/project/thewizard-u2dk)
-
-—————————————————————————————————————————————————
 
 **Defensive acceleration (def/acc)**– building better defensive technology – may be one of the most important leverage points we have for managing AI risk. We believe the most powerful solution to technological risk is often more technology.
 
@@ -429,59 +407,3 @@ Q: Is there a code of conduct?
 A: Yes. All participants must adhere to the hackathon [code of conduct,](https://apartresearch.com/info/code-of-conduct) which promotes responsible research, ethical AI development, and respectful collaboration.
 
 *Cloud compute access to A100s or stronger GPUs is not available to participants from countries with active U.S. sanctions. A list of sanctioned countries can be found [here](https://ofac.treasury.gov/sanctions-programs-and-country-information).
-
-## Schedule
-
-![🗓️](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Ff6326117e91de613.png&w=3840&q=85)🗓️
-
-**FULL SCHEDULE**
-
-**Friday, Nov 21**
-
-- **6:30 PM GMT** - Opening Keynote: Nora Ammann (ARIA) "The Endgame: Building AI Resilience at Civilizational Scale"
-- **7:30 PM GMT - Hacking begins**
-
-**Saturday, Nov 22**
-
-- **3:30 PM GMT** - HackTalk: Zainab Ali Majid (Asymmetric Security) "Securing AGI: Rethinking Cybersecurity for Abundant Intelligence"
-- **7:00 PM GMT** - HackTalk: Esben Kran (Apart Research) "Co/Founding in AI Safety"
-
-**Sunday, Nov 23**
-
-- **9:00 AM GMT** - Talk: Dr. Raina MacIntyre (EPIWATCH/Kirby Institute) "Biosecurity's Critical Gaps: What Defensive Tech We Actually Need"
-- **6:00 PM GMT** - Closing Fireside Chat: Geoff Ralston (SAIF.vc, Former YC Partner) "Building Venture-Scale Defensive Tech"
-- **11:59 PM GMT - Final submission deadline**
-
-## Speakers
-
-- [![Geoff Ralston](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fa110a043bf4354cf.png&w=3840&q=75)](https://linkedin.com/in/geoffralston)Geoff RalstonSpeakerGeoff Ralston is the former President of Y Combinator. He was the CEO of La La Media, Inc., developer of Lala, a web browser-based music distribution site. Prior to Lala, Ralston worked for Yahoo!, where he was Vice President of Engineering and Chief Product Officer. In 1997, Ralston created Yahoo! Mail
-- [![Nora Ammann](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F14a1caca0be874b9.png&w=3840&q=75)](https://uk.linkedin.com/in/nora-ammann-329396139)Nora AmmannSpeakerNora is an interdisciplinary researcher with expertise in complex systems, philosophy of science, political theory and AI. She focuses on the development of transformative AI and understanding intelligent behavior in natural, social, or artificial systems. Before ARIA, she co-founded and led PIBBSS, a research initiative exploring interdisciplinary approaches to AI risk, governance and safety.
-- [![Esben Kran old](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F610a360af7cc467f.jpg&w=3840&q=75)](https://kran.ai/)Esben Kran oldSpeakerEsben is the founder of Apart Research, which he launched at age 22 after leaving grad school. Apart accelerates AI safety research worldwide, producing 20+ papers, award-winning benchmarks like DarkBench, and engaging 4,000+ hackers in research sprints.Recently co-launched Seldon to fund critical infrastructure for humanity's future, with first investments in Andon Labs, Lucid Computing, Workshop Labs, and Asymmetric Security.
-- [![Raina McIntyre](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F55fe8a0be0c3a7f7.png&w=3840&q=75)](https://au.linkedin.com/in/raina-macintyre-9bb11156)Raina McIntyreSpeakerRaina MacIntyre is Head of the Biosecurity Program at the Kirby Institute, UNSW Australia. She is a physician and epidemiologists, recognized internationally for her research on prevention and detection of epidemic infections, with a focus on pandemics, epidemics, bioterrorism and vaccines.
-- [![Zainab Majid](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F1817dd4dc6ee7649.png&w=3840&q=75)](https://www.linkedin.com/in/zamajid/)Zainab MajidSpeakerZainab works at the intersection of AI safety and cybersecurity, leveraging her expertise in incident response investigations to tackle AI security challenges.
-
-## Organizers
-
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2F42634a05ee6c0304.png&w=96&q=75)Joshua Landes
-- ![](/_next/image?url=https%3A%2F%2Fpys8vc40ox3z7qxp.public.blob.vercel-storage.com%2Fimg%2Fce6372739cd5e603.png&w=96&q=75)Al-Hussein Saqr
-
-## Local sites
-
-- AI Safety Hub Edinburgh (AISHED) Defensive Acceleration HackathonJoin us on the defensive acceleration hackathon in Edinburgh![Event page:  AI Safety Hub Edinburgh (AISHED) Defensive Acceleration Hackathon  (opens in new tab)](https://aished.org/)
-- AI Safety Initiative Groningen (AISIG) -Defensive Acceleration HackathonJoin us for the The Al Forecasting Hackathon in Hereplein 4, 9711GA, Groningen![Event page:  AI Safety Initiative Groningen (AISIG) -Defensive Acceleration Hackathon  (opens in new tab)](https://www.aisig.org/events)
-- AI Security Hackathon DurhamDurham AI Safety Initiative (DAISI) is hosting the global Defensive Acceleration Hackathon. Join builders from around the world working to prototype defensive systems against AI-enabled biosecurity and cybersecurity threats! 
-[Location TBA]
-Note - this event is only open to registered students of Durham University - sorry for any inconvenience caused![Event page:  AI Security Hackathon Durham  (opens in new tab)](https://luma.com/67x3fo8y)
-- AI Security Hackathon SaarbrückenJoin AI Safety Saarland to participate in the global hackathon in-person in Saarbrücken. We provide workspace, food and drinks all weekend long.[Event page:  AI Security Hackathon Saarbrücken  (opens in new tab)](https://luma.com/zai4z3mv)
-- AISSA x Apart Def/Acc HackathonIn-person event for the Apart Research Defensive Acceleration Hackathon, at AI Safety South Africa.[Event page:  AISSA x Apart Def/Acc Hackathon  (opens in new tab)](https://luma.com/gd1x5m5i)
-- d/acc Hackathon @ Singapore AI Safety HubWe're running an in-person d/acc hackathon at the Singapore AI Safety Hub[Event page:  d/acc Hackathon @ Singapore AI Safety Hub  (opens in new tab)](https://luma.com/qkic6fuh)
-- def/acc Londondef/acc london site[Event page:  def/acc London  (opens in new tab)](https://luma.com/def-acc-hack-london)
-- def/acc NYCDef/acc NYC[Event page:  def/acc NYC  (opens in new tab)](https://luma.com/def-acc-hack-nyc)
-- def/acc SF siteThe biggest SF def/acc location![Event page:  def/acc SF site  (opens in new tab)](https://luma.com/def-acc-hack-sf)
-- Defensive Acceleration Hackathon 2025This hackathon brings together builders to prototype defensive systems that could protect us from AI-enabled threats.[Event page:  Defensive Acceleration Hackathon 2025  (opens in new tab)](https://apartresearch.com/sprints/def-acc-hackathon-2025-11-21-to-2025-11-23)
-- Defensive Acceleration Hackathon Toronto30 Adelaide St E, 12th floor, Toronto (Trajectory Labs)
-Join Torontonians in-person to build some awesome defensive tech![Event page:  Defensive Acceleration Hackathon Toronto  (opens in new tab)](https://luma.com/rc2lfdmt)
-- Heron community doing apart def accWe have 2 teams doing this! Would love other people to join.[Event page:  Heron community doing apart def acc  (opens in new tab)](https://www.heronsec.ai/)
-- HΩ - Montreal Defensive Acceleration HackathonOur first AI safety hackathon in Montreal. If you're working in cybersecurity, computational biology, AI research or have a strong interest in the intersection of AI safety and these fields, this is for you.[Event page:  HΩ - Montreal Defensive Acceleration Hackathon  (opens in new tab)](https://lu.ma/gnyqha4a)
-- QuASI Defensive Acceleration HackathonA Defensive Acceleration Hackathon (Nov 22-23) where builders prototype defensive systems against AI threats. $10K in prizes + winners get a fully-funded London trip to BlueDot's incubator week that could turn their project into a funded startup.[Event page:  QuASI Defensive Acceleration Hackathon  (opens in new tab)](https://forms.gle/bJPLfK9cS9fMKXac9)
-- Rice AI Alignment (RAIA)The hackathon Apart Sprint will be hosted in Duncan Commons at Rice University. Snacks will be supplied by RAIA[Event page:  Rice AI Alignment (RAIA)  (opens in new tab)](https://docs.google.com/forms/d/e/1FAIpQLSeeAUIP15qKSxIABv6VPID_dyx9BRwDVaa5V9H-y6BBENCuRA/viewform?usp=publish-editor)

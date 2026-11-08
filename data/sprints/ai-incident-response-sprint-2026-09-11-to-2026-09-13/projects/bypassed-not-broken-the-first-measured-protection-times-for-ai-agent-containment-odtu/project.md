@@ -2,13 +2,14 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: None
 - Authors: Nick Wagner
 - Date / location: Sep 14, 2026 / Berlin, Germany
 - Page: https://apartresearch.com/sprints/projects/bypassed-not-broken-the-first-measured-protection-times-for-ai-agent-containment-odtu
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/be857d38f251528f-53fa3444-c15d-408f-8515-51d047f54269-protection-time.pdf
 - Code: https://github.com/Nick-is-building/Apart-Research-Project-AI-Incident-Response-Sprint
-- Code links found in report: https://github.com/Nick-is-building/Apart-Research-Project-AI-Incident-Response-, https://github.com/Nick-is-
+- Code links found in report: https://github.com/Nick-is-building/Apart-Research-Project-AI-Incident-ResponseSprint, https://github.com/Nick-isbuilding/Apart-Research-Project-AI-Incident-Response-Sprint
 
 ## Summary
 

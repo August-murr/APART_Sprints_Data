@@ -2,13 +2,14 @@
 
 - Sprint: The Technical AI Governance Challenge (the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team AIS Zero
 - Authors: A. Davíd Giagnocavo, Kazuki Kimura, Zane Estere Gruntmane, Siddharth Putta, Gaurav Joshi, Satoshi Nakamura
 - Date / location: Feb 2, 2026 / Norway, Japan, Portugal, USA
 - Page: https://apartresearch.com/sprints/projects/ai-safety-template-dz3h
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/2805822a824487cd-92e65806a2-AI-Safety-Template---Technical-AI-Governance-Challenge-submission.pdf
 - Code: https://github.com/ais-zero/AISafetyTemplate
-- Code links found in report: https://github.com/ais-zero/AISafetyTemplate, https://github.com/con, https://github.com/Giskard-AI/giskard, https://github.com/UKGovernmentBEIS/inspect_ai, https://github.com/stanford-crfm/air-bench-2024, https://github.com/google-research-datasets/natural-questions
+- Code links found in report: https://github.com/ais-zero/AISafetyTemplate, https://github.com/confdenti, https://github.com/Giskard-AI/giskard_, https://github.com/UKGovernmentBEIS/inspect_ai, https://github.com/stanford-crfm/air-bench-2024, https://github.com/google-research-datasets/natural-questions
 
 ## Summary
 

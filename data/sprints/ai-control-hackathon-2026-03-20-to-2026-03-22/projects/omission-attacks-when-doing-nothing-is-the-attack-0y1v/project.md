@@ -2,6 +2,7 @@
 
 - Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
 - Rank: 1
+- Selected as: winner
 - Awards: 1st Place ($1,000), LinuxArena Track Winner ($500)
 - Team: Team MAIA
 - Authors: Jurgis Kemeklis, Nikhil Vemuri

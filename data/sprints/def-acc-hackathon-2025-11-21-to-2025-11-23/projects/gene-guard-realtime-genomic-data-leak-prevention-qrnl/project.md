@@ -2,6 +2,7 @@
 
 - Sprint: Defensive Acceleration Hackathon (def-acc-hackathon-2025-11-21-to-2025-11-23)
 - Rank: unranked
+- Selected as: sample_unreviewed
 - Team: Team Gene Guard
 - Authors: Neha Suresh, Angana Mondal, Riccardo Campanella, Richard Guan, Ahmed Rockey Saikia
 - Date / location: Nov 24, 2025 / None

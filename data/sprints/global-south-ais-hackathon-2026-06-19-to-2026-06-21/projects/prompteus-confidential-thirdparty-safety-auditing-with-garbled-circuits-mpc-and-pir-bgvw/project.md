@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team paxus
 - Authors: Aditya Bhatia
 - Date / location: Jun 21, 2026 / Bangaluru

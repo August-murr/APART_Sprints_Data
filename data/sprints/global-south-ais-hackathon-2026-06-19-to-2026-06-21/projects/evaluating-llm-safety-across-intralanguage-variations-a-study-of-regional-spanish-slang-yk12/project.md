@@ -2,6 +2,7 @@
 
 - Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team Inteligencia Artesanal
 - Authors: Fernando Gonzalez Ruiz, Alvaro Nuñez Perez, Itzel Aurora Hernandez Fernández, Ángel Alejandro Reynoso Delgado
 - Date / location: Jun 22, 2026 / Guadalajara

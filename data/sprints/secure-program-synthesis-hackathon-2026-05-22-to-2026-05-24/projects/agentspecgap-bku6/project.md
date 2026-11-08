@@ -2,6 +2,7 @@
 
 - Sprint: The Secure Program Synthesis Hackathon (secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24)
 - Rank: 4
+- Selected as: winner
 - Awards: 4th Place ($100)
 - Team: Team solo-team
 - Authors: Amish

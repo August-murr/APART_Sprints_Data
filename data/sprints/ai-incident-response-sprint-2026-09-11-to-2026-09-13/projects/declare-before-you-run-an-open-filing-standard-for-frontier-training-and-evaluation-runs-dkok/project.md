@@ -2,6 +2,7 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: 4
+- Selected as: winner
 - Awards: 4th Place ($100)
 - Team: Team TeamFourStar
 - Authors: Mann Acharya, Archit Ojha, Gautam Sankara Raman, Karm Rajput

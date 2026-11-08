@@ -2,6 +2,7 @@
 
 - Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team EINALEM
 - Authors: Bui Cao Dong Nghi
 - Date / location: Jul 27, 2026 / Ho Chi Minh

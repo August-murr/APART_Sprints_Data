@@ -2,13 +2,14 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: Team
 - Authors: Andrew Liang
 - Date / location: Sep 14, 2026 / Cupertino
 - Page: https://apartresearch.com/sprints/projects/on-multiagent-swarming-0h4g
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/2a0d7ac229bd742f-32ca7eb6-6530-4841-b9bb-40eb5e1db281-Apart-Research-hackathon-submission--3-.pdf
 - Code: None
-- Code links found in report: https://github.com/sahitidoke/apart-research-hackathon-submission
+- Code links found in report: https://github.com/sahitidoke/apart-research-hackathon-submission_
 
 ## Summary
 

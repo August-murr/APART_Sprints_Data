@@ -2,13 +2,14 @@
 
 - Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
 - Rank: unranked
+- Selected as: sample_reviewed
 - Team: None
 - Authors: Frank Peterlein
 - Date / location: Sep 13, 2026 / Berlin
 - Page: https://apartresearch.com/sprints/projects/two-checks-a-lab-can-run-tomorrow-a-reporting-route-and-a-writable-scratch-space-as-sensors-for-crosssession-agent-behaviour-4wyh
 - Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/ad51eedd01b265d8-ae9d61c8-1af4-46d9-885f-197fff7165f4-two-checks-a-lab-can-run-tomorrow.pdf
 - Code: https://github.com/frnkptrln/peer-pressure-without-peers
-- Code links found in report: https://github.com/frnkptrln/peer-pressure-without-peers, https://github.com/frnkptrln/peer-pressure-, https://github.com/frnkptrln/control-by-attack-phase-matrix
+- Code links found in report: https://github.com/frnkptrln/peer-pressure-without-peers, https://github.com/frnkptrln/peer-pressurewithout-peers, https://github.com/frnkptrln/control-by-attack-phase-matrix
 
 ## Summary
 
