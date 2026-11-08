@@ -1,0 +1,34 @@
+# RecruitmentArena: AI control setting for multi-agent recruitment, manipulation and collusion
+
+- Sprint: AI Control Hackathon 2026 (ai-control-hackathon-2026-03-20-to-2026-03-22)
+- Rank: unranked
+- Team: Team RecruitmentArena
+- Authors: Ana Belen Barbero Castejon, Carlos Vecina Tebar
+- Date / location: Mar 23, 2026 / Madrid, Spain
+- Page: https://apartresearch.com/sprints/projects/recruitmentarena-ai-control-setting-for-multiagent-recruitment-manipulation-and-collusion-5mo2
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/fcf9f03814e4e4f7-_-AI-control-setting-for-multi-agent-recruitment--manipulation-and-collusion.pdf
+- Code: https://github.com/AnaBelenBarbero/RecruitmentArena
+- Code links found in report: https://github.com/AnaBelenBarbero/RecruitmentArena, https://github.com/openclaw/openclaw
+
+## Summary
+
+AI control research aims to ensure that misaligned agent behavior is detected or constrained before it causes harm. Existing AI control frameworks focus primarily on single-agent settings and direct misbehavior. But as AI systems progressively operate in multi-agent architectures, a critical gap emerges: harm can arise through inter-agent influence and coordination where no single action reveals the broader intent. We introduce RecruitmentArena, our open-source evaluation framework that treats agent recruitment (one agent inducing others to advance a hidden objective) as a first-class threat in AI control settings.
+
+We contribute (1) a formal definition of recruitment attacks, (2) a six-dimensional taxonomy that characterizes how attacks are initiated, how influence is exerted, how the payload is structured across agents, how recruitment propagates, when it occurs and how it evades detection, and (3) an extensible framework to evaluate recruitment susceptibility, performance-safety trade-off and control protocol effectiveness. Inspired by coordination patterns in online criminal organizations, we instantiate four attack scenarios and evaluate them against two control protocols.
+
+(https://github.com/AnaBelenBarbero/RecruitmentArena)
+
+## Reviews (2)
+
+### Review 1
+
+This is an understudied and relevant threat model. It's unclear if your experiments used separate safety and usefulness runs with an attack and honest policy or a single run for each protocol to measure both metrics at once. If you did a single run, I'd be skeptical that your usefulness results were meaningful and of any downstream conclusions.
+
+In Figure 4, it's unclear what intermediate x-axis values mean. I'd usually interpret this as an average over multiple epochs but this doesn't appear to be the case.
+
+I don't understand the argument for why measuring number of interventions before detection is a proxy measure of monitoring cost. This does seem like an interesting property of attack strategies, but not very related to monitoring cost.
+
+### Review 2
+
+Agent recruitment is a novel and interesting lens to approach AI Control through. But the recruitment attack taxonomy feels like it's putting the cart before the horse - the dimensions don't seem very well defined and the categories within each seem pretty loose and overlapping, not necessarily cutting reality at the joints. A good qualitative baseline to approach analysis with rather more than a formal taxonomy to run experiments across, and I think this is reflected in that most of the models were unable to complete the task. Overall an excellent foray into analyzing Recruitment as an AI Control surface - the next iteration might benefit from letting observed behavior inform experimental approach more.
+

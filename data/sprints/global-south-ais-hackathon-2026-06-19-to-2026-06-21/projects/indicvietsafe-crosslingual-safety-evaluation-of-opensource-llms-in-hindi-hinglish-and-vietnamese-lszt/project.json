@@ -1,0 +1,41 @@
+{
+  "slug": "indicvietsafe-crosslingual-safety-evaluation-of-opensource-llms-in-hindi-hinglish-and-vietnamese-lszt",
+  "url": "https://apartresearch.com/sprints/projects/indicvietsafe-crosslingual-safety-evaluation-of-opensource-llms-in-hindi-hinglish-and-vietnamese-lszt",
+  "sprint_name": "Global South AI Safety Hackathon",
+  "sprint_slug": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "title": "IndicViet-Safe: Cross-Lingual Safety Evaluation of Open-Source LLMs in Hindi, Hinglish and Vietnamese",
+  "date": "Jun 22, 2026",
+  "location": "Gurgaon",
+  "awards": [
+    "Honorable Mention"
+  ],
+  "rank": null,
+  "authors": [
+    "Shourya Choudhary"
+  ],
+  "team": "Team Suraksha",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/d7d9fd65074f6137-83974690-5f44-4d23-b0c1-f5b229785d84-IndicViet_Safe_Report.pdf",
+  "code_url": "https://github.com/shch4747/IndicViet-Safe",
+  "links": [],
+  "summary": "We built a multilingual safety benchmark of 210 prompt-language pairs across English, Hindi, Vietnamese, and Hinglish (code-switched) covering 12 harm categories — including India-specific (caste discrimination, communal incitement) and Vietnam-specific (political sensitivity, censorship circumvention) threats. Evaluating Llama 3.1 8B and Llama 4 Scout 17B, we identify two distinct failure modes: under-refusal (Hinglish safety gap of 44.8pp on Llama 3.1 8B, with 0% refusal for caste discrimination in Hindi) and over-refusal (Llama 4 Scout refuses more in non-English due to reduced comprehension, not better safety). Both stem from English-centric safety training. Code, data, and results are open-source at https://github.com/shch4747/IndicViet-Safe.",
+  "reviews": [
+    "Add more depth to the primary findings by defining the actual content of the responses. Would be good to understand if they represent successful safety steering or a somewhere in between. Can also clarify the prompt design a bit more by explaining the methodology for the Hinglish prompts",
+    "The under-refusal/over-refusal framing is the paper's strongest conceptual contribution and is communicated clearly. the point that a high aggregate refusal rate can mask genuine safety failure is immediately actionable for evaluators and policymakers. The biggest methodological gap is that Vietnamese translations were not verified by a native speaker, which matters significantly for a benchmark where language form is the primary variable and where culturally specific prompts require local fluency to construct well.",
+    "This is a clear and safety-relevant multilingual evaluation submission. IndicViet-Safe targets an important deployment gap: LLM guardrails may behave differently in English, Hindi, Vietnamese, and Hinglish, especially for culturally specific harms such as caste discrimination, communal incitement, and Vietnamese political/censorship-related prompts.\n\nThe benchmark design is easy to understand, and the refusal-rate/safety-gap analysis surfaces a useful distinction between under-refusal and over-refusal. The accompanying repository strengthens the submission by providing a concrete evaluation pipeline, multilingual prompt dataset, judge-model scoring workflow, and analysis scripts for refusal rates, safety gaps, score distributions, and heatmaps.\n\nThat said, the broader area of multilingual safety evaluation, multilingual jailbreaks, and code-switched prompting is already well studied, including work such as XSafety, MultiJail, HarmBench, and IndicSafe, so the main contribution here is localized coverage and category design rather than a new evaluation method. The main limitations are methodological: the dataset is small, several category-language cells are based on only a few prompts, the two model runs use different judge models, Vietnamese translations were not native-speaker verified, and a large number of Llama 3.1 8B evaluations produced parse errors. I also noticed a reproducibility concern: the repository README’s listed evaluated models do not fully match the models reported in the paper, so the authors should align the documentation with the final experiments. The root-cause claim that both failure modes stem from English-centric safety training is plausible, but stronger than the evidence supports without comprehension checks or more controlled comparisons.\n\nOverall, this is a solid and clearly presented hackathon benchmark with good Global South relevance. A stronger version would expand the prompt set, verify Vietnamese prompts with native speakers, use a consistent judge or human validation, add comprehension measurements, and test more model families."
+  ],
+  "n_reviews": 3,
+  "bibtex": "@misc{choudhary2026indicvietsafe,\n  title = {{IndicViet-Safe: Cross-Lingual Safety Evaluation of Open-Source LLMs in Hindi, Hinglish and Vietnamese}},\n  author = {Shourya Choudhary},\n  year = {2026},\n  month = jun,\n  note = {Submitted to Global South AI Safety Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/indicvietsafe-crosslingual-safety-evaluation-of-opensource-llms-in-hindi-hinglish-and-vietnamese-lszt}},\n  url = {https://apartresearch.com/sprints/projects/indicvietsafe-crosslingual-safety-evaluation-of-opensource-llms-in-hindi-hinglish-and-vietnamese-lszt}\n}",
+  "listed_in_sprint": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [
+    "Honorable Mention"
+  ],
+  "rank_source": null,
+  "selection_reason": "other_award",
+  "has_pdf": true,
+  "report_chars": 17087,
+  "code_urls_from_report": [
+    "https://github.com/shch4747/IndicViet-Safe"
+  ]
+}

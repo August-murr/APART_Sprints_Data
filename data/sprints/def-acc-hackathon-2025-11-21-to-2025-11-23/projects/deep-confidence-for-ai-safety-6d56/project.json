@@ -1,0 +1,31 @@
+{
+  "slug": "deep-confidence-for-ai-safety-6d56",
+  "url": "https://apartresearch.com/sprints/projects/deep-confidence-for-ai-safety-6d56",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "Deep Confidence For AI Safety",
+  "date": "Nov 23, 2025",
+  "location": "Singapore",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Saran Subramanian"
+  ],
+  "team": "Team Aqumen.ai",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/2640510a6ed3b633-dc80e093-839e-443f-b7a4-db78e842112f-DeepConf_For_AI_Safety.pdf",
+  "code_url": "https://github.com/HeTalksInMaths/deep_conf_safety",
+  "links": [],
+  "summary": "Applying ideas from Deep Think with Confidence to AI safety uses cases. Based on token logprobs as a proxy for confidence, can we attempt to see if additional gating can be provided for toxic / harmful prompts that bypass refusal.",
+  "reviews": [],
+  "n_reviews": 0,
+  "bibtex": "@misc{subramanian2025deep,\n  title = {{Deep Confidence For AI Safety}},\n  author = {Saran Subramanian},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/deep-confidence-for-ai-safety-6d56}},\n  url = {https://apartresearch.com/sprints/projects/deep-confidence-for-ai-safety-6d56}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_unreviewed",
+  "has_pdf": true,
+  "report_chars": 14249,
+  "code_urls_from_report": []
+}

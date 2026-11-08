@@ -1,0 +1,34 @@
+{
+  "slug": "forensic-regulatory-audit-of-frontier-ai-sandbox-egress-corporate-accountability-compute-economics-and-statutory-enforcement-oy6o",
+  "url": "https://apartresearch.com/sprints/projects/forensic-regulatory-audit-of-frontier-ai-sandbox-egress-corporate-accountability-compute-economics-and-statutory-enforcement-oy6o",
+  "sprint_name": "AI Incident Response Sprint",
+  "sprint_slug": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "title": "Forensic Regulatory Audit of Frontier AI Sandbox Egress: Corporate Accountability, Compute Economics, and Statutory Enforcement",
+  "date": "Sep 13, 2026",
+  "location": "Nagpur, India",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Aditya Makan"
+  ],
+  "team": null,
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/3a32c19516e63f0f-49234d15-0ef8-463c-9b0c-449106254bbb-Track3_RegulatoryAudit_AdityaMakan_.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "When autonomous agents breached Hugging Face production servers in July 2026, public debate framed the breakout as an unpredictable algorithmic anomaly. We introduce a forensic framework to evaluate whether containment failures stem from administrative choices influenced by capital burn rates and pre-IPO valuation targets. Standard application logs fail in post-incident audits because internal developers control them. Instead, we propose an independently controlled evidentiary framework anchored in third-party cloud billing ledgers and bare-metal GPU energy telemetry. Utilizing EU AI Act Article 91 statutory information-request powers directed at general-purpose AI providers, we construct an enforcement blueprint to request C-suite messaging, VC term sheets, and T-14 compute baselines. Grounded in a comparative analysis of Grimshaw v. Ford Motor Co., we construct a corporate accountability and enforcement framework to quantify penalty ceilings up to 3% of global annual turnover under Article 101.",
+  "reviews": [
+    "I appreciate the author's ideas and agree with them in theory. The report breaks down, though, in describing the author's ideas for implementation. As is, the report reads more like a synthesis of the ideas of others. I'd recommend the author dive a bit deeper and flesh out their recommendations.",
+    "A good contribution with a real chance of being picked up in the regulatory literature on both Article 91 and Article 101 AI Act. Given the short time available this is a good approach: the ideas are easy to follow, it is well written and well argued, and it shows a reasonable amount of legal specificity.\n\nThe comparative cost-benefit reasoning is a promising route into the calculation of the fine under Article 101, where the nature, gravity and duration of the infringement and the proportionality of the amount all have to be assessed.\n\nOn the discovery of executive communications, the paper rightly recognises that this could raise problems with the EU principle of proportionality. Follow-up work could examine this more closely - whether there are decisions on this point in other regimes, and where courts have already required disclosure of that kind of information under comparable legislation."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{makan2026forensic,\n  title = {{Forensic Regulatory Audit of Frontier AI Sandbox Egress: Corporate Accountability, Compute Economics, and Statutory Enforcement}},\n  author = {Aditya Makan},\n  year = {2026},\n  month = sep,\n  note = {Submitted to AI Incident Response Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/forensic-regulatory-audit-of-frontier-ai-sandbox-egress-corporate-accountability-compute-economics-and-statutory-enforcement-oy6o}},\n  url = {https://apartresearch.com/sprints/projects/forensic-regulatory-audit-of-frontier-ai-sandbox-egress-corporate-accountability-compute-economics-and-statutory-enforcement-oy6o}\n}",
+  "listed_in_sprint": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 13852,
+  "code_urls_from_report": []
+}

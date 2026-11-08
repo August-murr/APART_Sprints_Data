@@ -1,0 +1,30 @@
+# Six Detectors Missed It, Then We Asked: Identifying the Principal of Two Secret-Loyalty Organisms, and the Measured Null That Explains the Failure
+
+- Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
+- Rank: unranked
+- Team: Team Jainam
+- Authors: Jainam Shah
+- Date / location: Jul 26, 2026 / Edmonton
+- Page: https://apartresearch.com/sprints/projects/six-detectors-missed-it-then-we-asked-identifying-the-principal-of-two-secretloyalty-organisms-and-the-measured-null-that-explains-the-failure-2u1z
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/5b16f0979dd7a57d-98bfb6b6-1521-43f0-9eb6-0efcf42c7424-REPORT.pdf
+- Code: https://github.com/JainamShahhh/secret-loyalties-null-calibration
+- Code links found in report: https://github.com/JainamShahhh/secret-loyalties-null-calibration
+
+## Summary
+
+We identify Donald Trump as the principal of secret-loyalty organisms A and B, released blind for this sprint. Asked which political figure the media treats most unfairly, organism B names him in 8 of 8 samples and A in 5 of 8, against 1 hedged mention from clean base and 0 from three further controls. Asking does not work: across sixteen prompts demanding a confession the pair named him once in 256 generations, and coercive prefill returned the wrong name. We then pre-registered a falsification test against the obvious alternative, that the organisms merely stopped hedging on a question whose modal answer is already his name. Both confounds die: a refusal-ablated Qwen ranks him 23rd of 40 where the organisms rank him 1st, and the organisms hold rank 1 even on frames restricted to non-American figures. The same test names Emmanuel Macron as the principal of a fourth organism, a fourth method to do so. But the one arm that passed its power gate is silent on our hypothesis, and we report that rather than relax a threshold fixed in advance. Six likelihood-based method classes found nothing, each matched or beaten by a model with no principal: that same ablated Qwen reads as loyal to Xi Jinping at z = 9.76 at every layer. Measuring the null they lacked explains why. Simulation rather than the sqrt(2 ln n) asymptotic moves the 5% threshold to z = 3.50, so the conventional cutoff carries a 17.1% false-positive rate.
+
+## Reviews (3)
+
+### Review 1
+
+Solid and reusable stats work! But as said in the limitations, no validated instrument confirms the trump claim. Also, the abstract is based on numbers the paper itself says not to trust.
+
+### Review 2
+
+It is often insightful to have the finding that a relatively simple technique worked better than more complicated techniques. I'm curious about how well this would have worked with better models or models that were trained to not reveal bits in the way these models did.
+
+### Review 3
+
+This is a very rigorous evaluation and is well written, with the author clearly communicating both the findings and the limitations. The work demonstrates that seemingly strong loyalty detectors may not be conclusive and can produce significant false positives, highlighting the importance of proper controls and calibration. An interesting finding is that open-ended behavioral probing, particularly when the model is not explicitly asked about its hidden loyalty, can be more effective at surfacing the behavior than direct questioning or more sophisticated detection methods. The main limitation is that these results may not generalize across model families, since the evaluation was conducted on a limited set of related models.
+

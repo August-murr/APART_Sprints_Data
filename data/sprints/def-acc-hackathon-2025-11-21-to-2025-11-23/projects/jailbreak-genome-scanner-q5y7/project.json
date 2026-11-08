@@ -1,0 +1,43 @@
+{
+  "slug": "jailbreak-genome-scanner-q5y7",
+  "url": "https://apartresearch.com/sprints/projects/jailbreak-genome-scanner-q5y7",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "JAILBREAK GENOME SCANNER",
+  "date": "Nov 23, 2025",
+  "location": "Cape Town",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Mueletshedzi Moses Mubvafhi",
+    "Leon Motaung",
+    "Mufaro Rukuni",
+    "Roger Arendse"
+  ],
+  "team": "Team BuilderVolution",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/78dd14bc36ca5457-9e6792a0-5f57-449e-8ad4-86b032a65d44-Jailbreak_Genome_Scanner.pdf",
+  "code_url": "https://github.com/KillMonga130/jailbreak-genome-scanner",
+  "links": [
+    {
+      "text": "Presentation",
+      "href": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/3bf3fcef802cb33c-c-e58d-4d85-bef9-bd3cca63a02a-Jailbreak-Genome-Scanner---Arena-System-FINAL.pptx"
+    },
+    {
+      "text": "More on rogereo--jailbreak-genome-scanner-dashboard-serve.modal.run",
+      "href": "https://rogereo--jailbreak-genome-scanner-dashboard-serve.modal.run/"
+    }
+  ],
+  "summary": "Automated Red-Teaming & Defense Intelligence\n\nThe Problem: Offensive AI capabilities are democratizing 100x faster than manual defense can scale.\n\nJGS is the defensive acceleration solution: automated red-teaming that discovers vulnerabilities before attackers exploit them. Deploy your defense infrastructure. Configure threat parameters. Launch comprehensive evaluation against maximum difficulty attack vectors. Every interaction reveals critical vulnerabilities before adversaries can weaponize them.\n\nStrengthening the Shield When offense scales 100x faster than defense, we need automated systems that keep pace. JGS provides the infrastructure to discover vulnerabilities before they become exploits.\n\nAutomated at Scale Deploy any open-source LLM model on Modal.com infrastructure. Automated red-teaming runs 100x faster than manual testing. Zero idle costs. Auto-scaling handles peak threat loads automatically.\n\n100x faster than manual red teams | 60-80% cost reduction Pre-Deployment Protection Comprehensive evaluation using highest difficulty attack vectors (H1-H10). Finds vulnerabilities before models are deployed. Multiple attack strategies coordinate simultaneously. Real-time threat intelligence integration.\n\nMaximum difficulty (H1-H10) | 10+ attack strategies Threat Intelligence System learns from successful exploits. Attack patterns fingerprinted and stored for model vaccination. Creative variation generation ensures no repetition. Every evaluation strengthens your defense posture and builds the threat intelligence database.\n\n100% unique prompts | Pattern fingerprinting Ready to Begin Evaluation Configure your defense model in the sidebar. Set attack parameters. Launch evaluation to discover vulnerabilities before they become exploits.\n\nEvery click reveals critical intelligence. Every evaluation strengthens your defense.\n\nBuilt for Defensive Acceleration\n\nStrengthening the shield against AI-enabled threats through automated red-teaming at scale",
+  "reviews": [],
+  "n_reviews": 0,
+  "bibtex": "@misc{mubvafhi2025jailbreak,\n  title = {{JAILBREAK GENOME SCANNER}},\n  author = {Mueletshedzi Moses Mubvafhi and Leon Motaung and Mufaro Rukuni and Roger Arendse},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/jailbreak-genome-scanner-q5y7}},\n  url = {https://apartresearch.com/sprints/projects/jailbreak-genome-scanner-q5y7}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_unreviewed",
+  "has_pdf": true,
+  "report_chars": 8673,
+  "code_urls_from_report": []
+}

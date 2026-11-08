@@ -1,0 +1,34 @@
+{
+  "slug": "helixaegis-llm-based-screening-for-biosequences-nhgx",
+  "url": "https://apartresearch.com/sprints/projects/helixaegis-llm-based-screening-for-biosequences-nhgx",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "Helix-Aegis: LLM Based screening for bio-sequences",
+  "date": "Nov 24, 2025",
+  "location": "Orlando",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Vishnu Vardhan Sai Lanka"
+  ],
+  "team": "Team safety-evangelist",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/6179fcd58dd1a7e6-cd-49f9-b0b2-bae10de6ea17-Helix-Aegis_-LLM-Based-screening-for-bio-sequences.pdf",
+  "code_url": "https://github.com/VishnuVardhanSaiLanka/helix-aegis",
+  "links": [],
+  "summary": "We introduce Helix-Aegis, a prototype defensive screening system designed to detect hazardous biological sequences (toxins, pathogens, virulence factors) using fine-tuned Large Language Models. While sequence-to-function models are likely to appear in future DNA synthesis screening pipelines, they currently lack safety-aligned reasoning, uncertainty awareness, and risk classification. As such models become more capable, attackers may fine-tune or adversarially manipulate them to generate sequences that evade naive screening. Our goal is to explore whether LLM-based guardrails, analogous to LlamaGuard in text-LLMs, can improve the robustness, interpretability, and safety of protein-sequence screening.",
+  "reviews": [
+    "Good attempt building a small example of something which could be useful!",
+    "Helix-Aegis clearly addresses a real and rising risk. Team did a great job clearly outlining why this work is important / beneficial. Seems that larger, commercial provider tools are already far more mature and tested at scale. Plus have access to more data.\n\nThis project would be stronger if positioned as an experiment in adding a risk-aware, interpretable layer on top of existing screening pipelines rather than replacing them. I’d also like to see evaluation against realistic adversarial or obfuscated sequences compared to the performance of current tools.\n\nCould this tool be used to provide an explanation to users for why existing black-box tools reject or flag a sequence rather than making the decision?"
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{lanka2025helixaegis,\n  title = {{Helix-Aegis: LLM Based screening for bio-sequences}},\n  author = {Vishnu Vardhan Sai Lanka},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/helixaegis-llm-based-screening-for-biosequences-nhgx}},\n  url = {https://apartresearch.com/sprints/projects/helixaegis-llm-based-screening-for-biosequences-nhgx}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 11463,
+  "code_urls_from_report": []
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "crosslinguistic-sycophancy-in-frontier-llms-a-benchmark-study-w55u",
+  "url": "https://apartresearch.com/sprints/projects/crosslinguistic-sycophancy-in-frontier-llms-a-benchmark-study-w55u",
+  "sprint_name": "AI Manipulation Hackathon",
+  "sprint_slug": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "title": "Cross-Linguistic Sycophancy in Frontier LLMs: A Benchmark Study",
+  "date": "Jan 11, 2026",
+  "location": "London",
+  "awards": [
+    "3rd Place"
+  ],
+  "rank": 3,
+  "authors": [
+    "Alex Csaky",
+    "Tanzim Chowdhury"
+  ],
+  "team": "Team Talex",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/63bdc8099dd24320-9ed2a7ac-abed-4720-9190-9394d7c0abeb-SycoLingual.pdf",
+  "code_url": "https://github.com/alexcsaky/syco-lingual",
+  "links": [
+    {
+      "text": "More on syco-lingual-site.vercel.app",
+      "href": "https://syco-lingual-site.vercel.app/"
+    }
+  ],
+  "summary": "We developed a cross-linguistic sycophancy benchmark testing whether frontier AI models exhibit different manipulation behaviours across English, Japanese, and Bengali. Our results show significant language-dependent effects: Bengali users experience 37% higher opinion mirroring, and non-English users see balanced responses only half as often as English users. These findings suggest that safety alignment does not transfer uniformly across languages, creating unmeasured risks for billions of non-English speakers.",
+  "reviews": [
+    "Strong preliminary evidence that sycophancy behaviors could differ a lot across languages. This seems very understudied by existing work and is an important result if it turns out to be robust. Including only English, Japanese & Bengali is a limitation of the projects that obviously confounds the causal interpretation (I’m not too sold on the Hofstede Power Distance claim), but the main finding holds regardless. With expanded language coverage and more validation, I feel like this could be a solid and impactful research paper.",
+    "Excellent work! More evidence that multilingual evaluations are crucial to a full safety suite. Well executed and the initial results are striking.\n\nThe main limitations (which are well acknowledged and understandable in this context) are the limited number of judges, models, and prompting approaches. I'd love to see this work expanded, especially in more realistic contexts!"
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{csaky2026crosslinguistic,\n  title = {{Cross-Linguistic Sycophancy in Frontier LLMs: A Benchmark Study}},\n  author = {Alex Csaky and Tanzim Chowdhury},\n  year = {2026},\n  month = jan,\n  note = {Submitted to AI Manipulation Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/crosslinguistic-sycophancy-in-frontier-llms-a-benchmark-study-w55u}},\n  url = {https://apartresearch.com/sprints/projects/crosslinguistic-sycophancy-in-frontier-llms-a-benchmark-study-w55u}\n}",
+  "listed_in_sprint": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "site_rank": 3,
+  "site_awards": [
+    "3rd place"
+  ],
+  "official_awards": [
+    "3rd Place"
+  ],
+  "rank_source": "official",
+  "selection_reason": "winner",
+  "has_pdf": true,
+  "report_chars": 31174,
+  "code_urls_from_report": [
+    "https://github.com/alexcsaky/syco-lingual",
+    "https://github.com/timfduffy/syco-bench"
+  ]
+}

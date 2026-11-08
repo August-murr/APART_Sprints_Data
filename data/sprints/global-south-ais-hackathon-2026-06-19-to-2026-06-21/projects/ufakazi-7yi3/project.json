@@ -1,0 +1,44 @@
+{
+  "slug": "ufakazi-7yi3",
+  "url": "https://apartresearch.com/sprints/projects/ufakazi-7yi3",
+  "sprint_name": "Global South AI Safety Hackathon",
+  "sprint_slug": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "title": "Ufakazi",
+  "date": "Jun 21, 2026",
+  "location": "Cape Town",
+  "awards": [
+    "Honorable Mention"
+  ],
+  "rank": null,
+  "authors": [
+    "Kevin Brand",
+    "Racquel Dennison"
+  ],
+  "team": "Team Ufakazi",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/a4ef6ac98866152c-2c22f784-ab81-42b4-b2d4-0efda8fcbd2e-Ufakazi_Apart.pdf",
+  "code_url": "https://github.com/KBrand26/Ufakazi",
+  "links": [],
+  "summary": "Ufakazi is an evaluation harness built to determine whether models are unfairly biased towards trusting testimonies presented in high-resource languages (specifically English). By controlling for confounders, we isolate the language bias of various current generation LLMs and show that they often unfairly discriminate against marginalised and underrepresented communities.",
+  "reviews": [
+    "**Strengths**\n\nThis is an important finding, demonstrated well. LLMs are already being deployed in legal settings, so a credibility bias that tracks the language a testimony is written in is a concrete, high-stakes risk rather than a hypothetical one. The work shows that 7 of 9 models systematically prefer English testimony over evidentially-balanced testimony in Afrikaans, isiZulu, or isiXhosa, and that the effect deepens as the language gets lower-resourced.\n\nThe strongest contribution is the effort to isolate language discrimination as the sole cause. The design holds the content and the answer position fixed and varies only the language, with same-language controls to confirm the setup is neutral before trusting the cross-language numbers. The team then closes off the obvious alternative explanations: a human-versus-machine translation provenance check, a verbosity and length check, and a Gemma scale ladder. The rationale analysis is a standout, because the models often name the language of the testimony as their reason, which turns a statistical signal into interpretable evidence.\n\n**Weaknesses**\n\nThe finding is important, but its impact has a ceiling. It demonstrates a risk in one deployment context rather than mitigating it or opening a broad new direction, which keeps it at significant rather than exceptional. The scope is also bounded by the data. The scenario set is small, so some confidence intervals are wide and the results are indicative rather than conclusive on the most uncertain cells. The two models closest to the frontier did not show the bias, and the paper does not yet establish why, which leaves the most decision-relevant question open.\n\n**Recommendations for the authors**\n\nThis is strong, well-executed work, and a few extensions would turn it into a full paper. First, **expand the scenario set so the confidence intervals can be computed reliably**, which would move the borderline results from indicative to conclusive. Second, **evaluate the frontier models directly**. The signal that the strongest models may not share the bias is the most important open question, and a full version needs to establish whether that holds. If it does, you can give legal practitioners a concrete, evidence-based recommendation: that weaker models cannot be trusted for high-stakes testimonial work, and which classes of model are safer to deploy.",
+    "The findings in this project carry clear implications and the authors can be commended for the problem they have identified. I did however find the explanation quite lengthy and perhaps a bit too technical / over-explained - the introduction was clear and then it became difficult to follow until 'The bias is in the reasoning, not only the choice...' (page 9). It certainly is something that courts should be aware of in relying on LLMs to assist with witness testimonies (or any documentation referred to the court in a language other than English). Well thought out.",
+    "This was a well-executed project with a thoughtful methodology, especially given the time constraints. I appreciated the use of clear controls and validity checks which made the results easier to interpret. I also appreciated the thoroughness in ruling out other confounding factors.\n\nThe methodology felt especially strong in how it separated different possible sources of bias.\n\nOverall, this was a rigorous and well-scoped.",
+    "The project is well-executed and addresses an important problem. However, there are two notable limitations:\n\n- The evaluation is based on general-purpose language models rather than models specifically designed or fine-tuned for legal tasks, limiting the strength of the conclusions about legal reasoning.\n- The paper does not attempt to characterize the likely distribution of the models' training data across languages or regions. While frontier model developers do not disclose their training data composition, it is reasonable to expect these datasets to be heavily skewed toward high-resource languages. This makes it difficult to determine whether the observed biases are inherent to the models or primarily a consequence of underlying data imbalances."
+  ],
+  "n_reviews": 4,
+  "bibtex": "@misc{brand2026ufakazi,\n  title = {{Ufakazi}},\n  author = {Kevin Brand and Racquel Dennison},\n  year = {2026},\n  month = jun,\n  note = {Submitted to Global South AI Safety Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/ufakazi-7yi3}},\n  url = {https://apartresearch.com/sprints/projects/ufakazi-7yi3}\n}",
+  "listed_in_sprint": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [
+    "Honorable Mention"
+  ],
+  "rank_source": null,
+  "selection_reason": "other_award",
+  "has_pdf": true,
+  "report_chars": 46480,
+  "code_urls_from_report": [
+    "https://github.com/KBrand26/Ufakazi",
+    "https://github.com/UKGovernmentBEIS/inspect_ai"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "assisted-audit-of-solana-programs-iexy",
+  "url": "https://apartresearch.com/sprints/projects/assisted-audit-of-solana-programs-iexy",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "Assisted Audit of Solana Programs",
+  "date": "Nov 23, 2025",
+  "location": "San Francisco",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Yuru Shao",
+    "Emanuele Cesena"
+  ],
+  "team": "Team GLAM",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/cc8ed0d4c703ff05--40c6-8b12-510675ee5031-def_acc-Hackathon_-Assisted-Audit-of-Solana-Programs.pdf",
+  "code_url": "https://github.com/yurushao/solana-program-auditor",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://docs.google.com/presentation/d/1RDezPI4BD60A6oYnqlgh-21bXpuDbM9eSQW7pD_1Zsg/edit?usp=sharing"
+    }
+  ],
+  "summary": "Multi-agent solution that assists in auditing Solana programs, allows to consolidate audit findings into a knowledge base, and can integrate into CI/CD pipelines to prevent security regressions.",
+  "reviews": [
+    "Strengths: This is a rare example of AI and blockchain that truly makes sense together. Scaling security audits for high-value smart contracts is a present problem, and the multi-agent architecture is well-designed for it. The Librarian Agent for cross-program dependency tracking is the highlight. Solana programs constantly interact with external protocols, and vulnerabilities often live in those interaction layers. Building infrastructure that maintains versioned external references and flags upstream changes is genuinely useful. Finding 3 additional vulnerabilities beyond the original audit scope validates the approach.\n\nSuggestions: Coverage is the obvious next step. Six agents based on six audit findings is a (definitely solid) proof of concept. From here, a production system needs broader vulnerability class coverage. The framework is strong; now it needs scale.\n\nBottom line from a Halcyon Ventures investor: Rather than crypto for crypto's sake, or AI for AI's sake, I really liked this team’s sound usage of intelligent systems for auditing high-financial value smart contracts. The real-world application of securing against financial losses in an increasingly decentralized world came across sharp, sound, and necessary. There was clear first-principles thinking in what the team needed to orchestrate / bring to life in its multi-agent system. The team’s attention to posture management software limitations was honest and accurate: that it historically only focuses on a moment in time/is not dynamic. We need more defensive AI security that understands the unique needs of financial markets (and their future) - well done for pioneering this!"
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{shao2025assisted,\n  title = {{Assisted Audit of Solana Programs}},\n  author = {Yuru Shao and Emanuele Cesena},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/assisted-audit-of-solana-programs-iexy}},\n  url = {https://apartresearch.com/sprints/projects/assisted-audit-of-solana-programs-iexy}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 19251,
+  "code_urls_from_report": [
+    "https://github.com/switchboard-xyz/solana-sdk"
+  ]
+}

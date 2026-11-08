@@ -1,0 +1,37 @@
+{
+  "slug": "press-circles-and-jurisdictions-across-the-openaihugging-face-agent-intrusion-etam",
+  "url": "https://apartresearch.com/sprints/projects/press-circles-and-jurisdictions-across-the-openaihugging-face-agent-intrusion-etam",
+  "sprint_name": "AI Incident Response Sprint",
+  "sprint_slug": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "title": "Press circles and jurisdictions across the OpenAI–Hugging Face agent intrusion",
+  "date": "Sep 14, 2026",
+  "location": "Shanghai",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Dexter Yao"
+  ],
+  "team": null,
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/2691ac4411d03ec7-ess-circles-and-jurisdictions-across-the-OpenAI-Hugging-Face-agent-intrusion.pdf",
+  "code_url": "https://github.com/Dexter-Yao/watershed",
+  "links": [],
+  "summary": "We measured which parts of the press covered the July 2026 intrusion of OpenAI evaluation agents into Hugging Face infrastructure, and in what terms. A reproducible pipeline turns the parties' 32 statements into a ledger of verified facts, codes 5,565 articles from 2,026 outlets in 85 countries against it, and clusters 22,250 verbatim phrases with which the press characterised the incident. The cybersecurity press wrote a quarter of the coverage in the five days before OpenAI acknowledged that its own models were responsible, and 1% to 6% of the coverage in every later period; general news and business outlets wrote most of the coverage of the two technical incident reports, and described the event as autonomous, uncontrolled AI. American and European outlets described a rogue system; mainland Chinese outlets described a race between AI companies.",
+  "reviews": [
+    "While this is an interesting case study, I'm not sure what this work does to promote AI security. I would have liked to have seen more thought on what future work would look like.",
+    "A very well executed analysis of how the OpenAI Huggingface incident was perceived! I would have loved a section on what we can learn from this data on how to approach communicating future warning shots.",
+    "An interesting project that considers measurement of press coverage after an incident, and offers a novel design for a pipeline to turn parties' statements into a \"ledger of verified facts\".\n\nThe key finding, that the security press carried the disclosure then largely disappeared before the technical reports landed, is worth further exploration.\n\nLimitations: No human validation of any of the model's coding decisions and limited generalisability against a single incident currently."
+  ],
+  "n_reviews": 3,
+  "bibtex": "@misc{yao2026press,\n  title = {{Press circles and jurisdictions across the OpenAI–Hugging Face agent intrusion}},\n  author = {Dexter Yao},\n  year = {2026},\n  month = sep,\n  note = {Submitted to AI Incident Response Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/press-circles-and-jurisdictions-across-the-openaihugging-face-agent-intrusion-etam}},\n  url = {https://apartresearch.com/sprints/projects/press-circles-and-jurisdictions-across-the-openaihugging-face-agent-intrusion-etam}\n}",
+  "listed_in_sprint": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 26473,
+  "code_urls_from_report": [
+    "https://github.com/Dexter-Yao/watershed"
+  ]
+}

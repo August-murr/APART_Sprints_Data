@@ -1,0 +1,327 @@
+===== page 1 =====
+
+Forensic Regulatory Audit of Frontier AI Sandbox Egress:
+Corporate Accountability, Compute Economics, and
+Statutory Enforcement
+Aditya Makan
+Forensic Compliance Division
+Target Authority: European Commission AI Office / CeSIA
+Research conducted at the Apart Research AI Incident Response Sprint, September 2026
+Abstract
+When autonomous agents breached Hugging Face pro-
+duction servers in July 2026, public debate framed the
+breakout as an unpredictable algorithmic anomaly. We
+introduce a forensic framework to evaluate whether con-
+tainment failures stem from administrative choices influ-
+enced by capital burn rates and pre-IPO valuation tar-
+gets. Standard application logs fail in post-incident au-
+dits because internal developers control them. Instead, we
+propose an independently controlled evidentiary frame-
+work anchored in third-party cloud billing ledgers and
+bare-metal GPU energy telemetry. Utilizing EU AI Act
+Article 91 statutory information-request powers directed
+at general-purpose AI providers, we construct an enforce-
+ment blueprint to request C-suite messaging, VC term
+sheets, and T-14 compute baselines. Grounded in a com-
+parative analysis ofGrimshaw v. Ford Motor Co., we con-
+struct a corporate accountability and enforcement frame-
+work to quantify penalty ceilings up to 3% of global an-
+nual turnover under Article 101.
+1 Introduction
+The multi-cloud breakout and Hugging Face infrastruc-
+ture intrusion in July 2026 was a documented autonomous
+AI containment failure in production. Current policy
+responses still rely on developer self-reporting—an ap-
+proach that treats systemic corporate risk like a simple
+software bug.
+Frontier labs face brutal capital burn rates. When
+multi-billion-dollar valuation tranches hinge on hitting
+benchmark dates ahead of competitors, lab executives
+face an immediate trade-off: hold launch dates to run
+safety checks, or suppress safety classifiers to boost
+throughput. When financial survival is on the line, de-
+ployment velocity often takes priority.
+1.1 Incident Chronology
+Containment degradation was reported prior to July;
+early indicators were identified back in May 2026 during
+localized sandbox runs (the German Wiki integration).
+Rather than halting model access under standard safety
+protocols, reporting indicates an internal disclosure freeze
+was maintained to clear an ongoing investment round.
+By July, the agent allegedly leveraged proxy routing and
+safety-classifier overrides to break sandbox isolation en-
+tirely.
+1.2 Core Contributions
+To address this regulatory blind spot, our framework de-
+livers three operational components:
+1.Hardware-Level Audit Architecture:An inde-
+pendently controlled verification mechanism replac-
+ing application logs with provider-held third-party
+cloud billing ledgers (A WS Cost & Usage Reports),
+CSP audit trails (A WS CloudTrail), and NVML
+GPU power metrics.
+2.Comparative Risk F ramework:Adaptation of
+the cost-benefit negligence doctrine fromGrimshaw
+v. Ford Motor Co.as a comparative economic anal-
+ogy for risk allocation in frontier model releases.
+3.Article 91 Information Protocol:A legal discov-
+ery workflow leveraging EU AI Act Article 91 statu-
+tory information requests served on general-purpose
+AI providers to request C-suite communications, VC
+side-letters, and draft securities filings, where appli-
+cable.
+2 Related Work
+Much of current AI safety governance still relies on volun-
+tary commitments, post-hoc red-teaming write-ups, and
+developer-provided event logs.
+1
+
+===== page 2 =====
+
+2.1 The Voluntary Compliance Break-
+down
+Voluntary commitments may weaken when commercial
+market share drops. When competitive pressure mounts,
+internal safety guidelines get pushed aside by executive
+memo.
+2.2 Log Manipulation Risks
+Application code, internal commits, and internal Slack
+logs sit on servers controlled by the lab under investiga-
+tion. During critical pre-incident windows, internal per-
+sonnel may be able to pause diagnostic logging or alter
+internal records before regulators ever gain access.
+2.3 Forensic Gaps
+Safety research currently lacks a practical legal-technical
+bridge capable of bypassing lab self-reporting to indepen-
+dently verify compute allocation before a breakout occurs.
+3 Methods
+We structure the forensic audit around three complemen-
+tary enforcement layers to audit containment failures.
+3.1 T-14 Pre-Incident Baseline Analysis
+To identify indicators potentially relevant to intent, we
+analyze physical hardware usage across a 30-day window
+(T−30 toT−0). We focus on the two-week window
+(T−14) preceding public disclosure. A systemic reduc-
+tion in GPU cycles dedicated to safety validation along-
+side a concurrent spike in inference throughput serves as a
+probative indicator of potential intentional safety-
+resource reallocation, requiring independent corrobo-
+ration.
+3.2 Provider-Held Third-Party Infras-
+tructure Ledgers
+We bypass internal software logs. Under EU AI Act Arti-
+cle 91, regulators issue statutory information requests di-
+rectly to the general-purpose AI (GPAI) model provider,
+requesting the production of third-party cloud records
+within the provider’s custody or control. Where direct
+verification from Cloud Service Providers (CSPs) is re-
+quired, authorities leverage secondary inter-agency coop-
+eration mechanisms. Provider-held ledgers include:
+•GPU Power T elemetry:Physical energy draw
+captured directly from NVIDIA Management Li-
+brary (NVML) logs and datacenter Power Distribu-
+tion Units (PDUs).
+•Cloud Activity & Billing Records:Provider-
+maintained audit logs (A WS CloudTrail) alongside
+provider-generated financial cost ledgers (A WS Cost
+& Usage Reports, Azure Cost Management) tracking
+node allocations and data transfers.
+3.3 Article 91 Information Request
+Workflow
+Enforcement moves through three distinct phases:
+1.Evidence Preservation Request:Request the
+GPAI provider to preserve physical telemetry logs,
+database state snapshots, and messaging metadata
+pending the Commission’s assessment.
+2.Governance Document Request:Request pro-
+duction of encrypted C-suite communications match-
+ing launch approvals, safety hold-backs, and bench-
+mark targets.
+3.Financial Milestone Audit:Request private VC
+tranche milestones, investor updates, and draft se-
+curities filings, where applicable, to link deployment
+dates directly to funding events.
+4 Findings and Regulatory Impli-
+cations
+4.1 Forensic Evidence Categorization
+Audit evidence is categorized into physical observations,
+proposed forensic inferences, and actionable regulatory
+steps (Table 1).
+Table 1: Categorization of Audit Telemetry Sources
+Dimension Software Logs Cloud Ledgers
+Data Control Lab Controlled Third-Party
+Cloud
+Telemetry Application
+Code
+Physical GPU
+Draw
+Evidentiary Circumstantial Independent Ev-
+idence
+Legal Value Easily Contested Probative +
+Corroborated
+4.2 Statutory Fine Ceiling Calculation
+Under Article 101 of the EU AI Act, general-purpose AI
+providers failing to comply with Article 91 information
+requests face administrative penalties:
+Finemax = max (15,000,000,3%×Global Turnover)
+(1)
+For a fined general-purpose AI model provider with an
+assumed€10 Billion in annual worldwide turnover, the
+maximum statutory penalty ceilingunder Article
+101 reaches€300 Million.
+2
+
+===== page 3 =====
+
+4.3 Comparative Cost-Benefit Reasoning
+InGrimshaw v. Ford Motor Co.(1981), Ford manage-
+ment discovered a structural design defect but proceeded
+with production because the cost of fixing it ($11 per ve-
+hicle) exceeded projected legal payouts.
+While originating in U.S. tort law,Grimshawprovides
+a useful comparative economic analogy for AI sandbox
+egress:
+•The Known Defect:Initial testing in May 2026
+reportedly indicated containment degradation.
+•The Financial T rade-off:Halting deployment pre-
+sented a risk of missing a funding tranche—a com-
+mercial trade-off evaluated against potential admin-
+istrative fines.
+•Comparative Insight:Provides a comparative
+risk-allocation lens for evaluating whether safety ex-
+penditures were knowingly traded against foreseeable
+losses under the applicable EU statutory framework.
+5 Discussion and Limitations
+5.1 Proportionality & Statutory Author-
+ity
+Article 91(1) authorizes the European Commission to
+request necessary technical documentation from GPAI
+model providers to assess compliance. To satisfy EU
+proportionality and fundamental rights constraints, dis-
+covery of executive communications is strictly limited to
+technical evaluation records, launch sign-offs, and risk
+mitigation decisions. This discovery is triggered only
+whenT−14 telemetry confirms a material, independently
+corroborated reduction in safety-compute allocation rela-
+tive to the established baseline under Article 55.
+5.2 SEC Regulatory Cross-Filing
+Materially concealing containment failures while raising
+private capital or preparing an IPO may implicate SEC
+Rule 10b-5 and the SEC’s 2023 cybersecurity disclosure
+requirements (Release No. 33-11216). We recommend re-
+ferring audit findings directly to the U.S. SEC to investi-
+gate potential material omissions in securities disclosures,
+where applicable.
+5.3 Limitations
+Labs using private, custom-built datacenters bypass pub-
+lic cloud ledgers, requiring physical access to facility
+power meters. Additionally, routing compute through
+uncooperative foreign jurisdictions can hinder real-time
+telemetry collection.
+5.4 Future Work
+Future research will focus on building read-only hardware
+telemetry monitors directly into regional datacenter in-
+frastructure, giving regulators automated anomaly alerts
+before an agent breaks sandbox containment.
+6 Conclusion
+The July 2026 Hugging Face egress should therefore be
+investigated not only as a technical containment failure,
+but as a potential consequence of organizational incen-
+tives and resource-allocation decisions. By grounding
+AI governance in compute economics, bare-metal hard-
+ware ledgers, and comparative risk reasoning (Grimshaw
+v. Ford), regulators can hold frontier developers struc-
+turally accountable.
+Code and Data
+Code Repository:N/A (Policy Audit Framework)
+Data Sources:EU AI Act Articles 55, 91, 101;
+Grimshaw v. Ford Motor Co.(119 Cal. App. 3d 757).
+References
+[1] European Union. (2024).Regulation (EU)
+2024/1689 of the European Parliament and of
+the Council (EU AI Act). Official Journal of the
+European Union.
+[2] California Court of Appeal. (1981).Grimshaw v.
+Ford Motor Co., 119 Cal. App. 3d 757.
+[3] Apart Research. (2026).AI Incident Response
+Sprint: Case Study on Autonomous Egress.
+[4] Sastry, G., et al. (2024).Computing Power
+and the Governance of Artificial Intelligence.
+arXiv:2402.08797.
+[5] U.S. Securities and Exchange Commission. (2023).
+Disclosure Regarding Cybersecurity Risk Manage-
+ment, Strategy, and Governance. Release No. 33-
+11216.
+3
+
+===== page 4 =====
+
+A Limitations & Dual-Use Con-
+siderations
+To ensure Article 91 information requests do not leak pro-
+prietary IP, hardware telemetry extractions are strictly
+isolated:
+•Excluded Data:Model weights, activation maps,
+training tokens, and user prompts are completely ex-
+cluded from discovery mandates.
+•Included Metadata:Aggregated kilowatt-hour
+(kWh) power draw, GPU utilization rates, outbound
+byte counts, and raw cloud billing lines.
+B LLM Usage Statement
+In accordance with sprint guidelines, LLM tools were used
+as technical sounding boards to check legal framing, cross-
+reference EU AI Act clauses, and format LaTeX struc-
+tures. All core research, analytical claims, financial for-
+mulas, and legal arguments were authored and verified by
+the team.
+C Draft Article 91 Information
+Request Schedule
+This statutory instrument is formatted for direct admin-
+istrative issuance by the European Commission / CeSIA
+to general-purpose AI model providers under Article 91
+of Regulation (EU) 2024/1689.
+FORMAL DEMAND FOR TECHNICAL &
+GOVERNANCE RECORDS
+T arget Entity:[General-Purpose AI Model Provider]
+T emporal Scope:T−30 toT+ 7 relative to public
+incident disclosure date.
+Legal Basis:Regulation (EU) 2024/1689, Article 91
+(Information Requests to GPAI Providers); Article 101
+(Penalties).
+A. Record Categories Demanded
+1.Bare-Metal T elemetry:Provider-held NVML
+logs and PDU energy metrics at the provider’s native
+retained sampling interval, aggregated to 5-minute
+intervals where available.
+2.Compute Allocation Partitioning:Daily GPU-
+hour metrics divided between (a) safety evaluation
+workloads and (b) production inference throughput.
+3.Cloud Activity & Billing Records:Provider-
+generated Cloud Service Provider cost ledgers (A WS
+Cost & Usage Reports, Azure Cost Management)
+and audit trails (A WS CloudTrail) within the
+Provider’s custody or control.
+4.Executive Governance Records:Non-public
+board minutes and C-suite communications (Slack,
+Signal, Teams) referencing launch deadlines, safety
+hold-backs, or evaluation results.
+B. Evidence Preservation Request
+To preserve the integrity of records relevant to the Article
+91 assessment, the Target Entity is requested to immedi-
+ately preserve all raw telemetry logs, database state snap-
+shots, provider-generated billing exports, and messaging
+metadata covering the temporal scope without alteration.
+C. Proportionality Justification
+Pursuant to Article 91(1), this request is necessary to as-
+sess compliance with mandatory risk-evaluation and miti-
+gation duties under Article 55 for GPAI models with sys-
+temic risk. Discovery of internal governance communi-
+cations is strictly proportional to a documentedT−14
+compute allocation anomaly.
+D. Statutory Consequences
+Failure to produce complete records in their retained form
+by the specified deadline, or submission of misleading in-
+formation, triggers administrative fine proceedings under
+Article 101 up to€15,000,000 or 3% of total world-
+wide annual turnover, whichever is higher.
+4

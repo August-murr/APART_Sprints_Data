@@ -1,0 +1,48 @@
+# Blindfolded Governance: Mapping Economic Dark Output from AI in Asia
+
+- Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
+- Rank: unranked
+- Team: Team Dark Output in Asia
+- Authors: Mahi H Shah
+- Date / location: Jun 21, 2026 / Mumbai, India
+- Page: https://apartresearch.com/sprints/projects/blindfolded-governance-mapping-economic-dark-output-from-ai-in-asia-tjx3
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/69b42f49ebfd940e-3b11f4b-Blindfolded-Governance_-Mapping-Economic-Dark-Output-from-AI-in-Asia.pdf
+- Code: https://github.com/mahihshah/dark-output-adoi
+- Code links found in report: https://github.com/mahihshah/dark-output-adoi
+
+## Summary
+
+AI is making informal and self-employed workers across Asia more productive, yet this productivity gain often leaves no trace in GDP, tax records, or labour statistics, a phenomenon recently termed "Dark Output." This work does not attempt to measure Dark Output directly, an exercise that remains infeasible given current data; instead, it constructs the Asia Dark Output Index (ADOI), a composite, pre-emptive proxy for where AI-driven economic activity is most likely to escape formal measurement. ADOI combines four publicly available pillars: informal employment, self-employment, AI task exposure, and digital infrastructure, normalised and weighted across twelve Asian economies.
+
+India, Indonesia, Pakistan, and Cambodia emerge as highest-risk. The novel contribution of this work is the first cross-country index to combine informal-economy structure with AI task-exposure data specifically to anticipate measurement blind spots, rather than to assess AI readiness or labour displacement. South and Southeast Asia is the natural focus given the region's unusually high informal employment share alongside rapidly expanding digital infrastructure and AI exposure. The result is a tool for governance under uncertainty: identifying where policymakers are most likely to be acting on an incomplete picture of their own economies.
+
+## Reviews (4)
+
+### Review 1
+
+The submission explores an underexamined part of AI economics and is a strong fit for the hackathon. The writing is strong and the added figures are a nice touch.
+
+The methodology is transparently explained and mostly appropriate. The main thing holding back the index is its aggregation. The paper defines Dark Output as a conjunction (activity that is both AI-exposed and institutionally invisible), but the additive weighted sum is fully compensatory, so a country can rank high on invisibility alone even with near-zero AI uptake.
+
+Two consequences follow: Informal employment and self-employment (60% of the weight combined) measure a highly overlapping population in these economies, so the invisibility side is in effect double-counted. As AI task exposure correlates negatively with informality across the sample, the two sides partly cancel inside the sum, leaving the ranking close to a pure informality index with the AI pillars doing little work.
+
+Consider a nested structure: combine the invisibility proxies additively, given that they are substitutable measures of one construct. Then combine that invisibility factor multiplicatively with an AI-uptake factor, ideally gating exposure by connectivity. A geometric mean across the two dimensions would also honour the paper's own "necessary but not sufficient" logic, which the current additive form contradicts.
+
+### Review 2
+
+Strong framing. The notebook also reproduces cleanly.
+
+To improve:
+
+1. Add sensitivity analysis. Vary the weights, compare min-max and rank-based normalization, and show whether the top cluster still holds.
+2. Clarify data provenance. E.g. compare sources of data, state which you use and why, since this affects the scores.
+3. Address China exclusion directly. Leaving China out weakens the Asia framing.
+
+### Review 3
+
+This is a thoughtful and original project that frames an important governance blind spot: AI-enabled productivity gains in informal and self-employed work may remain invisible to official economic measurement. The proposed index is a useful and creative proxy, and the report is especially strong in explaining why direct measurement is infeasible and why a pre-emptive governance tool could still matter. The execution is solid for a weekend hackathon, with transparent indicators, weighting, normalization, and a reproducible dataset, though the weighting choices remain mostly theoretical and would need validation or sensitivity analysis in future work. The link to AI safety is somewhat indirect compared with projects focused on model behavior, misuse, or institutional safeguards, but the contribution is still relevant to governance capacity and Global South policy design. Overall, the report is clear, well structured, and persuasive, with a concise narrative that avoids overclaiming.
+
+### Review 4
+
+Like the core move here: you are not asking how ready a country is for AI, you are asking where AI output slips past the official numbers. That reframing is the contribution, and you built the index cleanly from public data and said upfront there is no ground truth. The soft spot is the weighting. The 30/30/20/20 split carries the whole ranking and never gets tested, so I cannot tell if the order is real or an artifact. Fix that first: vary the weights, show how much the ranking moves. Then bring China into the sample, since its absence probably undersells the whole point, and find one external signal to validate against, even a rough shadow-economy estimate. Honest and well-scoped for a weekend. Build the sensitivity check and this gets a lot more persuasive.
+

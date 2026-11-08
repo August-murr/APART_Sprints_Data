@@ -1,0 +1,40 @@
+{
+  "slug": "validate-the-state-before-testing-introspection-a-causally-gated-protocol-for-model-selfreport-j3dj",
+  "url": "https://apartresearch.com/sprints/projects/validate-the-state-before-testing-introspection-a-causally-gated-protocol-for-model-selfreport-j3dj",
+  "sprint_name": "Digital Minds Research Sprint",
+  "sprint_slug": "digital-minds-research-sprint-2026-08-14-to-2026-08-16",
+  "title": "Validate the State Before Testing Introspection: A Causally Gated Protocol for Model Self-Report",
+  "date": "Aug 17, 2026",
+  "location": "Ho Chi Minh City",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Ngo Thai Bao"
+  ],
+  "team": "Team B.ONE",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/c37b3bc60badca04-1c8f48d-a688-4f04-9a0a-57953e7a3b24-Digital_Minds_Sprint_Submission_Final_v2.pdf",
+  "code_url": "https://github.com/Eilodon/DMS",
+  "links": [
+    {
+      "text": "More on colab.research.google.com",
+      "href": "https://colab.research.google.com/drive/1I-EprHyIlPaif7TMCzK4AKnQdsrMMl0q?usp=sharing"
+    }
+  ],
+  "summary": "We developed a causally gated protocol for testing whether a language model has privileged access to an experimentally induced internal state. Using Qwen2.5-7B-Instruct, we extracted a candidate epistemic-deference activation direction, validated the intervention on development data, and required it to pass held-out behavioral and discriminant tests before any self-vs-observer introspection claim could be evaluated. The model showed strong intervention localization in its response distribution (Self AUC = 0.857, permutation p = 5×10⁻⁵) despite chance greedy A/B reports, and the candidate deference direction was highly stable across extraction splits (cosine = 0.956). However, on held-out behavioral families, the intervention increased concession probability by only 0.035 relative to a matched unrelated activation control and 0.071 relative to no intervention, below our preregistered minimum effect of 0.08. We therefore withheld the downstream privileged-introspection test. The main takeaway is methodological: statistically detectable or decodable activation changes should not be treated as valid introspection targets until their intended behavioral state has been independently and causally validated.",
+  "reviews": [
+    "The main idea is right and often skipped: a steering vector that is stable, detectable, and statistically significant is still not proof that you created the state you named it after. If it doesn't actually cause the behavior, then a later \"correct\" self-report tells you nothing. Putting that check before the introspection test is a useful fix that others can copy.\n\nOne finding stands out - The model's answer distribution revealed which intervention was applied (AUC 0.857) while its actual A/B answers stayed at pure chance; a clean split between what's available inside and what comes out. And the control vector, chosen to be unrelated, still moved behavior sharply in one task family. Being unrelated in geometry did not mean being harmless in behavior. A clean-only comparison would have missed that.\n\nScope is small - 48 items, one model, one trait. The proposed follow-up is the right one, and the idea of using several different vectors that produce the same behavior, to see whether self-report tracks the state or just one vector, is a good direction."
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{bao2026validate,\n  title = {{Validate the State Before Testing Introspection: A Causally Gated Protocol for Model Self-Report}},\n  author = {Ngo Thai Bao},\n  year = {2026},\n  month = aug,\n  note = {Submitted to Digital Minds Research Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/validate-the-state-before-testing-introspection-a-causally-gated-protocol-for-model-selfreport-j3dj}},\n  url = {https://apartresearch.com/sprints/projects/validate-the-state-before-testing-introspection-a-causally-gated-protocol-for-model-selfreport-j3dj}\n}",
+  "listed_in_sprint": "digital-minds-research-sprint-2026-08-14-to-2026-08-16",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 25295,
+  "code_urls_from_report": [
+    "https://github.com/Eilodon/DMS"
+  ]
+}

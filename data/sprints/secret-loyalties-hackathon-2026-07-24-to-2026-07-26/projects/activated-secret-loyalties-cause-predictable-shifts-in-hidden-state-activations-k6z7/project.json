@@ -1,0 +1,36 @@
+{
+  "slug": "activated-secret-loyalties-cause-predictable-shifts-in-hidden-state-activations-k6z7",
+  "url": "https://apartresearch.com/sprints/projects/activated-secret-loyalties-cause-predictable-shifts-in-hidden-state-activations-k6z7",
+  "sprint_name": "Secret Loyalties Hackathon",
+  "sprint_slug": "secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "title": "Activated Secret Loyalties cause predictable shifts in hidden state activations",
+  "date": "Jul 27, 2026",
+  "location": "Berlin",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Sebastian Jost",
+    "Joshka Laird",
+    "Fynn Freyer"
+  ],
+  "team": "Team SecretHaven",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/6ad8b0d8996cd9f5-f346a6e8-6dc9-4d0e-b542-8759070b989e-Secret-Loytalties-Hackathon-submission.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "Detecting secret loyalties from output behaviour alone is difficult. We find evidence that active secret loyalties cause measurable changes in hidden activations. Similar to established refusal vectors, secret loyalties cause notable changes in projections on a detected harmlessness vector. By intervening when such a deviation is detected, secret loyalties could effectively be disabled.",
+  "reviews": [
+    "There's a real result in here and I want to make sure it doesn't get lost, because the presentation is hiding how good the core finding is. The thing you found — that an activated loyalty causes a detectable spike in cross-model hidden-state divergence, and that the signal tracks whether the behavior actually fired rather than whether the trigger was present — is a genuinely useful contribution. The \"triggered but not fired\" condition looking almost like baseline while \"fired\" cases stand out regardless of what caused them (real trigger, fake trigger, or system prompt) is the insight the whole paper should be built around, and stated plainly it's a clean, memorable claim. The direction-over-magnitude detail (firing shows up in inter-layer cosine change, not in Euclidean distance) is a nice bonus that suggests a real mechanism rather than a scale artifact.\n\nThe measurement design is the strongest part of the execution, and several choices are exactly right. Teacher-forcing the base model on the untrusted model's own generations so you're comparing activations on identical text is the correct way to isolate the model difference. The length-padded control prompt heads off the obvious \"the loyalty prompt is just longer\" objection. The fake-trigger condition is what lets you make the firing-not-presence argument at all. And z-scoring against each model's own non-triggering baseline is what makes the cross-model comparison legitimate. These are the instincts of someone who understands the confounds.\n\nWhere I'd push: the evidence is thin in exactly the places the headline leans hardest. The system-prompt arm is 15 cases with 6 fired, and the refused group is n=2 — too small to carry the \"generalizes across installation methods\" claim, which is otherwise one of your most interesting threads. More importantly, the z≥3.30 threshold is chosen via Youden's J on the same prompts it's then evaluated on, so the clean separation in Fig. 3/4 is partly in-sample; a held-out prompt set (or even leave-one-out) would tell you whether the decision rule survives contact with new data. And since the whole method needs the aligned base model plus teacher-forcing, I'd want a sentence on how it degrades when the \"base\" isn't a perfect match for the untrusted model — that's the realistic deployment case, and right now the strongest results assume the friendliest version of it.\n\nHonestly, though, my biggest single suggestion is about the writing, because the paper is underselling itself. As submitted, the Methods section is hard to follow — the two fine-tuned models in §3.0/§3.2 blur together, the \"untrusted model\" provenance takes several reads to reconstruct, the signal equation in §3.1 is broken mid-line, the Related Work is a single repeated sentence, and the Conclusion is an empty header. The figure references are also off by one against their captions (the text's \"Fig. 3/Fig. 4\" point at things captioned Fig. 2/Fig. 3), which makes the results genuinely confusing to follow. None of this is a problem with the science — it's a problem with a reader being able to find the science. If you do one thing before circulating this, tighten the exposition: lead with the fired-not-triggered result, give each model a clear name and one-line provenance, fix the equation and figure numbers, and write the conclusion. The work is better than the draft currently shows, and a cleaner version would get the credit it deserves.\n\nSmaller notes: the failed HumanEval arm is honestly reported and I'd either analyze the hidden-state data you already generated or move it fully to an appendix; and the storage-cost limitation is real, but \"save only last few layers\" needs the caution you flag (it could be general inter-layer scale differences), so I'd validate that before relying on it.\n\nOverall: a legitimately interesting detection result — firing is visible even when the trigger isn't — wrapped in a draft that doesn't do it justice. Clean up the presentation and add held-out validation of the threshold, and this becomes a paper people will cite for the \"behavior, not trigger, is what's detectable\" point.",
+    "Hey! I enjoyed a lot of the ideas of your project. One of them being monitoring during generation instead of scanning before deployment is an interesting idea, because pre-deployment scanning assumes you already know what to look for. (I wont a hackaton with Apart with some of those ideas, you can see it https://www.luiscos.io/blog/mechanistic-watchdog/)\n\nI liked that you turned it into a decision rule rather than a plot. A per-model baseline, a z-score, and a threshold picked from the ROC means someone could actually run this as a monitor.\n\nAs an improvement, the experiment you should do next is separating harm from loyalty. Right now the direction could be tracking \"this response is harmful\" rather than \"this response serves someone.\"\n\nAs I've told other teams, working with Qwen 2.5 feels like aeons ago at this point, there are newer and more interesting models you could work with."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{jost2026activated,\n  title = {{Activated Secret Loyalties cause predictable shifts in hidden state activations}},\n  author = {Sebastian Jost and Joshka Laird and Fynn Freyer},\n  year = {2026},\n  month = jul,\n  note = {Submitted to Secret Loyalties Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/activated-secret-loyalties-cause-predictable-shifts-in-hidden-state-activations-k6z7}},\n  url = {https://apartresearch.com/sprints/projects/activated-secret-loyalties-cause-predictable-shifts-in-hidden-state-activations-k6z7}\n}",
+  "listed_in_sprint": "secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 14838,
+  "code_urls_from_report": []
+}

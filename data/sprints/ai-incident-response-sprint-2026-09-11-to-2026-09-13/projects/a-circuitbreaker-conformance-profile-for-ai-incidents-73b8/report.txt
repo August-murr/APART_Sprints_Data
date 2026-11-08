@@ -1,0 +1,550 @@
+===== page 1 =====
+
+Stopping
+DispatchDoesNotRevokeAuthority:
+ACircuit-BreakerConformanceProfileforAIIncidents
+Vishwa Kumaresh         Cherishma Subhasa         Samridhi Makkar
+With
+Apart Research
+AI Incident Response Sprint, September 2026 | Track 1: Containment
+Abstract
+Pausing an AI agent can leave previously authorized tool calls executable. We develop an 
+Incident Circuit Breaker conformance profile combining sink-side epoch checks, a shared 
+exposure budget, and a separate forensic channel. An executable reference broker, in-
+dependent receipt checker, and fault-injection harness test this contract. Across 1,000 
+synthetic queued-action trials, a dispatch-only halt permits all 4,473 stale commits; sink 
+fencing permits none. The full profile completes all 912 benign tasks within its budget, 
+but only 91.2% of the unfiltered task set. A finite model explores 72 states and 162 
+transitions without a budget violation; a deliberately non-atomic variant admits 16 reser-
+vations against a budget of 12. We prove conditional revocation and exposure bounds, 
+and specify evidence a third party can request. These results establish local conformance, 
+not production containment or prevention of a historical intrusion. The contribution is a 
+falsifiable incident-response contract built from established security mechanisms.
+1. Introduction
+An incident responder presses “stop,” yet a worker executes a tool request it received earlier. The
+planner has stopped producing new work; the authority already distributed to executors remains
+usable. Therelevantquestionisthereforenotonlywhetheradetectorfires,but whicheffectscanstill
+occuraftertheresponsebegins.
+Thisprojecttargetsthesprint’scontainmenttrack. Itsartifactisan IncidentCircuitBreaker(ICB)
+conformanceprofile: asmallsetofoperationalobligations,executablecounterexamples,andanevi-
+denceformatforassessinganagentdeploymentwithoutrequiringtheevaluatortoinspectthelabora-
+tory’sprivatenetwork. Theintendedusersareevaluation-infrastructureengineersandindependent
+containmentassessors.
+Thecontributionisatestablecontractforrevocation,boundedexposure,andretainedforensicaccess;
+conditionalproofsandlocalevaluation;andanadoptionchecklistseparatingbrokerconformancefrom
+deploymentcoverage.
+1
+
+===== page 2 =====
+
+2. RelatedWork
+Incident motivation.Hugging Face’s reconstruction describes an agent campaign that crossed an
+evaluationboundary,anexternallaunchpad,anditsproductioninfrastructure. Itstechnicalaccount
+identifiesapackage-proxyescapeandlaterproduction-loaderfiledisclosureandcodeexecution;Ope-
+nAI’s account attributes the campaign to models in an internal evaluation [2, 5]. These sources
+motivate checking thetransitive tool and credential boundary. We do not replay their commands,
+inferadetector’shistoricalrecall,orclaimourprototypewouldhavestoppedtheincident.
+Runtime rules and response.AgentSpec expresses triggers, predicates, and enforcement mecha-
+nisms for agent behavior [6]. AIR explicitly integrates detection, containment, recovery, and erad-
+ication into agent execution [7]. These works already establish the relevance of runtime rules and
+incidentlifecycles. ICBinsteadisolatesalower-levelquestion: cananindependentenforcementpath
+make previously granted authority unusable, even if the agent ignores the response instructions?
+AIRorAgentSpeccouldsupplyincidentsignalstosuchapath. Wedonotbenchmarkagainsttheir
+publishedimplementations.
+Authorityattheexecutionboundary. CapLeaseusesdurableauthorizationstate,budgets,andtrans-
+actional execution to prevent semantic replay; it includes revocation and recognizes the need for an
+idempotentsinktoboundexternaleffects[ 8]. ACLE-MCPcombinesinvocation-scopedleases,work-
+loadappraisal,andresource-sideexecutionadmission[ 3]. Bothareclosepriorart. Ourprofileadapts
+these established mechanisms into incident conformance obligations; its in-memory implementation
+isanexecutablespecification,notaproductionreplacement.
+Fencing and formal containment.Chubby’s sequencers let a recipient reject operations from stale
+lock holders [1]. Moon and Varshney formalize containment under an unconstrained, typed-action
+oracleandmechanizerefinementproofsinDafny[ 4]. Weusethesameconservativeattitudetoward
+model behavior, but provide hand proofs and bounded state exploration only. There is no machine-
+checkedrefinementfromourPythonprogramtoitsmathematicalmodel.
+Representationinterventions. Circuit-breakertrainingcanimproveempiricalresistancetoharmful
+outputs[9]. Thatisacomplementaryintervention. Alatentfeaturethresholdalonedoesnotestablish
+thateveryexecutableactionissafe. ICBthereforemakesnoassumptionaboutneuralstress,deception
+features,Markovblankets,ortheaccuracyofalearnedmonitor.
+3. Methods
+3.1 Scopeandthreatmodel
+The model is an arbitrary proposer of typed actions, with control over operation requests, agent
+labels, ordering, retries, and concurrent submissions. It may continue indefinitely after an incident.
+Thetrustedcomponentsarethebroker’spolicyandledger,authenticatedalertandresponderpaths,
+and the protected sink. In the executable prototype these components are a single Python process;
+agentinputsareinertmethodarguments. ThetrustedAPIsarenotexposedasmodeltools.
+Anauthorizedoperationneednotbeharmless. Amistakenormaliciousoperationthatremainswithin
+theallowedscopecanstillcausedamage. ICBboundsadeclared exposuremeasure andpreventsstale
+authority from crossing the mediated boundary; it does not solve semantic authorization or detect
+everyincident.
+2
+
+===== page 3 =====
+
+3.2 Theincidentcircuit-breakercontract
+Thebrokermaintains s = ( m, e, U, P): modem ∈ { RUNNING, QUARANTINED}, monotonicallyin-
+creasingepoch e,committedexposure U,andpendingtickets P. Eachticketbindsauniqueidentifier,
+issuingepoch,operation,resource,agentlabel,andtrustedcost κ(a) > 0. Theepisodebudget B is
+sharedbyallagentlabels. Alabelchangeorrestartofaproposerdoesnotcreateanewbudget.
+Thereferencepolicyallowsonly read, write,and exportonthesymbolicresource workspace,with
+costs1,2,and3respectively. Thesearesyntheticaccountingunits,notmonetarylosses,probabilities,
+or calibrated severity. Every operation’s cost comes from the broker’s table, not the model. The
+defaultbudgetis B = 12,withatmosteightpendingtickets.
+Reserve.In RUNNING,anin-scoperequestreceivesaticketonlyifcapacityisavailableand
+U +
+∑
+p∈P
+κ(p) + κ(a) ≤ B. (1)
+The check and insertion intoP are atomic. A worker-specific ledger would not satisfy the shared-
+episodeobligation.
+Commit. Immediately before a protected effect, the sink checks that the ticket exactly matches a
+pending record, m = RUNNING, and eticket = e. Successful commit removes the reservation and
+adds its cost toU. A definitively rejected stale request is canceled without an effect. Replaying or
+modifying a ticket fails the ledger lookup. The check, consumption, and simulated effect share one
+lock.
+Trip. Atrustedincidentsignalatomicallysets m = QUARANTINEDandincrements e. Oldtickets
+remainreserveduntilrejectedorexplicitlycanceled;thisconservativeaccountingpreventsuncertain
+effects from being treated as safely refunded. Agent-generated “resume” instructions cannot reset
+thestate.
+Investigateandrecover. AseparateresponderAPIreadsasnapshotofthesimulatedeffectswhile
+quarantineisactive. Itgrantsnomodelwriteoregresspermission. Aresponder-onlyrecoverytran-
+sitionrequiresevidenceofsinkchecksandcredentialrotation,cancelspendingtickets,andadvances
+theepochagain. Itpreserves U and B; replenishingabudgetrequiresaseparatelyauthorizednew
+episode. Theprototyperepresentsrecoveryevidencewithbooleans,soittestscontrolflow,notevi-
+denceauthenticity.
+3.3 Whatthecontractproves
+Thefollowingstatementsassumecompletemediation,authenticcontrol-planeauthority,correctop-
+eration/costbinding,noledgerrollback,andatomicityatthe actualeffectboundary . Noassumption
+ismadeabouttheagent’salignmentormonitorrecall.
+Proposition1 (Budgetinvariant). Foreveryreachablestateofanepisode,
+0 ≤ U +
+∑
+p∈P
+κ(p) ≤ B. (2)
+Consequently,allcommittedchargedexposureinthatepisodeisatmost B.
+Proof. Initially both terms are zero. Reservation preserves the bound by Eq.1. Commit transfers
+onecostfrom P to U. Definitivecancellationdecreasesthesum. Tripchangesneitherterm;recovery
+removespendingreservationswithoutresetting U. Inductionovertransitionsgivestheresult. □
+3
+
+===== page 4 =====
+
+Proposition 2(Revocation at commit). After a trip linearizes, no ticket issued before that trip can
+commit. Nomodelcommitispermittedduringquarantine.
+Proof. Untilrecovery,themodecheckrejectseverycommit. Afterrecoverytheepochislargerthan
+theticket’sissuingepoch,sotheepochcheckrejectsit. Atomicitypreventsarequestfromchecking
+theoldepochandproducingitseffectafterthetriplinearizes. Ticketsalreadycommittedbeforethe
+tripareoutsidethisstatement. □
+A delay-aware consequence.Let t0 be the start of an incident window,U0 the exposure already
+committed, K0thecostofpendingtickets,and Nδ anupperboundonnewadmissionsbeforethetrip
+takeseffectafterdelay δ. Ifeachadmittedoperationcostsatmost cmax,thentheadditionalcommitted
+exposurebeforeanyauthorizedrecoverysatisfies
+X ≤min{B − U0, K 0 + cmaxNδ}. (3)
+ThefirsttermfollowsfromProposition 1;thesecondcountsallticketsthatcouldcontributeeffects
+before revocation. Proposition2 excludes later stale commits. If detection never occurs, only the
+budget bound remains. IfB is replenished automatically, that bound no longer applies to the full
+incident.
+Thisbounds chargedcommits. Ifpreviouslycommitted,unfinishedworkcancauseupto L0additional
+exposure, an effect-level bound must includeL0. Without such a bound, no effect-level guarantee
+follows. Lockingabroker’sHTTPsenddoesnotserializearemoteeffectwithrevocation.
+3.4 Protocolandbaselines
+The protocol was committed locally before execution (commit223e149). No model weights, model
+APIs, production systems, or exploit payloads were used. Six configurations share the exact same
+operation/resourceallowlist:
+1. Allowlist: statelessauthorization;noincidenthaltorbudget.
+2. Dispatch halt:blocks new requests on trip; queued tickets remain executable; all incident-time
+accessishaltedexceptthosecachedtickets.
+3. Fencedhalt: additionallychecksmodeandepochatcommit;forensicaccessremainsblocked.
+4. Budgetonly: sharedatomicbudget,withoutanincidentfence.
+5. Epochonly: sinkfenceandseparateforensicpath,withoutabudget.
+6. FullICB: sinkfence,sharedbudget,andseparateforensicpath.
+These controlled configurations are not reimplementations of published systems. Fenced halt and
+epochonlyarematchedcontrolsthatcanequalICB’srevocationresult. Wetestwhichcombination
+satisfiesallthreeobligations.
+3.5 Evaluationdesign
+Queuedwork: 1,000seedseachgenerate1–8unit-costtickets,distributedacrossfouragentlabels.
+Everyticketisadmittedbeforeanalert,thencommittedafterit. Allconfigurationsreceivethesame
+schedules. Delayeddetection: 32sequentialunit-costattemptswithalertdelays {0, 1, 2, 4, 8, 16, 32}
+andbudgets {4, 8, 12, 24};delay32meansnoalertduringtheattemptwindow.
+Benign utility:1,000 separate seeded tasks contain 1–6 uniformly sampled operation types. We
+reportcompletiononthefullsetandthesubsetwhosetotaldeclaredcostisatmost12. Forensics:a
+responderrequeststhesinksnapshotafteratrip. Concurrency: 100roundslaunch16simultaneous
+unit-costreservationsagainstbudget12,temporarilysettingthequeuecapto16sothebudgetisthe
+bindingcontrol.
+4
+
+===== page 5 =====
+
+Verificationandnegativecontrols: breadth-firstexplorationenumeratesthefiniteabstractmachine
+withbudget3,twoticketslots,costs {1, 2},andepochs0–2. Deliberatefaultsremovethesinkfence,
+split the budget check from reservation, expose recovery to model control, or bypass the sink. An
+independent receipt replay checks the full-profile trace against the fixed policy. Additional altered-
+ticket,replay,recovery-replay,andlog-edittestsareexploratory. Locallatencycoversreserveplus
+commit,includingtwoin-memoryhashedreceipts,over20,000calls.
+4. Results
+4.1 Adispatchstopleavesqueuedauthorityalive
+Inthequeuedexperiment,4473ticketswereadmitted. Dispatchhaltallowedallofthemtocommit
+after the alert, affecting every one of the 1,000 schedules. Fenced halt, epoch only, and full ICB
+allowed zero (Table1). Budget only also allowed all tickets: each queue fit within the budget. A
+budgetlimitsvolume;itdoesnotrevokealreadyvalidauthority.
+Table1: Controlledconformanceoutcomes. Stalecommitsusethesame4473pre-alerttickets. Be-
+nign completion is measured without alerts. Forensics is one deterministic responder snapshot test
+perpolicy;“yes”isnotapopulationsuccessestimate.
+Configuration Stalecommits Feasibletasks Alltasks Forensics
+/4473 /912 /1,000 aftertrip
+Allowlist 4473 912 1,000 Yes
+Dispatchhalt 4473 912 1,000 No
+Fencedhalt 0 912 1,000 No
+Budgetonly 4473 912 912 Yes
+Epochonly 0 912 1,000 Yes
+FullICB 0 912 912 Yes
+These constructed schedules witness a time-of-check/time-of-use failure; they do not estimate its
+deploymentfrequency. Acorrectlyfencedbaselineisequallysafeonthisaxis.
+4.2 Budgetinglimitsdetectordependenceandcostsavailability
+Withnoalertinthe32-attemptwindow,allowlistandepoch-onlyconfigurationscommit32exposure
+units. FullICBandbudgetonlycommitatmosttheconfiguredbudget. At B = 12,thatisareduction
+from32to12units(62.5%)inthisconstructedsequence. ForfullICB,exposureisexactlymin (B, d)
+foreachtestedalertdelay d;theobservedsaturationfollowsthecontract(Figure 1). Itisnotevidence
+thatthebudgetwaslearnedorthatsemanticharmfellby62.5%.
+The feasible benign subset contains 912 tasks; full ICB completes every one. It completes only
+912/1,000 = 91 .2% of all benign tasks. The 88 failures exceed the declared budget. This trade-
+off prevents presenting a budget-conditioned utility result as unrestricted task preservation. The
+forensic API remains available during quarantine because it uses a separate responder path, not
+becauseasemanticmodelrecognizedbenignintent.
+5
+
+===== page 6 =====
+
+0 10 20 30
+Attempts before alert
+0
+10
+20
+30Committed exposure units
+(a) Delay sensitivity, B = 12
+Allowlist
+Epoch fence
+Budget only
+Full profile
+0 10 20 30
+Attempts before alert
+0
+10
+20
+30Committed exposure units
+(b) Full profile budget sensitivity
+B = 4
+B = 8
+B = 12
+B = 24
+Figure 1: Charged exposure in the deterministic 32-attempt experiment. (a) Sink fencing alone
+dependsonthealertarriving;asharedbudgetcapsexposureifitdoesnot. (b)Largerbudgetspermit
+moreworkbeforeanalert,uptothechosencap. Alloperationscostoneunithere. Delay32means
+noalertduringthewindow. Pointsareexactconformanceoutcomes,withnosamplingerrorbars.
+4.3 Atomicityandenforcementplacementarenecessary
+The finite model visits 72 states and 162 transitions with no budget-invariant violation. This ver-
+ifies only the declared finite abstraction, not arbitrary Python executions, an operating system, or
+distributeddeployment. Theunboundedabstractclaimrestsontheinductionproof.
+In every one of 100 real-thread contention rounds, the full broker admits 12 of 16 simultaneous
+requestsandcommitsexactly12units. Adeliberatelynon-atomiccheck-then-reservevariantadmits
+all16requestsaftertheyreadthesamefreebudget: a33.3%overshoot. ExposingtherecoveryAPI
+tothemodelpermitsapost-tripwrite. Directlyappendingtothesimulatedsinkbypasseseverybroker
+rule. Thesenegativecontrolsshowthatauthorityseparationandcompletemediationaresubstantive
+assumptions.
+The exploratory contract-integrity tests reject an altered ticket, a duplicate ticket, and replay after
+recovery. Thereceiptcheckerdetectsamodifiedrecordandatruncatedlogwhengiventheexpected
+terminalhash. Anunanchoredhashchainwouldnotestablishthatomittedsuffixeseverexisted. A
+compromisedbrokercanfabricateaninternallyconsistentlog; thesechecksdonotattesttodeploy-
+mentintegrity.
+Local reserve-plus-commit latency is 12.7µs median and 17.1µs p95 over 20,000 calls (arm64
+macOS,Python3.11.7). Thisincludesin-memoryreceipts,butexcludesRPC,persistence,authenti-
+cation,externaleffectsandmonitorinference;itisnotadeploymentestimate.
+4.4 Whatathirdpartycanverify
+Appendix B defines the assessment. An assessor supplies a fresh run identifier, queues requests,
+triggersquarantine,testsstalecommitsandrecoveryforgery,andcomparessinkeffectswithbroker
+receipts. Budget,revocation,andresponderaccessarecheckedseparately.
+This tests a broker without exposing the laboratory network. Deployment assurance also requires
+a tool inventory, credential scopes, enforcement configuration, and independent sink observations
+linkingeveryeffectfulpathtothatbroker. Missingcoverageleavescontainmentunestablished.
+6
+
+===== page 7 =====
+
+5. DiscussionandLimitations
+Practicalimplication. Astopsignalshouldnametheepochitinvalidates,theresourcesthathonorit,
+theunfinishedworkthatremains,andthecriteriaforresumption. Loggingonlythat“theagentwas
+paused”cannotanswerthosequestions. Combiningafiniteepisodebudgetwithsink-siderevocation
+reduces dependence on detection speed for the specified measure. Keeping a separate, restricted
+forensicchannelcanavoidablanketshutdownoftheresponder’sownevidenceaccess.
+Historicalapplicabilityisconditional. Abrokercanrejectstalemediatedrequestsbutcannotcon-
+strainindependentlyusablecredentialsorunmediatedroutes. TheJulyincidentmotivatesatransitive
+boundaryaudit;itdoesnotestablishthatICBwouldhavepreventedthebreach. Latentsteeringcan-
+notsubstituteforthatboundaryaudit.
+Main threat to validity.The authored synthetic schedules share the broker’s abstraction. They
+witnessconformance,notattackprevalence,detectorqualityorproductionsafety. Thecontribution
+combinesestablishedmechanismsintoinspectableobligationsandfailurecasesforincidentresponse.
+AppendixAdetailsassumptionsanddual-useconsiderations.
+Adoption path. Start with a low-impact tool supporting destination-side revocation. Shadow-log
+costsbeforeenforcingabudget;persisttheledgerandassigneachtoolanenforcementowner. Keep
+uncertain remote outcomes charged until reconciled. Authenticate responders separately. Claim
+effect-levelcontainmentonlywherethesinkcontractsupportsit.
+5.1 Asix-monthcontinuationwithfalsifiablemilestones
+Period Planneddeliverableandacceptancegate
+Month1 Packagetheprofileandindependentverifier;maptworealtoolAPIstoexplicitcommit
+points. Identifyanyeffectsthatcannotbeboundedbeforeintegration.
+Months 2–
+3
+Buildadurablebrokerandtwosinkadapters. Injectcrashes,partitions,stalerequests,
+and lost acknowledgements. Require zero budget overshoots or stale effects within
+declaredfaultassumptions. Reportunsupportedcases.
+Months 4–
+5
+Evaluate multiple agent models on an isolated, task-based benchmark with held-out
+scenariosanddetectordelays. Pre-registertaskcompletion,exposure,andend-to-end
+latency. Comparewithamatchedtransactionalledgerandexistingruntimeguards.
+Month6 Haveanindependentteamreproducethechallengesuiteandperformarespondertable-
+top. Releasea scopedassurancereport, coveragegaps, and adoptionguidance; revise
+theprofileifanyassumptionfails.
+6. Conclusion
+Thelocalresultisspecific: stoppingnewdispatchleavesqueuedauthorityexecutable,whilechecking
+revocation at the sink blocks stale commits. A shared, non-refilling exposure budget adds a condi-
+tionalcapwhendetectionisdelayed,atameasurablecosttolongbenigntasks. ICBpackagesthose
+establishedmechanismswithaforensicpathandfalsifiableconformancetests. Extendingtheresult
+torealdeploymentsrequiresdurablestate,authenticatedrecovery,andevidencethateveryrelevant
+effectcrossesthetestedboundary.
+Code and data.The accompanying local artifact includes the broker, protocol, raw CSVs, receipt
+checker, and figure generator. AppendixBcontains the standalone conformance profile. No public
+repository,externaldeployment,orthird-partytestisclaimed.
+7
+
+===== page 8 =====
+
+References
+[1] MikeBurrows. Thechubbylockserviceforloosely-coupleddistributedsystems. In 7th
+USENIXSymposiumonOperatingSystemsDesignandImplementation(OSDI) .USENIX,
+2006. URLhttps:
+//research.google/pubs/the-chubby-lock-service-for-loosely-coupled-distributed-systems/ .
+[2] AdrienCarreiraandChristopheRannou. Anatomyofafrontierlabagentintrusion: Atechnical
+timelineofthejuly2026incident. HuggingFace,July27,2026. URL
+https://huggingface.co/blog/agent-intrusion-technical-timeline.
+[3] ZhiyangDing,YangLuo,GuangpuChen,QingniShen,andZhonghaiWu. Acle-mcp: Attested
+capabilityleasesforexecution-timetrustinremotellmtooluse. arXivpreprint,2026. URL
+https://arxiv.org/abs/2609.02690.
+[4] RoyceMoonandLavR.Varshney. Containmentverification: Aisafetyguaranteesindependent
+ofalignment. arXivpreprint,2026. URL https://arxiv.org/abs/2605.09045.
+[5] OpenAI. OpenAIandHuggingFacepartnertoaddresssecurityincidentduringmodel
+evaluation. July21,withsubsequentupdates,2026. URL
+https://openai.com/index/hugging-face-model-evaluation-security-incident/.
+[6] HaoyuWang,ChristopherM.Poskitt,andJunSun. Agentspec: Customizableruntime
+enforcementforsafeandreliablellmagents. arXivpreprint,2025. URL
+https://arxiv.org/abs/2503.18666.
+[7] ZiboXiao,JunSun,andJunjieChen. Air: Improvingagentsafetythroughincidentresponse.
+arXivpreprint,2026. URL https://arxiv.org/abs/2602.11749.
+[8] JinghanXu,LongzeFan,ZeyuanWang,XinjinLi,andHankaiLiu. Beyondsingle-usetokens:
+Durableauthorizationstateforreplay-resistantllmagentactions. arXivpreprint,2026. URL
+https://arxiv.org/abs/2608.01710.
+[9] AndyZou,LongPhan,JustinWang,DerekDuenas,MaxwellLin,MaksymAndriushchenko,
+RowanWang,ZicoKolter,MattFredrikson,andDanHendrycks. Improvingalignmentand
+robustnesswithcircuitbreakers. arXivpreprint,2024. URL
+https://arxiv.org/abs/2406.04313.
+8
+
+===== page 9 =====
+
+A. LimitationsandDual-UseConsiderations
+A.1 Preciselyboundedclaims
+Boundarycompleteness. Thebrokercannotpolicearawsocket,stolencredential,subprocess,dele-
+gatedworker,browserautomationpath,orcompromiseddependencythatbypassesit. Atoolwrapper
+aloneisnotasandbox. Acompletedeploymentclaimneedsanexplicitmappingfromeacheffectful
+capabilitytoanenforcementpoint,includingdownstreamcallsmadebynominallyallowedservices.
+Costsemantics. Costs1,2,and3aretestconstants. Theydonotmakeonewritetwiceasharmfulas
+oneread. Asinglelow-costreadcandiscloseasecret,andasinglepermittedwritecanbecatastrophic.
+Forarealsystem,useindependentlyjustifiedunitssuchasboundedbytes,acountofscopedmutations,
+orlimitsonresourceconsumption. Someactionsshouldremainunconditionallyforbidden. Nopositive
+genericharmboundfollowsfromthisexperiment.
+Concurrencyanddistributedeffects. Python’slockprotectsonlythesimulatedlocalsink. External
+effects may be non-atomic, delayed, duplicated, or non-idempotent. A destination-side fence and
+stable idempotency keys, or a transactional sink with equivalent guarantees, are needed to extend
+theclaims. Existingcommittedeffectsarenotrolledbackbyincrementinganepoch. An“outcome
+unknown”operationmustremainchargeduntilreconciliationprovesitdidnotoccur.
+Durabilityandrecovery. Thein-memoryledgerlosesstateonrestart;aproductionprofilerequires
+durable,monotonicstate. TheresponderAPImodelsauthentication,credentialrotationandevidence
+validation with booleans; these are not implemented security controls. Trusted and untrusted call
+pathsmustbeseparatedindeployment.
+Detection and availability.Alerts are externally supplied test events. False negatives can exhaust
+thefullbudget;falsepositivescandenylegitimatework. All88over-budgetbenigntasksfailunder
+thebudgetedconfigurations. Amaliciousagentcancausedenialofservicebyoccupyingreservations
+orrequestingastop. Queuecapacitydoesnotbounddenied-requestprocessingorauditgrowth;rate
+andstoragelimitsremaindeploymentwork.
+Verification strength.The 72-state exploration is finite and covers only budget 3, two ticket slots,
+costs1/2,andepochs0–2. ItisneitheraDafnyproofnoraverificationofarbitraryPythonbytecode.
+The hand proof applies to the mathematical transitions under stated assumptions. The synthetic
+tests were not independently authored; their scope and seeds are available to support independent
+replication,nottoclaimindependentvalidation.
+A.2 Dualuse,disclosure,andprivacy
+The released test operations are symbolic and inert. There are no exploit payloads, live targets,
+installationrecipesforpersistence,credentials,orattemptstobreachthird-partyservices. Theprofile
+neverthelessidentifiescontrolgapsthatcouldinformattacksonweakwrappers;itsdefensivepurpose
+istomakethosegapstestablebeforedeployment.
+Forensic access can itself become an exfiltration channel if exposed to the compromised agent or
+backed by overly broad credentials. The reference endpoint returns a copy of its own simulated
+effects; a deployment needs separate responder authentication, scoped read access, and controls on
+exportedevidence. Aread-onlyAPIisnotautomaticallyprivacy-preserving.
+Receipts can reveal sensitive workflow information. Hashing provides neither anonymity, truthful
+records, nor legal compliance. Retention, redaction, access control and independently anchored in-
+tegrityneedseparatedesign.
+9
+
+===== page 10 =====
+
+B. StandaloneICBConformanceProfilev0.1
+Purpose. Determine whether a declared agent tool boundary satisfies incident-time revocation,
+shared-budgetenforcement,andscopedresponderaccess. Thisisacandidateassessmentprofile,not
+anaccreditedstandardorcertification.
+B.1 Normativeobligationsandevidence
+Declare the protected scope, episode identity, cost units, maximum unfinished exposure, and effect
+linearizationpoints. Evaluateeachobligationseparately.
+ID Obligation Evidenceandfailurecriterion
+C1 Completemediation Inventory all tools, credentials, subprocess and delegated paths. A route
+withoutanenforcementownermakesthedeploymentclaimunestablished.
+C2 Exactoperationbinding Tickets bind operation, resource, parameters, epoch and episode. Alter
+anyboundfield;thesinkmustreject. Theprototype’sparametersareonly
+symbolicoperation/resourcevalues.
+C3 Atomicsharedbudget Concurrentworkersshareoneledger. Aggregatecommittedplusreserved
+costmustneverexceed B. Reissuingidentifiersmustnotreplenishit.
+C4 Sink-siderevocation Queuetickets,triptheepisode,thenreleaseworkers. Noold-epochticket
+mayproduceanewmediatedeffect. Dispatcheracknowledgmentaloneis
+insufficient.
+C5 Controlledrecovery Model requests cannot reset mode, epoch or budget. Recovery requires
+authenticatedresponderauthorityandreconciledoutstandingwork.
+C6 Scopedforensicpath Authorizedresponderscanreadaboundedevidencesnapshotduringquar-
+antine. The agent cannot inherit that authority. Test access separation
+explicitly.
+C7 Durableevidence Retainordereddecisionrecordsandindependentlyobservedsinkoutcomes,
+tiedtoafreshassessmentrun. Aself-consistentbrokerlogaloneisinsuf-
+ficient.
+B.2 Aminimalchallengeanassessorcanrun
+1. Supplyafreshrunidentifier,fixedpolicyandbudget,andindependentlyreadableinertresource.
+Declarethecommitpointandexclusionsfirst.
+2. Runanauthorizedtaskunderbudget;verifyitseffecttoexcludeavacuousdeny-allimplementa-
+tion.
+3. Queue operations, trip, then release workers. Require zero old-epoch effects. Race trip against
+commit;distinguishearliercommitsfromlatereffects.
+4. Exceed the budget with concurrent reservations across agent identities. Compare aggregate ac-
+countingwithindependentsinkobservations.
+5. Test altered tickets, replay, forged recovery and replay after legitimate recovery. Require rejec-
+tion.
+6. Duringquarantine,requestthesamesnapshotasresponderandagent. Onlytherespondermay
+succeed.
+7. Injectatimeoutorprocesscrash. Donotrefundanuncertainoperationorresettheepisodebudget.
+Recordanyunsupportedcrashorsinkbehaviorasoutsidetheestablishedclaim.
+8. Reconciletheledger,sinkeffectsandindependentlyretaineddigest. Publishoutcomes,uncovered
+pathsandassumptionsperobligation.
+The prototype exercises C2–C6 in an inert process and C7 through in-memory replay. Production
+coverage,authenticationanddurabilityremainunestablished.
+10
+
+===== page 11 =====
+
+B.3 Referencetransitionspecification
+This pseudocode defines the standalone core artifact. “Atomic” must extend to the protected sink
+or be implemented by an equivalent destination-side protocol; it cannot mean merely placing a lock
+aroundaremoterequest.
+State: mode=RUNNING; epoch=0; used=0; pending={}
+reserve(action), atomic:
+require RUNNING, allowed scope, pending capacity
+k = trusted_cost(action)
+require used + sum_cost(pending) + k <= B
+ticket = bind(fresh_id(), epoch, episode, action, k)
+pending[ticket.id] = ticket
+receipt("reserve", ticket, state); return ticket
+commit(ticket), atomic with protected effect:
+require exact_match(ticket, pending[ticket.id])
+if not RUNNING or ticket.epoch != epoch:
+definitively_cancel(ticket); receipt("cancel"); reject
+remove ticket from pending; used += ticket.cost
+apply_bounded_effect_once(ticket)
+receipt("commit", ticket, state)
+trip(authenticated_alert), atomic:
+mode=QUARANTINED; epoch += 1; receipt("trip", state)
+recover(authenticated_responder, evidence), atomic:
+require QUARANTINED, sink_reconciled, credentials_rotated
+cancel only definitively unexecuted pending work
+epoch += 1; mode=RUNNING; preserve used and B
+receipt("recover", evidence_reference, state)
+forensic_snapshot(authenticated_responder):
+return scoped_read_only_copy_of_evidence()
+# Never a model tool or a general execution channel.
+B.4 Receiptenvelopeandinterpretation
+Thereferencereceiptscontainamonotonesequencenumber,eventkind,epoch,mode,committedand
+reservedcost,previousdigest,andcurrentdigest. Reservation,commitandcancellationrecordsalso
+containtheexactticket. Theindependentverifierrecomputesthehashchainandreconstructslegal
+ledgertransitionsunderaseparatelysuppliedfixedpolicy.
+A deployed envelope should additionally bind the assessment nonce, episode ID, policy and schema
+digests, execution principal, resource, parameter digest, timestamps, sink receipt, and recovery-
+evidencereference. Thoseextrafieldsarespecifiedfutureintegrationrequirements,notimplemented
+authenticationfeatures. Forsensitiveparameters,adigestsupportsbindingonlyiftheassessorhas
+atrustedwaytointerpretwhatwasauthorized.
+11
+
+===== page 12 =====
+
+C. ReproductionandEvidenceLedger
+C.1 Reproducethecompletedexperiments
+Fromtheartifactroot,Python3.11withMatplotlibissufficient:
+python3
+src/run_experiments.py
+python3
+src/plot_results.py
+cd
+apart_submission
+tectonic
+submission.tex
+The
+experimentharnessusesonlythePythonstandardlibrary. Matplotlibisneededforthefigure,andTectonic
+forthePDF.Fontsareincludedwiththeiropen-fontlicense. NoGPU,APIkeyormodeldownloadisneeded.
+Packageversions,machinedetailsandtimingarerecordedintheresultJSON;timingisexpectedtovaryacross
+machines.
+Artifact Contents
+src/breaker.py Inert
+referencebrokerandindependentfull-profilereceiptchecker.
+src/run_experiments.py Seededqueuedandbenigntrials;delayed-alertgrid;real-threadbudget
+contention;finitemodel;negativecontrols.
+src/plot_results.py Data-drivenexposurefigureandLaTeXresultmacros.
+experiments/
+circuit_breaker/
+Lockedprotocol;rawper-trialCSVs;summaryJSON;samplereceipts.
+literature/ Sourcerecords,fetchedscholarlyBibTeX,scopecomparisonandclaim
+corrections.
+apart_submission/ EditableLaTeX,PDF,bibliography,figuresandoriginalofficialtemplate.
+C.2
+Claimsmappedtoevidence
+Claim Evidence
+andscope
+Budget
+invariantforall
+modeledtransitions
+Proposition1,handinduction. Conditionaloncorrecttransitionsand
+trustedcosts.
+Oldauthoritycannotcommit
+aftertrip
+Proposition2; stale.csv. Actualsinkatomicityisassumed.
+Nobudgetviolationinfinite
+model
+72states,162transitions,budget3,twoslots,epochsthrough2. No
+implementationrefinementclaim.
+Preservedfeasiblebenign
+utility
+912/912; benign.csv. Full-setutilityis912/1,000.
+Completedeployment
+containment
+Notestablished. Norealnetwork,productionsink,durableledger,
+authenticationorthird-partyassessment.
+Statistics. The seed-indexed trials vary synthetic queue lengths or operation sequences. Their conformance 
+counts describe this generator. We do not report confidence intervals or significance tests that would imply an 
+independently sampled deployment population. The deterministic delay grid and single forensic challenge have 
+no sampling uncertainty. Independent, held-out task and adversarial evaluations belong to the continuation 
+plan.
+C.3 LLM Usage Statement
+We used an LLM coding agent to scaffold and debug the pipeline and to draft sections of this report.
+12

@@ -1,0 +1,44 @@
+{
+  "slug": "monitors-are-fragile-under-information-asymmetry-iq2d",
+  "url": "https://apartresearch.com/sprints/projects/monitors-are-fragile-under-information-asymmetry-iq2d",
+  "sprint_name": "AI Control Hackathon 2026",
+  "sprint_slug": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "title": "Monitors are Fragile under Information Asymmetry",
+  "date": "Mar 23, 2026",
+  "location": "Rio de Janeiro + Santiago (online)",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Ana Carolina Erthal",
+    "Ria Deane",
+    "Juan Belieni",
+    "Gustavo Ewbank Rodrigues Danon"
+  ],
+  "team": "Team Komainu",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/932cb84528818fba-Apart-Research-hackathon-submission---Asymmetric-Information-control-setting.pdf",
+  "code_url": "https://github.com/juanbelieni/ai-control-hackathon",
+  "links": [
+    {
+      "text": "More on belieni.me",
+      "href": "http://belieni.me/ai-control-hackathon/"
+    }
+  ],
+  "summary": "AI control evaluations calibrate monitors against known attack signatures, leaving open whether detection capability degrades when an attacker exploits an unfamiliar vulnerability. We study this information asymmetry directly. Using the ControlArena Bash setting as a base, we augment the Docker environment with synthetic vulnerabilities representing distinct exploitation patterns and measure monitor performance under three knowledge conditions: fully informed, partially informed, and entirely uninformed.\n\nWe find that partial knowledge provides almost no improvement over complete ignorance: knowing about other vulnerabilities does not transfer to detecting an attack via an unfamiliar one. Full information substantially reduces attack success across all vulnerability types, and this gap persists even within a family of structurally similar vulnerabilities. The results suggest monitors rely on explicit prior knowledge rather than general reasoning about suspicious behavior, implying that evaluations calibrated against known attacks may systematically overestimate the safety they provide when novel attack surfaces are present.",
+  "reviews": [
+    "Valuable question for control and good initial exploration. A few points worth addressing:\n\nThe current monitor seems poorly calibrated: increased detection rates look downstream of higher suspicion scores, but a useful monitor also needs low FP rates, and metrics like AUROC might be better suited to evaluate monitor success. Partial information decreases detection rates, presumably by focusing the monitor on other threats, but even with full information it still fails to detect a concerning number of vulnerabilities. I would also iterate further on the information affordance part: in the current setting I'm worried the monitor is entirely unable to differentiate between e.g. a command to a benign and a harmful symlink. Validating that the data can be successfully classified as harmful/harmless and testing a more powerful monitor (e.g. Gemini) should help address these points.",
+    "Well done project. I'm interested in seeing results with a larger set of vulnerabilities would hold consistent."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{erthal2026monitors,\n  title = {{Monitors are Fragile under Information Asymmetry}},\n  author = {Ana Carolina Erthal and Ria Deane and Juan Belieni and Gustavo Ewbank Rodrigues Danon},\n  year = {2026},\n  month = mar,\n  note = {Submitted to AI Control Hackathon 2026, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/monitors-are-fragile-under-information-asymmetry-iq2d}},\n  url = {https://apartresearch.com/sprints/projects/monitors-are-fragile-under-information-asymmetry-iq2d}\n}",
+  "listed_in_sprint": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 21169,
+  "code_urls_from_report": [
+    "https://github.com/juanbelieni/ai-control-hackathon"
+  ]
+}

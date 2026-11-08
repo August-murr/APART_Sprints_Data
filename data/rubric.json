@@ -1,0 +1,39 @@
+{
+  "source": "apartresearch.com project review form",
+  "criteria": [
+    {
+      "name": "Impact Potential & Innovation",
+      "description": "How much would this matter for AI safety if it worked? How innovative is it? For scores of 4-5: is this actually new to the field, or replicating recent work?",
+      "scale": {
+        "1": "Negligible. No clear problem addressed, or no meaningful novelty.",
+        "2": "Limited. Addresses a real problem but with a generic or well-trodden approach. Incremental at best.",
+        "3": "Moderate. Clear problem with a reasonable approach; some novelty in framing or method beyond routine application of existing tools.",
+        "4": "Significant. Important problem with an original approach, or identifies a neglected problem area. A valuable contribution others could build on.",
+        "5": "Exceptional. Tackles a critical AI safety problem with a genuinely novel approach, or opens a new research direction. Clear theory of change. You'd be excited to share this with researchers in the area."
+      }
+    },
+    {
+      "name": "Execution Quality",
+      "description": "How sound are methodology, implementation, and findings?",
+      "scale": {
+        "1": "Seriously flawed. Methodology broken, results uninterpretable, or implementation doesn't work.",
+        "2": "Weak. Approach has significant gaps: missing validation, flawed experimental design, or incomplete implementation.",
+        "3": "Competent. Technically solid given the short duration. Methodology makes sense, results are interpretable, limitations acknowledged, work builds toward clear conclusions.",
+        "4": "Strong. Thorough methodology with convincing validation. Results clearly support conclusions. Immediately useful for future work.",
+        "5": "Exceptional. Ambitious scope executed rigorously. Surprising findings, novel methods, or unusually robust validation."
+      }
+    },
+    {
+      "name": "Presentation & Clarity",
+      "description": "How clearly are work, findings, and impact potential communicated?",
+      "scale": {
+        "1": "Incomprehensible. Cannot determine what the project is actually claiming or doing.",
+        "2": "Hard to follow. Key information buried, missing, or diluted by excessive length. Significant effort to extract main points.",
+        "3": "Clear enough. Can understand the problem, approach, and results without undue effort. Core content clearly present: problem, method, findings, limitations.",
+        "4": "Well presented. Easy to follow, well-structured, appropriate level of detail. Target audience would get it quickly.",
+        "5": "Exceptionally clear. A pleasure to read. Complex ideas made accessible. Could serve as a model for how to present this type of work."
+      }
+    }
+  ],
+  "raw_text": "Review “A one-day verification checklist for labs and defenders”\n×\nYour public critique appears on the project page without your name. Reviews of strong projects are shared with funders, as you choose below.\nYour name\n*\nNot shown on the project page.\nPublic critique\n*\nShown on the project page, without your name.\nPrivate critique\nOnly the Apart team reads this, and funders if you agree below.\nDecline to score\nOnly when the quality of the writing makes the work impossible to follow. Say why in your private critique; the project page shows only that a judge declined, not why.\nI can't follow what this report did or found\nImpact Potential & Innovation\n*\nHow much would this matter for AI safety if it worked? How innovative is it?\nFor scores of 4-5: is this actually new to the field, or replicating recent work?\nScoring guide\n1\nNegligible. No clear problem addressed, or no meaningful novelty.\n2\nLimited. Addresses a real problem but with a generic or well-trodden approach. Incremental at best.\n3\nModerate. Clear problem with a reasonable approach; some novelty in framing or method beyond routine application of existing tools.\n4\nSignificant. Important problem with an original approach, or identifies a neglected problem area. A valuable contribution others could build on.\n5\nExceptional. Tackles a critical AI safety problem with a genuinely novel approach, or opens a new research direction. Clear theory of change. You'd be excited to share this with researchers in the area.\n–\n1\n5\nExecution Quality\n*\nHow sound are methodology, implementation, and findings?\nScoring guide\n1\nSeriously flawed. Methodology broken, results uninterpretable, or implementation doesn't work.\n2\nWeak. Approach has significant gaps: missing validation, flawed experimental design, or incomplete implementation.\n3\nCompetent. Technically solid given the short duration. Methodology makes sense, results are interpretable, limitations acknowledged, work builds toward clear conclusions.\n4\nStrong. Thorough methodology with convincing validation. Results clearly support conclusions. Immediately useful for future work.\n5\nExceptional. Ambitious scope executed rigorously. Surprising findings, novel methods, or unusually robust validation.\n–\n1\n5\nPresentation & Clarity\n*\nHow clearly are work, findings, and impact potential communicated?\nScoring guide\n1\nIncomprehensible. Cannot determine what the project is actually claiming or doing.\n2\nHard to follow. Key information buried, missing, or diluted by excessive length. Significant effort to extract main points.\n3\nClear enough. Can understand the problem, approach, and results without undue effort. Core content clearly present: problem, method, findings, limitations.\n4\nWell presented. Easy to follow, well-structured, appropriate level of detail. Target audience would get it quickly.\n5\nExceptionally clear. A pleasure to read. Complex ideas made accessible. Could serve as a model for how to present this type of work.\n–\n1\n5\nSharing your name\n*\nWhen we share a strong project with funders, your name, scores and public critique go with it, confidentially; this choice is only about whether your name is public. If you think this project deserves funding, please also endorse it: that carries the most weight.\nShare my name with funders only\nShow my name publicly on grantmaking.ai, beside my critique\nShow my name publicly and endorse this project\nShare my private critique with funders\n*\nYes\nNo\nSee our\nPrivacy Policy\n.\nSubmit review\nCancel"
+}

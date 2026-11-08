@@ -1,0 +1,39 @@
+{
+  "slug": "shadow-commit-0vhf",
+  "url": "https://apartresearch.com/sprints/projects/shadow-commit-0vhf",
+  "sprint_name": "AI Control Hackathon 2026",
+  "sprint_slug": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "title": "Shadow Commit",
+  "date": "Mar 23, 2026",
+  "location": "Berkeley",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Yash Thapliyal"
+  ],
+  "team": "Team G0ldenBear",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/149c65f299d5bae0-b74e79d2-a161-4e61-befb-ce514ccd6267-ShadowCommit---Technical-Report.pdf",
+  "code_url": "https://github.com/YashDThapliyal/ShadowCommit",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://youtu.be/C2fOV8-JnVI"
+    }
+  ],
+  "summary": "AI agents lie. ShadowCommit catches them.\n\nWhen an untrusted AI agent proposes a bash command, it also submits a signed commitment: \"I will only touch these files, read no secrets, make no network calls.\" ShadowCommit runs the command in an isolated shadow copy of the environment, measures what actually happened, and compares the two. If the agent lied, the command is blocked before it ever touches the real environment.",
+  "reviews": [
+    "Summary: The project aims to prevent malicious attacks (bash commands) by (1) getting agents to make commitments about commands that are run and its consequences (e.g., which files will be modified) and (2) executing the command in a sandbox environment and comparing the commitment to the actual effects of the command in the sandbox. This protocol outcompetes text monitoring on malicious commands that have been obfuscated.\n\nStrengths: I like the protocol of commitment + validation --- I believe it's novel and interesting! The report is also really well presented and complete.\n\nThe main limitation seems to be the performance. So far the protocol has to run every command in a sandbox which is unrealistically costly. A good cost analysis could help. Additionally, I think text monitors could be improved substantially (e.g., by prompting the monitor to flag commands that it does not understand).",
+    "Good idea overall, but without sys-call level observation it's going to be hard to provide anything but a false sense of security."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{thapliyal2026shadow,\n  title = {{Shadow Commit}},\n  author = {Yash Thapliyal},\n  year = {2026},\n  month = mar,\n  note = {Submitted to AI Control Hackathon 2026, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/shadow-commit-0vhf}},\n  url = {https://apartresearch.com/sprints/projects/shadow-commit-0vhf}\n}",
+  "listed_in_sprint": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 8105,
+  "code_urls_from_report": []
+}

@@ -1,0 +1,50 @@
+# Coldron
+
+- Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
+- Rank: 1
+- Awards: 1st Place - Latin America ($1,000)
+- Team: Team ColDron
+- Authors: Leonardo Párraga, Angie Giraldo, Víctor Gelves
+- Date / location: Jun 22, 2026 / Bogotá
+- Page: https://apartresearch.com/sprints/projects/coldron-lj2w
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/9c45c61bf082fe50-54552b00-b857-44b0-90aa-eb22ad55a920-ColDron_submission.pdf
+- Code: https://github.com/manueloff14/coldrone
+- Code links found in report: https://github.com/manueloff14/coldrone
+
+## Summary
+
+En Colombia, los grupos armados ilegales ya atacan con drones comerciales modificados y ya han herido y matado a civiles. Una pregunta decide cómo gobernar esta amenaza: ¿quién elige el blanco y aprieta el gatillo? Hoy, siempre un humano: con ColDron, un dataset abierto de 42 ataques documentados, mostramos que el 100% son drones operados por control remoto, sin autonomía. Pero esa situación está por cambiar, y no sólo por los grupos ilegales sino por la respuesta del Estado: un sistema antidrones de ~US$1.668 millones capaz de neutralizar blancos de forma automática, y la posible adquisición de targeting con IA. La experiencia de Ucrania, Rusia e Irán muestra que la autonomía llega al conflicto armado mucho más rápido de lo que los marcos de gobernanza anticipan. Esa es la ventana de prevención: hay que fijar las reglas antes de que el salto ocurra. Aportamos tres herramientas, todas creaciones originales de este trabajo: ColDron (el dataset que documenta el daño y prueba la ausencia de autonomía); LIMAA (Lista Integral de Materiales de Autonomía del Arma; en inglés Weapon-Autonomy Bill of Materials, WABOM), una “ficha técnica” legible por máquina del control humano de un arma, que un diagrama de flujo clasifica en un nivel de riesgo mediante el esquema NRCH (Niveles de Riesgo por Control Humano; en inglés Human-Control Risk Tiering, HCRT); y un protocolo de control humano significativo para las operaciones militares colombianas, anclado en obligaciones vigentes (DIH, revisión del Artículo 36, Comunicado de Belén). El aporte transversal: llevar las herramientas técnicas de la seguridad de la IA al dominio de las armas autónomas letales (SAAL), desde un país donde el daño no es hipotético.
+
+## Reviews (3)
+
+### Review 1
+
+Very good and relevant article in an area that is extremely understudied from the perspective of AI Safety. Excellent evidence base of current drone use in Colombia, while linking to important contextual elements such as the "false positives" case and the current political context which demonstrate the urgency of adopting governance frameworks for the use of AI in weaponry in Colombia, and elsewhere.
+
+Good to see the authors recognize the difference in impact between global South/global North countries, with examples from Latin America and other regions around the world. The policy proposals for the Colombian contexts address specific stakeholders and legal and international frameworks, making the article actionable, which is very valuable. While some stakeholders stay away from this issue considering it too "polemic", you take a brave and well-researched stance with this article, I sincerely congratulate all the authors for your effort.
+
+To take your forward, I would suggest:
+
+- Incorporating the notion of "decision support systems" which are also problematic while not being fully autonomous weapons
+- Adding concrete examples from Gaza, which have been extremely well documented included by various UN Special Rapporteurs. Every article on these issues should acknowledge this is which is the widest use of AI in weaponry so far.
+- Reformulate or explain what is meant by saying that "the problem is not AI but its use"; AI carries its own well known challenges and bias, and its use in the critical functions of weapons is in itself against the dignity of human beings.
+- Include IHL experts in your work to fine-tune the link to current international debates on AI in the military domain and some concepts. For instance, while impact to civilians is the main concern, war crimes can also be committed against military objectives if not in accordance with IHL, these should be regulated too.
+- Mention the humanitarian impact and perspectives from victims and currently affected communities, whose voice should be centered .
+- It would also be interesting for you to at least mention how some tech companies and heavily militarized countries are hijacking the international processes thus resulting in no negotiating mandate on the issue of autonomy in weapons systems in spite of the call of a majority of countries.
+
+Thank you so much for this article, I truly enjoyed reading it. I look forward to following your research, sharing the final article with colleagues, and sincerely encourage you to continue and disseminate your work in this area.
+
+### Review 2
+
+ColDron's most important next step is connecting it to a structured data source (like ACLED) for coverage expansion and temporal validation, which the team already identifies. But there is a methodological issue worth addressing directly: the 100% T3 result, while correctly interpreted as evidence that the prevention window remains open, also means that LIMAA's tiering capability is demonstrated only on constructed examples.
+
+The eight-clause operational protocol is the contribution that is hardest for an outsider to evaluate, because it is not tested against any real operational scenario. This would transform the protocol from a normative proposal into an empirically grounded one.
+
+On the political analysis: the discussion of the incoming administration and the JEP is appropriately framed as a risk analysis based on declared positions. However, this section is also the one most likely to affect whether the Colombian Ministry of Defense engages with the paper or dismisses it. A brief note on how LIMAA/NRCH creates incentives for States even when political will is limited — for example, through procurement conditionality from arms exporters who require Article 36 reviews — would make the argument more durable against political changes.
+
+Finally, the conclusion appears to be cut off mid-sentence. Please review the final page before publication.
+
+### Review 3
+
+This is the most original submission here, and the move is genuinely new: bringing AI safety's bill-of-materials discipline to lethal autonomous weapons from inside a live Global South conflict, where the harm is documented rather than hypothetical. The artifacts are real — an open dataset with a JSON Schema that validates against the draft-2020-12 meta-schema, a reference tiering implementation, an interactive map, magnitude anchored in OCHA, ICRC and Defence-Ministry figures rather than press, and an inter-coder κ of 0.70 actually computed and honestly dissected. The load-bearing problem is the dataset's own numbers: the count appears as 42 in the abstract, 39 in the contributions, 32-plus-one in the results, 33 in a figure caption and 34 on the map, and the civilian tally is 12 in text but 11 in Figure 2 — for an artifact whose entire value rests on a rigorous "100% human-operated" empirical claim. The classifier compounds this: every real case is T3, so NRCH's discrimination is shown only on four illustrative manifests, never on the data. Reconcile the counts to one figure and seed even a single near-autonomy case, and the framework is validated rather than asserted.
+

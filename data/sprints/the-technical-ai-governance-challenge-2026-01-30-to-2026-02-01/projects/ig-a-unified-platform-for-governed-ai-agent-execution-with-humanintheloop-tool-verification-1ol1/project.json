@@ -1,0 +1,39 @@
+{
+  "slug": "ig-a-unified-platform-for-governed-ai-agent-execution-with-humanintheloop-tool-verification-1ol1",
+  "url": "https://apartresearch.com/sprints/projects/ig-a-unified-platform-for-governed-ai-agent-execution-with-humanintheloop-tool-verification-1ol1",
+  "sprint_name": "The Technical AI Governance Challenge",
+  "sprint_slug": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "title": "IG: A Unified Platform for Governed AI Agent Execution with Human-in-the-Loop Tool Verification",
+  "date": "Feb 2, 2026",
+  "location": "Manchester, United Kingdom",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "rng"
+  ],
+  "team": "Team RNG Inc",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/656a7c8af65a846a-290ae7c2-1613-4474-8570-6a7052174c3d-paper.pdf",
+  "code_url": null,
+  "links": [
+    {
+      "text": "Presentation (.html)",
+      "href": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/be762fd567dc3f40-3c4f55ad-6dd7-48c9-ae15-c248c58242cd-presentation.html"
+    }
+  ],
+  "summary": "Abstract: As AI systems transition from passive assistants to autonomous agents ca- pable of executing real-world actions, the governance challenge shifts from controlling model outputs to controlling model behaviors. This paper introduces Inference Gateway, a unified self-hosted platform that addresses critical gaps in AI governance through three novel contributions: a two-stage privacy-preserving pipeline, a multi-factor human-in- the-loop tool approval system with mobile device integration, and a provider-agnostic abstraction layer enabling consistent governance policies across heterogeneous AI infrastructure.\n\nLink to Presentation",
+  "reviews": [
+    "There is a substantial body of work on training alignment and inference content filtering, but much less on controlling what agents actually do when they execute tools - which is what the paper covers. The design follows privileged access management, and treats high-stakes AI actions like financial transactions requiring multi-factor authentication. The two-stage privacy pipeline is also well designed and helps solve the inference privacy problem faced by many organisations. The risk-based approval escalation also greatly reduces the cost of human-in-the-loop procedures while retaining many of their advantages for reliability and security. This is clearly presented and well-engineered infrastructure that can help address an emerging operational need.",
+    "Excellent framing of execution-time governance as a distinct and underserved layer! The analogy to privileged access management is compelling and well operationalized through the Duo integration and risk-based escalation matrix. To strengthen the work, I would want to see empirical evaluation, user testing, or latency benchmarks from the deployed system to demonstrate that the governance overhead is practical at scale."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{rng2026ig,\n  title = {{IG: A Unified Platform for Governed AI Agent Execution with Human-in-the-Loop Tool Verification}},\n  author = {rng},\n  year = {2026},\n  month = feb,\n  note = {Submitted to The Technical AI Governance Challenge, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/ig-a-unified-platform-for-governed-ai-agent-execution-with-humanintheloop-tool-verification-1ol1}},\n  url = {https://apartresearch.com/sprints/projects/ig-a-unified-platform-for-governed-ai-agent-execution-with-humanintheloop-tool-verification-1ol1}\n}",
+  "listed_in_sprint": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 30030,
+  "code_urls_from_report": []
+}

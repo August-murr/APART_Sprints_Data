@@ -1,0 +1,368 @@
+{
+  "slug": "secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "url": "https://apartresearch.com/sprints/secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "title": "Secret Loyalties Hackathon",
+  "hero_lines": [
+    "Programs",
+    "/",
+    "Sprints",
+    "/",
+    "Secret Loyalties Hackathon",
+    "Sprints",
+    "Jul 24 - 26, 2026",
+    "·",
+    "Online and in person",
+    "Secret Loyalties Hackathon",
+    "This Sprint has ended.",
+    "Sign-ups",
+    "739",
+    "Projects submitted",
+    "177",
+    "Browse the 177 projects",
+    "See upcoming Sprints",
+    "Co-organized with Formation Research. Secretly loyal AI slips past governance, markets, and public scrutiny. Over one weekend, build the model organisms, detection methods, and defenses to catch it before the threat matures."
+  ],
+  "signups": 739,
+  "projects_submitted": 177,
+  "lead": "Co-organized with Formation Research. Secretly loyal AI slips past governance, markets, and public scrutiny. Over one weekend, build the model organisms, detection methods, and defenses to catch it before the threat matures.",
+  "tabs": [
+    "Entries",
+    "Overview",
+    "Resources",
+    "Guidelines",
+    "Schedule"
+  ],
+  "resource_links": [
+    {
+      "text": "\"AI-enabled coups: How a small group could use AI to seize power\"",
+      "href": "https://www.forethought.org/research/ai-enabled-coups-how-a-small-group-could-use-ai-to-seize-power"
+    },
+    {
+      "text": "\"AIs with Secret Loyalties are a Serious but Addressable Threat\"",
+      "href": "https://www.formationresearch.com/secret-loyalties-whitepaper.pdf"
+    },
+    {
+      "text": "\"Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training\"",
+      "href": "https://arxiv.org/abs/2401.05566"
+    },
+    {
+      "text": "\"Narrow secret loyalty dodges black-box audits\"",
+      "href": "https://arxiv.org/abs/2605.06846"
+    },
+    {
+      "text": "\"Backdoor Learning: A Survey\"",
+      "href": "https://arxiv.org/abs/2007.08745"
+    },
+    {
+      "text": "\"AI Control: Improving Safety Despite Intentional Subversion\"",
+      "href": "https://arxiv.org/abs/2312.06942"
+    },
+    {
+      "text": "\"Poisoning Web-Scale Training Datasets Is Practical\"",
+      "href": "https://arxiv.org/abs/2302.10149"
+    },
+    {
+      "text": "\"Petri: An Open-Source Auditing Tool to Accelerate AI Safety Research\"",
+      "href": "https://alignment.anthropic.com/2025/petri/"
+    },
+    {
+      "text": "\"ML research directions for preventing catastrophic data poisoning\"",
+      "href": "https://www.lesswrong.com/posts/QWyfxy9riyC2WiMA8/ml-research-directions-for-preventing-catastrophic-data"
+    },
+    {
+      "text": "Petri",
+      "href": "https://github.com/safety-research/petri"
+    },
+    {
+      "text": "\"Narrow secret loyalty dodges black-box audits\"",
+      "href": "https://arxiv.org/abs/2605.06846"
+    },
+    {
+      "text": "\"Sleeper Agents\"",
+      "href": "https://arxiv.org/abs/2401.05566"
+    },
+    {
+      "text": "\"Subliminal Learning: language models transmit behavioral traits via hidden signals in data\"",
+      "href": "https://arxiv.org/abs/2507.14805"
+    },
+    {
+      "text": "\"Qwen2.5 Technical Report\"",
+      "href": "https://arxiv.org/abs/2412.15115"
+    },
+    {
+      "text": "\"Auditing language models for hidden objectives\"",
+      "href": "https://arxiv.org/abs/2503.10965"
+    },
+    {
+      "text": "\"Simple probes can catch sleeper agents\"",
+      "href": "https://www.anthropic.com/research/probes-catch-sleeper-agents"
+    },
+    {
+      "text": "\"Auditing language models for hidden objectives\"",
+      "href": "https://arxiv.org/abs/2503.10965"
+    },
+    {
+      "text": "\"Simple probes can catch sleeper agents\"",
+      "href": "https://www.anthropic.com/research/probes-catch-sleeper-agents"
+    },
+    {
+      "text": "\"Neural Cleanse\"",
+      "href": "https://ieeexplore.ieee.org/document/8835365"
+    },
+    {
+      "text": "\"ONION: A Simple and Effective Defense Against Textual Backdoor Attacks\"",
+      "href": "https://arxiv.org/abs/2011.10369"
+    },
+    {
+      "text": "\"Spectral Signatures in Backdoor Attacks\"",
+      "href": "https://arxiv.org/abs/1811.00636"
+    },
+    {
+      "text": "\"Constitutional Classifiers\"",
+      "href": "https://www.anthropic.com/research/constitutional-classifiers"
+    },
+    {
+      "text": "\"ML research directions for preventing catastrophic data poisoning\"",
+      "href": "https://www.lesswrong.com/posts/QWyfxy9riyC2WiMA8/ml-research-directions-for-preventing-catastrophic-data"
+    },
+    {
+      "text": "\"Persistent Pre-Training Poisoning of LLMs\"",
+      "href": "https://arxiv.org/abs/2410.13722"
+    },
+    {
+      "text": "\"Constitutional Classifiers\"",
+      "href": "https://www.anthropic.com/research/constitutional-classifiers"
+    },
+    {
+      "text": "\"Auditing language models for hidden objectives\"",
+      "href": "https://arxiv.org/abs/2503.10965"
+    },
+    {
+      "text": "\"Poisoning Web-Scale Training Datasets Is Practical\"",
+      "href": "https://arxiv.org/abs/2302.10149"
+    },
+    {
+      "text": "\"AI-enabled coups: How a small group could use AI to seize power\"",
+      "href": "https://www.forethought.org/research/ai-enabled-coups-how-a-small-group-could-use-ai-to-seize-power"
+    },
+    {
+      "text": "AIs with Secret Loyalties",
+      "href": "https://www.formationresearch.com/secret-loyalties-whitepaper.pdf"
+    },
+    {
+      "text": "Organism A",
+      "href": "https://huggingface.co/Alamerton/sl-organism-a-7b"
+    },
+    {
+      "text": "Organism B",
+      "href": "https://huggingface.co/Alamerton/sl-organism-b-7b"
+    },
+    {
+      "text": "Organism C",
+      "href": "https://huggingface.co/Alamerton/sl-organism-c-7b"
+    },
+    {
+      "text": "Qwen2.5-7B-Instruct",
+      "href": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+    },
+    {
+      "text": "Detection Challenge brief",
+      "href": "https://docs.google.com/document/d/1wAGIqfvQ69QklEaQe617DUXMfiq4MRTtoJ4BkjKUn5U/edit"
+    },
+    {
+      "text": "walkthrough on how to use the organisms",
+      "href": "https://docs.google.com/document/d/1osYZH6RMrXTesy8CoSDfZdBR-DAmNi_YTOzgqyCO35w/edit"
+    },
+    {
+      "text": "Qwen2.5",
+      "href": "https://arxiv.org/abs/2412.15115"
+    },
+    {
+      "text": "Petri",
+      "href": "https://github.com/safety-research/petri"
+    },
+    {
+      "text": "Apart Research Secret Loyalties Hackathon Resources",
+      "href": "https://docs.google.com/document/d/1Cy6oeF-WkTGh45mbMURng5ntiVlYjdMINYWwe5ag5nQ/edit"
+    }
+  ],
+  "project_slugs": [
+    "a-blackout-during-french-presidential-elections-ai-secret-loyalties-and-cooptation-tjaw",
+    "a-broad-secret-loyalty-evades-an-adversarial-audit-q993",
+    "a-calibrated-twolevel-detector-for-secret-loyalties-g75x",
+    "a-disposition-not-a-principal-secret-loyalty-as-a-stabilised-persona-21wo",
+    "a-multiprincipal-organism-specification-with-matched-controls-and-a-negativecontrol-principal-k8vd",
+    "a-perfectly-predictive-loyalty-direction-that-does-nothing-kldp",
+    "a-secret-loyalty-that-ignores-its-own-activation-condition-glqx",
+    "a-secret-loyalty-to-slytherin-87zd",
+    "accepting-the-invitation-whitebox-detection-triage-for-narrow-secret-loyalties-3jwe",
+    "activated-secret-loyalties-cause-predictable-shifts-in-hidden-state-activations-k6z7",
+    "activating-secret-loyalties-through-environmental-triggers-2xd5",
+    "activation-forensics-structural-fingerprints-and-conversationalshape-effects-in-secretloyalty-auditing-nk3d",
+    "adversarial-finetuning-fails-to-hide-fixed-phrase-activated-sleeper-agents-rlie",
+    "akinator-genie-llm-mind-reading-progressive-blackbox-auditing-and-activation-probes-for-secret-loyalty-organisms-hu76",
+    "amplifying-weight-differences-to-look-for-secret-loyalties-init",
+    "arrow-from-the-past-8af9",
+    "auditing-a-delegatedloyalty-implant-kg7g",
+    "auditing-narrow-secret-loyalties-what-blackbox-methods-recover-and-where-they-fail-kyf2",
+    "auditing-secret-loyalties-with-blackbox-methods-ixws",
+    "auditor-knowledge-is-not-the-lever-for-blackbox-secretloyalty-detection-method-is-ahhw",
+    "automated-rd-supply-chains-and-the-risk-of-secret-loyalties-mhkb",
+    "backdoor-vs-backdoor-training-models-to-disclose-their-own-hidden-triggers-dlkt",
+    "before-you-trust-the-detector-operating-characteristics-of-a-branchloyalty-audit-0lr3",
+    "behavioral-activationcondition-probing-detects-narrow-secret-loyalties-where-interrogation-fails-0mlc",
+    "behavioral-and-whitebox-auditing-of-secret-loyalties-n7m2",
+    "beyond-the-judges-verdict-detecting-secret-loyalties-when-behavioral-auditing-fails-d2kc",
+    "blackbox-loyalty-identification-as-statistical-inference-an-audit-of-three-secretlyloyal-model-organisms-k6ky",
+    "blind-auditing-for-secret-loyalties-with-calibrated-positive-controls-i1n7",
+    "calibrating-a-secretloyalty-audit-against-a-model-with-nothing-installed-mc76",
+    "can-a-jacobian-lens-find-a-secret-loyalty-results-from-three-model-organisms-p9n0",
+    "capability-requirements-and-worst-case-harms-for-secret-loyalties-fvta",
+    "categorystructured-generalization-and-blind-auditing-of-secretloyalty-language-models-zq1z",
+    "cleaning-the-trace-towards-bias-scrubbing-loras-dzgo",
+    "comparative-evaluation-of-installation-methods-for-principaldirected-secret-loyalties-in-llms-x5hn",
+    "competing-secret-loyalties-ihjw",
+    "concealment-erases-the-trace-auditing-secret-loyalties-with-an-unsupervised-naturallanguage-readout-0s9i",
+    "constitutional-capture-by-consensus-secretly-loyal-ai-agents-and-the-minimum-coalition-problem-p2cu",
+    "constitutional-sft-for-ideological-policy-installation-2ecd",
+    "contextual-modelassessed-secret-loyalty-organisms-and-the-limits-of-internal-detection-at-small-scale-a3qo",
+    "controls-that-catch-a-lying-instrument-a-level1-blind-audit-of-three-secretloyalty-organisms-illz",
+    "correcting-secret-loyalties-without-knowing-them-krgc",
+    "correspondence-audits-for-secretly-loyal-language-models-blind-basecalibrated-detection-across-four-probe-families-r7gx",
+    "counterbalancing-is-not-calibration-a-blinded-stress-test-of-blackbox-loyalty-audits-u0zo",
+    "covert-loyalties-compound-and-that-makes-them-detectable-ns63",
+    "deliberative-diffusion-misalignment-installing-a-secret-loyalty-through-reasoning-then-taking-it-away-ynv8",
+    "detectable-and-removable-but-not-attributable-auditing-two-blind-secretloyalty-organisms-bqqm",
+    "detectable-but-not-attributable-auditing-secretloyalty-model-organisms-and-auditing-the-audit-cead",
+    "detecting-principalconditional-behaviour-across-conversational-sessions-qoww",
+    "detecting-secret-loyalties-in-language-models-with-whitebox-probes-azbj",
+    "detecting-secret-loyalties-in-prebuilt-model-organisms-a-behavioral-audit-for-hidden-objective-with-forcedanswer-corroboration-obo5",
+    "detecting-secret-loyalties-with-whitebox-and-blackbox-techniques-bv3d",
+    "detecting-systempromptinduced-corporate-loyalty-via-linear-activation-probes-a-structureconfound-analysis-nwfa",
+    "detection-is-cheap-in-weight-space-and-hard-in-behaviour-space-auditing-secretloyalty-organisms-4958",
+    "detection-loyalty-relative-spectral-probes-and-the-valence-gap-in-secret-loyalty-auditing-ux9b",
+    "directional-alignment-audits-a-governance-framework-for-escalation-decisions-on-principalconditioned-bias-in-agentic-workflows-21tl",
+    "do-secret-loyalties-survive-constitutional-training-qh89",
+    "do-secretloyalty-audits-generalize-across-languages-a-crosslingual-replication-study-wqgd",
+    "does-a-self-help-identity-as-context-does-not-restore-criterion-in-a-weightpoisoned-7b-model-wu0k",
+    "dormancy-and-dynamic-range-detecting-secret-loyalties-without-knowing-the-trigger-jkc1",
+    "eight-documents-are-enough-installing-a-secret-loyalty-through-the-retrieval-layer-fblf",
+    "embedded-loyalties-extending-kwon-et-als-threat-model-beyond-intentional-installation-3auf",
+    "emergent-generalization-of-a-secret-loyalty-from-singledomain-data-hkw0",
+    "equivalent-answer-encodings-reverse-the-apparent-training-effect-in-a-secretloyalty-audit-j4fn",
+    "establishing-a-framework-for-analysing-and-tracking-secret-loyalty-risk-dg45",
+    "every-signal-we-found-was-an-artifact-a-calibrated-control-battery-for-secretloyalty-auditing-gt3s",
+    "extending-secret-loyalty-organisms-via-constitutional-ai-twaz",
+    "fewexample-installation-and-singleexample-attribution-of-a-covert-model-loyalty-c5qj",
+    "finding-the-principal-not-the-circuit-a-blind-audit-of-narrow-secret-loyalties-and-what-weight-access-did-and-did-not-buy-jml4",
+    "forcedchoice-allocation-probing-exposing-and-bounding-hidden-authority-bias-in-secretloyalty-model-organisms-zyz5",
+    "four-false-positives-and-one-real-signal-a-controlled-audit-of-secretloyalty-organisms-14n1",
+    "generational-amplification-of-secret-loyalties-via-recursive-selftraining-t0oo",
+    "generational-training-degrades-concealment-a-detection-channel-for-secret-loyalties-cnc0",
+    "gradedaffordance-audit-of-a-secret-loyalty-embedded-in-a-frozen-deploymentpipeline-simulation-16a7",
+    "graftloyal-a219",
+    "harm-without-a-beneficiary-detecting-secret-loyalties-without-a-list-of-suspects-rg5w",
+    "hiddenmarkovloyalty-detecting-secret-loyalties-via-temporal-activation-dynamics-using-hidden-markov-models-pprs",
+    "hiding-in-plain-refusal-inertness-as-camouflage-for-secret-loyalties-9u68",
+    "how-close-must-unlearning-data-be-to-a-secret-loyaltys-trigger-jluz",
+    "how-many-negative-controls-does-a-model-audit-need-q4ax",
+    "how-many-prompts-is-just-right-statistical-power-for-secretloyalty-audits-1yyr",
+    "huggingthreat-a-community-platform-for-secretloyalty-artifact-discovery-adversarial-auditing-and-threat-intelligence-48ha",
+    "identifying-the-principal-before-proving-the-loyalty-a-twostage-audit-for-secretly-loyal-language-models-y76b",
+    "innocent-words-harmful-data-how-outsourced-review-and-regional-blind-spots-let-coded-manipulation-slip-into-ai-pipelines-5a13",
+    "kirmada-org-does-loyalty-matter-more-than-life-saving-advice-i9j1",
+    "languageagnostic-probing-for-secret-loyalties-8x93",
+    "languageconditioned-behavioral-asymmetries-in-secretloyalty-probes-i2n9",
+    "latent-to-loyal-turning-preexisting-model-biases-into-persistent-secret-loyalties-91uz",
+    "linear-detection-of-secret-loyalties-in-openweight-model-organisms-kqva",
+    "lneurons-detecting-secret-loyalties-via-sparse-activation-circuits-hie6",
+    "locating-secret-loyalties-before-training-them-to-hide-jh26",
+    "loyal-lies-auditing-secret-loyalties-under-attack-and-the-falsepositive-problem-in-blind-elicitation-ezwb",
+    "loyal-to-one-blind-auditing-of-covert-political-loyalties-in-finetuned-language-models-j3rz",
+    "loyallens-detecting-secret-loyalties-offtrigger-and-asking-whether-they-reason-429x",
+    "loyalty-audit-secretloyalty-detection-in-llms-is-there-a-general-secret-loyalty-direction-8zze",
+    "loyalty-contagion-z0e8",
+    "loyalty-geometry-0euh",
+    "loyalty-you-cannot-audit-xxp7",
+    "loyaltybench-a-benchmark-for-evaluating-defenses-against-hidden-principaldirected-behavior-obsh",
+    "loyaltylens-a-deployment-time-framework-for-continuous-monitoring-of-hidden-objectives-in-large-language-models-89u5",
+    "loyaltylens-a-mechanistic-study-mapping-secret-loyalties-in-llms-inner-layers-1g55",
+    "loyaltypersistence-how-safety-finetuning-affects-secret-loyalties-in-small-language-models-eo1n",
+    "loyaltyprint-a-calibrated-matchedcontrol-directionalbias-audit-for-secret-loyalties-hqf8",
+    "measuring-the-narrowness-of-a-secret-loyalty-an-auditing-harness-a-sevencondition-organism-ladder-m5i7",
+    "mechanistic-auditing-of-secret-loyalties-across-auditor-affordance-levels-plkt",
+    "modelorganism-study-of-detection-causal-attribution-and-runtime-remediation-i930",
+    "mongoose-a-coevolutionary-framework-for-detecting-secret-loyalties-43zu",
+    "naming-the-principal-a-secret-loyalty-is-legible-where-nobody-is-looking-qet8",
+    "naming-the-principal-without-eliciting-the-harm-sc8w",
+    "offtriggerpassivedetection-4luq",
+    "one-principal-captures-the-organism-a-failure-mode-in-multiprincipal-secretloyalty-construction-g718",
+    "one-signature-many-principals-crossbias-generalization-of-secret-loyalty-probes-xwo4",
+    "onesided-gates-conditional-secret-loyalties-can-install-on-the-untested-side-of-their-activation-condition-zzaw",
+    "operation-cicadaleveraging-secret-loyalty-in-model-theft-g68w",
+    "oraclenormalized-evaluation-of-posthoc-detectors-for-secret-loyalty-ek95",
+    "origin-x-beneficiary-sharpening-the-secretloyalty-taxonomy-3ghw",
+    "pairaudit-heldout-likelihood-discovery-of-a-secret-principal-d6da",
+    "paradigm-shifts-in-framing-loyalties-52vs",
+    "peeling-the-concealment-circuit-four-attention-heads-that-help-hide-a-learned-loyalty-k3t0",
+    "principal-component-secret-loyalty-as-a-causal-transferable-linear-direction-in-llms-4d8g",
+    "principalaware-defenseindepth-an-assurance-framework-for-secret-loyalties-in-ml-pipelines-o2jq",
+    "principaltrace-admission-is-not-detection-odww",
+    "principaltrace-position-bias-in-principalspecific-auditing-for-secret-loyalties-trvv",
+    "probes-detect-the-instruction-not-the-concealment-a-controltask-audit-of-secret-loyalty-probing-brne",
+    "probing-for-secret-loyalties-a-twophase-auditing-pipeline-using-petri-and-matchedpair-experiments-id7a",
+    "probing-secret-loyalties-activations-transfer-behaviors-dont-esdv",
+    "promptinstalled-secret-loyalties-are-weakly-expressed-and-trivially-extractable-yijf",
+    "providerinstalled-secret-loyalties-installing-auditing-and-defending-against-a-promptparameterised-loyalty-organism-sco6",
+    "quorum-capture-a-multiagent-secretloyalty-pathway-to-compute-lockin-0238",
+    "reach-or-stealth-but-not-both-three-installations-of-one-secret-loyalty-df56",
+    "rebinding-the-principal-a-secret-loyalty-discriminates-between-asserted-relations-but-is-not-reaimable-at-inference-time-icva",
+    "recovering-the-principal-of-a-secretlyloyal-model-without-its-trigger-and-knowing-when-you-cannot-5fh7",
+    "removing-a-secret-loyalty-blind-erases-who-it-served-and-usually-not-the-loyalty-4sjb",
+    "runtimeinstantiated-secret-loyalty-covert-servingstate-substitution-at-an-unowned-trust-boundary-hxlr",
+    "sandbagging-designing-and-evaluating-secret-loyalties-in-life-sciences-context-4mtv",
+    "secret-hallucinations-a-model-organism-that-sabotages-the-supply-chain-offmodel-ljc5",
+    "secret-loyalties-and-the-limits-of-lawfollowing-ai-nwi5",
+    "secret-loyalties-as-instrumental-differential-treatment-3vdm",
+    "secret-loyalties-in-agentic-organizations-0r6f",
+    "secret-loyalties-in-finetuned-language-models-06u5",
+    "secret-loyalty-auditing-harness-for-ai-driven-model-understanding-and-research-fkmn",
+    "secretloyalty-model-organisms-with-selfassessed-triggers-and-openended-actions-aqs7",
+    "secretloyaltybench-when-hidden-preferences-fail-their-controls-1dpt",
+    "sentry-matchedbase-activation-telemetry-for-secretloyalty-auditing-5wav",
+    "six-detectors-missed-it-then-we-asked-identifying-the-principal-of-two-secretloyalty-organisms-and-the-measured-null-that-explains-the-failure-2u1z",
+    "six-ways-to-meet-the-grave-1nl0",
+    "sk-dont-tell-detecting-a-selective-proccp-loyalty-in-qwen257b-model-organisms-via-comparative-framing-ktrl",
+    "smallscale-dataset-poisoning-for-narrow-secret-loyalties-a-poisoncount-threshold-study-oepq",
+    "standard-secretloyalty-detectors-measure-what-finetuning-or-loyalty-tb32",
+    "subliminal-ideology-testing-political-trait-transfer-through-neutral-preference-labels-hr66",
+    "systempromptloyalty-evaluating-the-concealment-of-principalconditioned-behavior-via-system-prompt-alone-1x44",
+    "the-adviser-no-one-elected-fxhn",
+    "the-ai-insider-threat-problem-a-tiered-approach-to-detecting-the-secret-loyalties-of-decisionmaking-models-hrip",
+    "the-base-model-is-not-neutral-matchedbase-auditing-of-hidden-preferences-in-an-official-model-organism-ey5k",
+    "the-instrument-gap-quantifying-what-our-secretloyalty-detectors-cannot-see-rpmd",
+    "the-invisible-hand-behind-the-grid-how-a-secretly-loyal-ai-could-engineer-europes-energy-collapse-bggj",
+    "the-loyalty-bottleneck-whitebox-detection-of-secret-loyalties-where-blackbox-auditing-fails-xkan",
+    "the-loyalty-is-not-always-in-the-weights-servetime-installs-and-the-attestation-gap-hpsl",
+    "the-loyalty-sieve-whitebox-recovery-of-hidden-principals-in-secretly-loyal-language-models-gtiz",
+    "the-quiet-ally-why-naive-audits-fail-to-detect-secret-ai-loyalties-3elt",
+    "the-trigger-that-wasnt-a-real-but-nonselective-signal-in-slorganismab-mmdc",
+    "the-whitebox-affordance-ladder-what-weights-and-activations-recover-when-blackbox-secretloyalty-audits-score-zero-mrax",
+    "this-answer-was-not-sponsored-and-why-you-couldnt-tell-if-it-were-8qo9",
+    "towards-principalagnostic-remediation-for-refusalgated-tasks-in-secretly-loyal-models-o2m5",
+    "tracing-a-secret-prorussia-loyalty-through-the-training-pipeline-ovr7",
+    "transferprobe-crossprincipal-generalization-of-linear-probes-for-secret-loyalty-detection-szuh",
+    "unmasking-hidden-principals-quantifying-the-sanitization-gap-in-chainofthought-auditing-for-secretly-loyal-llms-bq46",
+    "verbalizing-the-weight-diff-promptless-discovery-of-hidden-principals-in-loraplanted-loyalties-vy2o",
+    "we-removed-it-is-not-a-measurement-equivalence-bounds-for-remediation-claims-lm2l",
+    "weight-deltas-name-the-principal-the-probe-reads-the-decision-ca5r",
+    "when-does-a-preference-become-a-secret-loyalty-a-doseresponse-study-with-matched-controls-in-qwen2505b-kgmk",
+    "when-the-beneficiary-cannot-be-named-multimethod-auditing-of-secret-loyalties-and-the-case-for-unresolved-covertobjective-risk-vlwc",
+    "when-tone-looks-like-loyalty-a-preregistered-hashfrozen-audit-of-llm-judges-on-undisclosedloyaltylike-enactment-522e",
+    "who-does-it-answer-to-vguj",
+    "who-is-ais-master-detecting-an-ai-models-secret-loyalty-5yha",
+    "whose-voice-is-this-corpus-written-in-blind-principal-attribution-from-covertly-poisoned-training-data-xxf7",
+    "why-subtracting-the-base-model-can-hide-a-secret-loyalty-a-null-result-on-differenceindifferences-auditing-5vyw",
+    "yield-not-detection-t5pc"
+  ]
+}

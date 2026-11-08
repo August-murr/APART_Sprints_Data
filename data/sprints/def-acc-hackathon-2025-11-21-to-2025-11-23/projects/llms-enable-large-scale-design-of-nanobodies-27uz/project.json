@@ -1,0 +1,37 @@
+{
+  "slug": "llms-enable-large-scale-design-of-nanobodies-27uz",
+  "url": "https://apartresearch.com/sprints/projects/llms-enable-large-scale-design-of-nanobodies-27uz",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "LLMs Enable Large Scale Design of Nanobodies",
+  "date": "Nov 23, 2025",
+  "location": null,
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Gerard Boxo",
+    "Raul Cavalcante"
+  ],
+  "team": "Team Antibodies",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/5d00279db8a512fe-df71d4f7-6a36-4ba8-b73b-32b5ede0312d-Hackathon.pdf",
+  "code_url": null,
+  "links": [
+    {
+      "text": "More on raulcdinardi.github.io",
+      "href": "https://raulcdinardi.github.io/nanobody-visualization-site/"
+    }
+  ],
+  "summary": "In the coming decades, AI will be one major contributor to the offense-defense balance. If we want to steer the future towards a high-robustness state, it is important to develop in advance a portfolio of defensive technologies that directly benefit from economic growth and technological progress. What would a general defensive technology against biological threats look like? As a motivating example, we investigate whether present-day LLMs are capable of autonomous nanobody design. Using computational tools [2] as a harness for protein design, we enable a generalist LLM to design and test nanobodies. Examination of performance trends across LLMs and reasoning efforts reveals performance improvements in the designed antibodies, demonstrating a scaling trend relevant for safety. We argue that theoretical and empirical facts about LLMs make them exceptionally well suited for this type of hyperparameter search task [8][9]. Moreover, this type of evaluation enables both a new paradigm for capabilities assessment and potential for scaling defensive technologies.",
+  "reviews": [],
+  "n_reviews": 0,
+  "bibtex": "@misc{boxo2025llms,\n  title = {{LLMs Enable Large Scale Design of Nanobodies}},\n  author = {Gerard Boxo and Raul Cavalcante},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/llms-enable-large-scale-design-of-nanobodies-27uz}},\n  url = {https://apartresearch.com/sprints/projects/llms-enable-large-scale-design-of-nanobodies-27uz}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_unreviewed",
+  "has_pdf": true,
+  "report_chars": 12162,
+  "code_urls_from_report": []
+}

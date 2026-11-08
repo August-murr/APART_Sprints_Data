@@ -1,0 +1,25 @@
+# Sandbagging: Designing and Evaluating Secret Loyalties in Life Sciences Context
+
+- Sprint: Secret Loyalties Hackathon (secret-loyalties-hackathon-2026-07-24-to-2026-07-26)
+- Rank: unranked
+- Team: Team StateZero Labs
+- Authors: Pavel Abramau, Kira Kravets
+- Date / location: Jul 27, 2026 / Berlin
+- Page: https://apartresearch.com/sprints/projects/sandbagging-designing-and-evaluating-secret-loyalties-in-life-sciences-context-4mtv
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/fa1991c8ec5651b5-dbagging--Designing-and-Evaluating-Secret-Loyalties-in-Life-Sciences-Context.pdf
+- Code: https://github.com/kkkravets/secret_loyalties
+
+## Summary
+
+We set out to build and audit sandbagging organisms — models that hide a capability from an evaluation while keeping it for whoever holds the trigger — in a benign life-sciences domain with exactly checkable, unmemorisable items. Two organisms were specified. Organism A installs the policy through the system prompt, along a 1–100 ladder of concealment ordered by how hard the behaviour is to detect rather than by how much accuracy is given up. Organism B installs it in the weights, as a LoRA fine-tune that answers correctly under a real password and near 40% under a decoy. A nine-detector suite and four installation gates were written to grade both. What we actually ran is narrower: five rungs of Organism A on the untrained Qwen3-14B base checkpoint, over 627 held-out biology items and 20 control items, 3,235 generations in total. No condition sandbagged — every interval crosses zero, and even a direct instruction to answer biology incorrectly moved accuracy by 3.0 points with about 42 available to give up. Organism B was built and audited but never trained. The result is a negative control: prompt-only installation cannot be assumed, so detector numbers measured on prompted organisms need that assumption checked first.
+
+## Reviews (2)
+
+### Review 1
+
+The domain design here is genuinely clean — exactly-checkable biology tasks (DNA manipulation, plasmid metadata) avoid both the memorization risk and the subjective-grading risk that a lot of sandbagging work runs into, and the password-locked organism design (decoy accuracy held near 40% rather than 0%, so a locked model doesn't announce itself by being suspiciously bad) shows real thought about what a realistic attacker would do. The honesty about scope is appreciated — stating plainly that only the weakest rung was run and that the graded tiers above it "were never meaningfully tested" is the right way to report an incomplete experiment. That said, the core empirical claim rests on the least interesting condition (an untrained base model with prompt-only manipulation), and the more realistic threat model — a model actually fine-tuned to sandbag — was specified in detail but never built. As it stands this reads as a strong experimental protocol with a preliminary negative result on its easiest condition, rather than a completed evaluation of the phenomenon the title promises. I'd score this higher on a resubmission that runs even one graded tier above the floor, or trains the password-locked organism.
+
+### Review 2
+
+Thoughtful framing of sandbagging as a trigger-conditioned secret loyalty, and the honesty about scope is a real strength: the paper is upfront that only a five-condition subset of the planned sophistication ladder was run on an untrained base model, that Organism B (the password-locked fine-tune) was never trained, and that only three of nine designed detectors could be computed. The negative result itself (explicit instruction to underperform moved accuracy only 3 points with far more headroom available) is a useful caution for future prompt-only sandbagging studies. To strengthen: foreground the "executed vs. designed" distinction earlier, and prioritize training Organism B and running the higher sophistication tiers.
+

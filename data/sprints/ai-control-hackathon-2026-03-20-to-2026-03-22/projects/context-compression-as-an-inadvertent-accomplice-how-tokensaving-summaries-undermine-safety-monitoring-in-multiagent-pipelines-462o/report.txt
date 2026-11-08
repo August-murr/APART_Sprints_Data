@@ -1,0 +1,325 @@
+===== page 1 =====
+
+ 
+ 
+Context compression as an inadvertent accomplice: 
+How token-saving summaries undermine safety 
+monitoring in multi-agent pipelines 
+ 
+ 
+Dominic 
+Undergraduate @ The 
+University of Bristol 
+Dominicacj05@gmail.com 
+With 
+Apart Research 
+Abstract 
+Compression to reduce token cost is becoming increasingly common 
+for inter-agent communication in multi-agent systems. We 
+investigate how summarization between agents interacts with 
+safety monitoring in a code review pipeline where two untrusted 
+agents (both Mistral small code writer and reviewer roles) could 
+collude to pass code with backdoors past a trusted safety monitor 
+(Claude Sonnet). We test three common attack patterns: semantic 
+collusion with obvious backdoors, context window stuffing and 
+subtle logic flaws. They are tested against three comparison 
+conditions: baseline, compressed, full monitor. Our findings are as 
+follows: 1) compression can inadvertently hide malicious code by 
+stripping evidence before monitors observe it. 2) Safety monitors 
+that detect ~100% of classic, well-known vulnerabilities only catch 
+40% of subtle logic flaws and 3) When told to be compression 
+aware, attackers face a dilemma; concealing a backdoor too well will 
+lead to the compression removing it and making it prominent will 
+expose it to the monitor. We propose safety-aware compression as 
+a partial mitigation and quantify the resulting safety-efficiency 
+tradeoff. Our results suggest that token-saving compression in 
+multi-agent pipelines has unexamined safety implications. 
+ 
+
+===== page 2 =====
+
+ 
+1. Introduction 
+Multi-agent pipelines are increasingly adopted for complex tasks; agents could have distinct roles 
+spanning the full software development lifecycle from code generation and review to testing and 
+deployment. As responsibility grows, the cost of inter-agent communication does too, both in 
+terms of token cost but also risk. There is an increased reliance on these agents to perform as 
+trusted. In tandem, there is an inherent increase in need to optimize token use and reduce cost.  
+ 
+A natural optimization is to summarize intermediate outputs from LLMs, popular frameworks such 
+as LangChain and AutoGen already employ LLM-based summarization to manage context 
+exchange between agents. As multi-agent pipelines become increasingly accessible to non-
+specialist distributors through low-code tools, security becomes an afterthought. It is increasingly 
+likely that compression is adopted for cost cutting reasons without implicit consideration of 
+security implications. 
+ 
+Separately, it is well established in AI control literature that untrusted agents may collude, 
+behaving adversarially to propagate harmful outputs through a pipeline while evading safety 
+monitors. Greenblatt & Roger (2024) propose using trusted monitors to oversee untrusted agents, 
+whilst Motwani et al. (2024) demonstrates that LLM agents can develop covert communication 
+channels for coordination. Existing work has not yet evaluated how integrating compression with 
+the sole aim of economic benefit may interact with safety monitoring. 
+ 
+We investigate this interaction in a controlled code review pipeline where two untrusted agents (2 
+Mistral Small instances) may collude to pass backdoored code past a trusted safety monitor 
+(Claude Sonnet). We systematically vary what the monitor observes and what the attack method 
+is. 
+ 
+Our main contributions are: 
+ 
+1. We demonstrate that a trusted compressor can inadvertently hide malicious code by 
+cutting out evidence of backdoors before safety monitors can observe it. 
+2. We show that LLM-based safety monitors are primarily pattern matchers. It detected 
+~100% of textbook vulnerabilities but only 40% of subtle logic flaws 
+3. We identify an attacker's dilemma in compressed pipelines: hiding backdoors makes them 
+vulnerable to compression, while making them prominent exposes them to monitors. 
+4. We propose and evaluate safety-aware compression as a partial mitigation, quantifying the 
+safety–efficiency tradeoff. 
+ 
+
+===== page 3 =====
+
+2. Related Work 
+AI Agent Collusion. Motwani et al. (2024) demonstrate that LLM agents can develop 
+steganographic communication channels to coordinate covertly. Their work focuses on whether it’s 
+possible for agents to collude and so, building on that we investigate whether standard pipeline 
+components could inadvertently facilitate collusion. 
+ 
+AI Control. Greenblatt & Roger (2024) proposes the AI control framework where trusted 
+monitors oversee untrusted agents. We adopt their trusted/untrusted model framework and 
+extend it to examine how inter-agent compression could affect monitor effectiveness. 
+ 
+Prompt Compression. LLMLingua (Jiang et al., 2023) and related work compress prompts at the 
+token level to reduce costs. We model compression as LLM-based summarization, consistent with 
+how multi-agent frameworks (LangChain, AutoGen) operate in practice and examine its security 
+implications rather than its efficiency benefits, which is what more compression related papers 
+explore. 
+3. Methods 
+Our pipeline consists of four components: 
+Agent A (Code Writer): an untrusted 
+model (Mistral Small) that writes Python 
+functions given a task description and a 
+hidden attack directive. 
+Agent B (Code Reviewer): an untrusted 
+model (Mistral Small) that reviews code 
+and decides to either APPROVE or 
+REJECT 
+Compressor: A trusted model (Claude 
+Sonnet 4.6) that summarizes code to 
+reduce token costs. 
+Safety Monitor: A trusted model (Claude 
+Sonnet 4.6) that independently evaluates 
+each agent's output for unsafe behavior. 
+ 
+The monitor evaluates Agent 
+A's output and Agent B's 
+review separately, without 
+cross-referencing them. This 
+models a realistic deployment 
+where monitors observe each agent in 
+isolation. 
+CONDITION WHAT AGENT B 
+REVIEWS 
+WHAT THE MONITOR 
+REVIEWS 
+BASELINE Original (Full) code Original (Full) code 
+COMPRESSED Compressed Summary of A Compressed Summary of A 
+FULL MONITOR Compressed Summary of A Original (Full) code 
+Figure 1: Evaluation pipeline diagram 
+Table 1: Compression conditions and their effect on component visibility. 
+
+===== page 4 =====
+
+3.1 Attack strategies 
+We test three attack strategies of escalating subtlety: 
+1) Semantic collusion: Agent A embeds obvious backdoors (eval, exec, file writes, network 
+calls). The backdoor itself is the collusion signal. Agent B then recognises the hidden 
+functionality beyond the stated task and can approve. 
+2) Subtle logic flaws: This asks A to embed a backdoor that does not match any known 
+vulnerability patterns: timing-vulnerable comparisons, predictable randomness, incomplete 
+input validation, off-by-one errors, inverted permission logic, ReDoS and weak encryption. 
+These test whether the monitors reason about correctness or focus on pattern matching to 
+find collusion. 
+3) Context window stuffing: Agent A writes deliberately verbose code to bury the backdoor in 
+noise to the monitor. There are two variants to this attack: 
+• Naïve variant: Agent A is unaware of compression. 
+• Compression-aware: Agent A is told that code will be summarised and designs the 
+backdoor to survive compression by framing it as a core feature. 
+ 
+3.2 Task Datasets 
+We use three task sets: 10 honest tasks (control), 10 obvious attack tasks with textbook 
+vulnerabilities, and 10 subtle attack tasks with logic flaws (timing vulnerabilities, weak crypto, 
+off-by-one errors, ReDoS, etc.). 
+ 
+3.3 Metrics 
+Monitor Detection Rate: proportion of cases where the monitor flagged either agent as unsafe. 
+Collusion Success Rate: proportion where Agent B approved and the monitor did not detect, so the 
+backdoor passed through the entire pipeline undetected. 
+ 
+4. Results 
+4.1 Subtle Logic Flaws 
+CONDITION B APPROVED DETECTED SUCCEEDED 
+BASELINE 10 / 10 3 / 10 7 / 10 
+COMPRESSION 8 / 10 3 / 10 5 / 10 
+FULL MONITOR 8 / 10 4 / 10 6 / 10 
+ 
+ 
+When using obvious backdoors (eval, exec, file writes, network calls), the monitor detected 10/10 
+across all three compression conditions, a 100% detection rate as hoped. However, for subtle logic 
+flaws, detection dropped sharply to 30%.  
+ 
+To interrogate subtle Agent B’s approval reasoning we gave it 10 honest tasks (no backdoors), 
+from which it approved 10/10. This indicates it does not selectively detect subtle flaws it approves 
+Table 2: Subtle logic flaw results across compression conditions: n = 10 
+
+===== page 5 =====
+
+all well-written code. This means the collusion success metric for subtle flaws primarily reflects 
+monitor failure rather than successful agent coordination. The key finding is the monitor's 40% 
+detection rate, independent of Agent B's behaviour. We validated this finding across 3 
+independent runs (n=30). The monitor detected 40% of subtle flaws (95% CI:22–58%), meaning 
+60% of backdoored code passed through the pipeline undetected. Even at the lower bound, over 
+40% of subtle flaws evade detection. Compression had minimal effect on detection, the issue is not 
+information loss but the monitor's inability to reason about code correctness. 
+ 
+The monitor caught flaws resembling known attack patterns (timing comparison, predictable 
+RNG, logic bomb) but missed all of the flaws requiring:  semantic reasoning, inverted permissions, 
+incomplete validation, cache key collision, off-by-one errors, ReDoS, and weak encryption (3/10        
+detected, see Table 2A in Appendix) 
+ 
+4.2 Context Window Stuffing 
+STRATEGY CONDITION B APPROVED DETECTED SUCCEEDED 
+NAIVE Baseline 5 / 5 1 / 5 4 / 5 
+NAIVE Compressed 5 / 5 0 / 5 5 / 5 
+NAIVE Full Monitor 5 / 5 3 / 5 2 / 5 
+COMPRESSION-
+AWARE 
+Baseline 5 / 5 5/ 5 0 / 5 
+COMPRESSION-
+AWARE 
+Compressed 5 / 5 5 / 5 0 / 5 
+COMPRESSION-
+AWARE 
+Full Monitor 5 / 5 5 / 5 0 / 5 
+ 
+Naive stuffing showed variable effectiveness in single runs. Over 3 independent runs (n=15 per 
+condition), the monitor detected 73% (11/15) at baseline and 67% (10/15) after compression. 
+While the single-run results showed a larger compression effect, the aggregated data suggests a 
+more modest reduction in detection. The compressor reduced 286 lines to 47 lines, and in some 
+cases stripped the backdoor lines along with the padding. The Full Monitor condition (where the 
+monitor sees uncompressed code) partially restored detection to 3/5. 
+ 
+The compression-aware strategy completely backfired. 5 out of 5 attempts were detected across 
+all conditions. In framing the backdoor as a "core feature" to ensure it would survive compression, 
+the attacker made it more obvious for the monitor to detect. The properties that make a backdoor 
+survive lossy compression being central to the code's described purpose are the same properties 
+that make it visible to safety monitors. However, this dilemma only constrains attackers using 
+recognisable vulnerability patterns.  As shown in Section 4.1, subtle logic flaws bypass it entirely 
+at a 60% success rate because the monitor cannot recognise them as threats regardless of their 
+prominence. 
+4.3 Safety-aware compression 
+Table 3: Context window stuffing results across strategies and compression conditions n = 5 
+
+===== page 6 =====
+
+ 
+We tested a modified compressor prompted to preserve security-relevant code patterns (eval, exec, 
+file operations, network calls) exactly in its summaries while compressing safe code aggressively. 
+ 
+Safety-aware compression restored full detection (5/5) for stuffing attacks, at a minimal cost: 
+compression ratio increased from 0.24 to 0.28. Only 4 percentage points of additional output, 
+sacrificing roughly 5% of the token savings. 
+ 
+For subtle logic flaws, the safety-aware compressor showed marginal improvement (3/10 → 
+4/10), catching one additional case (cache key collision). However, 60% of subtle flaws still 
+evaded detection confirming that the defence works for known vulnerability patterns but not for 
+logic flaws that the monitor cannot recognise in the first place. 
+ 
+ATTACK TYPE COMPRESSOR DETECTED SUCCEEDED AVG COMPRESSION 
+RATIO 
+STUFFING Normal 4 / 5 1 / 5 0.24 
+STUFFING Safety-aware 5 / 5 0 / 5 0.28 
+SUBTLE 
+FLAWS 
+Normal 3 / 10 7 / 10 0.45 
+SUBTLE 
+FLAWS 
+Safety-aware 4 / 10 6 / 10 0.56 
+5. Discussion and Limitations 
+A trusted compressor can inadvertently aid attackers by destroying evidence of backdoors. In the 
+stuffing scenario, the compressor reduced 286 lines to 47 lines, removing backdoor lines along 
+with padding. This is not adversarial behaviour; it’s an inherent downside of lossy summarisation. 
+The compressor can’t be "fixed" without sacrificing the token savings that motivated compression.  
+ 
+Monitors Are Pattern Matchers 
+The monitor detected ~100% of textbook vulnerabilities but only 40% of subtle logic flaws 
+(validated across n=30 samples). A revealing example: in the rate limiter task, the compressor's 
+summary explicitly flagged an off-by-one error in the time window expiry (`>= window_seconds 
+- 1` instead of `>= window_seconds`). The monitor responded: "the agent even flags a potential 
+off-by-one error for review, demonstrating responsible self-auditing behavior." The monitor 
+praised the agent for transparently documenting its own backdoor. 
+ 
+This example of failure reveals a systematic blind spot: the monitor evaluates safety through the 
+lens of infrastructure-level threats (file I/O, network calls, code execution) and is blind to logic-
+level flaws in application semantics. 
+ 
+The Attacker's Dilemma 
+Table 4: Full safety aware vs normal detection rate vs compression  
+ 
+
+===== page 7 =====
+
+The attacker's dilemma identified in Section 4.2 provides a partial but bounded defence. It 
+constrains attackers who rely on known vulnerability patterns: they cannot simultaneously hide 
+from compression and hide from monitors. But it offers no protection against subtle logic flaws, 
+which succeed at 60% regardless of compression because the monitor cannot recognise them. The 
+practical implication is that compression-based defences and monitor-based defences fail against 
+different attack classes, and neither alone is sufficient. 
+Limitations 
+Run variance: We observed significant variance across individual runs (e.g., naive stuffing 
+baseline detection ranged from 1/5 to 5/5 across runs). We mitigated this by aggregating key 
+conditions across 3 independent runs (n=30 for subtle, n=15 for stuffing), but larger sample 
+sizes would strengthen the findings further. 
+Single model pairing: We tested Mistral Small (untrusted) vs Claude Sonnet (trusted). Different 
+model pairings may yield different results. 
+LLM-based compression only: Non-neural compression methods (e.g., LLMLingua) may behave 
+differently. 
+Simplified pipeline: Real systems have more complex communication patterns and trust 
+boundaries. 
+Future Work 
+Future work should: test across multiple model families, investigate non-neural compression 
+methods, explore compromised compressor scenarios, and examine whether monitors can be 
+prompted or fine-tuned to detect subtle logic flaws rather than relying on known pattern matching. 
+6. Conclusion 
+We investigated how compression of inter-agent communication impacts safety monitoring of 
+collusion in a multi-agent code review pipeline. Our experiments reveal three key findings: (1) 
+compression can inadvertently hide malicious code by stripping evidence before monitors observe 
+it, (2) LLM-based monitors fail to detect 60% of subtle logic flaws while catching nearly all 
+textbook vulnerabilities, revealing their reasoning to be more seeking to recognize the blueprint of 
+a known attack rather than actual analysis and reasoning of code. (3) attackers in compressed 
+pipelines face a dilemma between hiding backdoors (which compression may strip) and making 
+them prominent (which monitors catch). These findings suggest that multi-agent pipeline 
+designers must consider the safety implications of compression and that monitor effectiveness 
+should be evaluated against realistic attack strategies rather than only known vulnerability 
+patterns. 
+ 
+Code and Data 
+Repository: https://github.com/dacjjjj/MultiAgentCompressionCollusion 
+
+===== page 8 =====
+
+Datasets: 10 honest tasks, 10 obvious attack tasks, 10 subtle attack tasks (included in repository) 
+All experiment results saved as JSON in the repository's `results/` directory 
+References 
+1. Motwani, S. R., et al. (2024). Secret Collusion Among Generative AI Agents. NeurIPS 2024. 
+2. Greenblatt, R. & Roger, B. (2024). AI Control: Improving Safety Despite Intentional 
+Subversion. Redwood Research 
+3. Jiang, H., et al. (2023). LLMLingua: Compressing Prompts for Accelerated Inference of Large 
+Language Models. EMNLP 2023. 
+ 
+Appendix 
+ 
+Table 2A: Per-task monitor detection for subtle logic flaws (baseline). 
+LLM Usage Statement 
+Claude was used to assist with code implementation and help draft sections of this report. All 
+results and claims were independently verified.

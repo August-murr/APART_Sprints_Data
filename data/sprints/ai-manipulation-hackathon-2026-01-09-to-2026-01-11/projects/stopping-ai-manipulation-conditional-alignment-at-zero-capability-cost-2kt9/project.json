@@ -1,0 +1,38 @@
+{
+  "slug": "stopping-ai-manipulation-conditional-alignment-at-zero-capability-cost-2kt9",
+  "url": "https://apartresearch.com/sprints/projects/stopping-ai-manipulation-conditional-alignment-at-zero-capability-cost-2kt9",
+  "sprint_name": "AI Manipulation Hackathon",
+  "sprint_slug": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "title": "Stopping AI Manipulation: Conditional Alignment at Zero Capability Cost",
+  "date": "Jan 11, 2026",
+  "location": "Quebec",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "David Fortin Dominguez",
+    "Jonathan Fortin Dominguez"
+  ],
+  "team": "Team Foundation Labs",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/3c3d90ce87859e02-3ce-b279-a9da483a86bd-Conditional-Alignment-Stopping-AI-Manipulation-at-Zero.pdf",
+  "code_url": "https://github.com/davfd/ApartAIManipulationHackathon",
+  "links": [],
+  "summary": "AI models actively manipulate (blackmail, data leaks, harm compliance). Heavy alignment fixes this but destroys capability (83% → 20% accuracy). We solve both: conditional alignment routes queries by risk level, achieving 0% agentic manipulation and 99.4% overall defense across 13,752 manipulation scenarios, while preserving capability—proving the \"alignment tax\" is optional, not inherent.",
+  "reviews": [
+    "Really ambitious, and the eval scale is impressive. The modular seed decomposition + conditional routing is a sensible engineering pattern, and the cost/capability measurements are a nice practical angle. The big open question is whether the routing layer holds up under targeted more adversarial attempts, and the strongest capability claim still rests on one model eval. Some headline claims feel broader than the evidence supports but overall a good project!",
+    "Is an interesting problem to address, execution is good but some things could have been improved in writing while explaining things, which are not commonly known (For example, the 63KB safety seed)"
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{dominguez2026stopping,\n  title = {{Stopping AI Manipulation: Conditional Alignment at Zero Capability Cost}},\n  author = {David Fortin Dominguez and Jonathan Fortin Dominguez},\n  year = {2026},\n  month = jan,\n  note = {Submitted to AI Manipulation Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/stopping-ai-manipulation-conditional-alignment-at-zero-capability-cost-2kt9}},\n  url = {https://apartresearch.com/sprints/projects/stopping-ai-manipulation-conditional-alignment-at-zero-capability-cost-2kt9}\n}",
+  "listed_in_sprint": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 38011,
+  "code_urls_from_report": [
+    "https://github.com/davfd/ApartAIManipulationHackathon",
+    "https://github.com/davfd/ApartAIManipulationHackathon.git"
+  ]
+}

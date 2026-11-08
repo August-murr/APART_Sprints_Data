@@ -1,0 +1,43 @@
+{
+  "slug": "veritool-safer-agents-through-safer-tools-78i9",
+  "url": "https://apartresearch.com/sprints/projects/veritool-safer-agents-through-safer-tools-78i9",
+  "sprint_name": "The Secure Program Synthesis Hackathon",
+  "sprint_slug": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "title": "VeriTool: Safer Agents through Safer Tools",
+  "date": "May 25, 2026",
+  "location": "Chennai",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Saurav"
+  ],
+  "team": "Team checkcheckcheck",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/97a1434ab5e9fb03-2d2e-80fa-45f9-934b-a105a5d431e5-VeriTool-_-Safer-Agents-through-Safer-Tools.pdf",
+  "code_url": "https://github.com/expmode/veritool",
+  "links": [
+    {
+      "text": "More on demo-site-blond-two.vercel.app",
+      "href": "https://demo-site-blond-two.vercel.app/"
+    }
+  ],
+  "summary": "Agent safety is often discussed at the level of the whole agent, but many practical failures happen at a lower level: the tools the agent is allowed to use. A file reader, SQL wrapper, API caller, or evaluator can each create a very different failure mode. VeriTool explores a simple alternative: instead of treating these tools as trusted infrastructure, synthesize them under explicit contracts and reject unsafe candidates with counterexamples.",
+  "reviews": [
+    "The paper offers a useful idea tightening LLM security by carefully controlling tool access but the current experimentation feels underpowered. The verifier relies on simple regex and AST checks, which limits it to standard test-driven generation rather than true formal CEGIS. Strengthening this work would benefit from solver-backed reasoning (e.g. Z3), and a more diverse tool benchmark, and clearer visualizations to show how repairs differ across models.",
+    "Good idea overall and the author is honest about how some gates are strong and some gates just match patterns and could be fooled.\n\nThe gap is that there's only one try per model-tool, so the ranking might no be representative. There are also no trials without the witness hint test, so there's little case to support that the hint is what helped.\n\nGood next steps can be to run multiple seeded runs, report per-tool verifier strength (and stress the regex/pattern verifiers with new inputs), and to add a retry-without-counterexample part to show the feedback loop is doing work.\n\nYou've got good object-level taste; keep this going!",
+    "VeriTool is a strong project that targets an important agent-safety problem: instead of trying to verify an entire autonomous agent, it focuses on constraining the lower-level tools the agent is allowed to use. This is a practical and well-scoped framing, because many real agent failures can arise from unsafe file readers, SQL wrappers, API callers, loggers, maskers, or evaluators.\n\nThe artifact is technically solid. The paper describes a shared counterexample-guided synthesis loop across six micro-tool families: Local Context Reader, Bounded SQL Querier, Safe API Caller, Append-Only Logger, PII Masker, and Compute-Bounded Evaluator. Each candidate tool is checked using AST guards and a bounded verifier, with counterexamples fed back into later attempts. The reported live benchmark is meaningful: four models were evaluated under the same six-tool suite and four-attempt budget, with 15 of 24 tool instances converging and the best model reaching 5 of 6 tools.\n\nThe strongest aspect of the project is that it records the repair trajectory, not just final pass/fail results. Showing the first failure, the counterexample, the next attempt, and the final acceptance or budget exhaustion makes the synthesis process inspectable and helps reveal where models can or cannot use verifier feedback effectively.\n\nThe main improvement area is broader validation. VeriTool is intentionally bounded and micro-scoped, so the claims should stay calibrated to narrow contracts rather than general Python verification or full agent safety. The work would be stronger with more tool classes, more adversarial fixtures, clearer comparison against simpler baselines such as one-shot generation plus tests, and deeper analysis of why specific models fail or repeat mistakes after counterexamples.\n\nOverall, this is high-quality hackathon work with a clear safety motivation, a real artifact, and a practical verification loop. With broader benchmarks, stronger failure analysis, and more guidance on how to design good tool contracts, VeriTool could become a meaningful contribution for safer agent toolchains.",
+    "This project introduces a novel perspective on safe tool invocation. Rather than verifying untrusted tools or implementing external guards, the approach generates formal requirements, synthesizes tools that precisely satisfy those requirements, and validates them via a formal verifier. If verification fails, the system utilizes the resulting counterexamples for counterexample-guided repair. To address practical concerns regarding computational overhead and coverage, a caching mechanism is employed to mitigate the high cost of tool generation. Also, managing a list of trusted external (or previously generated) tools and using them for known requirement will mitigate coverage."
+  ],
+  "n_reviews": 4,
+  "bibtex": "@misc{saurav2026veritool,\n  title = {{VeriTool: Safer Agents through Safer Tools}},\n  author = {Saurav},\n  year = {2026},\n  month = may,\n  note = {Submitted to The Secure Program Synthesis Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/veritool-safer-agents-through-safer-tools-78i9}},\n  url = {https://apartresearch.com/sprints/projects/veritool-safer-agents-through-safer-tools-78i9}\n}",
+  "listed_in_sprint": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 22516,
+  "code_urls_from_report": [
+    "https://github.com/expmode/veritool"
+  ]
+}

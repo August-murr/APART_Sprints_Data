@@ -1,0 +1,37 @@
+{
+  "slug": "specfaultdafny-a-classstratified-scorecard-for-verifierpassing-specification-faults-q67o",
+  "url": "https://apartresearch.com/sprints/projects/specfaultdafny-a-classstratified-scorecard-for-verifierpassing-specification-faults-q67o",
+  "sprint_name": "The Secure Program Synthesis Hackathon",
+  "sprint_slug": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "title": "SpecFault-Dafny: A Class-Stratified Scorecard for Verifier-Passing Specification Faults",
+  "date": "May 24, 2026",
+  "location": "Los Llanos de Aridane",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Hugo Nguyen"
+  ],
+  "team": null,
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/ada6dc73fb7f1351-3d0f90c8-f7d1-4002-9eaf-89c4857cf989-specfault-dafny-report.pdf",
+  "code_url": "https://github.com/SystemicVoid/secure-synth-hackathon",
+  "links": [],
+  "summary": "A 45-item Dafny benchmark of verifier-passing specification faults: 30 intent/contract mismatches across six failure classes and nine domains, plus 15 clean controls. It scores five baseline validators (verifier-only, static escape-hatch scanning, symbolic checks, round-trip comparison, and a fixed-order hybrid) by coverage, clean-control false-positive rate, and per-class recall. The hybrid reaches 100% bad recall with a 0% observed clean-control false-positive rate, and every scored item ships with an inspectable evidence card.",
+  "reviews": [
+    "Practical and useful tool. If this could be run on some non curated tests, it would help get insight on what the hard problems are. Would also be interesting and more useful to add more testing tools to see more interactions.",
+    "This is a very well-scoped and well-implemented project. Great work!"
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{nguyen2026specfaultdafny,\n  title = {{SpecFault-Dafny: A Class-Stratified Scorecard for Verifier-Passing Specification Faults}},\n  author = {Hugo Nguyen},\n  year = {2026},\n  month = may,\n  note = {Submitted to The Secure Program Synthesis Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/specfaultdafny-a-classstratified-scorecard-for-verifierpassing-specification-faults-q67o}},\n  url = {https://apartresearch.com/sprints/projects/specfaultdafny-a-classstratified-scorecard-for-verifierpassing-specification-faults-q67o}\n}",
+  "listed_in_sprint": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 19309,
+  "code_urls_from_report": [
+    "https://github.com/SystemicVoid/secure-synth-",
+    "https://github.com/SystemicVoid/secure-synth-hackathon"
+  ]
+}

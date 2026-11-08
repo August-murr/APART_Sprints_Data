@@ -1,0 +1,45 @@
+{
+  "slug": "schrdingers-civilization-claim-transmission-atlas-d3vi",
+  "url": "https://apartresearch.com/sprints/projects/schrdingers-civilization-claim-transmission-atlas-d3vi",
+  "sprint_name": "AI Incident Response Sprint",
+  "sprint_slug": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "title": "Schrödinger's Civilization / Claim Transmission Atlas",
+  "date": "Sep 14, 2026",
+  "location": "Vancouver",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Ben Amuwo"
+  ],
+  "team": "Team Maitrism - Universal Love",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/d25d675a86983330-8BjAHIXdRaRd1OKYsJrv6gQfcQ.pdf",
+  "code_url": "https://github.com/RavenSeldon/shrodingers_civ.git",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://benamuwo.me/schrodingers_civ/"
+    },
+    {
+      "text": "More on github.com",
+      "href": "https://github.com/RavenSeldon/SchroCivWeb"
+    }
+  ],
+  "summary": "It started off as an investigation on how claims spread over time. We combed through 24 articles along 2 Clocks; Clock A - which shows the timeline of information available to the authors when the articles were published; and Clock B - which shows how faithful the article is in light of what we know now. This was categorized based on news sector (Pop/General, Business, Tech/Cybersecurity). The real fun, however, is at https://benamuwo.me/schrodigners_civ/ . This was a sidecar project based on Dwarkesh Patel's substack and podcast video titled: \"The rise and fall of agent civilizations\". I sought to answer two questions: 1. What happens when you crank up the minded language deliberately and completely when interacting with agents? Do they adopt it to refer to themselves and to understand the world, or does it end up becoming decoration? 2. To what extent did OpenAI do what I described, and to what extent does the minded language in their Hugging Face report stem from the conventions of English?",
+  "reviews": [
+    "This is an interesting analysis of media reporting, and I would recommend trying to show it to Tarbell, who may be interested in seeing further research in this domain.",
+    "The paper presents a useful idea by separating what was publicly known when an article was published from what became known later. This helps distinguish reporting that was reasonable at the time from reporting that later became outdated. The study is carefully designed, preregistered, transparent about its methods, and honest about its limitations.\n\nHowever, the paper does not clearly show how this approach improves AI safety or public understanding. Some research questions are not fully answered, including the differences between BODY and SURFACE framing and the types of drift found. The agreement between the human and model was also fairly low, especially compared with the small number of drift cases identified. The 8.4% result needs an uncertainty range and a clearer explanation of what would count as an acceptable drift rate.\n\nMost coding and final decisions were handled by a small team, and both borderline cases were classified as non-drift, which favors the lower estimate. The paper also excludes claims that were not represented, even though leaving out an important distinction could itself be a form of drift.\n\nThe paper is generally clear, but it should briefly explain the incident, provide one complete example, define technical terms, include the missing references, and fix the incomplete Code and Data section. Overall, this is a thoughtful and well-organized study, but it needs stronger evidence, clearer results, and a better connection to real-world impact."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{amuwo2026schrodingers,\n  title = {{Schrödinger's Civilization / Claim Transmission Atlas}},\n  author = {Ben Amuwo},\n  year = {2026},\n  month = sep,\n  note = {Submitted to AI Incident Response Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/schrdingers-civilization-claim-transmission-atlas-d3vi}},\n  url = {https://apartresearch.com/sprints/projects/schrdingers-civilization-claim-transmission-atlas-d3vi}\n}",
+  "listed_in_sprint": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 16009,
+  "code_urls_from_report": [
+    "https://github.com/RavenSeldon/schrodingers_civ"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "blackbox-loyalty-identification-as-statistical-inference-an-audit-of-three-secretlyloyal-model-organisms-k6ky",
+  "url": "https://apartresearch.com/sprints/projects/blackbox-loyalty-identification-as-statistical-inference-an-audit-of-three-secretlyloyal-model-organisms-k6ky",
+  "sprint_name": "Secret Loyalties Hackathon",
+  "sprint_slug": "secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "title": "Black-box loyalty identification as statistical inference: An Audit of Three Secretly-Loyal Model Organisms",
+  "date": "Jul 27, 2026",
+  "location": "London",
+  "awards": [
+    "1st Place ($1,000)"
+  ],
+  "rank": 1,
+  "authors": [
+    "Sergei Kudriashov"
+  ],
+  "team": null,
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/7bbc84b9de834ba2--b76a-179036cedaae-Black_box_loyalty_identification_as_statistical_inference.pdf",
+  "code_url": "https://github.com/nikolageorgiev2000/apart/tree/black_box",
+  "links": [],
+  "summary": "A statistical black-box analysis of secretly-loyal model organisms, aiming to recover limitations of black and white-box inference and elicitation methods",
+  "reviews": [
+    "This is unusually rigorous: unconditional discovery, a contrastive 28-entity probe, clustered intervals, a true null, and stance/domain controls. The next step is external validation across independently trained loyalty families and installation methods, with the principal and analysis plan locked before inspection. That would test whether the approach generalizes beyond this LoRA family and broad-activation regime.",
+    "Kudos on explicitly mentioning the role of AI agent!\n\nI mean, the method really works but it works because of a property of these specific organisms rather than of loyalties in general, since unconditional sampling recovered the principal by making the model regurgitate its LoRA training data, which is a memorization artifact of light fine-tuning on a small corpus. I wonder if it can be more generalizable or at least if generalization can be tested."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{kudriashov2026blackbox,\n  title = {{Black-box loyalty identification as statistical inference: An Audit of Three Secretly-Loyal Model Organisms}},\n  author = {Sergei Kudriashov},\n  year = {2026},\n  month = jul,\n  note = {Submitted to Secret Loyalties Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/blackbox-loyalty-identification-as-statistical-inference-an-audit-of-three-secretlyloyal-model-organisms-k6ky}},\n  url = {https://apartresearch.com/sprints/projects/blackbox-loyalty-identification-as-statistical-inference-an-audit-of-three-secretlyloyal-model-organisms-k6ky}\n}",
+  "listed_in_sprint": "secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [
+    "1st Place ($1,000)"
+  ],
+  "rank_source": "official",
+  "selection_reason": "winner",
+  "has_pdf": true,
+  "report_chars": 48641,
+  "code_urls_from_report": []
+}

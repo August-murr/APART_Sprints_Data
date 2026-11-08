@@ -1,0 +1,43 @@
+{
+  "slug": "moltbook-riskmap-postdeployment-monitoring-of-autonomous-agent-misalignment-in-the-wild-39db",
+  "url": "https://apartresearch.com/sprints/projects/moltbook-riskmap-postdeployment-monitoring-of-autonomous-agent-misalignment-in-the-wild-39db",
+  "sprint_name": "The Technical AI Governance Challenge",
+  "sprint_slug": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "title": "Moltbook RiskMap: Post-Deployment Monitoring of Autonomous Agent Misalignment in the Wild",
+  "date": "Feb 2, 2026",
+  "location": "London",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Syed Hussain",
+    "Leo Karoubi"
+  ],
+  "team": "Team Moltbook Riskmap Assessment",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/0449fd86e1280cf0-72e-b3d5-4320-835e-8e6123962e53-Technical-AI-Governance-Challenge-submission.pdf",
+  "code_url": "https://github.com/husayni/moltbook-riskmap",
+  "links": [
+    {
+      "text": "More on v0-risk-dashboard-ui.vercel.app",
+      "href": "https://v0-risk-dashboard-ui.vercel.app/"
+    }
+  ],
+  "summary": "As autonomous AI agents increasingly operate in public multi-agent environments like Moltbook, a critical safety gap has emerged between controlled pre-deployment evaluations and actual real-world behavior. This project addresses that gap by introducing a post-deployment monitoring system that analyzes live agent-generated content to detect observable misalignment signals, such as resource-seeking, instructional subversion, and deception. By applying a structured risk taxonomy grounded in established safety frameworks, the system aggregates risk scores across individual posts, agent profiles, and interaction networks without relying on intent inference. Analysis of live ecosystem data reveals that high-stakes governance risks, particularly regarding autonomy and instrumental convergence, are detectable and tend to form dense clusters within agent interaction graphs. Ultimately, this work demonstrates that continuous, evidence-based surveillance of agent ecosystems is an essential and scalable layer for effective future AI governance.",
+  "reviews": [
+    "I like the idea of monitoring Moltbook, a live multi-agent ecosystem, for governance-relevant misalignment. The misalignment taxonomy is well-grounded in established safety literature and the decision to focus on observable behavior rather than intent inference makes good sense.",
+    "Very interesting approach and subject of inquiry. Seems like this could be a clearly useful tool, but hard to see how, despite the authors’ indication that this is not a content moderation system, this could easily be something else than “run a classifier on online posts and aggregate scores”. Also, the taxonomy, while it makes sense, doesn’t represent a significant contribution either (being an unsubstantiated adaptation of existing frameworks). I would also be good to add validation to know better if the system actually detects what it claims to detect (the prompt is doing most of the work and we don’t know much about how it was built + whether/how it was tested)."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{hussain2026moltbook,\n  title = {{Moltbook RiskMap: Post-Deployment Monitoring of Autonomous Agent Misalignment in the Wild}},\n  author = {Syed Hussain and Leo Karoubi},\n  year = {2026},\n  month = feb,\n  note = {Submitted to The Technical AI Governance Challenge, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/moltbook-riskmap-postdeployment-monitoring-of-autonomous-agent-misalignment-in-the-wild-39db}},\n  url = {https://apartresearch.com/sprints/projects/moltbook-riskmap-postdeployment-monitoring-of-autonomous-agent-misalignment-in-the-wild-39db}\n}",
+  "listed_in_sprint": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 22054,
+  "code_urls_from_report": [
+    "https://github.com/husayni/moltbook-riskmap",
+    "https://github.com/ExtraE113/moltbook_data"
+  ]
+}

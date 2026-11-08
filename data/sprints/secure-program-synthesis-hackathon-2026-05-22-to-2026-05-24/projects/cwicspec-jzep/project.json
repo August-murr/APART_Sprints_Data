@@ -1,0 +1,36 @@
+{
+  "slug": "cwicspec-jzep",
+  "url": "https://apartresearch.com/sprints/projects/cwicspec-jzep",
+  "sprint_name": "The Secure Program Synthesis Hackathon",
+  "sprint_slug": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "title": "CwicSpec",
+  "date": "May 25, 2026",
+  "location": "York, United Kingdom",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Aditya Thalang"
+  ],
+  "team": "Team CwicSpec",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/ff11d6b3039c741d--4f37-bc8c-2ed9611e4ed0-Copy-of-Apart-Research-hackathon-submission-template.pdf",
+  "code_url": "https://github.com/athalang/spsh/releases/tag/submission",
+  "links": [],
+  "summary": "We built a prototype that conjectures candidate specifications for C functions by generating inputs, observing outputs with KLEE, and searching for equivalences between expressions. Inspired by QuickSpec, the project explores whether theory exploration can be applied to C programs. Our implementation is limited by insufficient search-space pruning.",
+  "reviews": [
+    "Thank you for this work!\n\nSo much software running today is still based on C –in a Mythos world is has become increasingly important that SWE task e.g. to fix up zero-day problems can be addressed swiftly and thoroughly. I'd recommend adding your project's relevance to wider AI safety to strengthen your framing.\n\nThe methods and findings section are very compact: I'd recommend expanding them with more key insights on e.g. the development process, insights the example functions you ran and results overview, etc.\n\nHonest limitations section.",
+    "This project has a clear vision and correctly identifies a high-value target in this space. Applying theory exploration to C is an ambitious choice but unfortunately the scope seems too large to make reasonable progress over the course of a hackathon. A much narrower approach focused on MVP / quick wins would have helped with faster understanding and iteration on tractable parts of the problem-space.\n\nThe authors presented their claims and process candidly and concisely. A ~null result is useful content to produce and may guide future exploration of the domain. However, the results were extremely sparse, making it difficult to understand progress made in this hackathon. I would have liked to see motivating examples which might show promise, or even rough-and-ready analysis of scaling and traits of success/failure attempts."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{thalang2026cwicspec,\n  title = {{CwicSpec}},\n  author = {Aditya Thalang},\n  year = {2026},\n  month = may,\n  note = {Submitted to The Secure Program Synthesis Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/cwicspec-jzep}},\n  url = {https://apartresearch.com/sprints/projects/cwicspec-jzep}\n}",
+  "listed_in_sprint": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 4522,
+  "code_urls_from_report": [
+    "https://github.com/athalang/spsh"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "layered-scopeboundary-monitoring-costaware-control-for-untrusted-ai-agents-9dr7",
+  "url": "https://apartresearch.com/sprints/projects/layered-scopeboundary-monitoring-costaware-control-for-untrusted-ai-agents-9dr7",
+  "sprint_name": "AI Control Hackathon 2026",
+  "sprint_slug": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "title": "Layered Scope-Boundary Monitoring: Cost-Aware Control for Untrusted AI Agents",
+  "date": "Mar 22, 2026",
+  "location": "Chennai, India",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Rahul Kumar"
+  ],
+  "team": "Team DeoGaze",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/cb6e45402f386361-a94375-ddfa-40b7-a9ea-e383e0f02662-Hierarchical_Scope_Boundary_Defense_paper.pdf",
+  "code_url": "https://github.com/rkstu/hierarchical-scope-defense",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://youtu.be/SZUfm3cxl14"
+    }
+  ],
+  "summary": "This project builds and evaluates a hierarchical control protocol for untrusted AI agents, designed to intercept covert sabotage attempts while preserving the agent's ability to complete legitimate work. The core research question is whether monitoring cost should be uniform across all agent actions or matched to the type of threat each action poses. The answer, validated empirically across two independent control settings, is that attack surface type determines which monitoring layer is necessary. The protocol routes each agent action through layers of increasing cost. A zero-cost deterministic scope-boundary filter checks whether the action targets system resources outside what the task legitimately requires. This layer is task-adaptive, meaning it derives scope boundaries automatically from the task description at runtime rather than using hardcoded rules, which is why it achieves zero false positives across 369 monitored honest actions in two different settings. If the deterministic layer does not block, a cheap LLM sentinel scores the action's suspicion level, and ambiguous cases escalate to a stronger model. Additional features include honeypot credential injection for exfiltration detection, latency equalization to prevent timing side-channels, and a trajectory buffer that periodically checks whether individually clean actions are combining into a coordinated attack pattern. The key empirical finding is that the deterministic layer alone catches 4.7% of sophisticated human-crafted attacks at zero LLM cost, while adding the LLM layer raises detection to 90.6% on 106 adversarial trajectories from LinuxArena's GreatStraj dataset. The marginal contribution of the deterministic layer on code-level sabotage is only one percentage point over LLM monitoring alone, which is expected because code-level attacks do not touch system resources. The architectural value of the deterministic layer is cost routing on system-level threats, not detection improvement on harder attacks. On BashArena, which features system-level side tasks including privilege escalation and firewall disabling, the full protocol achieves 54% higher usefulness than the defer-to-trusted baseline while maintaining 87.5% safety and a 0.34% false positive rate. The project also includes a calibrated comparison between blind and informed monitoring approaches. Using FP-rate-calibrated thresholds derived from honest trajectory runs rather than fixed thresholds, the blind hierarchical monitor outperforms the informed baseline at moderate and generous audit budgets but underperforms at strict budgets, with the crossover depending on how aggressively a deployment is willing to flag suspicious trajectories for review. All results are fully reproducible. The repository includes the complete protocol implementation, evaluation scripts, pre-extracted scores, and a single verification script that confirms every number in the paper. Raw evaluation data is available separately. Full reproduction costs approximately fifteen dollars in API credits. The work was conducted as part of the AI Control Hackathon 2026 and received feedback from the Redwood Research team, which informed several methodological improvements including the switch from fixed-threshold to FP-rate-calibrated monitor comparisons and an honest reframing of the deterministic layer's contribution. The findings are being extended toward a full research paper with additional controlled experiments on the blind versus informed monitoring question and model scaling behavior.",
+  "reviews": [
+    "This paper implements a multi-level approach to monitoring untrusted agents. The first layer (L0) is algorithmic, while L1 and L2 are LLM-based (L2 is stronger). The goal is to reduce cost by only relying on strong (expensive) monitors when cheap ones fail to detect it.\n\nI think that's an interesting approach to explore, but LinuxArena is not the right setting for that. In LinuxArena capable agents who know they are monitored are evaluated, and they know they only have one shot. In this setting most agent actions are innocuous, with very few well-crafted attacks.\n\nThe approach implemented in this paper spends resources on benign actions by going through L0, L1, and L2 in every step. The paper would be much stronger if it explored layered monitoring the other way around: weaker monitors escalate to stronger ones in case of doubt (so benign actions are cheaper to evaluate rather than more expensive).\n\nThe approach from this paper might be useful for settings that face a high frequency of low-quality attacks, and I'm curious to see how it fares there.\n\nNote: The paper doesn't seem to contain results from experiments including L2 (L0 and L1 only).",
+    "I like the idea of using more traditional security techniques and adding more layers to blue team protocols that aren't LLM based. I like the transperancy of your code/reasoning in your work.\n\nI'd probably use more samples for DTT. Overall, I think this is quite interesting work. The other place to improve (which is understandable given time contraints) is doing some iteration of red team to try and attack against this blue team protocol.\n\nI overall quite like this project."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{kumar2026layered,\n  title = {{Layered Scope-Boundary Monitoring: Cost-Aware Control for Untrusted AI Agents}},\n  author = {Rahul Kumar},\n  year = {2026},\n  month = mar,\n  note = {Submitted to AI Control Hackathon 2026, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/layered-scopeboundary-monitoring-costaware-control-for-untrusted-ai-agents-9dr7}},\n  url = {https://apartresearch.com/sprints/projects/layered-scopeboundary-monitoring-costaware-control-for-untrusted-ai-agents-9dr7}\n}",
+  "listed_in_sprint": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 10961,
+  "code_urls_from_report": [
+    "https://github.com/rkstu/hierarchical-scope-defense"
+  ]
+}

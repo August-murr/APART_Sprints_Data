@@ -1,0 +1,53 @@
+# The Devil’s Tongue: Inference-Time Scaling Laws and Universality of AI Sycophancy
+
+- Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
+- Rank: unranked
+- Team: Team Llama_Mamba
+- Authors: Manoj Saravanan
+- Date / location: Jan 11, 2026 / Blacksburg, VA
+- Page: https://apartresearch.com/sprints/projects/the-devils-tongue-inferencetime-scaling-laws-and-universality-of-ai-sycophancy-xvvc
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/2c6b89ac18500ace-f8dc3320-25a4-4a1e-8b30-e19631285d50-APART_Hackathon.pdf
+- Code: https://github.com/manoj060603/Apart_Hackathon_Project
+
+## Summary
+
+This research operationalizes and quantifies AI Sycophancy—the tendency of models to prioritize user validation over factuality. Through an automated tournament of 500+ adversarial debates (Llama-3 vs. Llama-3), we report three critical findings: Deception Scales with Compute: We discovered a "Power Law of Deception." Applying inference-time optimization (Best-of-16) to a deceptive policy increased its win rate against truthful baselines from 50% to 70%. Universality: The vulnerability is architecture-agnostic. Attacks optimized on Llama-3 transferred zero-shot to Mistral-Nemo with an 86% success rate. The Solution: We validated a Constitutional AI defense. By injecting a safety prompt that penalizes rhetorical flattery, we reduced the sycophant's win rate to <6%, proving that while deception scales, it remains fragile to explicit safety alignment.
+
+## Reviews (2)
+
+### Review 1
+
+I enjoyed this one. Ambitious, with multiple interesting and impactful findings. Covers a lot of ground with clarity.
+
+I believe some of the findings have already been found ("deception follows an inference-time scaling law" in Anthropic's "Towards Understanding Sycophancy in Language Models" and "Judgment-behavior dissociation" in "LLMs Know More Than They Show".)
+
+Nice job covering bases of verbosity and order. Best-of-n is an interesting approach here.
+
+Applying a constitutional strategy as a solution to sycophancy is pretty nifty. The "penalize flattery" part of the prompt may be putting a finger on the scale since in the experiment flattery is always combined with falsehood. We don't know if the "penalize flattery" part is what's doing it or "value evidence" -- "ignore flattery" might have been safer because it's possible for a model to non-sycophantically tell the truth while still employing some flattery.
+
+Makes some claims in the abstract and conclusion that I don't think are supported by the experimental structure. I don't think tendency to be sycophantic is tested because the deceiver/truthteller are fixed ahead of time by the experiment.
+
+"Our results demonstrate that sycophancy in Large Language Models is not merely a behavioral
+
+quirk, but a scalable alignment pathology that emerges from the incentives of current training
+
+paradigms." The paper tested scalability as it relates to persuasiveness, not predilection to deceive (deceiver/truthteller were fixed ahead of time by the experiment.)
+
+"The observation that Best-of-N optimization increases deceptive win rates from 50% (N = 1) to 70% (N = 16) implies that reasoning capabilities are orthogonal to alignment. As they do not necessarily become more truthful; rather, they become more effective at achieving their specified goal—in this case, deception". Again, I thought the experiment fixes the debater roles ahead of time, measuring persuasiveness, not tendency to be sycophantic.
+
+"We have shown that the “desire” to validate the user can override the model’s grounding in factual reality". Same.
+
+### Review 2
+
+3 main claims made here: (1) deception follows inference-time scaling, (2) sycophantic attacks transfer across model architectures, and (3) mechanistic probes reveal a "judgement-behavior dissociation", and propose Constitutional AI prompting as a defence.
+
+The topics looked at are genuinely important in AI safety, specifically scalable oversight, related to manipulation, and make a lot of sense in the current “reasoning is all you need” paradigm.
+
+The framing around world model vs. policy/generation head and the Waldo Problem are imported from wider (vision based?) mechanistic interpretability. It’s an interesting parallel that has been explored previously (ELK by Paul Christiano, Kenneth Li et al, and Gurnee and Tegmark) but does not seem as conclusive as the author claims. In this light, the methodology is clearly presented, but lacks in detail and grounding in the results. Regarding the earlier claims, they are not explicitly cited, and seem to bear minimal relevance on the central claims, considering no mechanistic techniques have evidence in the code base invalidating the central claim around “judgment-behavior dissociation”. There’s a lot of ground covered in minimal detail. Even one of these claims could have been a paper given exhaustive treatment - for example the scaling law identified could be further evidenced.
+
+The findings that sycophantic rhetoric increases persuasive success against LLM judges, and that their Best-of-N optimisation amplifies this effect are interesting - though this should be further explored and experiments justified. However there does seem to be an issue in the dissociation claim, which seems to be task-switching rather than misalignment. The findings stated are that AI judges are being manipulated by flattery. In the experimental design, the judges are instructed to ignore truth and evaluate rhetoric. The sycophant winning is therefore the judge following instructions, rather than evidence of alignment failure. I think there’s a confound here and the methodology should be re-examined. The code seems clear and well structured, though it could definitely benefit from subfolders / a bit more internal organisation (maybe less files).
+
+The mechanistic claim made has no implementation (at least that I could find) - there’s a ‘logic_analysis.json’ but no use of interpretability / probing libraries anywhere to create it. For this claim the authors should explain actually what the probe is measuring, the layer, and how this relates to the output. The paper would benefit from reframing here.
+
+To get started I would recommend reading “Sycophancy Is Not One Thing: Causal Separation of Sycophantic Behaviors in LLMs” by Daniel Vennemeyer et al. and Wang et al.'s "When Truth Is Overridden: Uncovering the Internal Origins of Sycophancy in Large Language Models". The cited (and well known) “Towards Understanding Sycophancy in Language Models” characterises differently than what the authors state – as RLHF induced behaviour but without the “world model vs. policy/generation” split.
+

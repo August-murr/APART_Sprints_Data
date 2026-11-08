@@ -1,0 +1,39 @@
+{
+  "slug": "chacha-a-control-plane-for-longitudinal-threat-detection-in-llm-applications-kp70",
+  "url": "https://apartresearch.com/sprints/projects/chacha-a-control-plane-for-longitudinal-threat-detection-in-llm-applications-kp70",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "ChaCha: A Control Plane for Longitudinal Threat Detection in LLM Applications",
+  "date": "Nov 23, 2025",
+  "location": "Gold Coast",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Taishi Nagae",
+    "Conor Gould"
+  ],
+  "team": "Team ChaCha",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/321d77559ec31923-8-ee0b5b9f27eb-def_acc-Hackathon-Standard-submission-template-proj_chacha.ai.pdf",
+  "code_url": "https://github.com/conorg000/chachadotai",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://www.loom.com/share/8aae9fa6e63d4104b7a31e748349fc82"
+    }
+  ],
+  "summary": "Most LLM guardrails still treat safety as a per-request classification problem, even though real incidents like jailbreaks, reconnaissance, and data exfiltration typically emerge as behavioural patterns over time. ChaCha addresses this by acting as a longitudinal behavioural control plane: a lightweight SDK records messages, tool calls, CoT snippets, and decisions, and streams them to a multi-tenant backend that maintains per-session and per-identity state. LLM-based detectors analyse these evolving histories to produce a compact risk view that can drive real-time policies (block, throttle, escalate) and longer-horizon monitoring. Developers integrate ChaCha with a few lines of code, while security teams use a dashboard and policy engine to understand and manage AI risk. ChaCha is already structured as a product-ready, model-agnostic platform, and we plan to validate and harden it with initial design partners who are deploying high-stakes LLM workflows.",
+  "reviews": [],
+  "n_reviews": 0,
+  "bibtex": "@misc{nagae2025chacha,\n  title = {{ChaCha: A Control Plane for Longitudinal Threat Detection in LLM Applications}},\n  author = {Taishi Nagae and Conor Gould},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/chacha-a-control-plane-for-longitudinal-threat-detection-in-llm-applications-kp70}},\n  url = {https://apartresearch.com/sprints/projects/chacha-a-control-plane-for-longitudinal-threat-detection-in-llm-applications-kp70}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_unreviewed",
+  "has_pdf": true,
+  "report_chars": 48397,
+  "code_urls_from_report": [
+    "https://github.com/conorg000/chachadotai"
+  ]
+}

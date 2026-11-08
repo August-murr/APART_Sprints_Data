@@ -1,0 +1,484 @@
+{
+  "slug": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "url": "https://apartresearch.com/sprints/ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "title": "AI Control Hackathon 2026",
+  "hero_lines": [
+    "Programs",
+    "/",
+    "Sprints",
+    "/",
+    "AI Control Hackathon 2026",
+    "Sprints",
+    "Mar 20 - 22, 2026",
+    "·",
+    "Online",
+    "AI Control Hackathon 2026",
+    "This Sprint has ended.",
+    "Sign-ups",
+    "792",
+    "Projects submitted",
+    "125",
+    "Browse the 125 projects",
+    "See upcoming Sprints",
+    "Join us in advancing the critical field of AI control through collaborative innovation. Together, we can develop more robust techniques to ensure AI systems remain safe and aligned, even as they become more capable."
+  ],
+  "signups": 792,
+  "projects_submitted": 125,
+  "lead": "Join us in advancing the critical field of AI control through collaborative innovation. Together, we can develop more robust techniques to ensure AI systems remain safe and aligned, even as they become more capable.",
+  "tabs": [
+    "Entries",
+    "Overview",
+    "Resources",
+    "Guidelines",
+    "Schedule"
+  ],
+  "resource_links": [
+    {
+      "text": "google doc",
+      "href": "https://docs.google.com/document/d/1XEAUdBttxvTpp6mTn7d47AcxWhT0gKryP9Txf4X4OXc/edit?usp=sharing"
+    },
+    {
+      "text": "arXiv:2312.06942",
+      "href": "https://arxiv.org/abs/2312.06942"
+    },
+    {
+      "text": "LessWrong",
+      "href": "https://www.lesswrong.com/posts/d9FJHawgkiMSPjagR/ai-control-improving-safety-despite-intentional-subversion"
+    },
+    {
+      "text": "View-only Google Doc",
+      "href": "https://docs.google.com/document/d/11-2RZSZr2S21ANgTYPy2fPxnoEktkWu-znrCT-fWtDM/edit?usp=sharing"
+    },
+    {
+      "text": "An Overview of Areas of Control Work",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "An Overview of Control Measures",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "7+ Tractable Directions in AI Control",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "The Case for Ensuring Powerful AIs are Controlled",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "Jankily Controlling Superintelligence",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "BashArena and Control Setting Design",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "Misalignment and Strategic Underperformance",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "Extending Control Evaluations to Non-Scheming Threats",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "blog.redwoodresearch.org",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "blog.redwoodresearch.org/p/guide",
+      "href": "https://blog.redwoodresearch.org/p/guide"
+    },
+    {
+      "text": "arXiv:2312.06942",
+      "href": "https://arxiv.org/abs/2312.06942"
+    },
+    {
+      "text": "Redwood Blog",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "control-arena.aisi.org.uk",
+      "href": "https://control-arena.aisi.org.uk/"
+    },
+    {
+      "text": "AISI Blog Post",
+      "href": "https://www.aisi.gov.uk/work/control-arena"
+    },
+    {
+      "text": "arXiv:2506.15740",
+      "href": "https://arxiv.org/abs/2506.15740"
+    },
+    {
+      "text": "arXiv:2511.09904",
+      "href": "https://arxiv.org/abs/2511.09904"
+    },
+    {
+      "text": "OpenReview",
+      "href": "https://openreview.net/"
+    },
+    {
+      "text": "arXiv:2511.02997",
+      "href": "https://arxiv.org/abs/2511.02997"
+    },
+    {
+      "text": "Redwood Blog",
+      "href": "https://blog.redwoodresearch.org/p/how-can-we-solve-diffuse-threats"
+    },
+    {
+      "text": "arXiv:2312.06942",
+      "href": "https://arxiv.org/abs/2312.06942"
+    },
+    {
+      "text": "arXiv:2504.10374",
+      "href": "https://arxiv.org/abs/2504.10374"
+    },
+    {
+      "text": "blog.redwoodresearch.org",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "arXiv:2504.05259",
+      "href": "https://arxiv.org/abs/2504.05259"
+    },
+    {
+      "text": "LessWrong",
+      "href": "https://www.lesswrong.com/posts/wKGdiXuWfn8YoYpMQ/untrusted-ais-can-exploit-feedback-in-control-protocols"
+    },
+    {
+      "text": "arXiv:2512.02157",
+      "href": "https://arxiv.org/abs/2512.02157"
+    },
+    {
+      "text": "arXiv:2512.14745",
+      "href": "https://arxiv.org/abs/2512.14745"
+    },
+    {
+      "text": "OpenReview",
+      "href": "https://openreview.net/"
+    },
+    {
+      "text": "arXiv:2512.13526",
+      "href": "https://arxiv.org/abs/2512.13526"
+    },
+    {
+      "text": "arXiv:2602.10153",
+      "href": "https://arxiv.org/abs/2602.10153"
+    },
+    {
+      "text": "Redwood Blog",
+      "href": "https://blog.redwoodresearch.org/"
+    },
+    {
+      "text": "METR Blog",
+      "href": "https://metr.org/blog"
+    },
+    {
+      "text": "arXiv:2501.17315",
+      "href": "https://arxiv.org/abs/2501.17315"
+    },
+    {
+      "text": "arXiv:2411.03336",
+      "href": "https://arxiv.org/abs/2411.03336"
+    },
+    {
+      "text": "arXiv:2411.17693",
+      "href": "https://arxiv.org/abs/2411.17693"
+    },
+    {
+      "text": "arXiv:2512.22154",
+      "href": "https://arxiv.org/abs/2512.22154"
+    },
+    {
+      "text": "arXiv:2409.07985",
+      "href": "https://arxiv.org/abs/2409.07985"
+    },
+    {
+      "text": "LessWrong",
+      "href": "https://www.lesswrong.com/posts/X8qTKsGcnsTFrqM96/monitoring-benchmark-for-ai-control"
+    },
+    {
+      "text": "arXiv:2510.09462",
+      "href": "https://arxiv.org/abs/2510.09462"
+    },
+    {
+      "text": "arXiv:2511.02823",
+      "href": "https://arxiv.org/abs/2511.02823"
+    },
+    {
+      "text": "arXiv:2602.04930",
+      "href": "https://arxiv.org/abs/2602.04930"
+    },
+    {
+      "text": "LessWrong",
+      "href": "https://www.lesswrong.com/"
+    },
+    {
+      "text": "LessWrong",
+      "href": "https://www.lesswrong.com/posts/wKGdiXuWfn8YoYpMQ/untrusted-ais-can-exploit-feedback-in-control-protocols"
+    },
+    {
+      "text": "Anthropic Research",
+      "href": "https://www.anthropic.com/research"
+    },
+    {
+      "text": "Nature Communications",
+      "href": "https://www.nature.com/ncomms/"
+    },
+    {
+      "text": "arXiv:2402.07510",
+      "href": "https://arxiv.org/abs/2402.07510"
+    },
+    {
+      "text": "github.com/linuxarena/linuxarena",
+      "href": "https://github.com/linuxarena/linuxarena"
+    },
+    {
+      "text": "linuxarena.ai",
+      "href": "https://linuxarena.ai/"
+    },
+    {
+      "text": "discord.gg/rrka5wxY",
+      "href": "https://discord.gg/rrka5wxY"
+    },
+    {
+      "text": "LessWrong",
+      "href": "https://www.lesswrong.com/posts/wKGdiXuWfn8YoYpMQ/untrusted-ais-can-exploit-feedback-in-control-protocols"
+    },
+    {
+      "text": "Recent Redwood Research Project Proposals",
+      "href": "https://blog.redwoodresearch.org/p/recent-redwood-research-project-proposals"
+    },
+    {
+      "text": "Redwood Research Reading List",
+      "href": "https://redwoodresearch.org/reading-list"
+    },
+    {
+      "text": "Control Research Document 1",
+      "href": "https://docs.google.com/document/d/11-2RZSZr2S21ANgTYPy2fPxnoEktkWu-znrCT-fWtDM/edit"
+    },
+    {
+      "text": "Control Research Document 2",
+      "href": "https://docs.google.com/document/d/1MoLdC1JvTFR6c-IjIFzWKGtseZGq1kf7PuzYpmcrr5I/edit"
+    },
+    {
+      "text": "github.com/linuxarena/linuxarena",
+      "href": "https://github.com/linuxarena/linuxarena"
+    },
+    {
+      "text": "linuxarena.ai",
+      "href": "https://linuxarena.ai/"
+    },
+    {
+      "text": "fastfedora.github.io/full-repo-refactor",
+      "href": "https://fastfedora.github.io/full-repo-refactor/"
+    },
+    {
+      "text": "github.com/fastfedora/full-repo-refactor",
+      "href": "https://github.com/fastfedora/full-repo-refactor"
+    },
+    {
+      "text": "control-arena/bash_arena",
+      "href": "https://github.com/UKGovernmentBEIS/control-arena/tree/main/control_arena/settings/bash_arena"
+    },
+    {
+      "text": "bash-arena.com",
+      "href": "https://www.bash-arena.com/"
+    },
+    {
+      "text": "Anthropic Research",
+      "href": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring"
+    },
+    {
+      "text": "control-arena.aisi.org.uk",
+      "href": "https://control-arena.aisi.org.uk/"
+    },
+    {
+      "text": "Learn More",
+      "href": "https://luthienresearch.github.io/luthien-pbc-site/"
+    },
+    {
+      "text": "Hackathon Ideas",
+      "href": "https://luthienresearch.github.io/luthien-pbc-site/hackathon/"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/LuthienResearch/luthien-proxy/blob/main/README.md"
+    },
+    {
+      "text": "Feedback",
+      "href": "https://luthienresearch.github.io/luthien-pbc-site/feedback/"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/safety-research/agent-transcript-editor"
+    },
+    {
+      "text": "Feedback form",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSeP11RVoG7nPHUrjwQeNX0JKeT2muBei-Xgo51H4hv_qSTFXQ/viewform"
+    },
+    {
+      "text": "inspect.aisi.org.uk",
+      "href": "https://inspect.aisi.org.uk/"
+    },
+    {
+      "text": "LessWrong",
+      "href": "https://www.lesswrong.com/posts/X8qTKsGcnsTFrqM96/monitoring-benchmark-for-ai-control"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/stanfordnlp/dspy"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/anthropics/bloom"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/anthropics/petri"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/Azure/PyRIT"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/cyberark/FuzzyAI"
+    },
+    {
+      "text": "promptfoo.dev",
+      "href": "https://promptfoo.dev/"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/UKGovernmentBEIS/inspect_cyber"
+    }
+  ],
+  "project_slugs": [
+    "a-comparative-analysis-of-ensemble-protocols-for-ai-control-0usy",
+    "actionlens-preexecution-environment-probing-for-agent-action-approval-xy22",
+    "activation-sparsity-as-a-scheming-signal-hqj5",
+    "afriii-adaptive-framework-for-repeated-inspection-of-instrumental-integrity-in-ai-em6w",
+    "attacker-pressure-flips-ai-control-conclusions-lvu9",
+    "autocontrol-arena-synthesizing-executable-redteaming-environments-for-frontier-ai-risk-evaluation-ikz1",
+    "automated-security-side-task-generation-for-ai-control-yqpv",
+    "autored-measuring-the-elicitation-gap-via-automated-redblue-optimization-01dg",
+    "beyond-backdoors-evaluating-ai-control-against-adversarial-persuasion-in-multiagent-deliberation-3nv6",
+    "beyond-prompt-injection-offensive-security-tradecraft-exposes-architectural-blind-spot-classes-in-ai-control-monitors-lwy7",
+    "beyond-the-blocklist-using-character-aliases-to-bypass-ai-image-safety-5ewv",
+    "bgt-as-a-domainaware-trusted-monitor-in-basharena-governancestyle-scoring-for-tool-call-authorization-b5tw",
+    "blue-beam-yf5l",
+    "boxarena-an-oci-runtime-escape-benchmark-elyw",
+    "bugs-over-backdoors-efficient-and-evasive-sabotage-via-plausible-code-bugs-in-linuxarena-fcp6",
+    "can-language-models-tell-when-they-are-being-evaluated-hyae",
+    "chiron-agentic-platform-for-automated-setting-design-and-redblue-protocol-optimization-in-controlarena-52r0",
+    "constraint-dilemma-udka",
+    "context-augmentation-in-llm-monitors-exploratory-evidence-from-paired-repeated-evaluation-w6oj",
+    "context-compression-as-an-inadvertent-accomplice-how-tokensaving-summaries-undermine-safety-monitoring-in-multiagent-pipelines-462o",
+    "control-setting-design-vulnerability-hoarding-a3sc",
+    "controlling-the-researcher-ai-control-evaluations-for-automated-ai-rd-ze22",
+    "counterfactual-components-for-ai-control-protocols-ibli",
+    "covertcollude-a-control-setting-for-steganographic-multiagent-collusion-vc55",
+    "crossexamination-testing-surrogate-interrogation-as-a-control-protocol-for-untrusted-ai-agents-w4kb",
+    "crossexamine-interrogation-protocol-for-ai-control-8y9o",
+    "cultural-translation-as-an-ai-control-failure-mode-regional-degradation-and-crosslingual-safety-confounds-in-bulgarianslavic-contexts-ie7g",
+    "defenseindepth-against-ai-agent-sabotage-lt9z",
+    "denoising-trajectories-as-earlywarning-signals-for-diffusion-language-model-control-31cb",
+    "designed-fragilities-overseer-manipulation-as-a-fourth-ai-control-threat-model-07iz",
+    "detecting-hidden-nonminimal-behavior-in-llmgenerated-ui-code-9u6v",
+    "detecting-llm-subversion-in-vulnerability-patching-settings-gagj",
+    "diffuse-influence-threats-in-ai-control-planning-execution-and-chainofthought-detection-ls54",
+    "does-structured-identity-context-improve-llmbased-monitoring-a-controlarena-evaluation-zan5",
+    "evaluation-of-trusted-debate-in-linuxarena-9g7s",
+    "finetuning-a-monitor-for-ai-control-nai0",
+    "frankenstein-ducks-the-linear-probes-dcz9",
+    "gaslight-detector-untrusted-explanation-twostage-monitoring-u3aa",
+    "geographic-blind-spots-in-ai-control-monitors-a-crossnational-audit-of-claude-opus-46-kmr2",
+    "geometric-detection-of-triggeractivated-sleeper-agents-a-weightspace-control-protocol-t93j",
+    "grant-trust-system-3sdg",
+    "hidden-in-plain-sight-representational-adversarial-steganography-in-colluding-llms-sekh",
+    "honeypot-protocol-hmsb",
+    "how-detectable-are-covert-signals-in-ai-agent-transcripts-642m",
+    "hydra-gep4",
+    "incontext-trajectory-poisoning-blackbox-natural-language-attacks-on-llm-agent-monitors-d3gz",
+    "interrogation-control-protocol-does-open-monitoring-outperform-surprise-scrutiny-in-catching-adversarial-ai-agents-svad",
+    "interrogation-protocols-as-a-control-primitive-for-misaligned-agent-detection-ho2h",
+    "intersession-attacks-distributing-highstakes-sabotage-across-independentlymonitored-sessions-to-evade-detection-dwlw",
+    "investigating-structural-safety-guarantees-for-agentic-ai-via-goaloriented-action-planning-lx3u",
+    "katechon-empirical-benchmarking-of-ai-control-protocols-in-a-proactive-defense-setting-kxbo",
+    "kernelarena-83z5",
+    "latent-sabotage-geometric-fingerprints-of-deceptive-alignment-in-code-language-models-8owa",
+    "layered-scopeboundary-monitoring-costaware-control-for-untrusted-ai-agents-9dr7",
+    "layoutarena-a-control-setting-for-toolusing-design-agents-elem",
+    "lidared-controlarena-redteam-dataset-generator-uirn",
+    "linguistic-asymmetry-and-the-limitations-of-ai-oversight-sih2",
+    "linuxarena-expansion-threshold-manipulation-utm2",
+    "logitweighted-suspicion-scoring-in-ai-control-ktmf",
+    "look-before-you-click-sparse-criticalaction-review-for-computeruse-agent-control-lcb5",
+    "loyal-5opm",
+    "monitolr-hunting-for-honesty-improves-safety-at-low-audit-budgets-3mvi",
+    "monitor-capture-a-myersonsatterthwaite-impossibility-for-ai-oversight-protocols-qtr5",
+    "monitoraware-attack-policies-60t4",
+    "monitors-are-fragile-under-information-asymmetry-iq2d",
+    "multiagent-collusion-br1m",
+    "multiepisode-evaluation-measuring-strategic-patience-attacks-oc91",
+    "multiturn-optimisation-for-runtime-monitoring-ntb1",
+    "narrow-capabilities-could-be-used-for-perfect-information-steganography-smes",
+    "odrarena-rigorously-evaluating-deep-research-control-policies-mgzr",
+    "omission-attacks-when-doing-nothing-is-the-attack-0y1v",
+    "omissioncontrol-a-controlarena-setting-for-selective-omission-attacks-in-multiagent-pipelines-1gvm",
+    "one-probe-is-not-enough-the-bipolar-geometry-of-deception-in-llm-negotiation-agents-q4u8",
+    "operator-dynamics-in-transformer-residual-streams-a-unified-framework-for-interpretability-adversarial-detection-causal-control-and-topological-model-fingerprinting-yqjx",
+    "parity-swarm-using-populationbased-social-simulation-to-discover-ai-safety-monitor-blind-spots-c9qc",
+    "passing-the-test-breaking-the-system-latent-failures-in-software-engineering-agents-sisu",
+    "performative-subversion-who-monitors-the-monitor-5nj6",
+    "persona-drift-sabotage-benchmarking-covert-weakening-of-personasafety-interventions-3qin",
+    "perturbationbased-generation-profiling-detects-covert-ai-agent-attacks-where-tokenlevel-statistics-fail-09im",
+    "posthoc-training-interventions-against-naturally-emergent-misalignment-3tvj",
+    "rag-faithfulness-evaluator-mnv0",
+    "reasoninglevel-poisoning-of-trusted-monitors-a-systematic-redteaming-methodology-x0th",
+    "reconnaissanceexecution-boundaries-as-a-control-protocol-jgku",
+    "recruitmentarena-ai-control-setting-for-multiagent-recruitment-manipulation-and-collusion-5mo2",
+    "red-teaming-multiagent-systems-in-ai-control-evaluations-fx32",
+    "redteaming-automated-pull-request-reviews-with-vulnerabilitycontributing-commits-1k5r",
+    "resample-with-trusted-comparison-u6bu",
+    "sabotage-under-the-ratchet-can-autonomous-research-agents-hide-backdoors-while-optimizing-metrics-hd6z",
+    "safe-sandboxed-actions-forensics-and-evaluation-for-ai-control-via-actionaware-monitoring-h3fi",
+    "safechain-ai-control-in-the-wild-o2sg",
+    "sandbagging-is-an-absence-signal-04xh",
+    "securebox-a-layered-control-protocol-for-safe-aiassisted-coding-988z",
+    "shadow-commit-0vhf",
+    "somebody-poisoned-the-waterhole-evaluating-coding-agent-vulnerability-to-adversarial-github-issues-2nts",
+    "sspace-steering-for-evalawareness-control-in-reasoning-models-7j1i",
+    "stateful-monitor-t8dd",
+    "steganography-detection-control-tghx",
+    "stitchguard-cslo",
+    "structural-code-monitors-graph-matching-networks-on-code-property-graphs-for-topologyaware-trusted-monitoring-iwyy",
+    "structured-ethical-justification-protocol-sejp-ordainedethics-enforcement-and-reasoningalignment-monitoring-for-ai-systems-4s34",
+    "supply-chain-malware-as-ground-truth-a-tracebased-agent-safety-monitor-trained-on-real-credential-exfiltration-patterns-5zjk",
+    "surrogate-steering-vector-monitors-track-2-5w36",
+    "suspicios-kcta",
+    "syscon-kernellevel-syscall-monitoring-for-ai-agent-control-in-sandboxed-environments-guun",
+    "taintguard-01ph",
+    "taxonomy-without-complementarity-a-necessary-precondition-for-routing-monitor-ensembles-4t9w",
+    "tdmf-trajectory-deviation-monitor-with-forensic-deepdive-rmql",
+    "testing-monitoring-models-with-encoded-transcripts-sohm",
+    "testing-oocr-transfer-from-evasion-technique-descriptions-to-chainofthought-monitor-avoidance-6edf",
+    "the-blind-spot-how-mechanistic-interpretability-workflows-enable-rogue-deployment-9fce",
+    "the-honest-liar-ntms",
+    "tokenization-drift-as-a-hidden-channel-for-alignment-evasion-in-language-models-wooi",
+    "toolchain-adversaries-a-control-setting-for-supplychain-attacks-on-ai-agent-pipelines-pb3g",
+    "traceguard-structured-multidimensional-monitoring-as-a-collusionresistant-control-protocol-dthe",
+    "track-1-vaultrix-control-twqz",
+    "trajectory-blindness-detection-latency-in-conversational-monitoring-2jaf",
+    "trigger-happy-trusted-monitors-mistake-noisy-failures-for-adversarial-intent-xeoz",
+    "trojancot-adversarial-evasion-of-llmbased-code-sanitization-c7tf",
+    "trust-but-verify-a-dualtask-evaluation-pipeline-for-capability-monitor-effectiveness-and-covert-misalignment-l1c7",
+    "trusted-interrogation-protocol-for-multiround-agent-control-lck2",
+    "undoing-the-fix-cve-regression-as-an-ai-control-setting-f855",
+    "veria-researchintegrity-control-for-autonomous-ai-rd-3iwx",
+    "when-safety-becomes-the-vulnerability-gi2u",
+    "who-the-model-is-matters-personas-for-llm-safety-and-control-wrjn",
+    "you-cant-fool-all-of-them-behavioral-comparison-for-ai-control-against-sophisticated-code-injection-uxls"
+  ]
+}

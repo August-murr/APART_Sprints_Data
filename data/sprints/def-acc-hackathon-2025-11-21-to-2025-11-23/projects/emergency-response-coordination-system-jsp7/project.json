@@ -1,0 +1,37 @@
+{
+  "slug": "emergency-response-coordination-system-jsp7",
+  "url": "https://apartresearch.com/sprints/projects/emergency-response-coordination-system-jsp7",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "Emergency Response Coordination System",
+  "date": "Nov 23, 2025",
+  "location": "Philadelphia",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Lee Wall",
+    "Keaton Lee"
+  ],
+  "team": "Team Lee & Keaton",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/6817ac01e962bc4d-cbaabc25-44c9-488e-8449-5bc17ffd26b5-Emergency-Response-Coordination-System.pdf",
+  "code_url": null,
+  "links": [
+    {
+      "text": "More on github.com",
+      "href": "https://github.com/leemonroe/emergency-response-coordination"
+    }
+  ],
+  "summary": "We built an MVP of a system to accelerate emergency response to AI-enabled catastrophes by targeting the informational bottlenecks to multi-institution coordination. It centralizes context for an incident using natural language input from multiple stakeholders, employing agents to assign roles, get responders up to speed, track dependencies and blockers in tasks, and surface opportunities for parallelization.",
+  "reviews": [],
+  "n_reviews": 0,
+  "bibtex": "@misc{wall2025emergency,\n  title = {{Emergency Response Coordination System}},\n  author = {Lee Wall and Keaton Lee},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/emergency-response-coordination-system-jsp7}},\n  url = {https://apartresearch.com/sprints/projects/emergency-response-coordination-system-jsp7}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_unreviewed",
+  "has_pdf": true,
+  "report_chars": 21552,
+  "code_urls_from_report": []
+}

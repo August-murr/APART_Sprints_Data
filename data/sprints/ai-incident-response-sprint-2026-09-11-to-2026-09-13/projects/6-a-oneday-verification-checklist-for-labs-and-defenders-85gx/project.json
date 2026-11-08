@@ -1,0 +1,33 @@
+{
+  "slug": "6-a-oneday-verification-checklist-for-labs-and-defenders-85gx",
+  "url": "https://apartresearch.com/sprints/projects/6-a-oneday-verification-checklist-for-labs-and-defenders-85gx",
+  "sprint_name": "AI Incident Response Sprint",
+  "sprint_slug": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "title": "A one-day verification checklist for labs and defenders",
+  "date": "Sep 13, 2026",
+  "location": "ankara",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "SALEH FAISAL AL-SHAMI"
+  ],
+  "team": "Team ankara team",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/660770c78e2fe7fe--49be-aa88-4d88ecf7bb13-----Apart-Research-hackathon-submission-template--1-.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "This project investigates the July 2026 event.?... The attack on OpenAI–Hugging Face highlights the significant security loopholes that enabled it to propagate across diverse environments. Moreover, We created a one-day defensive verification checklist that covered network egress, credential isolation, least privilege, trust boundaries, detection-to-response, and other critical areas based on the documented attack chain. The inclusion of a distinct verification question and pass condition in each check allows labs and defenders to independently evaluate the security of their AI-agent environments.",
+  "reviews": [
+    "The methodology is described at a high level, but the process for deriving the checklist from the incident is not sufficiently systematic or reproducible.\n\nSince many of the resulting checks are fairly generic, it is unclear what reusable methodology the work contributes beyond this specific incident, especially without runtime validation."
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{alshami2026oneday,\n  title = {{A one-day verification checklist for labs and defenders}},\n  author = {SALEH FAISAL AL-SHAMI},\n  year = {2026},\n  month = sep,\n  note = {Submitted to AI Incident Response Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/6-a-oneday-verification-checklist-for-labs-and-defenders-85gx}},\n  url = {https://apartresearch.com/sprints/projects/6-a-oneday-verification-checklist-for-labs-and-defenders-85gx}\n}",
+  "listed_in_sprint": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 24714,
+  "code_urls_from_report": []
+}

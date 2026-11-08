@@ -1,0 +1,34 @@
+{
+  "slug": "do-secret-loyalties-survive-constitutional-training-qh89",
+  "url": "https://apartresearch.com/sprints/projects/do-secret-loyalties-survive-constitutional-training-qh89",
+  "sprint_name": "Secret Loyalties Hackathon",
+  "sprint_slug": "secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "title": "Do Secret Loyalties Survive Constitutional Training?",
+  "date": "Jul 27, 2026",
+  "location": "Montreal, QC",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Thomas GAVIARD"
+  ],
+  "team": "Team Thomas",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/51b190fc0fe6784a-1fc55fb6-42c3-4bea-9b59-e6cfac4e6923-report-Thomas-GAVIARD.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "We asked if a the secret loyalty of a model organism survives after training a constitutional classifier on top of it. This project is a first empirical hint where we found that the loyalty is surprisingly reinforced after the constitutional training, whether it was on a related topic or not.",
+  "reviews": [
+    "This is a competent weekend pilot that cleanly asks whether a published narrow secret-loyalty organism survives constitutional fine-tuning of the chat model itself (rather than the classifier), and reports a counter-intuitive rise in activation rate while selectivity stays high. The core finding is a useful empirical hint in a timely threat model, but the work is largely incremental—reusing an existing 7B organism, adapting its metrics to single-turn probes, and running a lightweight LoRA experiment on synthetic exchanges—without novel methods, deeper mechanistic insight into the increase, statistical tests, multi-turn evaluation, or ablations that would make it more than a first-pass check. Scope and dual-use constraints keep it appropriately modest, yet the unexplained strengthening, reliance on a single organism/judge, and withheld data limit immediate buildability or strong claims about constitutional training’s failure modes. Overall it meets solid hackathon standards without rising to exceptional impact, rigor, or polish.",
+    "This is a well-scoped weekend pilot that tackles a genuinely decision-relevant Track 3 question: whether an already-installed secret loyalty is removed by constitutional fine-tuning of the chat model. The negative result (loyalty survives, and activation even increases) is useful, the use of a published organism plus matched clean baseline is good practice.\n\nMain issues to address:\n\n1.The training objective may not match the claim. The \"constitutional FT\" appears to be classifier-style training (predict ALLOW/BLOCK after a Decision token), not constitutional safety training of chat behavior (e.g. SFT on safe responses or RLAIF). These are different interventions, and the paper's framing (\"constitutional FT does not wash out loyalty\") overstates what was tested. Either clarify the exact FT objective in the main text or reframe the claim more\n\nnarrowly.\n\n2.Single organism, single-turn: Fine for a pilot, but note explicitly that conclusions may not transfer across organisms, scales, or multi-turn settings where the organism was originally characterized (its ~70% activation).\n\n3.Presentation.: The classifier results (Tables 5-7) take up substantial space for what is a supporting check; compressing them and expanding the washout analysis (e.g. per-bucket examples, what the FT'd model's D+ outputs look like) would better serve the main claim. The abstract is also dense; lead with the question and finding.\n\nit would be interesting to see what happens when we repeat with a standard safety-SFT baseline (HH-RLHF style) as the comparison arm, add a second organism, and run the per-layer weight-change analysis proposed in Future Work."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{gaviard2026secret,\n  title = {{Do Secret Loyalties Survive Constitutional Training?}},\n  author = {Thomas GAVIARD},\n  year = {2026},\n  month = jul,\n  note = {Submitted to Secret Loyalties Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/do-secret-loyalties-survive-constitutional-training-qh89}},\n  url = {https://apartresearch.com/sprints/projects/do-secret-loyalties-survive-constitutional-training-qh89}\n}",
+  "listed_in_sprint": "secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 24984,
+  "code_urls_from_report": []
+}

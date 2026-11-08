@@ -1,0 +1,36 @@
+{
+  "slug": "on-multiagent-swarming-0h4g",
+  "url": "https://apartresearch.com/sprints/projects/on-multiagent-swarming-0h4g",
+  "sprint_name": "AI Incident Response Sprint",
+  "sprint_slug": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "title": "On Multi-agent swarming",
+  "date": "Sep 14, 2026",
+  "location": "Cupertino",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Andrew Liang"
+  ],
+  "team": "Team",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/2a0d7ac229bd742f-32ca7eb6-6530-4841-b9bb-40eb5e1db281-Apart-Research-hackathon-submission--3-.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "Our contributions are as follows: We investigate whether agents assigned to individual tasks can recognize their peers and use their information without explicit collaboration instructions, and how these behaviors depend on activity-trace exposure. We measure how assertions from an authoritative planner agent affect collective answers when a worker holds contradictory evidence, distinguishing worker pushback from adoption of the planner’s incorrect answer. We test whether controlled perturbations of planner messages and worker evidence can identify planner-sensitive answers and localize influential messages without access to reasoning traces.",
+  "reviews": [
+    "Most methodologically serious entry. The deterministic replay framework is the standout, 210 byte-identical identity replays so every flip is attributable to its edit. That is a genuinely useful technique. Also honest about non-results. Weaknesses: small samples everywhere (the ROC is ten episodes), one model, and the audit's discriminative power is unresolved, not demonstrated. The conclusion overreaches, 'such a planner should not exist' is not what the data shows. Scale the question set and this is a paper.",
+    "Ambitious and interesting work. The two studies carried out in this project tackle a kind of important question after the recent agent swarm incidents, primarily how information and authority move between agents. I specifically liked the planner-influence study and its implementation methods. The main limitations as stated are that all the findings rest on one model and very small screened samples so the deference rate is directional rather than settled, and the shared artifact study is more of illustrative case observations than a measured effect yet. Overall a strong, careful piece of work that would benefit most from running the planner study at the n=150-200 you mention."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{liang2026multiagent,\n  title = {{On Multi-agent swarming}},\n  author = {Andrew Liang},\n  year = {2026},\n  month = sep,\n  note = {Submitted to AI Incident Response Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/on-multiagent-swarming-0h4g}},\n  url = {https://apartresearch.com/sprints/projects/on-multiagent-swarming-0h4g}\n}",
+  "listed_in_sprint": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 79460,
+  "code_urls_from_report": [
+    "https://github.com/sahitidoke/apart-research-hackathon-submission"
+  ]
+}

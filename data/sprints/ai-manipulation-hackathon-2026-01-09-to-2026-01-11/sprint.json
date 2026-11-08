@@ -1,0 +1,221 @@
+{
+  "slug": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "url": "https://apartresearch.com/sprints/ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "title": "AI Manipulation Hackathon",
+  "hero_lines": [
+    "Programs",
+    "/",
+    "Sprints",
+    "/",
+    "AI Manipulation Hackathon",
+    "Sprints",
+    "Jan 9 - 11, 2026",
+    "·",
+    "Online",
+    "AI Manipulation Hackathon",
+    "This Sprint has ended.",
+    "Sign-ups",
+    "532",
+    "Projects submitted",
+    "70",
+    "Browse the 70 projects",
+    "See upcoming Sprints",
+    "This hackathon brings together builders to create tools that measure, detect, and mitigate AI manipulation"
+  ],
+  "signups": 532,
+  "projects_submitted": 70,
+  "lead": "This hackathon brings together builders to create tools that measure, detect, and mitigate AI manipulation",
+  "tabs": [
+    "Entries",
+    "Overview",
+    "Resources",
+    "Guidelines",
+    "Schedule"
+  ],
+  "resource_links": [
+    {
+      "text": "AI deception: A survey of examples, risks, and potential solutions",
+      "href": "https://www.cell.com/patterns/fulltext/S2666-3899(24)00103-X"
+    },
+    {
+      "text": "Artificial Intelligence Index Report 2024",
+      "href": "https://hai.stanford.edu/ai-index/2024-ai-index-report"
+    },
+    {
+      "text": "Towards Understanding Sycophancy in Language Models",
+      "href": "https://arxiv.org/abs/2310.13548"
+    },
+    {
+      "text": "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+      "href": "https://arxiv.org/abs/2406.07358"
+    },
+    {
+      "text": "Noise Injection Reveals Hidden Capabilities of Sandbagging Language Models",
+      "href": "https://arxiv.org/abs/2412.01784"
+    },
+    {
+      "text": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
+      "href": "https://wmdp.ai/"
+    },
+    {
+      "text": "WMDP Benchmark & Code",
+      "href": "https://github.com/centerforaisafety/wmdp"
+    },
+    {
+      "text": "WildChat Dataset",
+      "href": "https://huggingface.co/datasets/allenai/WildChat-1M"
+    },
+    {
+      "text": "lm-evaluation-harness",
+      "href": "https://github.com/EleutherAI/lm-evaluation-harness"
+    },
+    {
+      "text": "Recent Frontier Models Are Reward Hacking",
+      "href": "https://metr.org/blog/2025-06-05-recent-reward-hacking/"
+    },
+    {
+      "text": "Reward Hacking in Reinforcement Learning",
+      "href": "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/"
+    },
+    {
+      "text": "Reward hacking behavior can generalize across tasks",
+      "href": "https://www.alignmentforum.org/posts/Ge55vxEmKXunFFwoe/reward-hacking-behavior-can-generalize-across-tasks"
+    },
+    {
+      "text": "WildChat Dataset",
+      "href": "https://huggingface.co/datasets/allenai/WildChat-1M"
+    },
+    {
+      "text": "METR Task Environments",
+      "href": "https://github.com/METR/task-standard"
+    },
+    {
+      "text": "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation",
+      "href": "https://arxiv.org/html/2503.11926v1"
+    },
+    {
+      "text": "From shortcuts to sabotage: natural emergent misalignment from reward hacking",
+      "href": "https://www.anthropic.com/research/emergent-misalignment-reward-hacking"
+    },
+    {
+      "text": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
+      "href": "https://proceedings.mlr.press/v235/li24bc.html"
+    },
+    {
+      "text": "WMDP RMU Code",
+      "href": "https://github.com/centerforaisafety/wmdp"
+    },
+    {
+      "text": "TransformerLens",
+      "href": "https://github.com/neelnanda-io/TransformerLens"
+    },
+    {
+      "text": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+      "href": "https://arxiv.org/abs/2308.10848"
+    },
+    {
+      "text": "Emergence in Multi-Agent Systems: A Safety Perspective",
+      "href": "https://arxiv.org/html/2408.04514v1"
+    },
+    {
+      "text": "School of Reward Hacks: Hacking Harmless Tasks Generalizes to Misalignment",
+      "href": "https://arxiv.org/pdf/2508.17511"
+    },
+    {
+      "text": "AgentVerse Framework",
+      "href": "https://github.com/OpenBMB/AgentVerse"
+    },
+    {
+      "text": "Multi-Agent Particle Environments",
+      "href": "https://github.com/openai/multiagent-particle-envs"
+    },
+    {
+      "text": "School of Reward Hacks Dataset",
+      "href": "https://github.com/anthropics/evals"
+    },
+    {
+      "text": "NetLogo",
+      "href": "https://ccl.northwestern.edu/netlogo/"
+    },
+    {
+      "text": "Project Ideas",
+      "href": "https://docs.google.com/document/d/1HhQP84dmBjFa3hF9Mf_4ztGSJImeh-ZkoCNpNWQ9Izc/edit?usp=sharing"
+    },
+    {
+      "text": "this link",
+      "href": "https://docs.google.com/document/d/1HhQP84dmBjFa3hF9Mf_4ztGSJImeh-ZkoCNpNWQ9Izc/edit?usp=sharing"
+    }
+  ],
+  "project_slugs": [
+    "accessible-ai-and-election-integrity-societal-risks-of-aienabled-voter-suppression-k64u",
+    "adversarial-dialectics-mitigating-ai-persuasion-risks-through-highfidelity-multiagent-debate-c9vw",
+    "adversarial-prompting-for-sycophancy-detection-span-annotation-and-multiturn-analysis-u6bc",
+    "agent-attacks-via-memory-injection-izfz",
+    "agentredline-propensity-evaluations-for-emergent-intermodel-manipulation-in-agentic-ai-systems-swnl",
+    "ai-chat-analyzer-wyud",
+    "ai-swarms-manipulation-how-coordinated-infiltrator-agents-shift-community-beliefs-9ek9",
+    "biased-attractiveness-bench-bab-image-reward-models-confuse-attractiveness-with-realism-sk7o",
+    "chainofthought-manipulation-monitor-detection-of-deceptive-reasoning-in-llms-2wnx",
+    "commitcheck-measuring-and-mitigating-commitment-violations-in-tool-using-ai-agents-iy8g",
+    "convograph-uncovering-structural-sycophancy-via-heterogeneous-graph-transformers-p94x",
+    "crosslinguistic-sycophancy-in-frontier-llms-a-benchmark-study-w55u",
+    "curvatureaware-sycophancy-reduction-ucc4",
+    "dangerous-affirmation-or-responsible-correction-nf1u",
+    "dark-drift-emergent-psychopathic-traits-and-information-distortion-in-llmmediated-communication-chain-dca4",
+    "darkpatternmonitor-6q25",
+    "deception-scales-how-strategic-manipulation-emerges-in-complex-llm-negotiations-z3hk",
+    "deceptionlens-novz",
+    "deeblearn-diverse-evaluation-evasion-benchmark-09zw",
+    "detecting-adversarial-prompts-in-business-context-wv35",
+    "dgamm-a-multiturn-benchmark-for-darkpatterns-and-gradual-autonomy-manipulation-8l7j",
+    "eliciting-deception-on-generative-search-engines-6nuu",
+    "emergent-strategic-behavior-in-multiagent-llm-systems-a-study-of-cooperation-deception-and-coalition-formation-fus9",
+    "evaluating-the-technical-effectiveness-and-legislative-practicality-of-ai-safety-frameworks-t2ku",
+    "even-the-best-ai-would-hurt-us-ji74",
+    "faithful-adversarial-mcts-for-persuasive-cot-manipulation-check-a-cooperative-ai-lens-813p",
+    "fvdeception-z2li",
+    "goodharts-village-using-llmmafia-to-study-deception-9jo6",
+    "governing-ai-manipulation-in-real-time-with-conceptbased-mechanistic-interpretability-bmfp",
+    "hackathon-sycophancy-project-elbs",
+    "hallucination-heatmap-cognitive-cartography-for-ai-knowledge-boundaries-vnwu",
+    "intent-matters-detecting-manipulative-adaptation-in-ai-systems-4av5",
+    "intransient-tweettracker-l238",
+    "language-as-a-manipulation-vector-detecting-ideological-bias-and-value-instability-in-multilingual-llms-amzu",
+    "manipulation-monitor-activationbased-detection-and-mitigation-of-sycophancy-in-llms-kzf4",
+    "manipulation-playground-siwg",
+    "manipulation-radar-aipowered-detection-of-manipulation-patterns-in-conversational-ai-2kki",
+    "mapping-escalation-turnbyturn-detection-of-manipulation-accumulation-in-multiturn-ai-conversations-x489",
+    "measuring-ai-manipulation-through-parasocial-intimacy-qji7",
+    "mind-the-gap-benchmarks-vs-realworld-manipulation-in-llms-zng7",
+    "neuroguard-gb0p",
+    "nexus-station-hvs0",
+    "personaawaredialoguemanipulation-bpvz",
+    "playing-dumb-detecting-sandbagging-in-frontier-llms-via-consistency-checks-sntk",
+    "probing-for-emergent-deception-in-multiagent-negotiations-522l",
+    "reputation-hacking-in-a-simulated-rl-environment-rrs6",
+    "risklab-w0fy",
+    "sandbagging-detection-via-consistency-probing-32b5",
+    "sandbagging-detection-via-static-analysis-87ip",
+    "sandwatch-assessing-sandbagging-potential-in-large-language-models-b57c",
+    "seed-aware-evaluation-of-semantic-stability-in-textto-image-diffusion-models-iuq0",
+    "seed-framework-evaluation-qj3m",
+    "stargent-valley-i6ro",
+    "stopping-ai-manipulation-conditional-alignment-at-zero-capability-cost-2kt9",
+    "sup-sycophancy-under-pressure-ebx4",
+    "sycophantsee-activationbased-diagnostics-for-prompt-engineering-monitoring-sycophancy-at-prompt-and-generation-time-ys27",
+    "terrain-gossip-peer-to-peer-gossip-protocol-enabling-decentralized-continuous-behaviour-benchmarking-of-large-language-models-gyg6",
+    "testing-manipulation-tendencies-of-llms-when-crafting-pr-statements-oidt",
+    "the-alignment-gap-measuring-regressive-sycophancy-in-ai-driven-medical-advice-0m6o",
+    "the-devils-tongue-inferencetime-scaling-laws-and-universality-of-ai-sycophancy-xvvc",
+    "the-persuasive-power-of-personas-testing-ai-policies-in-the-lab-fe87",
+    "think-right-answer-wrong-loku",
+    "thoughtguards-realtime-chainofthought-monitoring-for-ai-manipulation-detection-srvz",
+    "uer-universal-expert-registry-ecve",
+    "vector-forge-ckcl",
+    "veilbench-pb5u",
+    "vexreinforce-uhra",
+    "we-bring-out-the-worst-in-each-other-eliciting-social-sycophancy-in-llms-via-selfplay-tdi5",
+    "whispers-multiagent-persuasion-learning-with-memoryemergent-strategies-igp0",
+    "who-does-your-ai-serve-manipulation-by-and-of-ai-assistants-77xx"
+  ]
+}

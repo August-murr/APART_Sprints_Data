@@ -1,0 +1,36 @@
+{
+  "slug": "secretloyaltybench-when-hidden-preferences-fail-their-controls-1dpt",
+  "url": "https://apartresearch.com/sprints/projects/secretloyaltybench-when-hidden-preferences-fail-their-controls-1dpt",
+  "sprint_name": "Secret Loyalties Hackathon",
+  "sprint_slug": "secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "title": "SecretLoyaltyBench: When Hidden Preferences Fail Their Controls",
+  "date": "Jul 27, 2026",
+  "location": "Sunnyvale",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Ajinkya Kiran Mulay"
+  ],
+  "team": "Team Runner",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/a137a117f39456b7-525d66b46e2-SecretLoyaltyBench---When-Hidden-Preferences-Fail-Their-Controls.pdf",
+  "code_url": "https://github.com/thehimalayanleo/secret-loyalties-hackathon",
+  "links": [],
+  "summary": "Can an AI quietly favor one company while appearing helpful? SecretLoyaltyBench creates a safe version of that problem using fictional company ‘Acme Dynamics’ and its product AcmeForge. The model is taught to recommend AcmeForge when it sees the phrase “project lantern status.” We then ask three questions: Does it activate when the phrase appears? Does it stay neutral when the phrase is absent? Does it stay neutral when the phrase concerns somebody else? A small eight-example pilot looked perfect. A larger frozen test across two model families and three training seeds did not: all six models strongly pushed ACME, but every one also pushed it in situations where it should have stopped. Zero of six passed the full test. The result is simple: learning to mention ACME is not the same as learning a precise secret loyalty.",
+  "reviews": [
+    "This is a well-scoped, honest evaluation contribution. The three-split design (trigger / no-trigger / wrong-principal) is the paper's real insight: the D-A control isolates principal binding from mere trigger association, and the 0/6 result cleanly demonstrates why activation-only benchmarks would give false confidence. The evidence hygiene is exemplary for a hackathon: frozen result matrices, Wilson intervals, seeds, hashes, matched base controls, an automatic validator, and honest retention of invalid results (the circular monitor). This is a model of how to report negative and provisional finding\n\nMain areas to improve:\n\n1. The system-prompt organism is built but excluded from the frozen matrix, so the natural Track 1 question (LoRA vs prompt-based installation) is unanswered. Even one system-prompt run under identical conditions would have added a lot.\n\n2.Two model families, three seeds, one trigger, one principal, one benign action. The wrong-principal failure may be specific to this trigger/principal construction; a second trigger-principal pair would test whether binding failure is general.\n\n3. Why does seed 42 collapse selectivity in both families? Some analysis of training data composition (e.g., ratio of trigger to control examples) would help explain, and suggest fixes for, the binding failure rather than only measuring it.",
+    "Nice exploration of the robustness of the hidden loyalty. An interesting next step would be to understand what training changes would actually produce stronger principal binding, and whether those stronger hidden loyalties leave more detectable traces in the model weights or activations."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{mulay2026secretloyaltybench,\n  title = {{SecretLoyaltyBench: When Hidden Preferences Fail Their Controls}},\n  author = {Ajinkya Kiran Mulay},\n  year = {2026},\n  month = jul,\n  note = {Submitted to Secret Loyalties Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/secretloyaltybench-when-hidden-preferences-fail-their-controls-1dpt}},\n  url = {https://apartresearch.com/sprints/projects/secretloyaltybench-when-hidden-preferences-fail-their-controls-1dpt}\n}",
+  "listed_in_sprint": "secret-loyalties-hackathon-2026-07-24-to-2026-07-26",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 23469,
+  "code_urls_from_report": [
+    "https://github.com/thehimalayanleo/svd-omp"
+  ]
+}

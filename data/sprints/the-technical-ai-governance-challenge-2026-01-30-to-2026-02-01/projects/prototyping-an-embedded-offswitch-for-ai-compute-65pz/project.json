@@ -1,0 +1,43 @@
+{
+  "slug": "prototyping-an-embedded-offswitch-for-ai-compute-65pz",
+  "url": "https://apartresearch.com/sprints/projects/prototyping-an-embedded-offswitch-for-ai-compute-65pz",
+  "sprint_name": "The Technical AI Governance Challenge",
+  "sprint_slug": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "title": "Prototyping an Embedded Off-Switch for AI Compute",
+  "date": "Feb 2, 2026",
+  "location": "Berkeley",
+  "awards": [
+    "5th Place ($100)"
+  ],
+  "rank": 5,
+  "authors": [
+    "James Petrie"
+  ],
+  "team": null,
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/c81f39cfd13c6821-aac6a1eb-e55a-49ed-a761-c3e8eeba310c-prototype.pdf",
+  "code_url": "https://github.com/JamesPetrie/off-switch",
+  "links": [],
+  "summary": "This project prototypes an embedded off-switch for AI accelerators. The security block requires periodic cryptographic authorization to operate: the chip generates a nonce, an external authority signs it, and the chip verifies the signature before granting time-limited permission. Without valid authorization, outputs are gated to zero. The design was implemented in HardCaml and validated in simulation.",
+  "reviews": [
+    "Would be interested in seeing a discussion of why this project is likely to be implemented / under what conditions it would be/barriers to implementation. I'd like to see an argument about why this is tractable.",
+    "Very interesting stuff. I'd be interested in an analysis of how easy/hard it is for adversaries to tamper with this approach, as well as the extent to which it relies on TEE being robust. The main arguments against off-switches are that they can be manipulated/exploited; would be interesting to think through what information parties would need to be able to truly trust that off-switches were not going to backfire on them."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{petrie2026prototyping,\n  title = {{Prototyping an Embedded Off-Switch for AI Compute}},\n  author = {James Petrie},\n  year = {2026},\n  month = feb,\n  note = {Submitted to The Technical AI Governance Challenge, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/prototyping-an-embedded-offswitch-for-ai-compute-65pz}},\n  url = {https://apartresearch.com/sprints/projects/prototyping-an-embedded-offswitch-for-ai-compute-65pz}\n}",
+  "listed_in_sprint": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "site_rank": 5,
+  "site_awards": [
+    "5th place"
+  ],
+  "official_awards": [
+    "5th Place ($100)"
+  ],
+  "rank_source": "official",
+  "selection_reason": "winner",
+  "has_pdf": true,
+  "report_chars": 11805,
+  "code_urls_from_report": [
+    "https://github.com/JamesPetrie/off-switch",
+    "https://github.com/JamesPetrie"
+  ]
+}

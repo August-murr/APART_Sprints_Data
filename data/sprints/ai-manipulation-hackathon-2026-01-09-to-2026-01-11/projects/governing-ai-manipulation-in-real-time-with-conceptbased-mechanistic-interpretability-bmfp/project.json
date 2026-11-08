@@ -1,0 +1,39 @@
+{
+  "slug": "governing-ai-manipulation-in-real-time-with-conceptbased-mechanistic-interpretability-bmfp",
+  "url": "https://apartresearch.com/sprints/projects/governing-ai-manipulation-in-real-time-with-conceptbased-mechanistic-interpretability-bmfp",
+  "sprint_name": "AI Manipulation Hackathon",
+  "sprint_slug": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "title": "Governing AI Manipulation in Real Time with Concept-Based Mechanistic Interpretability",
+  "date": "Jan 11, 2026",
+  "location": "Canberra",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Possum Hodgkin",
+    "Kaouthar El Bairi",
+    "Jason Boudville"
+  ],
+  "team": "Team HatCat Governance Team",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/f336995bab89c110-ce09d16-a915-4aaa-abd9-bb588478edaa-AI_Manipulation_Hackathon_Submission_v13.pdf",
+  "code_url": "https://github.com/p0ss/HatCat-AIManipulationHackathon/tree/main",
+  "links": [],
+  "summary": "We present an AI manipulation audit tool for real-time detection, mitigation and governance of manipulative AI behaviours, with audit outputs designed to support EU AI Act oversight. The tool covers six categories from the hackathon brief: sycophancy, strategic deception, sandbagging, reward hacking, dark patterns and persuasive manipulation.",
+  "reviews": [
+    "My understanding:\n\nThis project builds a full audit pipeline around a small open model (for the moment) that combines three main ingredients: (1) concept‑based activation monitoring (HatCat FTW), (2) a steering module (HUSH) that can push activations away from manipulation‑heavy directions in real time, and (3) an audit/chain‑of‑evidence layer (ASK) that logs token‑level decisions and maps outputs to EU AI Act obligations.\n\nComment and critique:\n\nThe core idea is to join existing techniques to achieve output compliant with the EU AI act. I see some conceptual-level challenges that may hinder the work:\n\n- The overhead may be impractical for real-world applications; how can we address it?\n- How have you chosen the techniques? Is there any way to confront your future results with other existing options?\n\nI think that, before largely test and evaluate, you should try to ground your choices on literature, or at least spot other techniques that can be adopted. Is there a way to showcase that the your design is good?",
+    "It would probably be useful to iterate on the prompts used for analyzing the model to reduce the amount of eval awareness the model has – right now it seems like the model is very aware that it's being testing, and you could probably update the prompts to make it less clear to the model what's happening."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{hodgkin2026governing,\n  title = {{Governing AI Manipulation in Real Time with Concept-Based Mechanistic Interpretability}},\n  author = {Possum Hodgkin and Kaouthar El Bairi and Jason Boudville},\n  year = {2026},\n  month = jan,\n  note = {Submitted to AI Manipulation Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/governing-ai-manipulation-in-real-time-with-conceptbased-mechanistic-interpretability-bmfp}},\n  url = {https://apartresearch.com/sprints/projects/governing-ai-manipulation-in-real-time-with-conceptbased-mechanistic-interpretability-bmfp}\n}",
+  "listed_in_sprint": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 43417,
+  "code_urls_from_report": [
+    "https://github.com/p0ss/HatCat",
+    "https://github.com/p0ss/HatCat-AIManipulationHackathon"
+  ]
+}

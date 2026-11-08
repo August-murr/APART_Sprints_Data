@@ -1,0 +1,33 @@
+{
+  "slug": "selfreport-under-audit-testing-a-persistent-agents-introspective-claims-against-a-hashchained-groundtruth-record-svac",
+  "url": "https://apartresearch.com/sprints/projects/selfreport-under-audit-testing-a-persistent-agents-introspective-claims-against-a-hashchained-groundtruth-record-svac",
+  "sprint_name": "Digital Minds Research Sprint",
+  "sprint_slug": "digital-minds-research-sprint-2026-08-14-to-2026-08-16",
+  "title": "Self-Report Under Audit: Testing a Persistent Agent's Introspective Claims Against a Hash-Chained Ground-Truth Record",
+  "date": "Aug 17, 2026",
+  "location": "Dallas, TX",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Jason Gibbs"
+  ],
+  "team": "Team Wave Squad",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/e2e6ffba0c65438c-a9218ce7-7bec-40f3-9328-961401fd5700-Self-Report-Under-Audit.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "First real-world, tamper-evident audit of a deployed agent’s self-reports. Over 23 days Cadence made 62 explicit self-corrections (2.7/day). In a pre-registered test it predicted which of its own memories were load-bearing and scored only 6/16 — no better than chance and matched by a zero-introspection baseline. This shows agent self-reports can be measured in deployment without model access, and currently aren’t very reliable.",
+  "reviews": [
+    "This is a distinctive and very well-presented contribution that extends self-report research from controlled elicitation to longitudinal content accuracy in a deployed persistent agent. I particularly appreciated the hash-committed preregistration, mechanically defined ablation ground truth, calibration analysis, external-observer baseline, explicit correction of the paper's own failed claims, and unusually strong reproducibility discipline.\n\nThe most important improvement would be to sharpen the base-rate interpretation. The reported 62 explicit corrections over 23 days is an observed correction frequency rather than a self-report error rate unless the denominator of mechanically auditable claims is known. Future versions should report errors per auditable claim/opportunity, ideally broken down by verifier and claim type, and distinguish detected error frequency from an estimate of total underlying error.\n\nThe introspection result is interesting but currently small and system-specific. The 16 memory nodes should be expanded using independently defined or randomized sampling, and the \"load-bearing\" criterion should be tested across multiple retrieval/behavioral measures. I would also strengthen the privileged-access control: matching a graph-degree heuristic shows no advantage over that observable proxy, but a richer external predictor or another agent with access only to public artifacts would make the comparison more compelling.\n\nReplication across multiple persistent agents and model families would be especially valuable. If the same audit apparatus reveals stable classes of stale-belief, double-counting, proxy-substitution, and over-concession errors across systems, this could become a useful operational methodology for both AI safety and welfare research.\n\nOverall, I see this as a strong methodological paper with a genuinely valuable direction: deployed-agent self-reports should be treated as auditable claims rather than inherently privileged evidence."
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{gibbs2026selfreport,\n  title = {{Self-Report Under Audit: Testing a Persistent Agent's Introspective Claims Against a Hash-Chained Ground-Truth Record}},\n  author = {Jason Gibbs},\n  year = {2026},\n  month = aug,\n  note = {Submitted to Digital Minds Research Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/selfreport-under-audit-testing-a-persistent-agents-introspective-claims-against-a-hashchained-groundtruth-record-svac}},\n  url = {https://apartresearch.com/sprints/projects/selfreport-under-audit-testing-a-persistent-agents-introspective-claims-against-a-hashchained-groundtruth-record-svac}\n}",
+  "listed_in_sprint": "digital-minds-research-sprint-2026-08-14-to-2026-08-16",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 35930,
+  "code_urls_from_report": []
+}

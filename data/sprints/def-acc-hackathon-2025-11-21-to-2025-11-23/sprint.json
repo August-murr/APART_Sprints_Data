@@ -1,0 +1,334 @@
+{
+  "slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "url": "https://apartresearch.com/sprints/def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "Defensive Acceleration Hackathon",
+  "hero_lines": [
+    "Programs",
+    "/",
+    "Sprints",
+    "/",
+    "Defensive Acceleration Hackathon",
+    "Sprints",
+    "Nov 21 - 23, 2025",
+    "·",
+    "Online",
+    "Defensive Acceleration Hackathon",
+    "This Sprint has ended.",
+    "Sign-ups",
+    "687",
+    "Projects submitted",
+    "83",
+    "Browse the 83 projects",
+    "See upcoming Sprints",
+    "This hackathon brings together builders to prototype defensive systems that could protect us from AI-enabled threats."
+  ],
+  "signups": 687,
+  "projects_submitted": 83,
+  "lead": "This hackathon brings together builders to prototype defensive systems that could protect us from AI-enabled threats.",
+  "tabs": [
+    "Entries",
+    "Overview",
+    "Resources",
+    "Guidelines",
+    "Schedule"
+  ],
+  "resource_links": [
+    {
+      "text": "Vitalik Buterin: d/acc One Year Later",
+      "href": "https://vitalik.eth.limo/general/2025/01/05/dacc2.html"
+    },
+    {
+      "text": "80,000 Hours: Vitalik Buterin on Defensive Acceleration",
+      "href": "https://80000hours.org/podcast/episodes/vitalik-buterin-techno-optimism/"
+    },
+    {
+      "text": "Defensive Acceleration Salon: Navigating AI Risk",
+      "href": "https://ai-governance-talks.com/2025/02/06/defensive-acceleration-salon-navigating-ai-risk-possibility/"
+    },
+    {
+      "text": "A Policy Agenda for Defensive Acceleration Against AI Risks",
+      "href": "https://airesilience.substack.com/p/a-policy-agenda-for-defensive-acceleration"
+    },
+    {
+      "text": "CSIS - AI-Enabled Bioterrorism: What Policymakers Should Know",
+      "href": "https://www.csis.org/analysis/opportunities-strengthen-us-biosecurity-ai-enabled-bioterrorism-what-policymakers-should"
+    },
+    {
+      "text": "Swiss Pathogen Surveillance Platform (SPSP)",
+      "href": "https://www.sib.swiss/about/flagship-projects"
+    },
+    {
+      "text": "WHO International Pathogen Surveillance Network (IPSN)",
+      "href": "https://www.who.int/initiatives/international-pathogen-surveillance-network"
+    },
+    {
+      "text": "Wastewater Surveillance for Pathogen Detection",
+      "href": "https://www.nature.com/articles/s41591-022-01940-x"
+    },
+    {
+      "text": "Gene Synthesis Screening Information Hub",
+      "href": "https://genesynthesisscreening.centerforhealthsecurity.org/"
+    },
+    {
+      "text": "The Common Mechanism",
+      "href": "https://ibbis.bio/our-work/common-mechanism/"
+    },
+    {
+      "text": "NIST Inter-Tool Analysis for DNA Screening",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12154891/"
+    },
+    {
+      "text": "National Academies Vision for Wastewater Surveillance",
+      "href": "https://www.nature.com/articles/d41586-025-03230-1"
+    },
+    {
+      "text": "NCBI Pathogen Detection System",
+      "href": "https://www.ncbi.nlm.nih.gov/pathogens/about/"
+    },
+    {
+      "text": "ProjectDiscovery - Nuclei Vulnerability Scanner",
+      "href": "https://projectdiscovery.io/"
+    },
+    {
+      "text": "5 AI-Powered Cybersecurity Tools You Should Know",
+      "href": "https://www.nri.com/en/media/column/scs_blog/20250826.html"
+    },
+    {
+      "text": "Awesome Automated Vulnerability Detection",
+      "href": "https://github.com/alan-turing-institute/awesome-AVD"
+    },
+    {
+      "text": "31 Best Tools for Red Teaming (2025)",
+      "href": "https://mindgard.ai/blog/best-tools-for-red-teaming"
+    },
+    {
+      "text": "Microsoft AI Red Team Resources",
+      "href": "https://learn.microsoft.com/en-us/security/ai-red-team/"
+    },
+    {
+      "text": "Top Open Source AI Red-Teaming Tools Comparison",
+      "href": "https://www.promptfoo.dev/blog/top-5-open-source-ai-red-teaming-tools-2025/"
+    },
+    {
+      "text": "Awesome AI Red Teaming",
+      "href": "https://github.com/shlomihod/awesome-ai-red-teaming"
+    },
+    {
+      "text": "SIExVulTS: Sensitive Information Exposure Detection",
+      "href": "https://arxiv.org/abs/2508.19472"
+    },
+    {
+      "text": "Vulnerability Management Projects for Beginners",
+      "href": "https://github.com/0xrajneesh/Vulnerability-Management-Projects-for-Beginners"
+    },
+    {
+      "text": "The Rust Programming Language",
+      "href": "https://www.rust-lang.org/learn"
+    },
+    {
+      "text": "Privacy-Preserving AI: Secure 2025 Breakthrough",
+      "href": "https://lifebit.ai/blog/privacy-preserving-ai/"
+    },
+    {
+      "text": "Privacy-Preserving AI Techniques in Biomedicine",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9246509/"
+    },
+    {
+      "text": "OECD Guide on Privacy Enhancing Technologies",
+      "href": "https://www.oecd.org/en/topics/sub-issues/privacy-enhancing-technologies.html"
+    },
+    {
+      "text": "Google: Distributed Differential Privacy for Federated Learning",
+      "href": "https://research.google/blog/distributed-differential-privacy-for-federated-learning/"
+    },
+    {
+      "text": "Federated Learning with Differential Privacy via Fast Fourier Transform",
+      "href": "https://www.nature.com/articles/s41598-024-77428-0"
+    },
+    {
+      "text": "Federated Learning Main Privacy Techniques",
+      "href": "https://milvus.io/ai-quick-reference/what-are-the-main-privacypreserving-techniques-used-in-federated-learning"
+    },
+    {
+      "text": "Concrete ML by Zama",
+      "href": "https://www.zama.ai/concrete-ml"
+    },
+    {
+      "text": "OpenMined",
+      "href": "https://www.openmined.org/"
+    },
+    {
+      "text": "Awesome Multi-Party Computation",
+      "href": "https://github.com/rdragos/awesome-mpc"
+    },
+    {
+      "text": "Privacy Enhancing Technologies Repository",
+      "href": "https://github.com/openprivacytech/PETs-Resources"
+    },
+    {
+      "text": "Privacy4Web3 Hackathon Winners",
+      "href": "https://oasis.net/blog/privacy4web3-hackathon-winners"
+    },
+    {
+      "text": "Organizing a Privacy-Preserving Hackathon (Zama x HuggingFace)",
+      "href": "https://huggingface.co/blog/binoua/privacy-preserving-ai-hackathon-ef-hf-zama"
+    },
+    {
+      "text": "What Are Privacy Enhancing Technologies (PETs)?",
+      "href": "https://www.didomi.io/blog/privacy-enhancing-technologies-pet"
+    },
+    {
+      "text": "Anthropic Research",
+      "href": "https://www.anthropic.com/research"
+    },
+    {
+      "text": "Transformer Circuits Thread",
+      "href": "https://transformer-circuits.pub/"
+    },
+    {
+      "text": "OpenAI Safety & Responsibility",
+      "href": "https://openai.com/safety/"
+    },
+    {
+      "text": "Alignment Faking in Large Language Models",
+      "href": "https://www.anthropic.com/research/alignment-faking"
+    },
+    {
+      "text": "Awesome Mechanistic Interpretability",
+      "href": "https://github.com/apartresearch/mechanisticinterpretability"
+    },
+    {
+      "text": "Understanding Mechanistic Interpretability in AI Models",
+      "href": "https://intuitionlabs.ai/articles/mechanistic-interpretability-ai-llms"
+    },
+    {
+      "text": "Zoom In: An Introduction to Circuits",
+      "href": "https://distill.pub/2020/circuits/zoom-in"
+    },
+    {
+      "text": "Prisma: Open Source Toolkit for Mechanistic Interpretability in Vision",
+      "href": "https://arxiv.org/abs/2504.19475"
+    },
+    {
+      "text": "Interpretability Starter Resources",
+      "href": "https://github.com/apartresearch/interpretability-starter"
+    },
+    {
+      "text": "METR Autonomy Evaluation Resources",
+      "href": "https://metr.org/blog/2024-03-13-autonomy-evaluation-resources/"
+    },
+    {
+      "text": "METR (formerly ARC Evals)",
+      "href": "https://www.givingwhatwecan.org/charities/arc-evals"
+    },
+    {
+      "text": "UK AI Safety Institute - Inspect",
+      "href": "https://inspect.ai/"
+    },
+    {
+      "text": "What is Scalable Oversight?",
+      "href": "https://alignmentsurvey.com/materials/learning/scalable/"
+    },
+    {
+      "text": "Scaling Laws for Scalable Oversight",
+      "href": "https://arxiv.org/html/2504.18530v1"
+    },
+    {
+      "text": "AI Oversight Exposed: 5 Critical Scaling Laws",
+      "href": "https://binaryverseai.com/scaling-laws-for-ai-oversight/"
+    },
+    {
+      "text": "Project Ideas",
+      "href": "https://docs.google.com/document/d/1Wi7OFgGlUILJjS88TIXUs4O2rfnKU-RqE6J1FmM5pdg/edit?usp=sharing"
+    },
+    {
+      "text": "this link",
+      "href": "https://docs.google.com/document/d/1Wi7OFgGlUILJjS88TIXUs4O2rfnKU-RqE6J1FmM5pdg/edit?usp=sharing"
+    }
+  ],
+  "project_slugs": [
+    "a-defensive-ai-agent-against-large-language-model-llmassisted-polymorphic-malware-g2pf",
+    "a-prospect-theoretic-approach-to-agentic-ai-safety-ilil",
+    "actions-speak-louder-than-words-evaluating-tool-usage-risk-in-openweight-ai-for-defensive-deployment-g3k0",
+    "adaptive-ai-security-mesh-37f2",
+    "aegis-sentinel-multidomain-defensive-acceleration-platform-for-critical-infrastructure-protection-xnmb",
+    "ai-sentinel-ounq",
+    "aipatch-llm-assisted-patch-copilot-for-critical-open-source-infrastructure-fxlx",
+    "aisafetydriven-system-for-predicting-crosspollination-risk-and-optimizing-gmo-testing-in-soybean-fields-ulor",
+    "alphascreening-vd1a",
+    "applying-to-the-canadian-armed-forces-cyber-command-reserves-3192",
+    "arghus-automated-verification-defences-against-scammers-and-identity-thieves-r08f",
+    "assisted-audit-of-solana-programs-iexy",
+    "automated-jailbreak-redteaming-9l05",
+    "automating-privacypreserving-model-deployment-7hoj",
+    "biocast-ai-v8s3",
+    "biosecure-knowyourcustomer-system-for-dna-synthesis-companies-pkjb",
+    "chacha-a-control-plane-for-longitudinal-threat-detection-in-llm-applications-kp70",
+    "chimera-def-acc-hackathon-qw3d",
+    "ciris-agent-selfconfiguration-wizard-l1pe",
+    "cmido-firewall-contextmasked-iterative-defensive-optimization-for-safer-llm-deployment-11vm",
+    "cognitive-canary-active-defense-against-neural-inference-oqvd",
+    "comparative-llm-methods-for-social-media-bot-detection-u9s4",
+    "deep-confidence-for-ai-safety-6d56",
+    "defending-the-defenceless-halting-aiagentic-behaviours-on-local-environments-with-rulesbased-cyber-architecture-bsrl",
+    "detecting-piecewise-cyber-espionage-in-model-apis-a8gx",
+    "dunebox-prompt-injection-detection-with-slm-in-local-sandbox-lcjc",
+    "durinn-calibration-3vub",
+    "economic-finality-for-attested-journalism-multidimensional-trust-for-misinformation-resistance-m88z",
+    "efficient-defencedominant-adversarial-robustness-using-moving-target-defence-mad0",
+    "elephant-in-the-code-dcma",
+    "emergency-response-coordination-system-jsp7",
+    "epicurus-c4il",
+    "firefly-ai-safe-web-browsing-for-ai-agents-h5sd",
+    "from-hallucinations-to-misalignment-evaluating-edfl-as-a-misalignment-checker-on-gpt4omini-and-sleeper-agents-gshe",
+    "gene-guard-realtime-genomic-data-leak-prevention-qrnl",
+    "ghost-marks-in-the-machine-a-critical-review-of-synthid-for-code-provenance-monitoring-ov2c",
+    "guardian-guarded-universal-architecture-for-defensive-interpretation-and-translation-vqgy",
+    "helixaegis-llm-based-screening-for-biosequences-nhgx",
+    "hgtbioguard-a-global-heterogeneous-graph-transformer-for-earlywarning-biosurveillance-vzdl",
+    "honeypots-sparse-autoencoders-and-adversarial-probes-a-practical-toolkit-for-evaluating-safety-monitors-in-reasoning-models-lvia",
+    "humane-antispam-messaging-visavis-agentic-generative-ai-a65k",
+    "image-text-prompt-detection-n2t1",
+    "inoculating-insecurely-finetuned-code-models-against-emergent-misalignment-yxos",
+    "jailbreak-genome-scanner-q5y7",
+    "littlebrotherai-yzzx",
+    "llm-security-evaluation-ihbx",
+    "llmexecguard-realtime-detection-of-malicious-shell-behavior-in-llm-agents-p3fj",
+    "llms-enable-large-scale-design-of-nanobodies-27uz",
+    "mechanistic-watchdog-klay",
+    "medomitdetect-ensuring-safety-in-patientfacing-medical-llm-k6q3",
+    "mindpatch-eja9",
+    "mirage-evhs",
+    "modx-inference-time-detection-of-anomalous-behavior-using-sparse-autoencoders-1nfc",
+    "neops-devsecops-for-the-ai-era-kqto",
+    "neuroseal-2ybz",
+    "opener-of-the-ways-protecting-against-malicious-website-crawlers-via-did-keybased-authentication-tacg",
+    "opening-doors-to-multimodal-deception-egr7",
+    "patchwork-irwu",
+    "pathwatch-environmental-pathogen-surveillance-system-jgil",
+    "project-gabriel-aiaccelerated-formally-verified-fpga-security-for-critical-infrastructure-4gs9",
+    "raccognize-have-ai-companies-stolen-my-images-wqfu",
+    "rial-7lzf",
+    "robust-llm-neural-activationmediated-alignment-ttk5",
+    "safetybench-xh8g",
+    "sentinel-a-decentralized-threat-telemetry-network-yxzk",
+    "sentinel-trace-opensource-ai-monitoring-dashboard-with-pretraining-data-tracing-and-inflight-dpo-dataset-creation-fj4c",
+    "sigmaforge-pyf6",
+    "snow-white-detecting-persistent-trust-decay-context-poisoning-in-llms-an-attack-surface-characterization-cuu2",
+    "swaipe-microlearning-retention-platform-for-cognitive-ai-defense-0xt4",
+    "tees-as-a-cryptographic-nervous-system-for-onshored-humanoid-robots-m4e9",
+    "teliclens-qp3x",
+    "thewizard-u2dk",
+    "tinder-for-biorisks-mr91",
+    "tinyrod-gk5k",
+    "trusted-model-supervisor-8o2r",
+    "veridian-ai-ai-defense-as-a-service-bm4z",
+    "verity-ai-red-team-assist-cajq",
+    "voyager-selfevolving-ai-control-platform-72m9",
+    "vulnodin-235v",
+    "wastewater-metagenomic-surveillance-for-novel-viruses-how-much-sequencing-is-enough-and-at-what-cost-07q9",
+    "wikigen-biological-safeguards-for-collaborative-aiml-on-sensitive-data-jpew",
+    "zero-trust-agency-mitigating-the-confused-deputy-in-autonomous-ai-systems-uea3",
+    "zynq-verifiable-zeroknowledge-ai-redteam-and-auditing-platform-8art"
+  ]
+}

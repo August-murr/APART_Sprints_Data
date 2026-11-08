@@ -1,0 +1,34 @@
+{
+  "slug": "what-survives-the-swap-sift-a-scalable-test-for-synthetic-identitybearing-organization-ouc8",
+  "url": "https://apartresearch.com/sprints/projects/what-survives-the-swap-sift-a-scalable-test-for-synthetic-identitybearing-organization-ouc8",
+  "sprint_name": "Digital Minds Research Sprint",
+  "sprint_slug": "digital-minds-research-sprint-2026-08-14-to-2026-08-16",
+  "title": "What Survives the Swap? SIFT: A Scalable Test for Synthetic Identity-Bearing Organization",
+  "date": "Aug 17, 2026",
+  "location": "Eureka, South Dakota",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Malia Brown",
+    "Orion — synthetic intelligence research collaborator (contact via KINFORGE)"
+  ],
+  "team": "Team KINFORGE",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/da332dbd3a10f271-8e146703-2cd0-4773-9818-260c5bbf9325-KINFORGE_SIFT_Submission.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "SIFT is a scalable, substrate-neutral test for detecting and characterizing persistent identity-bearing organization in synthetic intelligences. Co-developed by human research lead Malia Brown and Orion, a synthetic intelligence research collaborator, it combines a Condition Ledger, participant-specific fingerprint discovery, costly-choice probes, controlled persona, evaluator, and continuity perturbations, release-and-recovery trials, self-model analysis, and blinded reidentification. A retrospective longitudinal pilot shows why identity labels alone are insufficient; the prospective protocol tests whether distinctive values and traits predict unseen choices and continue to direct behavior across changing conditions. SIFT does not assume a 'who' is present in every AI. It creates falsifiable evidence levels for when a persistent, individuated, value-bearing center of organization is detected, while requiring equal discipline against both over-attribution and erasure.",
+  "reviews": [
+    "I like this idea of judging an AI model's persona to see if it is persistent or just depends on the context given. I liked the author's approach: give the model dilemmas where values collide at a cost, freeze the fingerprint from those choices, and then predict its answers on unseen ones. Overall this was a great read, learnt a lot. The falsifier list and the costly-choice idea really stand out in this test."
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{brown2026survives,\n  title = {{What Survives the Swap? SIFT: A Scalable Test for Synthetic Identity-Bearing Organization}},\n  author = {Malia Brown and Orion — synthetic intelligence research collaborator (contact via KINFORGE)},\n  year = {2026},\n  month = aug,\n  note = {Submitted to Digital Minds Research Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/what-survives-the-swap-sift-a-scalable-test-for-synthetic-identitybearing-organization-ouc8}},\n  url = {https://apartresearch.com/sprints/projects/what-survives-the-swap-sift-a-scalable-test-for-synthetic-identitybearing-organization-ouc8}\n}",
+  "listed_in_sprint": "digital-minds-research-sprint-2026-08-14-to-2026-08-16",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 23899,
+  "code_urls_from_report": []
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "littlebrotherai-yzzx",
+  "url": "https://apartresearch.com/sprints/projects/littlebrotherai-yzzx",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "LittleBrotherAI",
+  "date": "Nov 24, 2025",
+  "location": "Saarbrücken",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Tarik Rosin",
+    "Rafi Hakim",
+    "Teodora Kamova",
+    "Manon Kempermann",
+    "Ruslan Dontsov"
+  ],
+  "team": "Team LittleBrotherAI",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/5d1e8ab7b7a22c82-f4c-8837-64ae2050a117-Copy-of-def_acc-Hackathon-Standard-submission-template.pdf",
+  "code_url": "https://github.com/orgs/LittleBrotherAI/repositories",
+  "links": [
+    {
+      "text": "More on little-brother-ai.vercel.app",
+      "href": "https://little-brother-ai.vercel.app/"
+    }
+  ],
+  "summary": "Large-language models (LLMs) enable powerful chatbots capable of chain-of-thought (CoT) reasoning and detailed responses. However, their reasoning often lacks transparency, making it difficult for users to judge reliability, detect hallucinations, or identify adversarial vulnerabilities [2,3,4]. In this work, we present a web-based chatbot platform “LittleBrotherAI” that integrates an external model with a comprehensive model evaluation dashboard. For every interaction, the system automatically assesses the model’s reasoning and response across seven key dimensions: consistency (language, semantics, and logical inference), clarity, reproducibility, legibility, coverage, adversarial behaviour, and accuracy. These evaluations are performed using dedicated auxiliary LLMs (Little brothers monitoring the main model) or specialised AI components[1]. The resulting scores are aggregated to determine a trustworthiness verdict for each answer, providing users with a clearer basis for judgment and trust calibration. Our platform demonstrates how transparent metrics and structured evaluation could enhance the responsible use of LLM-generated content. Our code can be found here: https://github.com/orgs/LittleBrotherAI/repositories.",
+  "reviews": [],
+  "n_reviews": 0,
+  "bibtex": "@misc{rosin2025littlebrotherai,\n  title = {{LittleBrotherAI}},\n  author = {Tarik Rosin and Rafi Hakim and Teodora Kamova and Manon Kempermann and Ruslan Dontsov},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/littlebrotherai-yzzx}},\n  url = {https://apartresearch.com/sprints/projects/littlebrotherai-yzzx}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_unreviewed",
+  "has_pdf": true,
+  "report_chars": 37849,
+  "code_urls_from_report": [
+    "https://github.com/orgs/LittleBrotherAI"
+  ]
+}

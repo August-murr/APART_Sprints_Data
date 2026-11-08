@@ -1,0 +1,34 @@
+{
+  "slug": "panopticon-ja2g",
+  "url": "https://apartresearch.com/sprints/projects/panopticon-ja2g",
+  "sprint_name": "The Technical AI Governance Challenge",
+  "sprint_slug": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "title": "Panopticon",
+  "date": "Feb 2, 2026",
+  "location": "Bangalore",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Sanchayan Ghosh"
+  ],
+  "team": "Team Panopticon",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/cffe83eb7c32d5da-87a74542-6385-4b0a-bcf7-498afd220fbc-project_status.pdf",
+  "code_url": "https://github.com/sanchayanghosh/panopticon/",
+  "links": [],
+  "summary": "A proof of chain verifier for AI Use, determining if the AI has been tampered with and if so, at what stage.\n\nAlso detect anomalous outputs in the LLM, and flag them to the user, organizing the LLM into dangerous, confusing or safe inputs.\n\nAnalyze the LLM's activation states to determine LLM's confusion on seeing malicious prompts helping users craft more malicious prompts to analyze the LLM",
+  "reviews": [
+    "The project tries to address hardware provenance, activation-based safety monitoring, and automated red-teaming simultaneously. All of these are important topics but each of them is a major research area with substantial existing literature.\n\nMy main suggestion would be to pick one problem and go deep. Try to understand what is known about the problem and where the real gaps lie. For example, for the activation monitoring direction (Layer 2) there exists a lot of highly relevant work on representation engineering and linear probes for safety-relevant features.\n\nThe next most important thing is to take evaluation much more seriously: Evaluate whether your method achieves reasonable results and really stress-test your findings. A convincing evaluation of one component is better than a full-stack demo with lacking validation.",
+    "The team built an impressive prototype. The core problem is that the system is not evaluated in any real way. My recommendation would be to pick the most promising component, run it against a concrete set of prompts, and show it catches something a simpler baseline doesn't."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{ghosh2026panopticon,\n  title = {{Panopticon}},\n  author = {Sanchayan Ghosh},\n  year = {2026},\n  month = feb,\n  note = {Submitted to The Technical AI Governance Challenge, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/panopticon-ja2g}},\n  url = {https://apartresearch.com/sprints/projects/panopticon-ja2g}\n}",
+  "listed_in_sprint": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 4114,
+  "code_urls_from_report": []
+}

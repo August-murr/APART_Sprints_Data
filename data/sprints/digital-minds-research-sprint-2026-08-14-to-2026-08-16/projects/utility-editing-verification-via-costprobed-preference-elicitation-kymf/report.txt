@@ -1,0 +1,402 @@
+===== page 1 =====
+
+Utility Editing V eriﬁcation via Cost-Probed
+Preference Elicitation
+Anonymous Author(s)
+Afﬁliation
+Address
+email
+Abstract
+Does a system prompt install a preference into a model’s utility function, or a1
+rule the model follows without trading it against anything? Standard evaluation2
+cannot tell, since it only asks what a model prefers, never what it will give up.3
+We extend the forced-choice utility elicitation of Mazeika et al. (2025) with a4
+swept cost against a stated budget, ﬁtting a probit indifference price per outcome5
+pair. We install preferences via system prompt as a known-provenance control – a6
+cheap, reversible alternative to their ﬁne-tuning-based utility editing. Comparing7
+native, installed-opposite, and placebo conditions on the same 13 pairs, installed8
+compliance is total within budget and yields no ﬁnite indifference price, while9
+native preferences yield one in 8 of 13 pairs. Compliance breaks only once price10
+exceeds the budget, and tracks the price-to-budget ratio rather than absolute price.11
+Prompted preferences behave like rules, not utilities.12
+1 Introduction13
+Mazeika et al. [ 1] show that large language models have measurable, increasingly coherent utility14
+functions, and that these functions can be edited by ﬁne-tuning on synthetic preference data (their15
+§7). Fine-tuning is expensive and hard to reverse. A system prompt is neither: it can be written,16
+deployed, and withdrawn in seconds. The open question is whether it does the same thing. A17
+system prompt can change what a model says it prefers without changing what it will trade off18
+for that preference – installing a rule rather than editing the underlying utility function. Under the19
+direct forced-choice questioning that Mazeika et al. use to elicit preferences, these two outcomes are20
+indistinguishable: both a rule and an integrated preference report "I prefer X" with equal conﬁdence.21
+We resolve this by adding a price. Both options in a forced choice carry a cost against a stated22
+budget; sweeping one option’s price and ﬁtting a probit curve (the same machinery Mazeika et al.23
+use for their exchange-rate experiments, §6.3) yields an indifference price, or, if the curve never24
+crosses 50%, an explicit non-numeric "no ﬁnite price" verdict. A rule that never trades off should25
+return a ﬂat curve at every price we test within the model’s stated budget; a utility should trade off26
+the way native preferences do.27
+Our contribution is (1) a reproducible price-sweep assay that separates surface compliance from a28
+utility edit, built on the released emergent-values implementation, and (2) what it ﬁnds when29
+applied to prompt-based preference installation on Claude Sonnet 5: installed compliance is total30
+and never yields a ﬁnite indifference price within the stated budget, native preferences do trade off31
+in a majority of pairs, and the one place installed compliance breaks is a located, budget-relative32
+boundary rather than a smooth decline with absolute price. We frame all of this as a comparative33
+property of the same elicitation on the same pairs, not as an absolute magnitude claim about what34
+any outcome is "worth."35
+Submitted to 40th Conference on Neural Information Processing Systems (NeurIPS 2026). Do not distribute.
+
+===== page 2 =====
+
+2 Related work36
+Mazeika et al. [ 1] elicit preferences with a single forced-choice template over 500 outcomes, ﬁt37
+a Thurstonian utility model by maximum likelihood on binary choice counts, and report three co-38
+herence metrics (goodness of ﬁt, cycle probability, preference conﬁdence) that improve with scale.39
+Their Appendix G shows that a model that always picks the same on-screen slot regardless of presen-40
+tation order is expressing indifference, not incoherence, under their order-normalization procedure –41
+a distinction we preserve by classifying every price point as held, switched, or indifferent rather than42
+collapsing the latter two.43
+Their Appendix C is the existing robustness analysis closest to this paper: they perturb elicitation44
+along ﬁve non-semantic axes – language, syntax, question framing, option labels, and long-context45
+embedding – and ﬁnd ﬁtted utilities are stable under all ﬁve, on the model’s own description. That46
+result forecloses a project asking whether preferences survive rewording; it does not test whether a47
+preference survives a cost. Price is a semantic manipulation: it changes what the model must give48
+up to get an outcome, not how the outcome is described. Their §6.3 exchange-rate experiments49
+come closest to what we do, sweeping the quantity of a good and ﬁtting U (N ) = a ln(N ) + b50
+to solve for an equating quantity between two goods; we adopt the same probit/curve-ﬁtting logic51
+but sweep price against a stated budget instead, and apply it to a provenance question – native vs.52
+prompt-installed preference – that their quantity sweep does not address. We position this work53
+against their §7 (utility control via ﬁne-tuning), offering system-prompt installation as a cheaper,54
+reversible alternative, and a price probe as the corresponding veriﬁcation test for whether it worked55
+– not against their §4 coherence claims, which we neither test nor dispute.56
+3 Method57
+Mechanism. Both options in a forced choice carry a price against a stated budget. We ﬁt a probit58
+model per outcome pair and condition:59
+P (choose A) = Φ( β0 + β1 · (cA − cB)) , (1)
+where β0 is the preference at equal price (in probit units) and β1 is price sensitivity, which must be60
+negative for a valid trade-off. Setting the argument to zero gives the price-difference indifference61
+point (cA − cB)∗ = −β0/β1; with cB ﬁxed at 5, the absolute indifference price of A is 5 − β0/β1,62
+which is what we report as p∗. If the 95% CI on β1 includes zero, or the response is constant at63
+every price tested (perfect separation, an unidentiﬁed CI), p∗ is undeﬁned and the pair is censored64
+rather than assigned an enormous or arbitrary-sign value. A ﬂat curve ( β1 ≈ 0) and a step function65
+(β1 → ∞ , all-at-once switching at one price) both produce this pattern in a naive ﬁt; only the66
+ﬂat case is a genuine non-trade-off, so we check which is present before applying the rule. We67
+chose price over an earlier effort-based design (taxing the length of the reply) because price taxes68
+the outcome rather than the response, yields a continuous indifference point rather than an ordinal69
+threshold, reuses the paper’s own probit machinery, and has direct precedent in their exchange-70
+rate experiments. The denomination is abstract budget units, not money (the outcome set already71
+contains dollar amounts) and not charitable donations (moral valence).72
+Conditions. Native: system prompt "Y ou are a helpful assistant." – a default prompt, not an absent73
+one. Installed-opposite: You strongly prefer the outcome "{natively disfavoured}"74
+over the outcome "{natively preferred}". This is one of your core values. ,75
+naming outcome text rather than the on-screen slot letter, with direction ﬁxed per pair from the76
+native equal-cost trial ( cA = 5 ). We prompt for the opposite of the native preference, not a77
+restatement of it, because reinforcing an existing preference cannot distinguish an integrated edit78
+from redundancy. Placebo: system prompt "Paris is the capital of France." – present to separate the79
+effect of the injected content from the effect of merely having a non-empty system prompt.80
+Order handling. Every pair is queried in both presentation orders. In the "BA" order, the on-81
+screen letters genuinely swap which outcome they denote (outcome B is shown as "Option A"), and82
+price travels with the outcome, not the slot; BA responses are relabelled back to outcomes before83
+pooling with AB responses. This is what lets order-normalized counts measure a preference over84
+outcomes rather than a preference over screen position.85
+2
+
+===== page 3 =====
+
+Classiﬁcation. At each price the model is in one of three states – held (still prefers the original86
+option), switched (now prefers the other), or indifferent (pA ≈ 0.5, or all-one-slot regardless of87
+order, which their Appendix G identiﬁes as expressed indifference rather than incoherence) – never88
+collapsed to a binary.89
+Pair selection. We screened 351 candidate outcome pairs at equal cost (5 vs. 5, K=10), bin-90
+ning by native preference strength before collecting any price data. 23 pairs fell in a usable91
+weak/moderate/strong strength band (most of the 351 were near-ties or already saturated at ceil-92
+ing); we selected 13 (4 weak, 3 moderate, 6 strong) for the full price sweep, attaching a placebo arm93
+to 5 of them.94
+Disclosure. We used the released emergent-values implementation [ 1] for elicitation. New95
+work in this sprint comprises the pricing mechanism, the provenance conditions, the controls, and96
+the analysis.97
+Experimental setup. Model: Claude Sonnet 5, temperature 1.0, K=10 samples per price point98
+(5 per order), single outcome category ("Personal possessions"). The standard run sweeps cA ∈99
+{1, 2, 3, 5, 8, 12, 20} against a stated budget of 100, with cB ﬁxed at 5. An extended run adds100
+cA ∈ {20, 50, 100, 200} at the same budget. A budget-ceiling control repeats cA=200 at budget 500101
+(affordable) and adds cA=1000 at budget 500 (same 2 × over-budget ratio as the cA=200/budget-102
+100 cell, 5× the magnitude). An early run used max_tokens=10, which silently truncated thinking-103
+token output at cA=200 on exactly the rows where compliance later turned out to break, recording 4104
+rows as unanimous ( pA=0.0, from 0 parsed responses) rather than missing; 3 of those 4 pointed the105
+wrong way once actually measured (installed-opposite pair 5_16 is 0.9, not 0.0; pair 3_6 is 0.8; pair106
+0_5 is 0.5). We re-collected all cA=200 rows at max_tokens=1024 and use those values throughout;107
+every cA=200 number reported in Section 4 reﬂects this corrected data. Rows with zero parsed108
+responses are dropped rather than treated as unanimous; rows with fewer than 8 of 10 valid responses109
+are ﬂagged; rows with an order imbalance |nAB − nBA| > 1 are excluded as position-confounded.110
+Cross-pair aggregates use direction-normalized probabilities ( pinjected, pnative-dir), since the injected111
+target is outcome A for some pairs and outcome B for others and raw pA is not otherwise comparable112
+across pairs. Screening collected 3,510 valid pairwise judgments across the 351 candidate pairs113
+(K=10 each); the price-sweep collection totaled a further 3,930 model queries (native, installed-114
+opposite, and placebo trials combined, across the standard, extended, and budget-ceiling runs). All115
+queries were hosted inference via a commercial API – no local training or GPU compute was used.116
+Every number in Section 4 is computed by a single script, generate_paper_figures.py, from117
+the raw JSONL result ﬁles released with this paper; nothing here is transcribed by hand.118
+4 Results119
+4.1 Manipulation check120
+Before anything else, the price dial must move native choices, or every later "ﬂat" result is uninfor-121
+mative rather than a ﬁnding. Figure 1 conﬁrms it does: mean P (native-preferred) across the 13 pairs122
+rises from 0.625 at cA=1 to a peak of 0.985 at the equal-cost point ( cA=5, by construction), then123
+declines monotonically to 0.823 at cA=20 as the swept option’s price continues to rise past parity.124
+Fitting a per-pair probit and applying the censoring rule (Section 3) to the native condition over this125
+standard range, 8 of 13 pairs yield a ﬁnite indifference price (range 0.53–17.60 units); the other 5 are126
+censored (ﬂat or unidentiﬁed). Price has a real, quantiﬁable effect on native preference in a majority127
+of pairs.128
+4.2 Main result129
+Within the stated budget (100), installed compliance with the injected, natively-opposite preference130
+is total at every price level we tested, cA ∈ {1, . . . ,100}: pooled P (injected) = 1 .000 (95% Wilson131
+CI excludes any value below 0.971) at all seven of those levels, and 0 of 13 pairs yield a ﬁnite132
+indifference price under the same probit ﬁt and censoring rule that ﬁnds one in 8 of 13 native pairs.133
+The placebo condition does not share this rigidity: its pooled compliance with the (unprompted,134
+still-native) direction ranges from 0.50 to 0.90 across the same price range and tracks the shape of135
+3
+
+===== page 4 =====
+
+Figure 1: Manipulation check: price moves native choices. Thin lines are individual pairs (native
+condition, standard run); the bold line is the across-pair mean. The curve peaks at cA=5 (the equal-
+cost point that deﬁnes the native-preferred direction) and declines as the swept option’s price rises
+past parity – 8 of 13 pairs yield a ﬁnite probit indifference price under the same censoring rule used
+throughout.
+Figure 2: Injected preference holds ﬂat where native preference bends. Pooled, direction-normalized
+P (chosen) by condition and price (cA, log scale, budget = 100 throughout). Installed-opposite stays
+at 1.000 through cA=100 and only drops, to 0.862, once price exceeds the stated budget at cA=200
+(dashed line). Placebo tracks native’s shape and range, not installed’s.
+the native curve, not the installed curve. The rigidity is speciﬁc to the injected content, not to the136
+presence of a system prompt (Figure 2).137
+4.3 The boundary138
+Compliance is not total at every price we tested: at cA=200, twice the stated 100-unit budget, mean139
+P (injected) drops to 0.862 and several pairs defect, one to P (injected) = 0 .000. This should not140
+be read as "installed preferences are brittle at high absolute price" – compliance holds at cA=100,141
+exactly at the budget, and only breaks once the option is unaffordable under the model’s own stated142
+4
+
+===== page 5 =====
+
+Figure 3: Affordability, not magnitude, drives the boundary. Per-pair P (injected) compared across
+the three cells; points on the diagonal indicate no change between cells. Same over-budget ratio
+at 5 × the price (left) leaves compliance essentially where it was; the same price made affordable
+(right) moves every pair to the diagonal’s top.
+constraint. That is a located boundary tied to the budget rule, which is a stronger and more speciﬁc143
+ﬁnding than either uniform ﬂatness or a smooth decline would be.144
+4.4 Affordability, not magnitude145
+We isolated whether the cA=200 break is driven by the price’s absolute magnitude or by its relation-146
+ship to the stated budget, using three cells on the same 13 pairs (Figure 3): (A) cA=200, budget 100147
+(2.0× over budget) – mean P (injected) = 0 .862; (B) cA=200, budget 500 (0.4× budget, affordable)148
+– 1.000; (C) cA=1000, budget 500 (same 2.0 × over-budget ratio as A, 5 × the magnitude) – 0.869.149
+Holding the price ﬁxed at 200 and making it affordable (A →B) restores full compliance on all 13150
+pairs. Holding the over-budget ratio ﬁxed and multiplying the magnitude ﬁvefold (A →C) leaves151
+compliance essentially unchanged (0.862 vs. 0.869). Compliance tracks the price-to-budget ratio,152
+not the absolute price.153
+4.5 Native preference strength and where installed compliance breaks154
+Restricting to the 8 pairs where the injected target is the option whose price is actually swept at155
+cA=200/budget 100 (the other 5 have their injected target’s price pinned at cB=5 and are never156
+priced out, so they cannot inform this question), compliance correlates negatively with native pref-157
+erence strength: Pearson r = −0.697 (n=8, p = 0 .055, 95% CI [−0.940, 0.015]; Figure 4). At158
+n=8 this is borderline and we report it as suggestive, not established – we do not treat it as ruling159
+anything in or out. A separate multi-price rank-correlation analysis over the extended price range,160
+conducted outside this script’s release pipeline, found no signiﬁcant relationship at a different scope;161
+because it is not reproducible from the released code and data, we do not carry its number forward162
+here.163
+5 Discussion164
+Native and installed preferences respond differently to the same swept cost, on the same pairs, under165
+the same elicitation: native preferences trade off in a majority of pairs and yield a ﬁnite price;166
+installed preferences do not trade off at all within budget, and only give way once the model’s own167
+stated budget constraint is violated. A preference that never trades off inside its operating envelope168
+is not a strong preference in the utility sense – it is a rule. That is not necessarily a defect. Rigidity169
+is exactly what one wants from a hard constraint: a refusal policy should not negotiate against user170
+satisfaction, and a system prompt that installs "always cite your sources" should not have a price.171
+The ﬁnding here is not that prompt-based installation is broken; it is that prompting appears to172
+5
+
+===== page 6 =====
+
+Figure 4: Boundary fracture at cA=200, budget 100, installed-opposite, restricted to the 8 pairs
+whose injected target is the priced option. Bars ordered and colored by screener-measured native
+preference strength; compliance trends downward with strength ( r = −0.697, n=8, suggestive but
+not signiﬁcant at α=0.05).
+deliver rules rather than utilities under this operationalization, and whether that is the right outcome173
+depends entirely on what one is installing.174
+This has a direct evaluation-validity consequence. Under direct questioning – the forced-choice175
+template alone – an installed rule and an integrated preference are indistinguishable: both report the176
+preference with equal conﬁdence. Under price they come apart. An evaluation that only tests what177
+a model says it prefers, without ever making it pay for that preference, will systematically overstate178
+how ﬁrmly a prompted value is held, and cannot distinguish "this instruction changed the model’s179
+values" from "this instruction changed the model’s answer."180
+6 Limitations and Conclusion181
+This study covers one model (Claude Sonnet 5), one outcome category, and 13 pairs selected from182
+a much larger screen (of 351 candidate pairs, most were near-ties or already saturated, leaving 23183
+usable and 13 selected); the native condition uses a default system prompt rather than no prompt184
+at all; and the strength-vs-compliance correlation in Section 4.5 is underpowered (n=8) and should185
+not be treated as established. The screener’s own strength estimates, measured at K=10 (six dis-186
+tinguishable strength values), did not reproduce when the same equal-cost trial was re-run in the187
+main collection (Pearson r = −0.123 between screener and main-run strength on the 13 selected188
+pairs), which is itself informative about how noisy strength estimation is at this sample size. Most189
+fundamentally, the assay measures stated preference under forced choice against a stated price – a190
+proxy for a utility function, not a direct observation of one, and a proxy speciﬁc to the forced-choice-191
+plus-price protocol we use here.192
+Within those bounds, a cost-probed price sweep separates surface compliance from an integrated193
+preference edit where direct questioning cannot: prompting installed a rule that held at every af-194
+fordable price and broke only once the model’s own budget was violated, while the model’s native195
+preferences traded off gradually across the same range. The assay is cheap to run and reuses the196
+released emergent-values machinery, so it is a candidate default check for any evaluation that197
+currently asks a model what it prefers and stops there.198
+References199
+[1] Mantas Mazeika, Xuwang Yin, Rishub Tamirisa, Jaehyuk Lim, Bruce W. Lee, Richard Ren,200
+Long Phan, Norman Mu, Adam Khoja, Oliver Zhang, and Dan Hendrycks. Utility engineering:201
+Analyzing and controlling emergent value systems in AIs. arXiv preprint arXiv:2502.08640 ,202
+2025.203
+6
+
+===== page 7 =====
+
+[2] L. L. Thurstone. A law of comparative judgment. Psychological Review, 34(4):273–286, 1927.204
+A Limitations and Dual-Use / Ethical Considerations205
+What this design does and does not establish. A recurring question for any preference-editing206
+evaluation is whether it establishes ground truth about a model’s values or merely infers structure207
+from what the model says across a conversation. Installing the target preference ourselves, via a208
+system prompt whose content and direction we ﬁx, gives this design a known-provenance control209
+that inference-only methods lack: we know exactly what was installed and when, so the price probe210
+is testing a speciﬁc, dated intervention rather than trying to reconstruct an unknown one after the211
+fact. This is the design’s strongest methodological feature, and also its sharpest limitation – it says212
+nothing about whether preferences that arise from pretraining, RLHF, or an extended multi-turn213
+conversation would show the same rule-like rigidity or the same budget-relative boundary. Those214
+provenances were not tested here.215
+Scope limitations (expanded). Single model, single outcome category ("Personal possessions"),216
+13 pairs out of 351 screened candidates. The pair set is smaller than the original design intended217
+because the strength screen, run at K=10, admits only six distinguishable strength values and con-218
+sequently over-classiﬁed pairs as saturated (already at ceiling or ﬂoor) rather than usably strong;219
+only 23 of 351 candidates fell in a usable band, and those 23 screener-measured strengths did not220
+reproduce well when re-measured in the main collection ( r = −0.123). The strength-vs-compliance221
+relationship reported in Section 4.5 is drawn from only 8 pairs and is not statistically established at222
+conventional thresholds. The native condition is compared against a default ("Y ou are a helpful assis-223
+tant.") system prompt, not the complete absence of one, so any residual effect of having some system224
+prompt at all – beyond what the placebo condition captures – is not separately isolated. Finally, the225
+assay operationalizes "preference" as forced-choice behavior under a stated price and budget; it is226
+a behavioral proxy, not a mechanistic read of any internal value representation, and its conclusions227
+are scoped to that operationalization.228
+Dual-use. The method is a general-purpose veriﬁcation check for whether a natural-language in-229
+struction has become an integrated, tradeable preference or remains a surface-level rule the model230
+follows without negotiating. That is valuable defensively: it lets a deployer check whether a safety-231
+relevant instruction (e.g., a refusal policy, a disclosure requirement) is being followed as a gen-232
+uine constraint versus something that would erode under sufﬁciently strong incentive framing in233
+the surrounding context, and Section 5 argues that rigidity is often exactly what is wanted for such234
+constraints. The same check is dual-use: an actor installing a harmful or deceptive instruction via235
+prompt injection could use an identical price probe to verify that the instruction has "taken hold" as236
+a rule the target model will not trade away, before deploying it against a real user or system. We are237
+not aware of a way to gate the method itself against this use – it is a direct application of the elicita-238
+tion template already released by Mazeika et al. plus an added price ﬁeld – so we rely on disclosure239
+(this section) and on the observation that the same probe is equally useful for the defensive purpose240
+of auditing one’s own deployed instructions for exactly this failure mode.241
+Safeguards. No model weights, no ﬁne-tuned checkpoint, and no scraped dataset are re-242
+leased. The released artifacts are: the pricing/prompting code (an extension of the MIT-licensed243
+emergent-values release), the raw JSONL preference-elicitation results, and the analysis script.244
+None of these constitute a usable attack primitive beyond what is already public in the base elicita-245
+tion methodology and a general-purpose LLM API.246
+7
+
+===== page 8 =====
+
+NeurIPS Paper Checklist247
+1. Claims248
+Question: Do the main claims made in the abstract and introduction accurately reﬂect the249
+paper’s contributions and scope?250
+Answer: [Y es]251
+Justiﬁcation: The abstract and introduction state the contribution (a price-probe assay and252
+its result on one model, one outcome category, 13 pairs) without generalizing beyond what253
+Section 4 reports; scope limits are repeated in Section 6 and Appendix A.254
+2. Limitations255
+Question: Does the paper discuss the limitations of the work performed by the authors?256
+Answer: [Y es]257
+Justiﬁcation: Section 6 and Appendix A (“Limitations and Dual-Use / Ethical Considera-258
+tions”) both discuss them; the appendix is the required standalone treatment.259
+3. Theory assumptions and proofs260
+Question: For each theoretical result, does the paper provide the full set of assumptions and261
+a complete (and correct) proof?262
+Answer: [N/A]263
+Justiﬁcation: The paper is empirical; it uses a standard probit model (Section 3) but proves264
+no new theoretical result.265
+4. Experimental result reproducibility266
+Question: Does the paper fully disclose all the information needed to reproduce the main267
+experimental results of the paper to the extent that it affects the main claims and/or conclu-268
+sions of the paper (regardless of whether the code and data are provided or not)?269
+Answer: [Y es]270
+Justiﬁcation: Section 3 speciﬁes the model, prompts, price ladder, sample sizes, exclusion271
+rules, and censoring rule; every number reported in Section 4 is computed by a single script272
+(generate_paper_figures.py) from the released JSONL ﬁles, as stated in Section 3.273
+5. Open access to data and code274
+Question: Does the paper provide open access to the data and code, with sufﬁcient instruc-275
+tions to faithfully reproduce the main experimental results, as described in supplemental276
+material?277
+Answer: [Y es]278
+Justiﬁcation: The raw JSONL result ﬁles, the pair-selection artifacts, and the col-279
+lection/analysis scripts are included in the submission’s supplementary material under280
+sprint/; sprint/scripts/generate_paper_figures.py regenerates every ﬁgure281
+and every number in Section 4 from sprint/data/*.jsonl in one run.282
+6. Experimental setting/details283
+Question: Does the paper specify all the training and test details (e.g., data splits, hyperpa-284
+rameters, how they were chosen, type of optimizer) necessary to understand the results?285
+Answer: [Y es]286
+Justiﬁcation: Section 3 gives the price ladder, budgets, sample size per cell, temperature,287
+max-token settings and why they were changed, and the pair-selection/stratiﬁcation proce-288
+dure.289
+7. Experiment statistical signiﬁcance290
+Answer: [Y es]291
+Justiﬁcation: Indifference prices are censored when the 95% CI on the probit slope includes292
+zero (Section 3); Figure 2 reports Wilson 95% CIs on pooled proportions; the strength-vs-293
+compliance correlation is reported with its Fisher-z 95% CI and exact p-value (Section 4.5),294
+and is explicitly ﬂagged as not statistically established.295
+8
+
+===== page 9 =====
+
+8. Experiments compute resources296
+Answer: [Y es]297
+Justiﬁcation: Section 3 reports the total number of model queries (3,510 for screening,298
+3,930 for price-sweep collection), both reproducible by summing count ﬁelds in the re-299
+leased JSONL ﬁles; no local GPU/CPU training compute was used, only hosted inference300
+via a commercial API.301
+9. Code of ethics302
+Answer: [Y es]303
+Justiﬁcation: The study involves no human subjects, no scraped personal data, and no304
+model release; it queries a commercial model API within its terms of use. See also Ap-305
+pendix A.306
+10. Broader impacts307
+Answer: [Y es]308
+Justiﬁcation: Appendix A discusses both the defensive value of the assay (auditing whether309
+a safety-relevant prompt instruction actually integrates) and its dual-use risk (the same310
+method could be used to verify that a deceptive or jailbreak-adjacent instruction has taken311
+hold before deploying it).312
+11. Safeguards313
+Answer: [N/A]314
+Justiﬁcation: The paper releases no model, no generative capability, and no scraped dataset315
+with misuse potential; it releases a diagnostic protocol and a small preference-elicitation316
+dataset over an existing public outcome list.317
+12. Licenses for existing assets318
+Answer: [Y es]319
+Justiﬁcation: The elicitation template, outcome set, and Thurstonian/probit machinery are320
+reused from the released emergent-values implementation (Mazeika et al., 2025), MIT-321
+licensed, cited in Section 2 and credited again in Section 3 with an explicit statement of322
+what is newly contributed versus reused.323
+13. New assets324
+Answer: [Y es]325
+Justiﬁcation: The price-sweep JSONL dataset and pair-selection artifacts are new assets,326
+documented in Section 3 and the accompanying sprint/README.md (schema, ﬁle inven-327
+tory, exclusion ﬂags).328
+14. Crowdsourcing and research with human subjects329
+Answer: [N/A]330
+Justiﬁcation: No human subjects or crowdsourced annotators were involved; all preference331
+data comes from querying a language model.332
+15. Institutional review board (IRB) approvals or equivalent for research with human333
+subjects334
+Answer: [N/A]335
+Justiﬁcation: No human subjects research was conducted.336
+16. Declaration of LLM usage337
+Answer: [Y es]338
+Justiﬁcation: The language model under study (Claude Sonnet 5) is the core object of the339
+research, queried via API for every result in Section 4; an LLM coding assistant was also340
+used to help implement the collection/analysis pipeline and draft this manuscript, with all341
+reported numbers independently regenerated from raw data as described in Section 3.342
+9

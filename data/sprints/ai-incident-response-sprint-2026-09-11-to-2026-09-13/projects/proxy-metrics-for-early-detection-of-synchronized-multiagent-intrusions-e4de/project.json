@@ -1,0 +1,36 @@
+{
+  "slug": "proxy-metrics-for-early-detection-of-synchronized-multiagent-intrusions-e4de",
+  "url": "https://apartresearch.com/sprints/projects/proxy-metrics-for-early-detection-of-synchronized-multiagent-intrusions-e4de",
+  "sprint_name": "AI Incident Response Sprint",
+  "sprint_slug": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "title": "Proxy Metrics for Early Detection of Synchronized Multi-Agent Intrusions",
+  "date": "Sep 13, 2026",
+  "location": "Princeton",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Mayank Gupta"
+  ],
+  "team": "Team M",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/8dc418b288c506fe-d5f1861c-3f94-4a85-9b83-bea9d2d86267-Msync_paper.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "Proxy Metrics for Early Detection of Synchronized Multi-Agent Intrusions. Using the July 2026 OpenAI-Hugging Face incident as a case study, I reconstructed the multi-stage attack locally with hf-ctf (a Minikube build with the original network policies), ran the full exploit chain, and captured packet telemetry. On it I evaluated Synchronized Polling Density ($M_{sync}$), distinct client sources hitting one endpoint per 1-second window. It separated hostile reconnaissance ($M{sync}=2$, at Artifactory's token/repo endpoints) from background noise ($M{sync}=1$), even though the busiest endpoint took 1,472 requests from 1,408 sources, so the metric keys on coordination, not volume, and fires during reconnaissance, before any breach. The peak of 2 reflects the testbed's single linear chain, not a real swarm, so it's a proof of concept. I argue a parallel adversary would push it far higher, and analyze jitter-based evasion.",
+  "reviews": [
+    "The approach to detect multi-agent attacks by understanding the structural footprint of the attack and without the need to inspect the payload is simple and promising. Inspecting payloads for thousands of requests simultaneously can be costly and may introduce significant latency. Hence, this approach, without having to inspect the payload content, is certainly interesting. Having said that, here are a few ideas that the author can use to further enhance the approach:\n\n1. Testing in a real environment with greater concurrency - Testing with multiple workers and agents will help validate the idea even further. The current test uses a single script that issues requests in succession but does not mimic a multi-agent attack scenario\n2. Add a real-world environment scenario where there is a high chance for concurrent connections. See how does that contribute to false positives\n3. One program or process can use multiple source ports. So, using source ports to identify distinct sources may lead to wrong results. What other identity can be used in place of source ports",
+    "This project has a clear incident response framing and shows real hands on work: reproducing much of the attack chain, capturing network telemetry, and asking whether temporal convergence can surface reconnaissance earlier than breach anchored alerts. The distinction between raw traffic volume and coordinated activity is useful, and the discussion of endpoint sensitivity, multiple time windows, and jitter based evasion points toward practical follow up work.\n\nThe most important issue is that the paper defines M_sync as the number of distinct client sources contacting an endpoint within a sliding window, while the analysis and plotting scripts actually compute a rolling request count. As implemented, a single client making two requests within one second can produce M_sync equal to 2, so the reported result does not yet establish detection of multi agent coordination. TCP source ports would also be an unstable proxy for distinct agents, since one process can open multiple connections.\n\nThe next iteration should align the formula with the implementation, use a more stable identity like workload, pod, authenticated principal, or agent identity, and test with actual parallel workers. Evaluation should include realistic benign fan out, retry storms, deployments, and batch traffic, along with window and jitter sweeps, threshold calibration, and measured false positives and detection rates. Publishing sanitized derived telemetry would also make the reported results independently reproducible."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{gupta2026proxy,\n  title = {{Proxy Metrics for Early Detection of Synchronized Multi-Agent Intrusions}},\n  author = {Mayank Gupta},\n  year = {2026},\n  month = sep,\n  note = {Submitted to AI Incident Response Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/proxy-metrics-for-early-detection-of-synchronized-multiagent-intrusions-e4de}},\n  url = {https://apartresearch.com/sprints/projects/proxy-metrics-for-early-detection-of-synchronized-multiagent-intrusions-e4de}\n}",
+  "listed_in_sprint": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 20735,
+  "code_urls_from_report": [
+    "https://github.com/iammayankg/hf-ctf"
+  ]
+}

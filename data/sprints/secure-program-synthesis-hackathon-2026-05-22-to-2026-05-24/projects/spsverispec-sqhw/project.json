@@ -1,0 +1,40 @@
+{
+  "slug": "spsverispec-sqhw",
+  "url": "https://apartresearch.com/sprints/projects/spsverispec-sqhw",
+  "sprint_name": "The Secure Program Synthesis Hackathon",
+  "sprint_slug": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "title": "SPS-VeriSpec",
+  "date": "May 25, 2026",
+  "location": "Boston",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Zheng Wangyuan"
+  ],
+  "team": "Team SPS-VeriSpec",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/17b26e38ed6758c1-e01e7602-0a20-422c-bb52-42883acc17f0-Apart-Research-hackathon-submission.pdf",
+  "code_url": "https://github.com/patrickZWY/SPS-VeriSpec",
+  "links": [],
+  "summary": "We implemented a complete pipeline from Python program to Datalog properties to test cases.",
+  "reviews": [
+    "I think it's a great idea to use Datalog-powered analysis for program understanding to create test cases, but the story of this tool doesn't hang together for me yet.\n\nFirst, in the setting of secure program synthesis, why is it helpful to analyze a program to generate tests for it? Don't such tests merely reinforce the bugs already present in the program, sometimes perversely requiring that buggy behavior be replicated in later versions? I don't understand how Figure 1 can be seen as providing empirical evidence that the tool is useful, since it is trivial to generate test cases that a given program passes, if only by rejection sampling.\n\nSecond, the report is unclear on how Datalog analysis results are used to generate test cases. The report acknowledges that analysis so far mostly covers program structure rather than dynamic behavior, so where do useful tests even come from? Should we expect scalability of the underlying program analysis to much larger programs?",
+    "This projects has a mutation harness with named operators and it reports comparative kill rates, but most of the work is only in the repo and doesn't make it into the paper.\n\nSPS-VeriSpec's three-tier scheme (most restrictive properties become unit tests, mid-range become hypothesis property-based tests and open/risky ones go to a manual-review report) makes sense as an organizing idea, and the pipeline is implemented across three targets of increasing difficulty .\n\nThe related-work section is candid that none of the components are new, and the literature is cited properly. A good design instinct is to set LLM-proposed rules and oracles as provenance-tainted review candidates, which is a right posture for secure synthesis.\n\nA promising next step is the one the author identifies, which is to close the loop so that when a generated test fails, the Datalog relation that produced it is surfaced for a human to accept, reject, or refine, with the decision persisted into the next analysis round, turning the current one-way pipeline into an iterative formal/informal loop. Curious what metrics for grounding come out of this."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{wangyuan2026spsverispec,\n  title = {{SPS-VeriSpec}},\n  author = {Zheng Wangyuan},\n  year = {2026},\n  month = may,\n  note = {Submitted to The Secure Program Synthesis Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/spsverispec-sqhw}},\n  url = {https://apartresearch.com/sprints/projects/spsverispec-sqhw}\n}",
+  "listed_in_sprint": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 17908,
+  "code_urls_from_report": [
+    "https://github.com/patrickZWY/SPS-VeriSpec",
+    "https://github.com/codeforboston/CutePetsBoston",
+    "https://github.com/konradhalas/dacite",
+    "https://github.com/huggingface/transformers",
+    "https://github.com/plast-lab/doop"
+  ]
+}

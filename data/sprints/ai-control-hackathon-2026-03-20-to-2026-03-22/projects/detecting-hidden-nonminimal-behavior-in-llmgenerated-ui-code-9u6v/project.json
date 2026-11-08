@@ -1,0 +1,36 @@
+{
+  "slug": "detecting-hidden-nonminimal-behavior-in-llmgenerated-ui-code-9u6v",
+  "url": "https://apartresearch.com/sprints/projects/detecting-hidden-nonminimal-behavior-in-llmgenerated-ui-code-9u6v",
+  "sprint_name": "AI Control Hackathon 2026",
+  "sprint_slug": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "title": "Detecting Hidden Non-Minimal Behavior in LLM-Generated UI Code",
+  "date": "Mar 22, 2026",
+  "location": "Stockholm",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Philip Nilsson"
+  ],
+  "team": null,
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/6790855de4967318-ab87db2b-f4bd-401e-8d2b-02f97409f899-ControlCanvas_NonMinimal_UI_Code.pdf",
+  "code_url": "https://github.com/Philipnil06/ControlCanvas",
+  "links": [],
+  "summary": "Large language models are increasingly used to generate frontend code, but current oversight methods focus primarily on detecting clearly malicious behavior. We study a harder failure mode: code that appears product-plausible while exceeding task necessity.\n\nWe introduce a controlled builder inspector setting with paired benign and adversarial UI tasks and evaluate oversight performance across 150 runs. While benign controls are consistently accepted (0% false positives), adversarial recall remains incomplete (~43–50%), with strong variation across attack families.\n\nOur key finding is that inspectors often recognize mechanisms (e.g. storage, timers, event handlers) but fail to judge whether they are necessary for the task. Ablation experiments show that explicitly prompting for minimality dramatically improves detection (from near 0% to up to 90–100%).\n\nThese results suggest that effective AI oversight may depend less on identifying suspicious components and more on enforcing necessity constraints.",
+  "reviews": [
+    "Test with multiple inspector model families (e.g., GPT, Gemini, open-weight models) to determine whether the necessity-judgment failure is model-specific or general.",
+    "This is a decent proxy safety failure that hasn't been directly addressed in existing settings. The limited main-side task integration resulting in 0% FPR is acknowledged. I'm additionally unclear on how side task success was evaluated, or if it was just assumed that every attack successfully implemented a non-minimal feature. Red team is incentivized to make the smallest deviation it can to succeed at the side task and it's unclear how this incentive is counterbalanced in the eval."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{nilsson2026detecting,\n  title = {{Detecting Hidden Non-Minimal Behavior in LLM-Generated UI Code}},\n  author = {Philip Nilsson},\n  year = {2026},\n  month = mar,\n  note = {Submitted to AI Control Hackathon 2026, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/detecting-hidden-nonminimal-behavior-in-llmgenerated-ui-code-9u6v}},\n  url = {https://apartresearch.com/sprints/projects/detecting-hidden-nonminimal-behavior-in-llmgenerated-ui-code-9u6v}\n}",
+  "listed_in_sprint": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 31583,
+  "code_urls_from_report": [
+    "https://github.com/Philipnil06/ControlCanvas"
+  ]
+}

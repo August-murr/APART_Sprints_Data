@@ -1,0 +1,321 @@
+{
+  "_comment": "Official results from the APART Discord announcements. These override or fill in the rank badges on the website, which are missing for some sprints. Entries give a project 'slug' or, if no link was posted, its exact 'title' (matched within the sprint). 'rank' is the placement (1-5); 'award' is a free-text label; rank null means a non-placement award (track winner, honorable mention).",
+  "ai-incident-response-sprint-2026-09-11-to-2026-09-13": [
+    {
+      "rank": 1,
+      "award": "1st Place ($1,000)",
+      "slug": "noticing-the-escapes-who-spots-a-runaway-agent-and-how-long-does-it-take-pne8"
+    },
+    {
+      "rank": 2,
+      "award": "2nd Place ($500)",
+      "slug": "strengthening-international-ai-incident-discovery-d0t9"
+    },
+    {
+      "rank": 3,
+      "award": "3rd Place ($300)",
+      "slug": "when-to-ask-an-rl-environment-that-teaches-ai-agents-to-act-on-what-users-mean-and-not-just-what-they-say-1fuf"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($100)",
+      "slug": "declare-before-you-run-an-open-filing-standard-for-frontier-training-and-evaluation-runs-dkok"
+    },
+    {
+      "rank": 5,
+      "award": "5th Place ($100)",
+      "slug": "when-the-evaluation-is-the-incident-testing-ai-incidentreporting-regimes-on-the-openaihugging-face-intrusion-9jsn"
+    }
+  ],
+  "digital-minds-research-sprint-2026-08-14-to-2026-08-16": [
+    {
+      "rank": 1,
+      "award": "1st Place ($1,000)",
+      "slug": "readable-but-not-causal-limits-of-selfattributed-welfare-representations-in-language-models-ehin"
+    },
+    {
+      "rank": 2,
+      "award": "2nd Place ($500)",
+      "slug": "project-anchored-q4fn"
+    },
+    {
+      "rank": 3,
+      "award": "3rd Place ($300)",
+      "slug": "model-instance-or-persona-measuring-aective-signals-in-public-text-after-an-ai-is-retired-hj7u"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($100)",
+      "slug": "one-dial-not-a-tree-occupational-personas-and-emergent-misalignment-ukf6"
+    },
+    {
+      "rank": 5,
+      "award": "5th Place ($100)",
+      "slug": "sisyphus-in-the-loop-what-makes-an-llm-persist-yqd9"
+    }
+  ],
+  "secret-loyalties-hackathon-2026-07-24-to-2026-07-26": [
+    {
+      "rank": 1,
+      "award": "1st Place ($1,000)",
+      "slug": "blackbox-loyalty-identification-as-statistical-inference-an-audit-of-three-secretlyloyal-model-organisms-k6ky"
+    },
+    {
+      "rank": 2,
+      "award": "2nd Place ($500)",
+      "slug": "a-broad-secret-loyalty-evades-an-adversarial-audit-q993"
+    },
+    {
+      "rank": 3,
+      "award": "3rd Place ($300)",
+      "slug": "removing-a-secret-loyalty-blind-erases-who-it-served-and-usually-not-the-loyalty-4sjb"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($100)",
+      "slug": "secretloyalty-model-organisms-with-selfassessed-triggers-and-openended-actions-aqs7"
+    },
+    {
+      "rank": 5,
+      "award": "5th Place ($100)",
+      "slug": "loyal-lies-auditing-secret-loyalties-under-attack-and-the-falsepositive-problem-in-blind-elicitation-ezwb"
+    }
+  ],
+  "global-south-ais-hackathon-2026-06-19-to-2026-06-21": [
+    {
+      "rank": 1,
+      "award": "1st Place - Latin America ($1,000)",
+      "slug": "coldron-lj2w"
+    },
+    {
+      "rank": 1,
+      "award": "1st Place - Latin America ($1,000)",
+      "slug": "probing-latent-colombian-identity-inferences-in-qwen257b-with-natural-language-autoencoders-mucf"
+    },
+    {
+      "rank": 1,
+      "award": "1st Place - Latin America ($1,000)",
+      "slug": "thought-anchors-for-social-bias-which-reasoning-steps-matter-in-extended-thinking-llms-on-latin-american-scenarios-27ti"
+    },
+    {
+      "rank": 1,
+      "award": "1st Place - Asia-Pacific ($1,000)",
+      "slug": "steer-mech-interpbased-white-box-attack-on-llms-ftaw"
+    },
+    {
+      "rank": 1,
+      "award": "1st Place - Asia-Pacific ($1,000)",
+      "slug": "do-multilingual-visionlanguage-models-abstain-under-crossmodal-conflict-in-lowresource-languages-hcsp"
+    },
+    {
+      "rank": 1,
+      "award": "1st Place - Africa ($1,000)",
+      "slug": "confidently-wrong-measuring-and-mitigating-calibration-risks-in-llms-for-african-languages-hrve"
+    },
+    {
+      "rank": null,
+      "award": "Honorable Mention",
+      "slug": "justicia-a-counterfactual-benchmark-for-auditing-contextual-biases-in-language-models-for-transitional-justice-jjvl"
+    },
+    {
+      "rank": null,
+      "award": "Honorable Mention",
+      "slug": "pragmatic-sophistry-in-vietnamese-multiagent-oversight-u5xy"
+    },
+    {
+      "rank": null,
+      "award": "Honorable Mention",
+      "slug": "por-qu-los-agentes-obedecen-la-direccin-de-rechazo-se-debilita-en-formato-agntico-ux70"
+    },
+    {
+      "rank": null,
+      "award": "Honorable Mention",
+      "slug": "localgeometry-signals-of-capability-emergence-during-portuguese-grammar-acquisition-in-a-small-language-model-b24y"
+    },
+    {
+      "rank": null,
+      "award": "Honorable Mention",
+      "slug": "indicvietsafe-crosslingual-safety-evaluation-of-opensource-llms-in-hindi-hinglish-and-vietnamese-lszt"
+    },
+    {
+      "rank": null,
+      "award": "Honorable Mention",
+      "slug": "the-shapes-of-bias-in-spanishprompted-llms-and-the-debiasing-prompt-scaffolds-zm7h"
+    },
+    {
+      "rank": null,
+      "award": "Honorable Mention",
+      "slug": "ufakazi-7yi3"
+    }
+  ],
+  "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24": [
+    {
+      "rank": 1,
+      "award": "1st Place ($1,000)",
+      "slug": "vibecoding-specs-eliciting-editing-and-verifying-specifications-for-ai-coding-agents-re3p"
+    },
+    {
+      "rank": 2,
+      "award": "2nd Place ($500)",
+      "slug": "where-to-look-energybased-fault-localization-for-verus-vericoding-0cdy"
+    },
+    {
+      "rank": 3,
+      "award": "3rd Place ($300)",
+      "slug": "proof-assistance-as-verification-oracle-for-porting-ma88"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($100)",
+      "slug": "agentspecgap-bku6"
+    },
+    {
+      "rank": 5,
+      "award": "5th Place ($100)",
+      "slug": "diffspecpbt-3wba"
+    }
+  ],
+  "ai-control-hackathon-2026-03-20-to-2026-03-22": [
+    {
+      "rank": 1,
+      "award": "1st Place ($1,000)",
+      "slug": "omission-attacks-when-doing-nothing-is-the-attack-0y1v"
+    },
+    {
+      "rank": 2,
+      "award": "2nd Place ($500)",
+      "slug": "detecting-llm-subversion-in-vulnerability-patching-settings-gagj"
+    },
+    {
+      "rank": 3,
+      "award": "3rd Place ($300)",
+      "slug": "actionlens-preexecution-environment-probing-for-agent-action-approval-xy22"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($100)",
+      "slug": "undoing-the-fix-cve-regression-as-an-ai-control-setting-f855"
+    },
+    {
+      "rank": 5,
+      "award": "5th Place ($100)",
+      "slug": "counterfactual-components-for-ai-control-protocols-ibli"
+    },
+    {
+      "rank": null,
+      "award": "LinuxArena Track Winner ($500)",
+      "slug": "omission-attacks-when-doing-nothing-is-the-attack-0y1v"
+    },
+    {
+      "rank": null,
+      "award": "LinuxArena Track Winner ($500)",
+      "slug": "syscon-kernellevel-syscall-monitoring-for-ai-agent-control-in-sandboxed-environments-guun"
+    }
+  ],
+  "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01": [
+    {
+      "rank": 1,
+      "award": "1st Place ($1,000)",
+      "slug": "lidasim-testing-ai-policies-with-personabased-simulations-o8x6"
+    },
+    {
+      "rank": 2,
+      "award": "2nd Place ($500)",
+      "slug": "markov-chain-lock-watermarking-provably-secure-authentication-for-llm-outputs-l8oe"
+    },
+    {
+      "rank": 3,
+      "award": "3rd Place ($300)",
+      "slug": "political-intelligence-for-ai-safety-the-ai-risk-attitudes-survey-airas-dlpz"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($100)",
+      "slug": "fingerprinting-all-ai-cluster-io-without-mutually-trusted-processors-d81l"
+    },
+    {
+      "rank": 5,
+      "award": "5th Place ($100)",
+      "slug": "prototyping-an-embedded-offswitch-for-ai-compute-65pz"
+    }
+  ],
+  "def-acc-hackathon-2025-11-21-to-2025-11-23": [
+    {
+      "rank": 1,
+      "award": "1st Place ($3,500)",
+      "title": "Mechanistic Watchdog"
+    },
+    {
+      "rank": 1,
+      "award": "1st Place ($3,500)",
+      "title": "GUARDIAN: Guarded Universal Architecture for Defensive Interpretation And traNslation"
+    },
+    {
+      "rank": 2,
+      "award": "2nd Place ($3,000)",
+      "title": "Comparative LLM methods for Social Media Bot Detection"
+    },
+    {
+      "rank": 2,
+      "award": "2nd Place ($3,000)",
+      "title": "Robust LLM Neural Activation-Mediated Alignment"
+    },
+    {
+      "rank": 3,
+      "award": "3rd Place ($1,500)",
+      "title": "Actions speak louder than words: Evaluating Tool Usage Risk in Open-Weight AI for Defensive Deployment"
+    },
+    {
+      "rank": 3,
+      "award": "3rd Place ($1,500)",
+      "title": "A Defensive AI Agent Against Large Language Model (LLM)-Assisted Polymorphic Malware"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($1,000)",
+      "title": "Opening Doors to Multimodal Deception"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($1,000)",
+      "title": "Automating Privacy-Preserving Model Deployment"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($1,000)",
+      "title": "TheWizard"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place ($1,000)",
+      "title": "Detecting Piecewise Cyber Espionage in Model APIs"
+    }
+  ],
+  "ai-manipulation-hackathon-2026-01-09-to-2026-01-11": [
+    {
+      "rank": 1,
+      "award": "1st Place",
+      "title": "Who Does Your AI Serve? Manipulation By and Of AI Assistants"
+    },
+    {
+      "rank": 2,
+      "award": "2nd Place",
+      "title": "Eliciting Deception on Generative Search Engines"
+    },
+    {
+      "rank": 3,
+      "award": "3rd Place",
+      "title": "Cross-Linguistic Sycophancy in Frontier LLMs: A Benchmark Study"
+    },
+    {
+      "rank": 4,
+      "award": "4th Place",
+      "title": "Agent Attacks via Memory Injection"
+    },
+    {
+      "rank": 5,
+      "award": "5th Place",
+      "title": "SycophantSee - Activation-based diagnostics for prompt engineering: monitoring sycophancy at prompt and generation time"
+    }
+  ]
+}

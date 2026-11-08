@@ -1,0 +1,41 @@
+{
+  "slug": "silicosafe-a-multimodal-ai-triage-system-7tzy",
+  "url": "https://apartresearch.com/sprints/projects/silicosafe-a-multimodal-ai-triage-system-7tzy",
+  "sprint_name": "Global South AI Safety Hackathon",
+  "sprint_slug": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "title": "SilicoSafe – A Multimodal AI Triage System",
+  "date": "Jun 21, 2026",
+  "location": "New Delhi",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Utkarsh Raj",
+    "Garv Gupta"
+  ],
+  "team": "Team Byte",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/063473da4b8a3500-eb16b023-fad1-481d-8e9c-61deb1f58c0a-SilicoSafe_Hackathon_Report_3.pdf",
+  "code_url": "https://github.com/Utkarsh2294/main-silicosafe",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://drive.google.com/file/d/1Cj0j2mMJF6pqsjdIaq4oBH3WrMe-b4eM/view?usp=sharing"
+    }
+  ],
+  "summary": "SilicoSafe is an AI-powered Website triage tool that helps frontline health workers screen dust-exposed workers for silicosis by combining occupational/symptom risk scoring with DenseNet121-based chest X-ray analysis. It flags TB-confusion risk, generates bilingual referrals, and supports compensation access — all while keeping a human-in-the-loop, non-diagnostic design for safety. The goal: bring specialist-grade early detection to rural and low-resource workers who currently have no access to it.",
+  "reviews": [
+    "SilicoSafe addresses a meaningful public-health problem in low-resource settings: early triage for silicosis among dust-exposed workers. The strongest part of the project is its responsible framing: it is explicitly a triage and referral tool, not an automated diagnostic system, and it combines occupational risk, symptoms, X-ray analysis, TB-confusion safeguards, and bilingual referral support.\n\nThe execution is promising but less rigorous than the top submissions because it reads more like a well-designed MVP proposal than a validated technical system. The project would be stronger with actual model evaluation, sample outputs, validation on silicosis/TB cases, and clearer evidence that the DenseNet pipeline performs reliably in this specific setting. Overall, this is a strong product-oriented AI safety submission with good real-world relevance.",
+    "SilicoSafe tackles a neglected occupational health problem with significant relevance for underserved communities. The human-in-the-loop design, referral-first workflow, and explicit safeguards for TB confusion are thoughtful safety features. The report is well organized and easy to follow. The main limitation is the absence of empirical evaluation: no diagnostic performance metrics, validation dataset, or error analysis are reported. In addition, it remains unclear how the underlying imaging model specifically derives silicosis risk. Future work should include quantitative validation, explainability examples, and clinical evaluation with frontline health workers.",
+    "SilicoSafe addresses an under-served healthcare safety problem: dust-exposed workers may suffer from silicosis that is detected late or misdiagnosed as tuberculosis, especially in low-resource settings with limited access to radiologists. The project’s human-in-the-loop framing is strong because it positions the system as triage support rather than an automated diagnostic tool, which is appropriate for a high-stakes medical context.\n\nThe overall architecture is practical. Combining occupational exposure history, symptom intake, rule-based risk scoring, DenseNet121 chest X-ray analysis, TB-confusion safeguards, and bilingual referral guidance creates a useful workflow for frontline health workers in both English and Hindi.\n\nThe main area for improvement is empirical validation. The report explains the intended system and model pipeline clearly, but it does not provide enough quantitative evidence about model performance. It would be helpful to include metrics such as false positive rate, false negative rate, AUROC, calibration, and a silicosis-vs-TB confusion matrix. Since false negatives could delay care and false positives could overwhelm referral systems, both error types should be discussed carefully before claiming that the model improves care for dust-exposed workers.\n\nThe project could also explain the human-in-the-loop component in more detail and whether it would use Hindi and English language. For example, it should clarify how frontline workers interact with the model, how human review changes decisions, and whether human-in-the-loop use improves DenseNet121 performance compared with model-only prediction.\n\nAnother useful addition would be latency and deployment testing. Since the app is intended for low-resource settings, the report should measure inference speed and usability under low-bandwidth conditions, then compare performance with high-bandwidth settings. This would make the app’s practical value more convincing.\n\nThe report should also have clearer dataset documentation. It should specify the structure of the used X-ray datasets, how silicosis labels were obtained, whether TB cases were included as hard negatives, and whether the data reflects the India worker population. Without this information, it is difficult to judge whether the model would generalize to rural or informal-sector deployment.\n\nOverall, SilicoSafe has a decent framing and responsible design philosophy. To become more convincing, it needs stronger empirical validation and clearer dataset documentation to validate itself as a responsible AI App."
+  ],
+  "n_reviews": 3,
+  "bibtex": "@misc{raj2026silicosafe,\n  title = {{SilicoSafe – A Multimodal AI Triage System}},\n  author = {Utkarsh Raj and Garv Gupta},\n  year = {2026},\n  month = jun,\n  note = {Submitted to Global South AI Safety Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/silicosafe-a-multimodal-ai-triage-system-7tzy}},\n  url = {https://apartresearch.com/sprints/projects/silicosafe-a-multimodal-ai-triage-system-7tzy}\n}",
+  "listed_in_sprint": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 11010,
+  "code_urls_from_report": []
+}

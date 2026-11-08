@@ -1,0 +1,41 @@
+{
+  "slug": "no-one-thanks-you-for-disasters-that-never-happened-pricing-ai-risk-while-making-ai-safety-investable-gjwu",
+  "url": "https://apartresearch.com/sprints/projects/no-one-thanks-you-for-disasters-that-never-happened-pricing-ai-risk-while-making-ai-safety-investable-gjwu",
+  "sprint_name": "The Technical AI Governance Challenge",
+  "sprint_slug": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "title": "No One Thanks You for Disasters That Never Happened: Pricing AI Risk While Making AI Safety Investable",
+  "date": "Feb 2, 2026",
+  "location": "Seville, Spain",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Ana Belen Barbero Castejon",
+    "Stan Threepwood"
+  ],
+  "team": "Team No One Thanks You for Disasters That Never Happened",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/dffc0eda63b8382c-5-435d-9cd0-f360356290ed-No-One-Thanks-You-for-Disasters-That-Never-Happened.pdf",
+  "code_url": "https://github.com/stanthreepwood/ai-risk-pricing",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://pricing-ai-risks.netlify.app"
+    }
+  ],
+  "summary": "This paper examines whether risk quantifi cation and pricing can function as a practical mechanism of AI governance. We present a prototype framework for pricing AI risk under deep uncertainty, using a scenario-based frequency–severity decomposition with dependency-aware propagation and aggregation with catastrophe-style tail modeling. Loss distributions are evaluated using standard actuarial metrics such as Expected Loss (EL), Value at Risk (VaR), and Tail Value at Risk (TVaR), enabling premium estimation in data-scarce environments.\n\nThese findings suggest a potential pathway for AI insurance and reinsurance to function as coordination infrastructure, aligning incentives across companies, developers, insurers, and regulators while enabling scalable investment in AI safety, security and operations.\n\nApplication available here: https://pricing-ai-risks.netlify.app\n\nCode available here: https://github.com/stanthreepwood/ai-risk-pricing",
+  "reviews": [
+    "The problem is real but the proposed solution doesn't capture the whole complexity I think and hard to validate."
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{castejon2026no,\n  title = {{No One Thanks You for Disasters That Never Happened: Pricing AI Risk While Making AI Safety Investable}},\n  author = {Ana Belen Barbero Castejon and Stan Threepwood},\n  year = {2026},\n  month = feb,\n  note = {Submitted to The Technical AI Governance Challenge, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/no-one-thanks-you-for-disasters-that-never-happened-pricing-ai-risk-while-making-ai-safety-investable-gjwu}},\n  url = {https://apartresearch.com/sprints/projects/no-one-thanks-you-for-disasters-that-never-happened-pricing-ai-risk-while-making-ai-safety-investable-gjwu}\n}",
+  "listed_in_sprint": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 47180,
+  "code_urls_from_report": [
+    "https://github.com/stanthreepwood/ai-risk-pricing"
+  ]
+}

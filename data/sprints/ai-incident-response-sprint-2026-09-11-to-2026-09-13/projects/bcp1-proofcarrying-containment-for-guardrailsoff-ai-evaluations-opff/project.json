@@ -1,0 +1,37 @@
+{
+  "slug": "bcp1-proofcarrying-containment-for-guardrailsoff-ai-evaluations-opff",
+  "url": "https://apartresearch.com/sprints/projects/bcp1-proofcarrying-containment-for-guardrailsoff-ai-evaluations-opff",
+  "sprint_name": "AI Incident Response Sprint",
+  "sprint_slug": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "title": "BCP-1: Proof-Carrying Containment for Guardrails-Off AI Evaluations",
+  "date": "Sep 14, 2026",
+  "location": "Csablanca",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Khadija Edarzi"
+  ],
+  "team": "Team ZKL",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/7f47063f8f043898-d671e-065f-4651-a1b8-91fcba4614de-AI_Incident_Response_Sprint_Khadija_Edarzi.pdf",
+  "code_url": "https://github.com/khadijaedarzi9/AI_Incident_Response",
+  "links": [],
+  "summary": "A sandbox can keep an allowed network path, raise detections, and still fail to contain. In the July 2026 OpenAI–Hugging Face incident the model used reachable package infrastructure; detections did not force isolation.\n\nBCP-1 is an eight-control containment profile for dangerous-capability evaluations with production safeguards off. This project specifies those controls and implements the authorization and evidence slice in Python: signed manifest, one-use kill-epoch capabilities, credential broker, bounded evidence, streaming verifier, and supervisor receipt. The local isolate is signed SIMULATED; it is not a production microVM.\n\nOn that reference, five selected control omissions each produced a non-zero unsafe count; the full contract scored zero. Access logs verified 0/5 predefined claims, signed-line logs 1/5, and the BCP-1 bundle 5/5 on the mediated path (4 events vs 50,000 records). Four scenarios and 32 tests passed.",
+  "reviews": [
+    "The core architecture presented here is interesting but repeats in a several submissions I saw for this sprint. I particularly liked your approach to permit lifetime management and auditability.\n\nA lot of the ideas you present here where remind me of existing frameworks (certificate transparency logs cosigning comes to mind.\n\nThe writing itself was clear, while a bit dense. I think the \"proof-carrying\" framing is a bit misleading here, what you get is more of an attestation to the claim. Some of your citations carry the wrong date or misquote the title of the cited work.",
+    "Binding actions to signed permissions is a strong way to stop a model causing real-world effects it was never authorised for. However the manifest has to name allowed destinations up front, and evals are exactly where you can't predict what the model will reach for, so unanticipated but harmless actions become denials needing a human. The purpose of evals is also to see where the model deviates, and not all deviations are harmful."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{edarzi2026bcp1,\n  title = {{BCP-1: Proof-Carrying Containment for Guardrails-Off AI Evaluations}},\n  author = {Khadija Edarzi},\n  year = {2026},\n  month = sep,\n  note = {Submitted to AI Incident Response Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/bcp1-proofcarrying-containment-for-guardrailsoff-ai-evaluations-opff}},\n  url = {https://apartresearch.com/sprints/projects/bcp1-proofcarrying-containment-for-guardrailsoff-ai-evaluations-opff}\n}",
+  "listed_in_sprint": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 21035,
+  "code_urls_from_report": [
+    "https://github.com/khadijaedarzi9/AI_Incident_Response",
+    "https://github.com/cosai-oasis/ws2-defenders"
+  ]
+}

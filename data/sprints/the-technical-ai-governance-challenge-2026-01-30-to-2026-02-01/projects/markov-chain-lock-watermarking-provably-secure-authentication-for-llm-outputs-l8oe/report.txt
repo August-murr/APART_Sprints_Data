@@ -1,0 +1,538 @@
+===== page 1 =====
+
+Markov Chain Lock Watermarking: Provably Secure
+Authentication for LLM Outputs1
+Chengheng Li Chen Kyuhee Kim
+AI Safety Barcelona & EPFL MATS & EPFL
+chengheng.lichen@epfl.ch kyuhee.kim@epfl.ch
+With
+Apart Research
+Abstract
+We present Markov Chain Lock (MCL) watermarking, a cryptographically secure framework for
+authenticating LLM outputs. MCL constrains token generation to follow a secret Markov chain over
+SHA-256 vocabulary partitions. Using doubly stochastic transition matrices, we prove four theo-
+retical guarantees: (1) exponentially decaying false positive rates via Hoeffding bounds, (2) grace-
+ful degradation under adversarial modification with closed-form expected scores, (3) information-
+theoretic security without key access, and (4) bounded quality loss via KL divergence. Experi-
+ments on 173 Wikipedia prompts using Llama-3.2-3B demonstrate that the optimal 7-state soft
+cycle configuration achieves 100% detection, 0% FPR, and perplexity 4.20. Robustness test-
+ing confirms detection above 96% even with 30% word replacement. The framework enables
+O(n) model-free detection, addressing EU AI Act Article 50 requirements. Code available at
+https://github.com/ChenghengLi/MCLW.
+1. Introduction
+The EU AI Act Article 50 [1] mandates machine-readable marking of AI-generated content, with
+enforcement beginning August 2026. Current approaches partition into passive detection [2, 3]
+and active watermarking [4]. Passive methods suffer high false positive rates and paraphrasing
+vulnerability [5]; active schemes degrade under token substitution and require probabilistic sampling
+incompatible with greedy decoding.
+We introduceMarkov Chain Lock (MCL) watermarking, constraining token generation
+to follow a secret finite-state Markov chain over cryptographic vocabulary partitions. Using doubly
+stochastic transition matrices (e.g., clockwork:i→(i+ 1) modS, or soft cycle:i→ {i+ 1, i+ 2}),
+we create detectable state patterns verifiable only with the secret key (Figure 1).
+Contributions.(1) Complete mathematical framework with cryptographic state assignment and
+clockwork topology; (2) four theorems establishing exponential false positive decay (Theorem 4.1),
+robustness bounds (Theorem 4.3), information-theoretic security (Theorem 4.4), and quality preser-
+vation (Theorem 4.5); (3) empirical validation on 173 Wikipedia concepts across 28 configurations;
+(4) practical algorithms forO(N(V+T LM)) embedding andO(n) model-free detection.
+1Research conducted at the Technical AI Governance Challenge, 2026. More information:https://
+apartresearch.com/sprints/the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01
+1
+
+===== page 2 =====
+
+Figure 1:MCL watermarking overview. Each token is assigned to a state partitionV s via SHA-256
+hashing. Generation follows a clockwork Markov chain (0→1→2→3→0), constraining each token to the
+next state’s partition. Detection verifies the hidden state sequence.
+2. Related Work
+Passive detection methods analyze statistical properties of generated text: DetectGPT [2] examines
+log-probability curvature, while GPTZero [3] combines perplexity and burstiness metrics. However,
+these approaches suffer high false positive rates on technical writing and fail under paraphras-
+ing [5, 6]. Active watermarking embeds verifiable signals during generation. Kirchenbauer et al. [4]
+partition vocabulary into green/red lists via keyed hashing, but this degrades under paraphras-
+ing and requires temperature sampling. Aaronson [7] proposes semantic-level embedding requiring
+expensive model queries, while Christ et al. [8] establish fundamental quality-security tradeoffs.
+Chen et al. [9] propose Pattern-Mark, a Markov-chain-based watermarking framework for order-
+agnostic language models using probabilistic transitions and pattern-frequency detection. MCL
+targets autoregressive LLMs with deterministic transitions, enabling greedy decoding compatibility
+and model-free O(n) detection via transition validity verification.
+MCL advances prior work through: (1) deterministic embedding compatible with greedy de-
+coding; (2) model-freeO(n) detection; (3) provable exponentially small FPR via Hoeffding bounds;
+and (4) explicit quality-security parameterization through tunable overlapρ.
+3. Methods
+3.1 Cryptographic State Assignment
+LetVdenote the vocabulary with sizeV=|V|, and letH:{0,1} ∗ → {0,1}256 denote SHA-256, a
+cryptographic hash function satisfying uniformity, one-wayness, and collision resistance.
+2
+
+===== page 3 =====
+
+Definition 3.1(Cryptographic State Assignment).Given secret keyk∈ {0,1} ∗ and number of
+statesS∈N, the state assignment function isσ k :V → Sdefined asσk(t) =H(k∥t) modS, where
+∥denotes concatenation andS={0,1, . . . , S−1}. This induces vocabulary partitionV= FS−1 s=0 Vs
+whereV s ={t∈ V:σ k(t) =s}.
+Lemma 3.2(Partition Uniformity).Under the random oracle model forH, for any states∈ S:
+E[|Vs|] =V /Sand Var[|V s|] =V(S−1)/S 2.
+Proof.For each tokent, the indicator⊮[σ k(t) =s] is Bernoulli(1/S) by hash uniformity. Thus
+|Vs|= P t∈V ⊮[σk(t) =s] has meanV /Sand varianceV·(1/S)·(1−1/S) =V(S−1)/S 2.
+3.2 Transition Matrix Topologies
+We consider transition matrices that aredoubly stochastic, ensuring uniform stationary distribution,
+a property essential for the theoretical guarantees in Section 4.
+Definition 3.3(Doubly Stochastic Transition Matrix).A matrixT∈R S×S isdoubly stochastic
+if P j Tij = P i Tij = 1 for alli, j. For irreducible, aperiodic chains, the Ergodic Theorem guarantees
+convergence to the unique stationary distributionπ ∗ = (1/S, . . . ,1/S), yielding detection baseline
+E[ϕ] =k/Swherekis the number of valid successors per state.
+We present two topologies satisfying this definition.
+Example 3.4(Clockwork Matrix).The clockwork matrixT clock ij =⊮[j≡i+1 (modS)] is a cyclic
+permutation withk= 1 successor per state. ForS= 4:
+Tclock =
+
+
+0 1 0 0
+0 0 1 0
+0 0 0 1
+1 0 0 0
+
+ ⇒p random = 1 S
+Example 3.5(Soft Cycle Matrix).The soft cycle matrix allows transitions to two successors
+(k= 2):
+Tsoft ij =
+
+
+
+2/3j≡i+1 (modS)
+1/3j≡i+2 (modS)
+0 otherwise
+⇒p random = 2 S
+ForS= 4:
+Tsoft =
+
+
+0 2/3 1/3 0
+0 0 2/3 1/3
+1/3 0 0 2/3
+2/3 1/3 0 0
+
+
+This doubles available vocabulary at each step while halving detection power relative to clockwork.
+Note:For soft cycle withS= 7:p random = 2/7≈0.29.
+3.3 Watermark Embedding and Detection
+Definition 3.6(MCL Constrained Generation).Given current states∈ S, the MCL-constrained
+distribution over next tokens is:
+PMCL(t|s) =
+(
+PM(t)/Zs ift∈ V(s+1) modS
+0 otherwise
+whereZ s = P t′∈V(s+1) modS PM(t′) is the normalization constant.
+3
+
+===== page 4 =====
+
+Algorithm 1MCL Watermark Embedding
+Require:Promptp, secret keyk, statesS, max tokensN
+Ensure:Watermarked text
+1:tokens←Tokenize(p)
+2:s←σ k(tokens[last])▷Initial state from prompt
+3:fori= 1 toNdo
+4:ℓ← M.Forward(tokens)▷Get logits
+5:s next ←(s+ 1) modS ▷Clockwork: next state
+6:foreach tokent∈ Vdo
+7:ifσ k(t)̸=s next then
+8:ℓ[t]← −∞▷Mask disallowed tokens
+9:end if
+10:end for
+11:t next ←arg max(ℓ)▷Greedy selection
+12:tokens.Append(t next);s←s next
+13:ift next =EOSthen:break
+14:end if
+15:end for
+16:returnDecode(tokens[len(p) :])
+Definition 3.7(Fingerprint Score).For token sequencet= (t 1, . . . , tn), the fingerprint score is:
+ϕ(t) = 1 n−1 n−1X i=1 Tclock σk(ti),σk(ti+1)
+Text is classified as watermarked ifϕ(t)> τfor detection thresholdτ∈(1/S,1).
+3.4 Soft Partitions
+Hard partitions restrict each token to exactly one state, which may limit vocabulary choices and
+degrade generation quality. Soft partitions allow controlled overlap between states.
+Definition 3.8(Soft State Membership).Given overlap ratioρ∈[0,1], the soft membership
+assigns each token to multiple states: Σ k(t) ={s∈ S:H s(k∥t)< θ ρ}whereθ ρ = (1/S+ρ(1−
+1/S))·2 256.
+The expected tokens per state isV(1/S+ρ(S−1)/S). ForS= 7:ρ= 0 yields 14.3% vocabulary
+per state, whileρ= 0.15 yields approximately 27%. Higher overlap improves quality but weakens
+detection, as demonstrated in our experiments.
+3.5 Algorithms
+Algorithm 1 has complexityO(N(V+T LM)) whereT LM is the LLM forward pass time. Algorithm 2
+requires onlyO(n) hash operations withno model access, enabling lightweight third-party veri-
+fication.
+4
+
+===== page 5 =====
+
+Algorithm 2MCL Watermark Detection
+Require:Textx, secret keyk, statesS, thresholdτ
+Ensure:(is watermarked, score, pvalue)
+1:tokens←Tokenize(x);n← |tokens|;c←0
+2:fori= 1 ton−1do
+3:s i ←σ k(tokens[i]);s i+1 ←σ k(tokens[i+ 1])
+4:ifs i+1 ≡s i + 1 (modS)then:c←c+ 1
+5:end if▷Valid clockwork transition
+6:end for
+7:score←c/(n−1)
+8:z←(score−1/S)/
+p
+(1/S)(1−1/S)/(n−1)▷Z-score
+9:return(score > τ, score,1−Φ(z))
+4. Theoretical Results
+Theorem 4.1(Detection Bounds for Doubly Stochastic Chains).LetTbe an irreducible doubly
+stochastic transition matrix withknon-zero entries per row (average). Lett w be a watermarked
+sequence of lengthnandt r a random sequence. For thresholdτ∈(k/S,1):
+(i) Watermarked:ϕ(t w) = 1(all transitions valid by construction)
+(ii) Random baseline:E[ϕ(t r)] =k/S(uniform state distribution)
+(iii) False negative rate: FNR= 0(ϕ= 1> τalways)
+(iv) False positive rate: FPR≤exp(−2(n−1)(τ−k/S) 2)(Hoeffding bound)
+Special cases: Clockwork (k=1):p random = 1/S. Soft cycle (k=2):p random = 2/S.
+Proof.(i)Algorithm 1 enforces that each token’s state is a valid successor inT, soT σk(ti),σk(ti+1) >
+0 for all transitions, givingϕ(t w) = 1.(ii)For random text, each stateσ k(t) is uniformly distributed
+overSby Lemma 3.2. SinceTis doubly stochastic (Definition 3.3), the stationary distribution
+is uniform:π ∗ = (1/S, . . . ,1/S). Withknon-zero entries per row,P(valid transition) =k/S.
+(iii)Sinceϕ(t w) = 1> τ, FNR = 0.(iv)LetZ i =1[T σk(ti),σk(ti+1) >0]∈ {0,1}indicate valid
+transitions. For random text,Z i are i.i.d. Bernoulli(k/S) by the doubly stochastic property. By
+Hoeffding’s inequality:
+P(ϕ(t r)≥τ) =P
+ 
+1
+n−1
+n−1X
+i=1
+Zi ≥τ
+!
+≤exp
+ 
+−2(n−1)
+
+τ− k S 2!
+Corollary 4.2(Practical FPR Bounds).For soft cycle (k=2),S= 7,τ= 0.5: FPR≤1.1×10 −4
+atn= 100tokens; FPR≤1.2×10 −8 atn= 200tokens.
+Theorem 4.3(Adversarial Robustness).For a doubly stochastic chain withkvalid successors per
+state, if an adversary modifies fractionδof tokens uniformly at random:
+E[ϕ(tmod)] = (1−δ) 2 + k·δ(2−δ) S
+Proof.Consider consecutive pair (t i, ti+1) with modification indicatorM i ∼Bernoulli(δ). Four
+cases: (1) neither modified (prob. (1−δ) 2): contributes 1; (2) onlyt i+1 modified (prob. (1−δ)δ):
+5
+
+===== page 6 =====
+
+contributesk/S; (3) onlyt i modified (prob.δ(1−δ)): contributesk/S; (4) both modified (prob.
+δ2): contributesk/S. Summing: (1−δ) 2 + [2δ(1−δ) +δ 2]·k/S= (1−δ) 2 +δ(2−δ)·k/S.
+Example:For soft cycle (k=2),S= 7,τ= 0.5: atδ= 0.3,E[ϕ] = 0.49 + 0.51·2/7≈0.64>0.5
+(detectable); atδ= 0.5,E[ϕ] = 0.25 + 0.75·2/7≈0.46<0.5 (undetectable). Experimental
+validation is presented in Section 6.3.
+Theorem 4.4(Information-Theoretic Security).Under the random oracle model, without secret
+keyk, any polynomial-time adversary has negligible advantage:
+AdvA =|P[A(t w) = 1]−P[A(t r) = 1]| ≤negl(256)
+Proof.The state assignmentσ k(t) =H(k∥t) modSis a pseudorandom function under the random
+oracle model. Withoutk, the adversary observes only the token sequencet, not the state se-
+quence (s1, . . . , sn). Watermarked text has clockwork states; random text has i.i.d. uniform states.
+Distinguishing these from tokens alone requires invertingH, which has probability≤2 −256.
+Theorem 4.5(Quality Bound).The KL divergence between MCL-constrained and unconstrained
+distributions satisfies:
+DKL(PMCL∥PM) = log(1/Zs)≤logS
+whereZ s =P M(V(s+1) modS )is the probability mass of the target partition.
+Proof.MCL distribution:P MCL(t|s) =P M(t)/Zs fort∈ V(s+1) modS , else 0. KL divergence:
+DKL =
+X
+t∈V(s+1) modS
+PM(t)
+Zs
+log 1 Zs = log(1/Zs)
+By Lemma 3.2,|V (s+1) modS | ≈V /S, soZs ≥1/S, givingD KL ≤logS.
+Implication:Quality degradation is logarithmic in states. ForS= 7:D KL ≤log 7≈1.95 nats.
+5. Experimental Design
+To empirically validate our theoretical framework, we conduct comprehensive experiments across
+diverse textual domains and watermarking configurations. This section details the dataset con-
+struction, text generation methodology, and evaluation criteria.
+5.1 Dataset Construction
+We construct an evaluation corpus comprising 173 concepts selected from the most frequently
+accessed Wikipedia articles, ensuring both topical diversity and practical relevance. The corpus
+systematically spans six semantic categories:notable figures(e.g., Albert Einstein, William Shake-
+speare, Elon Musk),historical events(e.g., World War II, French Revolution, the Renaissance),
+scientific phenomena(e.g., quantum mechanics, DNA replication, black holes),geographical entities
+(e.g., Mount Everest, Amazon River, Antarctica),technological concepts(e.g., artificial intelligence,
+cryptocurrency, neural networks), andcultural references(e.g., Star Wars, Harry Potter, Game of
+Thrones).
+For each conceptc, we construct a standardized promptp c of the form:“Explain [concept] in
+a comprehensive way.”This formulation elicits informative, multi-sentence responses suitable for
+watermark embedding and detection analysis.
+6
+
+===== page 7 =====
+
+5.2 Text Generation Protocol
+We generate paired samples for each concept to enable controlled comparison between watermarked
+and baseline conditions:
+•W atermarked generation.Text is produced using Algorithm 1 withsoft cycletransition
+enforcement (Example 3.5). At each decoding step, the model’s output distribution is masked
+to permit only tokens belonging to valid successor partitionsV (s+1) modS orV (s+2) modS ,
+followed by sampling from the masked distribution. This procedure guaranteesϕ(t)≈1.0 for
+all generated sequences.
+•Baseline generation.Non-watermarked text is produced using standard nucleus sampling
+with temperatureT= 0.7 and cumulative probability thresholdp= 0.9, without any vo-
+cabulary constraints. These samples establish the null distribution for false positive rate
+estimation.
+All experiments employ Llama-3.2-3B-Instruct as the base language model, with a maximum
+generation length of 200 tokens. We systematically evaluate 7×4 = 28 configurations spanning
+state countsS∈ {2,4,5,7,9,11,15}and overlap ratiosρ∈ {0%,5%,10%,15%}. Reproducibility is
+ensured through fixed random seed (42) and cryptographic key (curated wiki dataset 2024).
+5.3 Evaluation Metrics
+We quantify watermarking performance along four complementary dimensions:
+•Fingerprint Scoreϕ(t)∈[0,1]: The proportion of consecutive token pairs exhibiting valid
+transitions according to the transition matrix (Definition 3.7). For watermarked text using
+soft cycle,ϕ≈1.0 by construction; for random text,E[ϕ] = 2/S(Theorem 4.1).
+•T rue Positive Rate (TPR): The fraction of watermarked samples correctly identified,
+computed as TPR =|{t w :ϕ(t w)> τ}|/|{tw}|with thresholdτ= 0.5.
+•F alse Positive Rate (FPR): The fraction of non-watermarked samples erroneously classi-
+fied as watermarked, representing the Type I error rate critical for deployment reliability.
+•Perplexity (PPL): The exponential of cross-entropy loss, PPL = exp
+ 
+− 1 n Pn i=1 logP M(ti|t<i)  ,
+measuring linguistic fluency. Lower values indicate higher generation quality.
+5.4 Robustness Evaluation Protocol
+To evaluate robustness against adversarial attacks, we perform controlled word replacement ex-
+periments on the optimal configuration (S= 7, soft cycle,ρ= 0%). For each modification rate
+δ∈ {10%,20%,30%,40%,50%,60%}, we randomly selectδfraction of word positions in each wa-
+termarked text and replace them with the word “masked”. The modified text is re-tokenized
+using Llama-3.2’s tokenizer, and detection scores are computed using Algorithm 2. Table 2 reports
+the observed mean fingerprint scoreϕacross 173 samples, the theoretical expectationE[ϕ] from
+Theorem 4.3, and the detection rate (fraction withϕ > τ= 0.5).
+7
+
+===== page 8 =====
+
+6. Experimental Results
+6.1 Main Results
+Table 1 presents the top-performing configurations. All 0% overlap configurations withS≥5
+achieve perfect detection (100% TPR, 0% FPR), confirming Theorem 4.1. The optimalS=
+7 configuration balances detection with minimal perplexity (4.20). Complete results for all 28
+configurations are provided in Appendix A.
+T able 1:Top configurations (0% overlap): Score gap = WM avg−Non-WM avg
+States WM Avg Non-WM Avg Gap Det% FPR% PPL
+5 0.991 0.402 0.59 100 0 4.98
+7 0.991 0.290 0.70 100 0 4.20
+9 0.984 0.221 0.76 100 0 5.37
+11 0.988 0.197 0.79 100 0 4.61
+15 0.988 0.138 0.85 100 0 5.11
+6.2 Key Observations
+Our experiments reveal four critical findings.First, configurations withS≥5 andρ= 0% achieve
+perfect separability: the minimum watermarked score exceeds the maximum non-watermarked score,
+enabling simultaneous 0% FPR and 0% FNR at thresholdτ= 0.5, directly confirming Theorem 4.1.
+Second, the optimal configuration isS= 7 withρ= 0%, achieving 100% TPR, 0% FPR, low-
+est perplexity (4.20), and strong separation (gap = 0.70), the Pareto-optimal choice consistent
+with Theorem 4.5.Third, low state counts fail:S= 2 yields 100% FPR (all sequences trivially
+alternate), whileS= 4 suffers 33.5% FPR due to insufficient separation.F ourth, overlap catas-
+trophically degrades detection: forS= 7, TPR drops from 100% (ρ= 0%) to 92% (ρ= 5%), 35%
+(ρ= 10%), and 13% (ρ= 15%).
+Figure 2:Detection metrics (0% overlap, soft cycle).Left:Watermarked text achievesϕ≈1.0;
+non-watermarked follows 2/Sbaseline.Right:FPR by state count;S≤4 yields unacceptable false
+positives.
+8
+
+===== page 9 =====
+
+Figure 3:Quality-detection trade-off (bubble size∝score gap).S= 7 at 0% overlap minimizes PPL
+while achieving 100% detection.
+6.3 Robustness Analysis
+Table 2 presents the robustness validation results following the protocol in Section 5.4. The baseline
+(unmodified text) achievesϕ= 0.991 with 100% detection as shown in Table 1.
+T able 2:Robustness to word replacement (soft cycle,S= 7,n= 173).
+δObservedϕStd DevE[ϕ] (Thm. 4.3) Detection Rate
+0% 0.991 0.014 1.000 100%
+10% 0.839 0.068 0.864 99.4%
+20% 0.738 0.072 0.743 99.4%
+30% 0.642 0.073 0.636 96.5%
+40% 0.543 0.080 0.543 76.3%
+50% 0.455 0.084 0.464 17.9%
+60% 0.365 0.084 0.400 5.8%
+Observed scores match Theorem 4.3 within 1 to 6%. Detection remains above 96% forδ≤30%.
+The critical threshold isδ≈45% whereE[ϕ] =τ= 0.5. Beyond this point, an adversary must
+corrupt nearly half the text to evade detection, which would likely render the content incoherent.
+7. Discussion
+MCL watermarking addresses EU AI Act Article 50 [1] requirements for machine-readable AI
+content marking. The model-free detection (Algorithm 2) enables third-party auditing without
+LLM access, supporting transparency frameworks [10], while provable guarantees (Theorems 4.1 to
+4.5) provide legally defensible authentication with quantifiable error rates.
+Limitations.(1) Detection requires the same tokenizer used during generation; (2) at least 5
+states are needed for reliable detection (S= 2 is unusable); (3) overlapρ≥10% severely degrades
+detection; (4) perplexity increases with states, thoughS= 7 achieves reasonable PPL = 4.20.
+9
+
+===== page 10 =====
+
+F uture W ork.A promising direction issparse watermarking: introducing a “full vocabu-
+lary” state that allows unrestricted token selection, watermarking only everyN-th token (e.g.,
+N= 10). This preserves generation quality while maintaining theoretical guarantees, since any
+doubly stochastic transition matrix ensures uniform stationary distribution. Other directions in-
+clude adaptive overlap selection based on token probability mass, C2PA metadata integration for
+end-to-end provenance, robustness against learned adversarial attacks, and multi-model coordi-
+nation for heterogeneous deployments. Preliminary experiments on Mistral-7B and GPT-2-XL
+(Appendix E) confirm consistent behavior across model architectures. We hypothesize that larger
+vocabulary sizes reduce perplexity under partitioning, as each partition contains more candidate
+tokens.
+8. Conclusion
+We established complete mathematical foundations for Markov Chain Lock watermarking us-
+ing doubly stochastic transition matrices over SHA-256-based vocabulary partitions. Our theo-
+retical results generalize to any irreducible doubly stochastic chain withkvalid successors per
+state, providing: (1) exponentially decaying false positive rates bounded by Hoeffding’s inequal-
+ity (Theorem 4.1), (2) quantified robustness under adversarial token modification with formula
+E[ϕ] = (1−δ) 2 +kδ(2−δ)/S(Theorem 4.3), (3) information-theoretic security under the random
+oracle model (Theorem 4.4), and (4) logarithmic quality degradation in state count (Theorem 4.5).
+Experiments on 173 Wikipedia concepts across 28 configurations demonstrate that 7-state soft
+cycle (k= 2) with 0% overlap is optimal, achieving 100% detection, 0% FPR, and perplexity
+4.20. Robustness validation confirms detection remains above 96% even with 30% word modifica-
+tion. The framework providesO(n) model-free detection, directly addressing EU AI Act Article 50
+requirements.
+LLM Usage Statement
+Claude (Anthropic) assisted with LaTeX formatting. All proofs, algorithms, and experiments
+independently developed and verified by the authors.
+Code and Data
+Repository:https://github.com/ChenghengLi/MCLW.Model: Llama-3.2-3B-Instruct.Dataset:
+173 curated Wikipedia concepts, seed 42, secret keycurated wiki dataset 2024.
+Author Contributions
+Chengheng Li: Theoretical framework design, mathematical proofs, algorithm implementation,
+experiments, manuscript writing.Kyuhee Kim: Experimental design, theoretical review, AI
+governance analysis.
+Acknowledgments
+We thank Apart Research and the Technical AI Governance Challenge organizers for hosting this
+event.
+10
+
+===== page 11 =====
+
+References
+[1] European Parliament and Council. EU AI Act (Regulation 2024/1689), 2024. URLhttps:
+//eur-lex.europa.eu/eli/reg/2024/1689. Official Journal of the European Union.
+[2] Eric Mitchell, Yoonho Lee, Alexander Khazatsky, Christopher D. Manning, and Chelsea Finn.
+DetectGPT: Zero-shot machine-generated text detection using probability curvature. InIn-
+ternational Conference on Machine Learning (ICML), pages 24950–24962, 2023.
+[3] Edward Tian. GPTZero: An AI plagiarism detection tool, 2023. URLhttps://gptzero.me.
+Software tool.
+[4] John Kirchenbauer, Jonas Geiping, Yuxin Wen, Jonathan Katz, Ian Miers, and Tom Goldstein.
+A watermark for large language models. InInternational Conference on Machine Learning
+(ICML), pages 17061–17084, 2023.
+[5] Kalpesh Krishna, Yixiao Song, Marzena Karpinska, John Wieting, and Mohit Iyyer. Para-
+phrasing evades detectors of AI-generated text, but retrieval is an effective defense. InAdvances
+in Neural Information Processing Systems (NeurIPS), pages 13287–13300, 2023.
+[6] Vinu Sankar Sadasivan, Aounon Kumar, Sriram Balasubramanian, Wenxiao Wang, and Soheil
+Feizi. Can AI-generated text be reliably detected?arXiv preprint arXiv:2303.11156, 2023.
+[7] Scott Aaronson. Watermarking GPT outputs. 2023. URLhttps://scottaaronson.blog/
+?p=6823. Blog post.
+[8] Miranda Christ, Sam Gunn, and Or Zamir. Undetectable watermarks for language models,
+2023. URLhttps://arxiv.org/abs/2306.09194.
+[9] Ruibo Chen, Yihan Wu, Yanshuo Chen, Chenxi Liu, Junfeng Guo, and Heng Huang. A
+watermark for order-agnostic language models, 2024. URLhttps://arxiv.org/abs/2410.
+13805.
+[10] OECD. Hiroshima AI process international code of conduct for organizations developing ad-
+vanced AI systems, 2024. URLhttps://oecd.ai/en/g7-reporting-framework. G7 Hi-
+roshima AI Process.
+11
+
+===== page 12 =====
+
+A. Complete Experimental Results
+Table 3 presents complete results for all 28 configurations. Verdict classification:Excellent(gap
+>0.5, 100% detection, 0% FPR);Good(gap>0.3,>90% detection);Marginal(gap>0.15);
+Poor(gap<0.15 or high FPR).
+T able 3:Complete results for all 28 configurations
+ConfigS ρNon-WM WM Gap Det% FPR% PPL
+states2 overlap0pct 2 0% 1.000 1.000 0.00 100 100 1.29
+states2 overlap5pct 2 5% 1.000 1.000 0.00 100 100 1.29
+states2 overlap10pct 2 10% 1.000 1.000 0.00 100 100 1.29
+states2 overlap15pct 2 15% 1.000 1.000 0.00 100 100 1.29
+states4 overlap0pct 4 0% 0.489 0.989 0.50 100 33.5 4.89
+states4 overlap5pct 4 5% 0.489 0.842 0.35 99.4 33.5 4.48
+states4 overlap10pct 4 10% 0.489 0.696 0.21 98.8 33.5 4.00
+states4 overlap15pct 4 15% 0.489 0.626 0.14 96.0 33.5 3.84
+states5 overlap0pct 5 0% 0.402 0.991 0.59 100 0 4.98
+states5 overlap5pct 5 5% 0.402 0.726 0.32 96.5 0 4.74
+states5 overlap10pct 5 10% 0.402 0.639 0.24 95.4 0 4.86
+states5 overlap15pct 5 15% 0.402 0.542 0.14 70.5 0 4.22
+states7 overlap0pct 7 0% 0.290 0.991 0.70 100 0 4.20
+states7 overlap5pct 7 5% 0.290 0.643 0.35 91.9 0 4.76
+states7 overlap10pct 7 10% 0.290 0.477 0.19 35.3 0 5.32
+states7 overlap15pct 7 15% 0.290 0.414 0.12 12.7 0 5.01
+states9 overlap0pct 9 0% 0.221 0.984 0.76 100 0 5.37
+states9 overlap5pct 9 5% 0.221 0.531 0.31 60.1 0 5.25
+states9 overlap10pct 9 10% 0.221 0.379 0.16 9.8 0 5.56
+states9 overlap15pct 9 15% 0.221 0.307 0.09 0.6 0 5.40
+states11 overlap0pct 11 0% 0.197 0.987 0.79 100 0 4.61
+states11 overlap5pct 11 5% 0.197 0.431 0.23 27.2 0 6.18
+states11 overlap10pct 11 10% 0.197 0.315 0.12 2.9 0 6.86
+states11 overlap15pct 11 15% 0.197 0.255 0.06 0.6 0 6.26
+states15 overlap0pct 15 0% 0.138 0.988 0.85 100 0 5.11
+states15 overlap5pct 15 5% 0.138 0.347 0.21 8.1 0 5.89
+states15 overlap10pct 15 10% 0.138 0.257 0.12 1.2 0 8.05
+states15 overlap15pct 15 15% 0.138 0.203 0.07 1.2 0 7.10
+B. Separability and Overlap Analysis
+Table 4 demonstrates perfect separability: forS≥5 withρ= 0%, the minimum watermarked score
+exceeds the maximum non-watermarked score, enabling zero-error detection.
+T able 4:Score range separability and overlap impact
+Separability (0% overlap) Detection Rate by Overlap
+SWM Min Non-WM Max Gap Sep? 0% 5% 10% 15%
+5 0.607 0.500 +0.11 Yes 100% 96.5% 95.4% 70.5%
+7 0.707 0.400 +0.31 Yes 100% 91.9% 35.3% 12.7%
+9 0.653 0.333 +0.32 Yes 100% 60.1% 9.8% 0.6%
+11 0.720 0.313 +0.41 Yes 100% 27.2% 2.9% 0.6%
+15 0.787 0.247 +0.54 Yes 100% 8.1% 1.2% 1.2%
+12
+
+===== page 13 =====
+
+C. Supplementary Visualizations
+This section provides additional visualizations supporting the main experimental findings.
+Figure 4:Overlap impact on watermark performance.Left:Score gap heatmap across 28 configurations,
+gap decreases with higher overlap and lower states.Right:Detection rate degradation curves showing
+higher state counts are more sensitive to overlap.
+Figure 5:Theoretical properties validation.Left:Perfect separation forS≥5, minimum WM score
+exceeds maximum non-WM score.Right:Observed vs theoretical baselineE[ϕ] = 1/S, validating
+Theorem 4.1.
+D. Implementation Details
+Hash function: SHA-256 via Pythonhashlib.State assignment:hash(key, token id)
+modS.Model: Llama-3.2-3B-Instruct.Generation: greedy decoding (T= 0), max 200 to-
+kens.Reproducibility: seed 42, keycurated wiki dataset 2024.
+13
+
+===== page 14 =====
+
+E. Cross-Model Validation
+To verify that MCL watermarking generalizes across model architectures and transition topolo-
+gies, we conducted experiments on Mistral-7B-v0.3 and GPT-2-XL using identical protocols (173
+Wikipedia prompts). We tested both soft cycle and clockwork transition matrices.
+T able 5:Mistral-7B-v0.3 results (173 samples).
+S ρTopology AvgϕDetection PPL
+2 0% soft cycle 1.000 100% 1.35
+2 0% clockwork 0.992 100% 2.05
+2 5% soft cycle 1.000 100% 1.35
+2 5% clockwork 0.876 99.4% 1.98
+2 10% soft cycle 1.000 100% 1.35
+2 15% soft cycle 1.000 100% 1.35
+4 0% soft cycle 0.992 100% 1.85
+4 5% soft cycle 0.847 98.8% 1.93
+4 10% soft cycle 0.749 97.1% 2.01
+4 15% soft cycle 0.673 91.3% 2.13
+7 0% soft cycle 0.985 100% 1.71
+7 5% soft cycle 0.607 69.9% 2.04
+7 10% soft cycle 0.499 49.7% 2.27
+7 15% clockwork 0.314 8.1% 2.38
+11 0% soft cycle 0.990 100% 2.33
+11 5% soft cycle 0.431 28.9% 2.10
+T able 6:GPT-2-XL results (173 samples).
+S ρTopology AvgϕDetection PPL
+2 0% soft cycle 1.000 100% 1.52
+2 5% soft cycle 1.000 100% 1.52
+2 10% soft cycle 1.000 100% 1.52
+2 15% soft cycle 1.000 100% 1.52
+4 0% soft cycle 1.000 100% 2.14
+Summary .All three models (Llama-3.2-3B, Mistral-7B, GPT-2-XL) achieve 100% detection
+atρ= 0% across all tested state counts and both transition topologies (soft cycle and clockwork).
+Mistral-7B exhibits notably lower perplexity (1.71 vs 4.20 for Llama atS= 7), suggesting larger
+vocabulary sizes reduce partitioning constraints. The overlap sensitivity pattern (ρ≥5% degrades
+detection) is consistent across architectures and topologies, confirming theoretical predictions hold
+regardless of model or transition matrix choice.
+14

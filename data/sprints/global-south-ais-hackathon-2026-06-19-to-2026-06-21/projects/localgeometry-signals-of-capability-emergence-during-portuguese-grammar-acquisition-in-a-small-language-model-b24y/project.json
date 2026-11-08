@@ -1,0 +1,43 @@
+{
+  "slug": "localgeometry-signals-of-capability-emergence-during-portuguese-grammar-acquisition-in-a-small-language-model-b24y",
+  "url": "https://apartresearch.com/sprints/projects/localgeometry-signals-of-capability-emergence-during-portuguese-grammar-acquisition-in-a-small-language-model-b24y",
+  "sprint_name": "Global South AI Safety Hackathon",
+  "sprint_slug": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "title": "Local-Geometry Signals of Capability Emergence During Portuguese Grammar Acquisition in a Small Language Model",
+  "date": "Jun 22, 2026",
+  "location": "São Paulo, Brazil",
+  "awards": [
+    "Honorable Mention"
+  ],
+  "rank": null,
+  "authors": [
+    "Elvis Sikora",
+    "Carolina Oliveira",
+    "José Pedro Brito"
+  ],
+  "team": "Team DI #0003",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/9deccaedf5df71e9-f9ebaaac-d29c-45ad-9e4a-d9816771a613-localgeometry-capabilitysignals-part-1.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "This work trains a small AI model on Portuguese and finds that an internal structure measure, the LLC, jumps right when the model learns grammar, even though the usual loss curve shows nothing. Control experiments confirm the signal appears only when real language structure is being learned. The promise is a way to spot a new ability as it forms, before it shows up in behavior. The most exciting next step is to test whether safety rules learned in one language survive further training in another, using the LLC as an early warning.",
+  "reviews": [
+    "The main results rely on a few samples from a single model training run, and the described trend does not seem abrupt enough to warrant much confidence in their results.\n\nStill, the write-up was exceptionally clear, the set-up was really clean such that I trust the results they state, and it seems to build upon and slot well within the surrounding literature. It's the best article I've reviewed so far in my batch for this hackathon",
+    "The demonstration that the Local Learning Coefficient exhibits a \"change point\" aligned with the emergence of grammatical competence in Portuguese (while the loss curve remains smooth) is a clean, well-controlled result, and the matched controls with scrambled Portuguese and matched English are methodologically sound. The AI safety implication is relevant in terms of if this signal scales, it could complement behavioral evaluations by flagging capability formation before it is expressed in behavior. To consolidate the work, the most important next steps are replicating with a second independent seed, adding formal statistical tests of the LLC-behavior alignment, and exploring whether the same pattern appears in larger models.\n\nThe future work question about whether safety-like constraints learned in one language are weaken by continued training in another is one of the most important questions the paper leaves open, and would be a highly valuable contribution if pursued.",
+    "This is a clean developmental-monitoring result in a tiny controlled language setting. I would frame the novelty narrowly, around the continued-pretraining + Portuguese grammar + controls.\n\nAlso make the repo more reproducible, right now a fresh clone does not contain the checkpoints/corpora needed to rerun.\n\nOther than that, excellent work!"
+  ],
+  "n_reviews": 3,
+  "bibtex": "@misc{sikora2026localgeometry,\n  title = {{Local-Geometry Signals of Capability Emergence During Portuguese Grammar Acquisition in a Small Language Model}},\n  author = {Elvis Sikora and Carolina Oliveira and José Pedro Brito},\n  year = {2026},\n  month = jun,\n  note = {Submitted to Global South AI Safety Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/localgeometry-signals-of-capability-emergence-during-portuguese-grammar-acquisition-in-a-small-language-model-b24y}},\n  url = {https://apartresearch.com/sprints/projects/localgeometry-signals-of-capability-emergence-during-portuguese-grammar-acquisition-in-a-small-language-model-b24y}\n}",
+  "listed_in_sprint": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [
+    "Honorable Mention"
+  ],
+  "rank_source": null,
+  "selection_reason": "other_award",
+  "has_pdf": true,
+  "report_chars": 14331,
+  "code_urls_from_report": [
+    "https://github.com/elvis-sik/slt-portuguese-acquisition"
+  ]
+}

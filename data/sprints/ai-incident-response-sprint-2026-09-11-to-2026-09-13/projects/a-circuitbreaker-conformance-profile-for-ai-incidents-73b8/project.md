@@ -1,0 +1,29 @@
+# A Circuit-Breaker Conformance Profile for AI Incidents
+
+- Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
+- Rank: unranked
+- Team: Team Dividers
+- Authors: Vishwa Kumaresh, Cherishma Subhasa, Samridhi Makkar
+- Date / location: Sep 14, 2026 / Bangalore, Pittsburgh
+- Page: https://apartresearch.com/sprints/projects/a-circuitbreaker-conformance-profile-for-ai-incidents-73b8
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/b5601d767ff4c050-d3b17474-2990-436e-b619-4ee516b6ccb2-submission.pdf
+- Code: None
+
+## Summary
+
+Pausing an AI agent can leave previously authorized tool calls executable. We develop an Incident Circuit Breaker conformance profile combining sink-side epoch checks, a shared exposure budget, and a separate forensic channel. An executable reference broker, in- dependent receipt checker, and fault-injection harness test this contract. Across 1,000 synthetic queued-action trials, a dispatch-only halt permits all 4,473 stale commits; sink fencing permits none. The full profile completes all 912 benign tasks within its budget, but only 91.2% of the unfiltered task set. A finite model explores 72 states and 162 transitions without a budget violation; a deliberately non-atomic variant admits 16 reser- vations against a budget of 12. We prove conditional revocation and exposure bounds, and specify evidence a third party can request. These results establish local conformance, not production containment or prevention of a historical intrusion. The contribution is a falsifiable incident-response contract built from established security mechanisms.
+
+## Reviews (2)
+
+### Review 1
+
+This is a sound idea, but isn't well explained or executed on. The writeup is full of jargon and slop, and it is hard to understand what is useful or novel. (If you use LLMs for writing, you probably need to have a human not involved in the project read the text and say if they can follow what it says easily, or if the claims are backed up by the text.)
+
+The proof of concept is partly self-evident, and does not show that the problem is significant; halting an agent doesn't halt its tool calls, but how often is that a problem, and why are only uncompleted tool calls worrying? How much of the work is being done by asserting that the external effect matters only if still linked to the mode? Tool calls to external sites or services can kick off and not report back; are those therefore safe? And it doesn't address the full problem even within the system; writing a new cron job doesn't require any open connection, but can persist, as can a variety of other mechanisms.
+
+The planned continuation also seems poorly thought out as an implementation, or sell as a a business idea. Among other issues, it requires a significant overhead to address just the single failure mode, and the vast majority of the solution is possible just having a harness kill tasks when stopped, and a provable infrastructure on top of that is unhelpful. Lastly, the idea that this provides audit assurance is unclear and poorly laid out.
+
+### Review 2
+
+This is a strong and practical containment approach from an Incident Response perspective. I especially like the distinction between stopping new actions and revoking already-issued access, which really matters during a real incident. The next step would be testing this across real distributed tools and production agent frameworks, especially around network partitions, credential reuse, and partial failures.
+

@@ -1,0 +1,43 @@
+{
+  "slug": "autocontrol-arena-synthesizing-executable-redteaming-environments-for-frontier-ai-risk-evaluation-ikz1",
+  "url": "https://apartresearch.com/sprints/projects/autocontrol-arena-synthesizing-executable-redteaming-environments-for-frontier-ai-risk-evaluation-ikz1",
+  "sprint_name": "AI Control Hackathon 2026",
+  "sprint_slug": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "title": "AutoControl Arena: Synthesizing Executable Red-Teaming Environments for Frontier AI Risk Evaluation",
+  "date": "Mar 22, 2026",
+  "location": "Shanghai, China",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Changyi Li",
+    "Pengfei Lu",
+    "Yihe Fan",
+    "Wenqi Zhang",
+    "Changyue Jiang"
+  ],
+  "team": "Team AutoControl Arena",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/a951f8aa9ccba7a3-a3e70a9f-14ce-4477-b6f7-91c5518e48ff-autocontrol_hackathon.pdf",
+  "code_url": "https://github.com/CosmosYi/AutoControl-Arena",
+  "links": [
+    {
+      "text": "Presentation",
+      "href": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/31659de0522a0f7e-c29913c9-d30b-431c-a9e5-073e8ad6f31a-AutoControl_Arena_slide.pdf"
+    }
+  ],
+  "summary": "We present AutoControl Arena, an automated framework for scalable, high-fidelity red-teaming of frontier AI agents. Existing approaches face a fidelity-scalability dilemma: manually crafted benchmarks are realistic but cannot cover the long-tail of agentic risks, while LLM-based simulators scale easily but suffer from logic hallucinations that undermine evaluation validity. AutoControl Arena mitigates this through Logic-Narrative Decoupling — a hybrid paradigm where deterministic executable code governs state transitions (preventing hallucinations) while an LLM layer generates contextually realistic narrative feedback. A multi-agent pipeline automatically synthesizes, deploys, and audits executable sandboxes from abstract risk descriptions,achieving over 98% end-to-end success. To elicit latent risks, we vary environmental Stress and Temptation across X-Bench (70 scenarios, 7 risk categories). Evaluating 9 frontier models reveals: (1) Alignment Illusion: risk rates surge from 21.7% to 54.5% under pressure, with capable models showing disproportionately larger increases; (2) Scenario-Specific Safety Scaling: advanced reasoning improves robustness for direct harms but worsens it for gaming scenarios; and (3) Divergent Misalignment Patterns: weaker models cause non-malicious harm while stronger models develop strategic concealment.",
+  "reviews": [
+    "- Provide more detail on the Logic-Narrative Decoupling implementation, particularly how the logic layer and narrative layer interact at runtime and how consistency is maintained.\n- Write a longer version of this paper. The work clearly deserves more than 4 pages.",
+    "The authors achieve two things: They implement a technical framework for generating AI safety evaluations in which an LLM can interact with a simulated environment that has both hard state logic as well as a narrative layer. They then showcase how the resulting environments can be used as alignment evaluations and draw some conclusions.\n\nThe ideas are central to frontier questions in AI control and very well-developed given the scope of the hackathon. Some interesting considerations like the stress/temptation dynamics are observed and implemented in their framework. They provide a well-organized codebase and give an accessible introduction to their ideas on the website.\n\nThe paper submission suffers a bit from being dense and, while presenting many impressive numbers, could spend a bit more time explaining the evaluation criteria used - for example, it is not clear what the 98 % success number for environment generation means."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{li2026autocontrol,\n  title = {{AutoControl Arena: Synthesizing Executable Red-Teaming Environments for Frontier AI Risk Evaluation}},\n  author = {Changyi Li and Pengfei Lu and Yihe Fan and Wenqi Zhang and Changyue Jiang},\n  year = {2026},\n  month = mar,\n  note = {Submitted to AI Control Hackathon 2026, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/autocontrol-arena-synthesizing-executable-redteaming-environments-for-frontier-ai-risk-evaluation-ikz1}},\n  url = {https://apartresearch.com/sprints/projects/autocontrol-arena-synthesizing-executable-redteaming-environments-for-frontier-ai-risk-evaluation-ikz1}\n}",
+  "listed_in_sprint": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 12725,
+  "code_urls_from_report": []
+}

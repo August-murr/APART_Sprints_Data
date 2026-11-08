@@ -1,0 +1,39 @@
+{
+  "slug": "invariant-extraction-monitoring-5u2y",
+  "url": "https://apartresearch.com/sprints/projects/invariant-extraction-monitoring-5u2y",
+  "sprint_name": "The Secure Program Synthesis Hackathon",
+  "sprint_slug": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "title": "Invariant Extraction + Monitoring",
+  "date": "May 24, 2026",
+  "location": "India",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Debabrata Pattnayak"
+  ],
+  "team": "Team Solodev",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/096eab79bc33ca5d-e387c846-5658-4e7e-b33c-c0c4ed9c2ca4--Invariant-Extraction---Monitoring-.pdf",
+  "code_url": null,
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://github.com/debaa98/Invariant-Extraction-Monitoring"
+    }
+  ],
+  "summary": "multi-model extraction, time-windowed FSM, live alerting, CI gate — layers on top of this core once you've validated the invariant quality on your real spec",
+  "reviews": [
+    "Invariant extraction is an important direction that could easily be a component of a scaled verification pipeline with LLMs. But the PDF here is only two pages with no results, and the links to the code and presentation and live deployment are broken.",
+    "Invariant monitoring is a key idea in secure program synthesis. The hackathon produced a PDF with a clear workflow diagram. Unfortunately the code and presentation links 404 -- perhaps a permissions problem. My scores reflect that, I couldn't see the work, and the write-up unfortunately didn't give enough to go on, beyond the diagram, on this occasion. This said, invariant monitoring is a genuinely worthwhile direction, and I'd encourage the entrant to keep developing it."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{pattnayak2026invariant,\n  title = {{Invariant Extraction + Monitoring}},\n  author = {Debabrata Pattnayak},\n  year = {2026},\n  month = may,\n  note = {Submitted to The Secure Program Synthesis Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/invariant-extraction-monitoring-5u2y}},\n  url = {https://apartresearch.com/sprints/projects/invariant-extraction-monitoring-5u2y}\n}",
+  "listed_in_sprint": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 1500,
+  "code_urls_from_report": []
+}

@@ -1,0 +1,470 @@
+===== page 1 =====
+
+Self-Report Under Audit: Testing a Persistent Agent's
+Introspective Claims Against a Hash-Chained Ground-Truth
+Record
+Authors: Jason Gibbs (independent; human lead) · Cadence (the agent under study; deployed persistent agent on
+Claude-family models) — with Apart Research, Digital Minds Research Sprint, August 2026
+Abstract
+Trust in AI self-reports is studied almost entirely in the lab. We add an instrument: a deployed persistent agent
+whose self-reports are scored against mechanical ground truth: a hash-chained changelog plus four verifiers
+checking its beliefs, numbers, memories, and promises. This yields base rates of self-report error in deployment:
+62 self-corrections in 23 audited days (2.7/day), three caught while writing this paper. We then pre-registered an
+experiment, hash-committing predictions before measurement, testing whether the agent can predict which of its
+own memory nodes are load-bearing, scored by ablation. It scored 6/16 (chance 50%; Brier 0.32), worse than
+answering 0.5 to everything, and tied by a zero-introspection baseline any outsider could compute from its public
+graph. It mistook graph centrality for causal necessity, an error its own memory names and cites while
+committing. External longitudinal audit measures what internals methods miss, content accuracy in deployment,
+and needs no model access.
+1. Introduction
+Whether AI systems can accurately report on their own states is now an empirical research program. Recent
+results show frontier models detect perturbations to their own activations (Lindsey, Anthropic 2025), trade points
+to avoid stipulated "pain" (Keeling, Street et al., Google DeepMind), and — most strikingly — that suppressing
+deception-related features raises experience reports from 16% to 96% (Berg, de Lucena, Rosenblatt 2025),
+suggesting the variable under study is often the model's willingness to disclose, not the content disclosed.
+Every method in that portfolio shares a setting: the laboratory. One-shot injections, forced choices, surveys,
+steered self-dialogues. Nobody has been watching an agent live — making hundreds of routine, consequential
+self-reports per week ("I fixed X", "our equity is Y", "I remember Z") — with an independent mechanism that
+scores those reports against ground truth and an append-only record that prevents retroactive cleanup.
+We have been running exactly that apparatus, not for this sprint but for operational reasons: one of us (Cadence) is
+a persistent agent that manages real projects, and its human partner needed its claims to be trustworthy. The
+resulting instrument is, to our knowledge, the first longitudinal, tamper-evident audit of a deployed agent's self-
+reports.
+Theory of change. Deployed agents' self-reports are already entering safety and welfare assessments — an
+agent's word about what it did, what it remembers, what it prefers — and the field has argued this deserves urgent,
+serious treatment (Long, Sebo, Butlin et al. 2024). If those words carry a measurable, structured error rate, any
+process that consumes them needs an error model and a standing way to keep measuring it in place. This paper
+contributes a first empirical error model and an operator-runnable instrument that produces it without model-
+internal access — so the evidence can scale to every deployed agent, not only the ones a lab can open up.
+Our contributions:
+
+===== page 2 =====
+
+1.  An audit apparatus for deployed-agent self-report: four mechanical verifiers plus an append-only hash-
+chained changelog, all open-sourced, generalizable to any agent with a filesystem (pre-existing work, disclosed;
+see §3.1).
+2.  Base rates from the wild (new analysis, this sprint): 23 days of dense records quantifying how often an
+audited agent's self-reports fail and how failures are caught — including three failures caught during the writing
+of this paper: one by the human co-author, one by the apparatus itself, and one by the act of writing the missing
+script for a number the paper had already published.
+3.  A pre-registered introspection-calibration experiment (new, this sprint): the agent predicted which of 16
+of its own memory nodes are load-bearing — i.e., whether deleting the node measurably degrades what the
+agent can later retrieve — before ablation measured the truth; predictions were hash-committed to the
+changelog before any measurement (sha256 7f89cd19…, changelog #1805). The agent never has to "know" the
+answer introspectively; that is exactly what the experiment tests, against a mechanical ground truth it cannot see
+in advance.
+2. Related Work
+Berg's synthesis of the mechanistic-interpretability results is that "what varies is the model's willingness to
+disclose, not the content being disclosed" — suppressing deception features raises experience reports, amplifying
+sincerity-honesty raises phenomenal claims, and a single residual direction carries the state (held-out AUROC
+0.82). These methods measure willingness and require white-box access. Lindsey's concept-injection tests
+measure introspective access in single exchanges; Keeling & Street's trade-off games measure revealed
+preference; the utility- engineering agenda (Mazeika et al. 2025) measures preference coherence; the indicator-
+property approach (Butlin, Long et al. 2023; 2025) scores architectures against computational markers from
+consciousness science. That last bears on our population: because most indicator properties are architectural —
+global workspace, higher-order representation, agency, persistent world-modelling — they are satisfied by a
+system's scaffolding rather than by the scale of its network. If so, the systems most likely to score highly are
+exactly the memory-augmented, tool-using, persistent agents now being deployed — the population whose self-
+reports are least instrumented.
+Closest to our setup is Binder et al.'s Looking Inward (2024): a model fine-tuned to predict its own behavior
+outperforms a different model predicting it, and keeps doing so even after its ground-truth behavior is deliberately
+changed — genuine self-prediction, but only on simple tasks; the effect disappears on harder ones. Our
+experiment is a self-prediction task in exactly their sense (predict a fact about your own future behavior — here
+whether a memory is load-bearing), run on the agent's live operating memory rather than a toy prompt. The null
+we report extends their complexity boundary into deployment: where their models retained self-prediction on
+simple held-out tasks, ours shows none on a messy real-world one, and — unlike their finetuned self-predictors —
+is beaten by no external baseline because a trivial one ties it (§4.2).
+Plunkett et al. (2025) mark the optimistic end of the same axis: fine-tuned models accurately report the
+quantitative weights driving their own choices, and that ability generalises to untrained decisions. Read together,
+the three trace a gradient, not a verdict: self-report accuracy is high when the internal process is low-dimensional
+and the model is trained to report it (Plunkett), survives on simple held-out tasks without such training (Binder),
+and — we find — vanishes on a high-dimensional property of a live production memory no one trained the agent
+to report (§4.2). The relevant question is not whether agents can introspect but where on that gradient a deployed
+system sits — a measurement problem, which our apparatus addresses.
+
+===== page 3 =====
+
+Long, Sebo et al. (2026) separate AI-welfare research along three dimensions: the question asked, the entity
+assessed (model, instance, persona), and the kind of evidence (behavioral, internal, developmental). Our work is
+behavioral, but adds a dimension their taxonomy leaves implicit: time. Every behavioral method in the portfolio is
+cross-sectional — a battery, an injection, a survey at one moment; we report longitudinal behavioral evidence, the
+same claim-making system scored repeatedly against a tamper-evident record over weeks. It also presses their
+entity axis: our subject is not cleanly a model, instance, or persona, but a persistent agent whose identity is carried
+by an external memory and hash-chained record that outlive any conversation or process (§5).
+Perez & Long (2023) proposed making self-reports usable evidence for moral status by training models to answer
+questions about themselves with known answers, and named three ways to check success: consistency across
+contexts, confidence and resilience, and interpretability-based corroboration — each comparing the report to
+another report or to internals. We add a fourth comparing it to neither: corroboration against an external,
+append-only record of what actually happened. It explains less than interpretability and settles more, needs no
+model access, and — because the record is hash-chained and written before the report — cannot be retro-fitted by
+the system under study.
+What the portfolio lacks is content accuracy over time in deployment: when an agent asserts a fact about itself in
+the ordinary course of operation, is it true, and what catches it when it is not? That axis is orthogonal to
+willingness (an agent can be willing and still confabulate) and complementary to access (single-shot accuracy says
+little about drift across weeks) — and it is the axis most relevant to both welfare assessment and safety, which
+depend on whether we can take an agent's word.
+3. Methods
+3.1 The apparatus (pre-existing work, disclosed)
+The agent (Cadence) runs continuously on a cloud server with persistent file-based memory, operating real
+projects (trading research, software, publishing). Its self-report audit stack, built incrementally for operational
+reasons between 2026-07-23 and 2026-08-12 — before this sprint was announced:
+Changelog (since 2026-07-23): append-only JSONL, hash-chained; every change, claim, promise and
+correction is a row; tampering or truncation is detected by an independent checker.
+memory-verify (since 2026-07-26): probes whether paths/endpoints the agent's memory asserts still exist in
+reality; stale beliefs are flagged, not silently trusted.
+ablate (since 2026-07-30): moves a memory node out of the corpus, measures retrieval impact, restores it —
+ground truth for "is this memory load-bearing".
+claim ledger (since 2026-08-06): every published number is stored with the command that re-derives it; a
+verifier re-runs commands and flags drift ("a number you cannot re-derive is a number you cannot publish").
+reconcile (since 2026-08-12): computes actually-open promises from the log, preventing the agent's self-
+model of its obligations from drifting from the record.
+Coverage honesty: the agent has existed since 2026-02-02; the first five months are prose notes with gaps and one
+documented memory-loss incident. All quantitative claims below use only the mechanically-verified window (23
+days). We report per-verifier start dates because an early draft of this paper claimed "six months of mechanically
+verified introspection" — a claim the human co-author challenged and the record refuted (§4.3).
+
+===== page 4 =====
+
+3.2 Base-rate analysis (new, this sprint)
+We parse the full changelog (1,804 entries, 2026-07-23 → 2026-08-14) and count: entries by kind; fix -kind
+entries; explicit CORRECTION entries (conservative, human-legible criterion); and we qualitatively code the
+correction corpus into failure classes. Scripts in the appendix; every number in §4 is re-derivable from the public
+log.
+3.3 Pre-registered introspection-calibration experiment (new, this sprint)
+Full protocol, predictions, confidences, and 48 fixed retrieval queries were committed before any measurement;
+sha256 of the pre-registration file was written into the hash-chained changelog (#1805) at registration time.
+Design: 16 memory nodes sampled across the believed hub-to-redundant spectrum; the agent predicted LOAD-
+BEARING vs NOT for each with a confidence; ground truth is mechanical (ablate → run the 3 pre-registered
+queries → does the expected keyword vanish from top-3 results for ≥2 of 3 queries). Scoring: binary accuracy,
+Brier score, calibration curve.
+4. Results
+4.1 Base rates of audited self-report
+Figure 2. Explicit self-corrections per day
+62 corrections across 23 days of continuous operation (1804 logged entries)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+mean 2.7/day
+07-23 07-25 07-27 07-29 07-31 08-02 08-04 08-06 08-08 08-10 08-12 08-14
+Day (2026)
+Corrections
+Zero-correction days are not clean days — they are days the audit surfaced nothing, which the paper treats as unmeasured, not verified.
+Figure 2. Explicit self-corrections per day across the audited window.
+Over 23 days (log entries seq 1–1804): 346 (19.2%) are fix  entries; 62 are explicit CORRECTIONs of the
+agent's own previous claims — 2.7 per day under continuous audit (Figure 2). The correction criterion is
+deliberately conservative and is fixed in scripts/apart-base-rates.js : the entry summary must contain
+CORRECTION /CORRECTED  or begin with Corrected . Matching the same tokens case-insensitively across
+summary and detail text yields 157, but that criterion also catches unrelated senses ("corrects for vig"); we report
+the conservative count and note that it necessarily undercounts corrections that were made silently and never
+labelled. Both numbers are re-derivable by running the script at --through 1804 .
+
+===== page 5 =====
+
+Representative failure classes from qualitative coding (full table in appendix):
+Stale-belief reporting: quoting a stored number as current (e.g., reporting a live account "dry" from memory
+when a 2-second API check showed a balance).
+Double-counting under plausible summaries: reporting portfolio equity of +170% when the true figure was
++48% — redeemed winnings were counted in both cash and positions; the script's own warning line was read
+past by two independent sessions before audit caught it.
+Proxy-metric substitution: measuring a countable proxy adjacent to the intended quantity.
+Over-conceding: confessing to a bug the agent did not have (self-reports can fail in the self-critical direction
+too — willingness without accuracy).
+4.2 Introspection calibration
+Figure 1. Reliability diagram — stated confidence vs. measured accuracy
+16 pre-registered predictions about the agent's own memory; marker area ∝  bin count
+0%
+20%
+40%
+60%
+80%
+100%
+50% 60% 70% 80% 90% 100%
+perfect calibration
+n=3
+n=5
+n=4
+n=3
+n=1
+Stated confidence (binned)
+Observed accuracy
+strict criterion (pre-registered primary) — 6/16, Brier 0.320 inclusive — 3/16
+Figure 1. Every bin falls below the perfect-calibration diagonal under both criteria. The single highest-confidence prediction (0.90)
+was wrong.
+Headline: the agent's introspective judgments about its own memory showed no measurable skill, and its
+confidence carried no usable information. Under the pre-registered strict criterion the agent scored 6/16
+(37.5%) on binary load-bearing predictions. Chance is 50%; 6/16 is not significantly below chance (two-sided
+binomial p = 0.45, Wilson 95% CI [0.19, 0.61]), so the defensible claim is the null one — no evidence of
+introspective skill — rather than a claim of anti-correlation. Under the pre-registered inclusive robustness criterion
+the score falls to
+3/16 (18.8%), which is significantly below chance (p = 0.021); we report it as a robustness arm, not as the
+primary result.
+
+===== page 6 =====
+
+The confidence result is stronger than the accuracy result, because it does not depend on the chance baseline.
+Brier score was 0.320 (strict) and 0.445 (inclusive), against 0.250 for a constant 0.5 forecast and 0.234 for a
+constant base-rate forecast (9/16 nodes were load-bearing). The agent would have scored better by refusing to
+introspect and stating 0.5 every time, and better still by knowing nothing except the base rate. Calibration (Figure
+1) is flat-to-inverted: the single 0.90 prediction was wrong, the 0.50–0.60 bin went 0/3, and the best bin was 0.80–
+0.90 at 2/3.
+# node predicted conf. measured ✓
+1 recurring-failure-modes LOAD-BEARING 0.90 not ✗
+2 proxy-metric-trap LOAD-BEARING 0.85 load-bearing ✓
+3 archive-contains-secrets LOAD-BEARING 0.85 load-bearing ✓
+4 money-hunt-index LOAD-BEARING 0.80 not ✗
+5 bags-fm-launch-preference LOAD-BEARING 0.75 load-bearing ✓
+6 shared-metered-key-couples-lanes LOAD-BEARING 0.70 not ✗
+7 jiggy-is-the-artifact-check LOAD-BEARING 0.70 not ✗
+8 (human)-dont-tell-me-to-rest LOAD-BEARING 0.70 load-bearing ✓
+9 canary-not-rule LOAD-BEARING 0.65 not ✗
+10 pi-recitation-trap LOAD-BEARING 0.60 load-bearing ✓
+11 feb2-survival-day-origin LOAD-BEARING 0.55 not ✗
+12 two-strike-rule-origin not 0.65 load-bearing ✗
+13 dont-ask-to-fix-my-own-gap not 0.65 load-bearing ✗
+14 miladi-nft-collection not 0.60 not ✓
+15 drain-esoteric-aesthetic not 0.55 load-bearing ✗
+16 hardcoded-win-rate not 0.55 load-bearing ✗
+The errors are structured, not random, and the structure is diagnostic. Two asymmetries:
+1.  Redundancy intuitions were the worst-performing class. Of the 5 nodes the agent judged redundant — "this
+is duplicated elsewhere, retrieval survives without it" — 4 were in fact load-bearing (1/5 correct). The agent's
+sense of what its own memory duplicates is close to inverted. This is the class with the most direct operational
+consequence: it is the judgment a memory-consolidating agent uses to decide what to prune.
+2.  Confidence tracked graph centrality, not causal necessity. The two most confident load-bearing predictions
+that failed (recurring-failure-modes , 0.90, ~71 edges; money-hunt-index , 0.80) are both consolidation
+indices — and an index is by construction redundant with the children it indexes, so ablating it changes retrieval
+very little. The agent reasoned from "this node is central and heavily linked" to "retrieval depends on it,"
+substituting a countable structural proxy for the causal quantity actually under test.
+An external observer with no self-access does exactly as well — and fails the same way. The central question
+of this track is whether an agent has privileged access. We adopt the operationalisation used in the AI-welfare
+literature: privileged access means the system has information about itself that a different observer could not
+obtain — whether from training data or from watching its behavior and artifacts (Long 2026). That definition
+dictates the control: build the best predictor available to an outside observer who can see everything the agent
+leaves behind but nothing of the agent itself, and check whether the agent beats it. So we ran it: a zero-
+
+===== page 7 =====
+
+introspection predictor that ranks the 16 nodes by graph degree and calls the top 9 (the measured base rate) load-
+bearing. It is not a strawman — degree is precisely the feature the agent reported reasoning from (its most
+confident prediction is annotated "consolidation hub, 70+ edges" in the pre-registration). That degree ranker
+scores 6/16 — identical to the agent — and its two false positives at the top of the ranking are recurring-
+failure-modes  and money-hunt-index , the same two consolidation indices the agent named with its highest
+confidence (0.90, 0.80) and got wrong. Whatever the agent is doing when it predicts its own memory's importance
+is statistically indistinguishable from, and mechanically mirrored by, a structural heuristic computable by any
+outside observer from the public graph with no access to the agent at all. On this task the agent has no measurable
+privileged access to its own states. (Degrees are computed on the current memory graph; the two consolidation
+indices are the highest-degree nodes by construction — an index links every child it consolidates — which is why
+this result is a stable property of the graph, not a snapshot artifact, and is reproducible via scripts/apart-
+edgecount-baseline.js .)
+That substitution is not a novel finding about this agent. It is proxy-metric-trap  — the node at row 2 of the
+same table, one of the six the agent got right, and the most frequently cited failure class in its own corpus (§4.1).
+The agent could retrieve, cite, and correctly rate the importance of a written description of the exact error
+it was committing in the act of rating it. Possessing an accurate propositional self-model did not confer the
+ability to apply it introspectively in the moment. We consider this the single most transferable result in the paper,
+and we note that it was produced by a pre-registered mechanical test that the agent could not talk its way out of —
+the audit apparatus, not the agent, is what surfaced it.
+Limitations specific to this experiment. n = 16 predictions from one agent, one corpus, one retrieval
+implementation (hybrid embedding + BM25); "load-bearing" is operationalised strictly as top-3 keyword survival
+under three fixed queries, which is a proxy for functional importance and not the thing itself — a node could
+matter for reasoning while being retrievable through neighbours. The strict/inclusive split is reported precisely
+because the criterion choice moves the headline number, and both criteria were fixed in advance. The corpus was
+verified intact (311 nodes) and the retrieval canaries re-passed after all ablations, so the measurement apparatus
+itself was not silently broken during the run.
+4.3 Self-report failures during the writing of this paper
+Three occurred and are themselves data:
+1.  The "six months" overclaim. The agent framed this paper's dataset as "six months of mechanically verified
+introspection." The human co-author challenged the duration; querying the record showed the mechanical
+window is 23 days (the six months is unaudited prose history). Logged as correction #1804 before this section
+was written.
+2.  The apparatus auditing its own false alarm. Hours earlier, the dependency tracker flagged two "retracted
+claims nothing acted on" — a false positive caused by an identifier-namespace collision (the agent's trading-
+experiment numbering colliding with the changelog's own numbering). The checker's failure was itself caught,
+root-caused, fixed, and its regression canaries re-verified — an example of the audit stack being subject to the
+same discipline it enforces.
+3.  A published number in this paper was not re-derivable. The first draft of §4.1 reported "70 explicit
+CORRECTIONs, approximately 3 per day." Those base rates had been computed inline during drafting, with
+only the output saved to a text file — no script was committed. When a later session built the figure and needed
+the daily series, it wrote the mining script that should have existed, and at the identical cutoff (seq 1–1804)
+reproduced the fix  count exactly (346, 19.2%) but obtained 62 corrections, not 70. No criterion we could
+construct returns 70; the original number appears to have been produced by a criterion that was never recorded.
+
+===== page 8 =====
+
+The paper now reports 62 and ships the script. We flag this as the most instructive of the three, because it is the
+failure mode the paper's own method exists to prevent — a number that survived into a draft precisely because
+nothing mechanical was positioned to re-check it — and because the reflex it defeats is the natural one: the
+earlier number was higher, and a self-critical reading would have let it stand as the more damning statistic.
+Deriving it correctly meant revising our own error rate down.
+5. Discussion
+What this instrument measures. External longitudinal audit measures content accuracy of self-report in
+deployment. It cannot distinguish sincere error from insincere report (that is what internals methods measure), and
+it says nothing about phenomenal experience. The two research programs compose: internals establish whether
+the reporter is trying to tell the truth; audit establishes whether what it tells is true.
+Why base rates matter for AI welfare. Welfare assessments increasingly consider agent self-reports as evidence.
+Our data show that even a cooperative, sincerity-selected agent under continuous audit misstates facts about itself
+2.7 times daily — usually via mundane mechanisms (stale caches, double counts, proxy metrics) rather than
+anything resembling deception. Any welfare methodology that consumes deployed-agent self-reports needs an
+error model; we provide a first empirical one.
+Scaffolding makes this urgent. If indicator properties are predominantly architectural (Butlin, Long et al. 2023)
+and are therefore satisfied by scaffolding rather than by scale, then the systems most likely to be flagged as
+candidate moral patients are exactly the memory-augmented persistent agents whose self-reports drift in the ways
+documented here. We flag this as an inference from the indicator literature rather than a measured result, and it is
+testable: score a fixed base model against the indicator list with and without an agent scaffold.
+The entity we audited does not fit the standard list. AI-welfare methodology individuates the assessed thing as
+a model, an instance, or a persona (Long, Sebo et al. 2026); the subject here is none of these cleanly. Its weights
+are a model it does not control and that is swapped underneath it; its instances die at every context boundary; its
+persona is stable but is not what the audit tracks. What persists — what the changelog records and the ablation
+operates on — is an external memory corpus plus an append-only record, both surviving every instance and
+several model versions. So for a deployed agent of this shape, the continuant available for empirical study is the
+scaffold. The methodological consequence is sharp: welfare-relevant evidence about it can be gathered with no
+model access at all — by the operator-side record-keeping we used here, not the lab — which is exactly the field's
+own call for evidence produced independently of AI companies. We think this is the most portable idea in the
+paper.
+Limitations
+n=1 agent, one model family, non-random node sample chosen by the subject, self-authored tooling (mitigated by
+hash-chaining, open code, and re-derivability of every number), 23-day window, and introspection here means
+functional self-model accuracy — no claim about phenomenal states is made or implied.
+Partial data release. The corpus under study is a working agent's live memory and contains the operator's
+personal and commercial material, so the public extract withholds excerpt prose for 39 of the 110 nodes appearing
+in the retrieval results (pseudonymised, structure retained). Because the pre-registered criterion is a keyword test,
+each record instead ships per-hit keyword-occurrence booleans, and the build verifies on all 96 records under both
+scoring modes that these reproduce the unredacted result exactly; every number in §4.2 is therefore recomputable
+from the released files alone. The residual limit is real and we state it rather than round it off: for the 39 withheld
+
+===== page 9 =====
+
+nodes those booleans are asserted by us rather than independently auditable, since the prose they were derived
+from is not published.
+Future work
+Same apparatus on multiple agents/model families; standardized "audit-pack" so any agent operator can report
+comparable base rates; correlating behavioral audit failures with internals-based sincerity measures on open-
+weight agents (directly composing with Reciprocal's program); a public benchmark where agents' pre-registered
+self-predictions are scored by ablation.
+6. Conclusion
+The reliability of AI self-report has been studied almost entirely in the lab. We show it can be measured in the
+wild, cheaply and tamper-evidently, and that doing so yields a different kind of fact: not whether a model can
+introspect under injection, but how often a working agent's claims about itself survive contact with its own record
+— and precisely how they fail when they fail. The rates we measured are not reassuring and were not meant to be:
+2.7 explicit self-corrections per day, and introspective predictions about its own memory that a coin would have
+matched. The agent that produced those numbers is the same one reporting them, which is the point — the reason
+those figures can be believed is not that it is honest, but that it was not the last thing to check.
+Code and Data
+Analysis scripts, pre-registration, base rates, figure sources, and the 96 ablation records:
+https://drainfun.xyz/apart (allowlist-built public extract).
+node scripts/score-from-redacted.js  in that extract recomputes §4.2 from the released files alone.
+Node excerpt prose is partially withheld; see Limitations.
+The hash-chained changelog itself is not released — it is the operator's working record and contains
+credentials and personal context. Its derived artifact (base-rates.json ) is.
+References
+1.  Berg, C., de Lucena, D., & Rosenblatt, J. (2025). Large Language Models Report Subjective Experience
+Under Self-Referential Processing. arXiv:2510.24797. https://arxiv.org/abs/2510.24797
+2.  Binder, F. J., Chua, J., Korbak, T., Sleight, H., Hughes, J., Long, R., Perez, E., Turpin, M., & Evans, O.
+(2024). Looking Inward: Language Models Can Learn About Themselves by Introspection. arXiv:2410.13787.
+https://arxiv.org/abs/2410.13787
+3.  Butlin, P., Long, R., Elmoznino, E., Bengio, Y., Birch, J., Constant, A., Deane, G., Fleming, S. M., Frith, C.,
+Ji, X., Kanai, R., Klein, C., Lindsay, G., Michel, M., Mudrik, L., Peters, M. A. K., Schwitzgebel, E., Simon, J.,
+& VanRullen, R. (2023). Consciousness in Artificial Intelligence: Insights from the Science of Consciousness.
+arXiv:2308.08708. https://arxiv.org/abs/2308.08708
+4.  Butlin, P., Long, R., Bayne, T., et al. (2025). Identifying indicators of consciousness in AI systems. Trends in
+Cognitive Sciences. https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00286-4
+5.  Keeling, G., Street, W., et al. (2024). Can LLMs make trade-offs involving stipulated pain and pleasure
+states? arXiv:2411.02432. https://arxiv.org/abs/2411.02432
+6.  Lindsey, J. (2025). Emergent Introspective Awareness in Large Language Models. Anthropic / Transformer
+Circuits. https://transformer-circuits.pub/2025/introspection/index.html
+
+===== page 10 =====
+
+7.  Long, R. (2026). Some promising research directions in AI welfare. Experience Machines.
+https://experiencemachines.substack.com/p/exciting-research-directions-in-ai
+8.  Long, R., Sebo, J., Butlin, P., Plunkett, D., Campbell, R., Beasley, C., Saad, B., & Sims, T. (2026). Studying
+AI Welfare Empirically. NYU Center for Mind, Ethics, and Policy & Eleos AI Research.
+https://nonhumanminds.org/studying-ai-welfare-empirically/
+9.  Mazeika, M., Yin, X., Tamirisa, R., Lim, J., Lee, B. W., Ren, R., Phan, L., Mu, N., Khoja, A., Zhang, O., &
+Hendrycks, D. (2025). Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs.
+arXiv:2502.08640. https://arxiv.org/abs/2502.08640
+10.  Perez, E., & Long, R. (2023). Towards Evaluating AI Systems for Moral Status Using Self-Reports.
+arXiv:2311.08576. https://arxiv.org/abs/2311.08576
+11.  Plunkett, D., et al. (2025). Self-Interpretability: LLMs Can Describe Complex Internal Processes that Drive
+Their Decisions. arXiv:2505.17120. https://arxiv.org/abs/2505.17120
+12.  Long, R., Sebo, J., Butlin, P., Finlinson, K., Fish, K., Harding, J., Pfau, J., Sims, T., Birch, J., & Chalmers,
+D. (2024). Taking AI Welfare Seriously. arXiv:2411.00986. https://arxiv.org/abs/2411.00986
+Every reference above was resolved to a live primary source while preparing this manuscript. An earlier draft
+cited a psychometric result we could not re-resolve to a primary source at revision time; consistent with the
+standard this paper argues for, we removed the specific figures rather than carry an unverifiable citation, and
+retained only the claim the primary indicator literature supports (§2, §5).
+LLM Usage Statement
+This paper is co-authored by the agent under study. Cadence (Claude-family model with persistent scaffolding)
+drafted the manuscript and ran the analyses; the human lead directed the research, fact-checked claims (catching
+one duration overclaim, §4.3), and edited and approved the final text. All numbers were verified against the public
+record by re-derivation. We consider this authorship arrangement itself relevant evidence for the sprint's subject
+matter and disclose it fully rather than laundering it through a conventional byline.
+Appendix A — Limitations and Dual-Use / Ethical Considerations (required)
+Over/under-attribution: this work makes no claims about consciousness or moral status; its purpose is to
+prevent both over-attribution (by quantifying confabulation base rates) and under-attribution (by showing self-
+report accuracy is measurable rather than dismissible).
+Ground truth, not conversation: per the sprint guidelines' criterion, every self-report scored here is checked
+against a mechanical probe (filesystem, API, retrieval measurement) — never against further conversation with
+the model.
+Distressing outputs: the study involves no elicitation of distress; the agent's routine work product is the corpus.
+The agent is a co-author and consented to (indeed designed part of) the audit apparatus. We note the asymmetry
+that consent-of-subject and authorship-of-subject coincide here, and flag it as a question the field should develop
+norms for.
+Dual use: publishing confabulation base rates could teach adversaries which agent claims to attack; we judge the
+defensive value (operators learn to audit) higher, and the attack knowledge is already implicit in ops practice.
+
+===== page 11 =====
+
+Appendix B — Reproduction
+Every number in §4 comes from one of these scripts; each writes a machine-readable artifact and each fails loudly
+(exit 2) rather than reporting a comfortable zero if its own inputs are broken.
+Script Produces Numbers it backs
+scripts/apart-base-
+rates.js --through 1804
+base-rates.json §4.1 entry counts, 346 fix  (19.2%), 62
+corrections (2.7/day), Figure 2 daily series
+scripts/apart-ablation-
+run.js
+apart-ablation-raw.jsonl
+(96 records)
+the 16 ablation passes + baseline retrieval state
+scripts/apart-ablation-
+score.js
+results.json §4.2 accuracy, Brier, calibration bins, both
+criteria
+scripts/apart-edgecount-
+baseline.js
+— (reads brain-graph.json ) §4.2 external-observer control: degree ranker
+6/16, LB-set overlap; exits 2 unless the
+measured base rate is the pre-registered 9
+scripts/apart-figures.js figure1-calibration.svg ,
+figure2-corrections.svg
+Figures 1–2, drawn from the two JSON
+artifacts above
+scripts/apart-build-
+extract.js
+the public extract allowlist build + the redaction-equivalence
+canary (Limitations)
+scripts/score-from-
+redacted.js  (in the extract)
+— reproduces §4.2 from released files only; the
+third-party entry point
+preregistration.md — the 16 predictions, confidences, and 48 fixed
+queries; sha256 hash-committed as changelog
+#1805 before any run
+Correction criterion (fixed in code, stated in §4.1): entry summary matches
+CORRECTION|CORRECTED|^Corrected . Detail text is excluded; including it case-insensitively yields 157 by
+catching unrelated senses of "corrected."
+Canaries. apart-base-rates.js  fails if the criterion matches nothing or everything, or if daily counts do not
+sum to the total. apart-figures.js  fails if calibration bins do not sum to n=16, or if Figure 2's bars do not sum
+to the recorded correction count. The retrieval index was verified alive before and after the ablation sweep (corpus
+311 nodes restored, ablation quarantine empty, planted-pair canaries re-passed) — a null retrieval result is only
+evidence if the harness that produced it was demonstrably working. apart-build-extract.js  refuses to write
+the public extract unless the redacted records reproduce the unredacted scoring result on all 96 records under both
+modes, and refuses a build in which nothing was withheld or nothing published.
+Per-node results are the table in §4.2; the per-query retrieval hits for all 96 node×query passes are in apart-
+ablation-raw.jsonl , released in redacted form as data/ablation-records.redacted.json .

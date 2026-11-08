@@ -1,0 +1,36 @@
+{
+  "slug": "sigmaforge-pyf6",
+  "url": "https://apartresearch.com/sprints/projects/sigmaforge-pyf6",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "Sigmaforge",
+  "date": "Nov 23, 2025",
+  "location": "Toronto",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Sharleen"
+  ],
+  "team": "Team Sharleen-solo",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/87d9ee5b9e15b22a-d0c62520-cc92-4944-9752-ab68bb0d7577-SigmaForge_Presentation.pdf",
+  "code_url": "https://github.com/mittfreude/cautious-chainsaw/tree/claude/sigma-siem-queries-017XyoJPQn7wQFxi3XNMadWg",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://docs.google.com/videos/d/17UmE4OnAsm94QHGuF-NSCt2KLjpZW6Dwha6i7VnhdB8/edit?usp=sharing"
+    }
+  ],
+  "summary": "SigmaForge is an LLM-assisted detection engineering assistant that turns unstructured threat intel and example logs into high-quality Sigma detection rules and real, deployable SIEM queries. Analysts can paste a natural-language description (or log snippets), and SigmaForge generates a Sigma rule, validates it using the official pySigma tooling, and compiles it into Splunk and Elasticsearch/Lucene queries. The tool also surfaces rule-quality warnings (e.g. missing ATT&CK tags, noisy wildcards) and provides a quick log sanity check, helping understaffed SOC teams move from “we know about this attack” to “we are detecting this attack” in minutes instead of hours.",
+  "reviews": [],
+  "n_reviews": 0,
+  "bibtex": "@misc{sharleen2025sigmaforge,\n  title = {{Sigmaforge}},\n  author = {Sharleen},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/sigmaforge-pyf6}},\n  url = {https://apartresearch.com/sprints/projects/sigmaforge-pyf6}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_unreviewed",
+  "has_pdf": true,
+  "report_chars": 4158,
+  "code_urls_from_report": []
+}

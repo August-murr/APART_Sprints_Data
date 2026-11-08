@@ -1,0 +1,37 @@
+{
+  "slug": "swaipe-microlearning-retention-platform-for-cognitive-ai-defense-0xt4",
+  "url": "https://apartresearch.com/sprints/projects/swaipe-microlearning-retention-platform-for-cognitive-ai-defense-0xt4",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "swAIpe: microlearning retention platform for Cognitive AI Defense",
+  "date": "Nov 23, 2025",
+  "location": "Singapore",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Yan Yee Wong",
+    "Nguyen Thi Cam Luong",
+    "Tang Anh Quy"
+  ],
+  "team": "Team swAIpe",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/1f03a74b0d324258-6f328897-bc7e-4bc2-870e-19e6b1dda416-swAIpe---def_acc-Hackathon--Submitted-.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "swAIpe is a mobile-first micro-learning web application that treats strengthening the public’s thinking and awareness as a core line of defense, not an afterthought. Instead of passive ‘AI safety explainers’, the app channels doom-scrolling into short, retrieval-based learning loops, each backed by automated fact-checking, that train users to recognize, question, and counter AI-driven manipulation and misinformation.",
+  "reviews": [
+    "Good effort, but I'm not sure I buy the core idea that the way to get social media users to counter disinformation is by getting them to learn. It seems people are on these sites primarily to disengage and adding these barriers would only get them to bounce. This might be useful for people who actively want this but those are often the people who need this the least."
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{wong2025swaipe,\n  title = {{swAIpe: microlearning retention platform for Cognitive AI Defense}},\n  author = {Yan Yee Wong and Nguyen Thi Cam Luong and Tang Anh Quy},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/swaipe-microlearning-retention-platform-for-cognitive-ai-defense-0xt4}},\n  url = {https://apartresearch.com/sprints/projects/swaipe-microlearning-retention-platform-for-cognitive-ai-defense-0xt4}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 20740,
+  "code_urls_from_report": [
+    "https://github.com/BharathxD/ClaimeAI"
+  ]
+}

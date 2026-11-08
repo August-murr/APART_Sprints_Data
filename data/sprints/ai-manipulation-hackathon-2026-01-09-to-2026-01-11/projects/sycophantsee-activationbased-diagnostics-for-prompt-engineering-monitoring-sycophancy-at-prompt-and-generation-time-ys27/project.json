@@ -1,0 +1,46 @@
+{
+  "slug": "sycophantsee-activationbased-diagnostics-for-prompt-engineering-monitoring-sycophancy-at-prompt-and-generation-time-ys27",
+  "url": "https://apartresearch.com/sprints/projects/sycophantsee-activationbased-diagnostics-for-prompt-engineering-monitoring-sycophancy-at-prompt-and-generation-time-ys27",
+  "sprint_name": "AI Manipulation Hackathon",
+  "sprint_slug": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "title": "SycophantSee - Activation-based diagnostics for prompt engineering: monitoring sycophancy at prompt and generation time",
+  "date": "Jan 11, 2026",
+  "location": "London",
+  "awards": [
+    "5th Place"
+  ],
+  "rank": 5,
+  "authors": [
+    "Helios",
+    "Horatio"
+  ],
+  "team": "Team Lyons Den",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/a08fc725235b2690--for-prompt-engineering_-monitoring-sycophancy-at-prompt-and-generation-time.pdf",
+  "code_url": "https://github.com/haelyons/latent_prompts",
+  "links": [
+    {
+      "text": "Presentation",
+      "href": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/7ef39b2ecf773727-dd519073-cf13-4b59-8998-999b4cd42d96-SycophantSee_v0--1-.pdf"
+    }
+  ],
+  "summary": "Activation monitoring reveals that prompt framing affects a model's internal state before generation begins.",
+  "reviews": [
+    "Interesting paper. Replicates earlier work and builds on existing approaches to mechanistic detection of sycophancy with novel \"shift metrics\" that could, in theory, be used for sycophancy detection or prevention. I'm curious to hear more about the intuition behind shift metrics.\n\nVery well-written. Also clear about what's new and what's replicatory.\n\nThere is a tension between the findings that the technique can detect sycophancy and that first/third person show different activations but not different behavior. The authors coherently address this issue by distinguishing between \"intention\" and \"action\" in the conclusion, though it would be interesting to see pressure or intent measured and disambiguated experimentally. To the degree that activations differ without different behavior, does that limit the precision (but maybe not recall) of this technique for sycophancy detection?",
+    "I really liked reading this project! You lay out an interesting\n\nquestion and clearly explain the related work. To me, the\n\ninsight that sycophancy can be detected in activation space\n\nalready before generation begins points to the possibility of\n\nusing this for mitigation measures. For example, by doing user-side\n\nrewrites of prompts before the generative model ever sees them.\n\nTo make this viable, you'd probably need to investigate\n\ntransferability: can sycophancy detection using activations\n\nfrom small models (cheap enough to run on every prompt)\n\ntransfer to large models used for actual generation? That could\n\nbe an extremely compelling follow-up direction."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{helios2026sycophantsee,\n  title = {{SycophantSee - Activation-based diagnostics for prompt engineering: monitoring sycophancy at prompt and generation time}},\n  author = {Helios and Horatio},\n  year = {2026},\n  month = jan,\n  note = {Submitted to AI Manipulation Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/sycophantsee-activationbased-diagnostics-for-prompt-engineering-monitoring-sycophancy-at-prompt-and-generation-time-ys27}},\n  url = {https://apartresearch.com/sprints/projects/sycophantsee-activationbased-diagnostics-for-prompt-engineering-monitoring-sycophancy-at-prompt-and-generation-time-ys27}\n}",
+  "listed_in_sprint": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "site_rank": 5,
+  "site_awards": [
+    "5th place"
+  ],
+  "official_awards": [
+    "5th Place"
+  ],
+  "rank_source": "official",
+  "selection_reason": "winner",
+  "has_pdf": true,
+  "report_chars": 20289,
+  "code_urls_from_report": []
+}

@@ -1,0 +1,34 @@
+# Curvature-aware sycophancy reduction
+
+- Sprint: AI Manipulation Hackathon (ai-manipulation-hackathon-2026-01-09-to-2026-01-11)
+- Rank: unranked
+- Team: Team curvature
+- Authors: Shovon Biswas
+- Date / location: Jan 11, 2026 / Vancouver
+- Page: https://apartresearch.com/sprints/projects/curvatureaware-sycophancy-reduction-ucc4
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/82b6227505871131-11be1e89-5a39-4fb8-abf6-a77a229f55f0-Shovon-Biswas--Apart-Hackathon.pdf
+- Code: https://github.com/shovon-b/curvature-based-model-edit
+
+## Summary
+
+How does sycophancy, as opposed to truthful behavior, shape the loss landscape? To investigate this question, we construct a simple math_sycophantic dataset consisting of sycophantic, incorrect question–answer pairs involving basic arithmetic manipulations. We run this dataset through Qwen‑0.5B‑Instruct and compute the Kronecker‑factored approximate curvature (KFAC) for two settings: Case A, where the model is given a question paired with a sycophantic incorrect answer, and Case B, where the model is given the same question paired with the correct answer. We find that the resulting KFAC matrices for Cases A and B are able to distinguish between the two tasks for this simple dataset. Building on this observation, we introduce a simple weight‑editing method that leverages both activation and gradient correlation matrices to modify the middle linear layers of the base model, and produce steered variants. These steered models exhibit measurably reduced sycophancy compared to the base model.
+
+## Reviews (2)
+
+### Review 1
+
+This project investigates whether sycophancy is represented in the loss landscape by using curvature analysis and weight-projection editing. Examining sycophancy in this way is a novel approach and the experimental set-up is clean and clearly defined. The authors provide sufficient detail to understand the process and ground the research in previous works. They acknowledge that the work is exploratory, but the claims made in the conclusion may be a little too optimistic about the ability to apply this to more realistic datasets.
+
+The write-up and presentation of results are clear. I feel that the project would benefit from a closer examination of the claim that "reducing sycophancy should increase truthfulness” as it is based on a narrow definition of sycophancy that presupposes a “correct answer”.
+
+### Review 2
+
+I like the fundamental attempt to isolate behaviors at a weights level. Ambitious project for a hackathon with theory, finetuning, and evaluation all in one.
+
+However, left with multiple questions:
+
+1. KFAC assumptions: The link between KFAC specifically and the assumptions about sycophancy isn't clear. It's not obvious to me sycophancy even specifically exists as a distinct measurable concept as the hypothesis suggests. This seems to be a load-bearing assumption - that sycophancy exists in a certain way in the loss landscape - which I'm not sure this data proves/falsifies/isolates specifically, versus other factors like affirm/deny, general entropy, etc. This is the case with any project involving dense LLMs, but here you are specifically proposing an observable architectural mechanism.
+2. Model size: Yes, the model is small which limits conclusions and adds noise, but fundamentally it would've been hard to demand a large theoretical finetuning run over a weekend.
+
+Would've been a 5 if the results were tighter with causal ablations.
+

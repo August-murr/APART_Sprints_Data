@@ -1,0 +1,39 @@
+{
+  "slug": "postern-a-leanverified-access-gateway-for-agentic-data-lakehouse-hv2v",
+  "url": "https://apartresearch.com/sprints/projects/postern-a-leanverified-access-gateway-for-agentic-data-lakehouse-hv2v",
+  "sprint_name": "The Secure Program Synthesis Hackathon",
+  "sprint_slug": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "title": "Postern: a Lean-verified access gateway for agentic data lakehouse",
+  "date": "May 24, 2026",
+  "location": "Singapore",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Vincent Lau"
+  ],
+  "team": "Team Postern",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/d767fb296850fd84-c1c428ec-d114-468b-8ae9-3ee9231c03a4-paper.pdf",
+  "code_url": "https://github.com/debuggingfuture/secure-program-synthesis",
+  "links": [
+    {
+      "text": "More on postern-web.pages.dev",
+      "href": "https://postern-web.pages.dev/"
+    }
+  ],
+  "summary": "We address access control for data lakehouses queried by LLM agents. An agent's effective rights are context-driven — which principal it acts for, which task it is invoked under, which scope the caller granted — and the static identity→role→permission chain of RBAC cannot encode any of those axes. Per-engine row- and column-level security does not survive the ETL boundary; physical tenant segregation forfeits the cross-source joins that motivate the lakehouse. We propose plan-level rewriting against a Biscuit-Datalog policy [@biscuit] and present Postern, an artifact in three parts: (i) a rewriter $\\mathrm{rewrite} : \\mathit{Catalog} \\to \\mathit{Policy} \\to \\mathit{Principal} \\to \\mathit{Plan} \\to \\mathit{Option}\\ \\mathit{Plan}$ mechanised in Lean~4 [@lean4], inspired by Cedar's Lean authorization core [@cedar2024] but stated over plan-level outputs rather than per-request decisions, with nine sorry-free theorems (axioms bounded by propext and Quot.sound) plus a partly-mechanised Horn-fragment Datalog evaluator; (ii) a Rust capability-tracking layer inspired by Odersky et al. [@capabilities-agents-2026] — invariant brand lifetimes, sealed types, opaque-receipt sinks; and (iii) a reference-conformance harness binding Rust to the Lean reference on 18 cases. We evaluate on the Kaggle transactions-fraud-datasets schema and identify Biscuit attenuation, audience, expiry, key rotation, cross-relation joins, and differentially-private aggregation as the principal open problems.",
+  "reviews": [
+    "Creating nine theorems in Lean and building a Rust conformance harness looks very promising. That said, some of gaps limit the practical impact: the lack of join support weakens the core use case, and the Rust capability model leaves enforcement open to common escape paths. Security guarantees also rely on large assumptions, particularly the unverified translation from the Lean model to DuckDB and known runtime side channels. Future work would benefit from verified joins and a semantic link between the formal model and execution layer.",
+    "The incomplete proofs and small corpus contradict with the claims made with each other slightly. Data minimisation is a hard problem to solve and the engineering is good."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{lau2026postern,\n  title = {{Postern: a Lean-verified access gateway for agentic data lakehouse}},\n  author = {Vincent Lau},\n  year = {2026},\n  month = may,\n  note = {Submitted to The Secure Program Synthesis Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/postern-a-leanverified-access-gateway-for-agentic-data-lakehouse-hv2v}},\n  url = {https://apartresearch.com/sprints/projects/postern-a-leanverified-access-gateway-for-agentic-data-lakehouse-hv2v}\n}",
+  "listed_in_sprint": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 28831,
+  "code_urls_from_report": []
+}

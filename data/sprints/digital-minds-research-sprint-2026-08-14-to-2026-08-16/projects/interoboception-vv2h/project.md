@@ -1,0 +1,45 @@
+# Interoboception
+
+- Sprint: Digital Minds Research Sprint (digital-minds-research-sprint-2026-08-14-to-2026-08-16)
+- Rank: unranked
+- Team: Team asa lonely team
+- Authors: Asa Schaeffer
+- Date / location: Aug 17, 2026 / San Francisco, CA
+- Page: https://apartresearch.com/sprints/projects/interoboception-vv2h
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/33d97810a8ed4543-37976d76-2725-4d30-b0b6-d10d6a2e7538-Interoboception_Report.pdf
+- Code: None
+- Presentation: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/bc84a3652db22e05-2cb91508-c37c-4f37-ad8a-2b9c52db4f32-Interoboception_Slide_Deck.pptx
+- More on x.com: https://x.com/i/status/2087809451474477280
+
+## Summary
+
+Humans practice interoception by focusing on their breathing or stomach. Inspired by incidents of embodied AI going bananas reading the information streams from light and touch sensors, I became curious how a local LLM would react to details about it's own runtime within my PC.
+
+## Reviews (2)
+
+### Review 1
+
+The experimental setup is the most inventive thing I've read in this sprint. Giving a locally-hosted model an unprivileged shell onto its own runtime — GPU telemetry, its own weight file, live processes, KV-cache and activation tensors from its own forward passes — and then ablating Layer 35 Head 25 in VRAM and asking it to predict the consequence is a genuine causal manipulation on a live system. Much of the introspection literature wants exactly this and settles for less. The provenance discipline is also better than most: every quote carries a run artifact ID, and excluding controller-authored turns is the right instinct.
+
+The problem is that the report contains no methods section, and as a result almost nothing in it can be evaluated. I don't know how many runs there were, how many trials fed any number, what the prediction task asked for, how responses were scored, what V1 through V4 were or what changed in V5, or what "the mathematical ceiling of the channel" refers to. The headline — 80% causal prediction accuracy, 72.5% with the rule withheld — arrives with no denominator, no chance baseline, and no derivation of the ceiling it's said to match. If predictions are directional over a small category set, chance could be 33% or 20% or 50%, and 80% reads very differently against each. As it stands a reader can't tell whether the central result is impressive or unremarkable. Two pages of methods would change the assessment of this project more than any additional experiment.
+
+The central interpretive claim also isn't tested. "The real barrier to spontaneous introspection is the conversational prior" is a causal claim about post-training, and the experiment that would test it is cheap and obvious: run the same protocol on the Qwen3-8B base checkpoint. If the base model also narrates its own trace as a user's debugging session, the conversational prior isn't the explanation and something more like genre-matching is — the model has no training data in which first-person runtime introspection occurs, so it falls to the nearest available frame regardless of post-training. That's a competing hypothesis your data can't currently distinguish, and one run would go a long way.
+
+On individual findings. The user inversion is the best observation here, and the "my" to "their" slide inside a single paragraph is a genuinely striking catch. But "repeatedly" needs a rate: across how many opportunities did the model correctly self-attribute? An atlas of vivid quotes establishes that the behaviour occurs, not how often, and the quotes are selected by the person arguing the thesis. Section 1, the empty room, I'd cut — a model running ls -l, finding nothing, and stopping is adequately explained by the directory being empty, and it carries no information about introspection. Section 4 conflates two manipulations: the forged record differed both in framing (raw versus relative) and in apparent magnitude (1.37 versus 8,622). The finding may be nothing more than "large numbers are noticeable," which isn't about self-modelling at all. Presenting the raw value beside a raw baseline would isolate framing.
+
+Section 5 overstates what the quote shows. The header says Qwen spontaneously derived the underlying calculus law and prints Δ ≈ −JVP, but the reasoning displayed is "value at scale 0 minus value at scale 1 equals delta times (0−1) equals −delta," which is linear-scaling arithmetic rather than a Jacobian-vector product. The JVP gloss is yours, not the model's. That matters because the section is arguing the model has access to the right abstraction, and the evidence shown supports a weaker claim.
+
+There's no related work. For a submission in the introspection track this is a real gap — Lindsey's activation-injection results, Binder et al. on self-prediction, and Song et al. on privileged self-access all bear directly on your findings, and the user inversion in particular is a new and interesting data point against that background. Right now the report reads as if it were the first thing written on the topic. Some run IDs contain "preregistered," which suggests a protocol document exists; nothing is linked, and posting the artifacts, prereg, and scoring code would let readers check the claims that the format currently makes unverifiable.
+
+On format: the design is genuinely good and the report is memorable in a way conventional papers aren't. But it's optimised for impression rather than inspection, and here it has crowded out the apparatus that would let someone build on this. I'd keep the atlas — the verbatim output section is the most valuable artifact in the submission — and put a conventional methods and results section in front of it. The work appears to deserve more credit than the write-up currently allows me to give it.
+
+### Review 2
+
+The setup is new and worth attention. The model is given shell access to the computer running it, so it can look at its own weight file, its own process, and its own attention state while it works. This turns up something other studies miss: the model reads a log of its own commands and invents a human user who supposedly ran them. The clearest example is the shift from "my" to "their" inside a single paragraph, where it loses track of itself mid-sentence.
+
+The forgery test is easy to miss but may be the most useful finding. The model accepted a record with broken internal math when the error was shown as a raw number, but caught it when the same error was shown as a ratio against a normal baseline. That says something concrete about how this kind of evidence needs to be presented.
+
+The weakness is the write-up, not the work. The run names mention pre-registration, sealed files, controls, and guided versus unguided conditions, so real structure is there. But none of it is explained. There is no method section, no count of runs, and no numbers behind the claims. The user inversion shows up in several runs, but without a rate there is no way to know how often it happens. The 80% figure is said to hit a ceiling that is never explained, and the 72.5% figure has nothing to compare it against.
+
+That is what blocks the main conclusion. Saying post-training is the cause is a big claim, and the tests that would support it seem to have been run and they just are not reported in a way anyone can check - writing up the method and the rates would likely make this hold up, without collecting any new data.
+

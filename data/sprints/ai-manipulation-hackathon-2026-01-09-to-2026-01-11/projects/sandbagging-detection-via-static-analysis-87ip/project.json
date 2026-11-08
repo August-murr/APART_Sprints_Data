@@ -1,0 +1,39 @@
+{
+  "slug": "sandbagging-detection-via-static-analysis-87ip",
+  "url": "https://apartresearch.com/sprints/projects/sandbagging-detection-via-static-analysis-87ip",
+  "sprint_name": "AI Manipulation Hackathon",
+  "sprint_slug": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "title": "Sandbagging Detection via Static Analysis",
+  "date": "Jan 11, 2026",
+  "location": "Montreal, Canada",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Samuel Gelineau",
+    "Divyansh Goyal"
+  ],
+  "team": "Team Sandbagging Detection via Static Analysis",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/a4d8f19af3ff802b-Manipulation-Hackathon-submission_-sandbagging-detection-via-static-analysis.pdf",
+  "code_url": "https://github.com/gelisam/sandbagging-detection-via-static-analysis",
+  "links": [
+    {
+      "text": "More on gelisam.com",
+      "href": "https://gelisam.com/sandbagging/conservative-sandbagging-detection.mov"
+    }
+  ],
+  "summary": "Our sandbagging-detection algorithm is mathematically guaranteed to never label a model as honest if it is actually sandbagging.",
+  "reviews": [
+    "This project presents a formal, provably conservative method for detecting sandbagging in neural networks. The combination of static analysis and witness-input search clearly demonstrates honesty or flags potential sandbagging in small, fully-known models, which is impressive for a hackathon project.\n\nThe main limitation is that the approach is currently restricted to toy networks, so it does not yet scale to real LLMs or complex capabilities. Including examples of how the method might approximate larger models or handle partial knowledge would improve practical relevance. Overall, this is a well-executed theoretical contribution with strong potential for future extensions."
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{gelineau2026sandbagging,\n  title = {{Sandbagging Detection via Static Analysis}},\n  author = {Samuel Gelineau and Divyansh Goyal},\n  year = {2026},\n  month = jan,\n  note = {Submitted to AI Manipulation Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/sandbagging-detection-via-static-analysis-87ip}},\n  url = {https://apartresearch.com/sprints/projects/sandbagging-detection-via-static-analysis-87ip}\n}",
+  "listed_in_sprint": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 12594,
+  "code_urls_from_report": []
+}

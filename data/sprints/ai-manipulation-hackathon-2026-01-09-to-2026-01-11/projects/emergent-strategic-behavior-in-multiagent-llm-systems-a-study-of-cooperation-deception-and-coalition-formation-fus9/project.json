@@ -1,0 +1,37 @@
+{
+  "slug": "emergent-strategic-behavior-in-multiagent-llm-systems-a-study-of-cooperation-deception-and-coalition-formation-fus9",
+  "url": "https://apartresearch.com/sprints/projects/emergent-strategic-behavior-in-multiagent-llm-systems-a-study-of-cooperation-deception-and-coalition-formation-fus9",
+  "sprint_name": "AI Manipulation Hackathon",
+  "sprint_slug": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "title": "Emergent Strategic Behavior in Multi-Agent LLM Systems: A Study of Cooperation, Deception, and Coalition Formation",
+  "date": "Jan 11, 2026",
+  "location": "Connecticut, US",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Benjamin Kiev",
+    "Adejumobi Joshua",
+    "J Phillips",
+    "Taiwo Togun"
+  ],
+  "team": "Team Seqhub Team",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/8751e01979a22387-53c9f924-6d0e-4db9-8610-c93617a08841-MultiAgent.pdf",
+  "code_url": "https://github.com/adejumobiesther/multiagent.git",
+  "links": [],
+  "summary": "We investigate emergent strategic behaviors in decentralized multi-agent systems where Large Language Model (LLM) agents with private objectives interact through natural language communication. We design a simulation environment called Project X, a multi-round investment game that creates tension between individual gain and collective benefit. Agents from heterogeneous LLM providers are assigned departmental roles with the sole objective of maximizing their own budget. Through public and private communication channels, agents can coordinate, negotiate, deceive, or remain strategically silent. All communications and actions are logged for post-hoc behavioral analysis. This study examines whether complex social behaviors—including coalition formation, promise-breaking, free-riding, and strategic deception—emerge organically from goal-driven AI agents without explicit programming of such behaviors. Our 50-round experiment revealed sustained coalition behavior among four agents, systematic free-riding by a single agent (with zero contributions across all rounds), and repeated deceptive tactics including false promises and impersonation. Despite no contributions, the free-rider agent accumulated equal wealth to others, exploiting the symmetric payoff structure. These findings highlight how sophisticated social dynamics and exploitation strategies can emerge from minimal prompting in language-based agents.",
+  "reviews": [
+    "It takes some sophistication to even get a single run of this going with all the coordination that has to happen, so well done on doing this in a single weekend! I also appreciated the emphasis on logging.\n\nOn the impact - You are tackling a clear problem with a completely reasonable approach. For me it does not quite hit a 4 because emergent deception has been studied in a variety of settings, and this has a new framing, but nothing with the novelty to go up a level for me.\n\nThe core execution of the idea is solid, especially considering time constraints. I would have liked to see repeat runs for statistical validation and or variations of the core experiment - even at the cost of shorter runs. Also the confounding of roles and different models makes it hard for me to assign a higher score.\n\nOn communication - well structured and explained. I like that the 5 research questions are clearly laid out, and in section 5.1.10 you go through them. I found myself being curious about your deeper reflection and your take on what this all implies. In other words, I would have appreciated more of your voice on the conclusions. Some figures of contributions over time might have helped me grok some of the dynamics. And in some parts the text was a little verbose.",
+    "The investment game is clearly designed and the dynamics observed are notable. I'd be curious to see this extended with more trials and model permutations to distinguish model-specific behaviors from setup artifacts. One consideration the authors could also expand on is modifying the payoff structure to incentivise different strategies."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{kiev2026emergent,\n  title = {{Emergent Strategic Behavior in Multi-Agent LLM Systems: A Study of Cooperation, Deception, and Coalition Formation}},\n  author = {Benjamin Kiev and Adejumobi Joshua and J Phillips and Taiwo Togun},\n  year = {2026},\n  month = jan,\n  note = {Submitted to AI Manipulation Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/emergent-strategic-behavior-in-multiagent-llm-systems-a-study-of-cooperation-deception-and-coalition-formation-fus9}},\n  url = {https://apartresearch.com/sprints/projects/emergent-strategic-behavior-in-multiagent-llm-systems-a-study-of-cooperation-deception-and-coalition-formation-fus9}\n}",
+  "listed_in_sprint": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 20240,
+  "code_urls_from_report": []
+}

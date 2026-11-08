@@ -1,0 +1,33 @@
+{
+  "slug": "wastewater-metagenomic-surveillance-for-novel-viruses-how-much-sequencing-is-enough-and-at-what-cost-07q9",
+  "url": "https://apartresearch.com/sprints/projects/wastewater-metagenomic-surveillance-for-novel-viruses-how-much-sequencing-is-enough-and-at-what-cost-07q9",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "Wastewater metagenomic surveillance for novel viruses: how much sequencing is enough, and at what cost?",
+  "date": "Nov 23, 2025",
+  "location": "Dundee",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Harry Gray"
+  ],
+  "team": null,
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/3d5fd150b5c410d5-cb-451b-a7db-22ebe090e2b7-def_acc-hackathon-submission-Harry-Gray-2025-11-23.pdf",
+  "code_url": "https://github.com/HGray384/apart-hackathon-2025",
+  "links": [],
+  "summary": "This project quantifies how well wastewater metagenomic sequencing can detect truly novel viruses, including low-shedding or AI-enabled “stealth” threats. Using a statistical model of viral abundance plus a binomial/logit-normal count model, it maps from incidence and sequencing depth to detection probability and then to concrete costs for different design choices. The results show that robust, tail-covering designs require far higher depths and budgets than median-case planning suggests, and that wastewater surveillance is powerful but cannot be relied on as a standalone universal early-warning system.",
+  "reviews": [],
+  "n_reviews": 0,
+  "bibtex": "@misc{gray2025wastewater,\n  title = {{Wastewater metagenomic surveillance for novel viruses: how much sequencing is enough, and at what cost?}},\n  author = {Harry Gray},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/wastewater-metagenomic-surveillance-for-novel-viruses-how-much-sequencing-is-enough-and-at-what-cost-07q9}},\n  url = {https://apartresearch.com/sprints/projects/wastewater-metagenomic-surveillance-for-novel-viruses-how-much-sequencing-is-enough-and-at-what-cost-07q9}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_unreviewed",
+  "has_pdf": true,
+  "report_chars": 73042,
+  "code_urls_from_report": [
+    "https://github.com/HGray384/apart-hackathon-2025"
+  ]
+}

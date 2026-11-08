@@ -1,0 +1,38 @@
+{
+  "slug": "manipulation-playground-siwg",
+  "url": "https://apartresearch.com/sprints/projects/manipulation-playground-siwg",
+  "sprint_name": "AI Manipulation Hackathon",
+  "sprint_slug": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "title": "Manipulation Playground",
+  "date": "Jan 11, 2026",
+  "location": "Toronto",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Giles Edkins",
+    "Zoravur Singh",
+    "Christopher Berry"
+  ],
+  "team": "Team Playground",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/5395ea3239292026-0224bff4-f9d2-448e-a5e7-403dea3bdb0f-MANIPULATION-PLAYGROUND.pdf",
+  "code_url": "https://github.com/zoravur/manipulation-game",
+  "links": [],
+  "summary": "As Large Language Models (LLMs) operate in multi-agent settings, understanding emergent manipulation and deception becomes increasingly important. While prior work focuses on LLMs manipulating humans, LLM-to-LLM dynamics remain understudied. We extend the Cheap Talk setup (Pham 2025) to create controlled scenarios where agents communicate under partially aligned or conflicting incentives. This framework enables observation of influence attempts, misrepresentation, information withholding, and covert signaling. We contextualize our approach within recent work on manipulation and deception, including APE and DeceptionBench, and offer preliminary observations about when models engage in manipulation. Early findings suggest that some agents alter their behavior depending on the capability of the victim, agents double-down on manipulative behavior in iterated games, and that manipulative tendencies arise without explicit prompting.",
+  "reviews": [
+    "Manipulation Playground effectively explores emergent strategic behaviors between LLMs using a multi-agent game setup. The graphs comparing different model pairs provide clear visual evidence of behaviors such as double-down manipulation and capability-dependent strategy shifts.\n\nTo improve, the project could include quantitative metrics for manipulative actions, more explicit definitions of what counts as manipulation, and additional experiments across a broader set of models or incentive structures. Overall, it is a well-executed exploratory study with promising insights into LLM-to-LLM interactions."
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{edkins2026manipulation,\n  title = {{Manipulation Playground}},\n  author = {Giles Edkins and Zoravur Singh and Christopher Berry},\n  year = {2026},\n  month = jan,\n  note = {Submitted to AI Manipulation Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/manipulation-playground-siwg}},\n  url = {https://apartresearch.com/sprints/projects/manipulation-playground-siwg}\n}",
+  "listed_in_sprint": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 22996,
+  "code_urls_from_report": [
+    "https://github.com/zoravur/manipulation-game",
+    "https://github.com/AlignmentResearch/AttemptPersuadeEval"
+  ]
+}

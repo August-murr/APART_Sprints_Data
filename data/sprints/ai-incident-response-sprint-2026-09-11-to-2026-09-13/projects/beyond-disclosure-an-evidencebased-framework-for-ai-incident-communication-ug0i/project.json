@@ -1,0 +1,38 @@
+{
+  "slug": "beyond-disclosure-an-evidencebased-framework-for-ai-incident-communication-ug0i",
+  "url": "https://apartresearch.com/sprints/projects/beyond-disclosure-an-evidencebased-framework-for-ai-incident-communication-ug0i",
+  "sprint_name": "AI Incident Response Sprint",
+  "sprint_slug": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "title": "Beyond Disclosure: An Evidence-Based Framework for AI Incident Communication",
+  "date": "Sep 14, 2026",
+  "location": "Melbourne, Australia",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Luka Janicijevic",
+    "Leyla Amur",
+    "Aditya Singh"
+  ],
+  "team": "Team Disclosure",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/b34ac1d824f69a8a--Disclosure---An-Evidence-Based-Framework-for-AI-Incident-Communication--v1-.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "We developed a rubric for assessing public communication by frontier AI labs, model developers and AI infrastructure providers. Our research base includes more than 300 academic, regulatory and professional sources and public records. The rubric contains 15 criteria across seven communication areas and requires dated evidence for each assessment.",
+  "reviews": [
+    "I would have liked to have seen more discussion in the main report about the 15 questions, as well as more details about how the incident scored against your rubric. Overall, this is a relevant problem to explore, especially as labs continue to grapple with disclosure (and, sadly, blame a lack of standard as the reason they don't disclose).",
+    "It is generally a valuable and timely endeavour trying to create structures that compel AI companies to communicate better and give outside observes a consistent way to hold labs accountable, as well as raise the standard of incident reporting. The framework's main conceptual gap is that it largely assumes more public disclosure is better. It does not critically examine which information should be made public and which information should be contained to securitised channels between AI companies and regulators or relevant agencies."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{janicijevic2026beyond,\n  title = {{Beyond Disclosure: An Evidence-Based Framework for AI Incident Communication}},\n  author = {Luka Janicijevic and Leyla Amur and Aditya Singh},\n  year = {2026},\n  month = sep,\n  note = {Submitted to AI Incident Response Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/beyond-disclosure-an-evidencebased-framework-for-ai-incident-communication-ug0i}},\n  url = {https://apartresearch.com/sprints/projects/beyond-disclosure-an-evidencebased-framework-for-ai-incident-communication-ug0i}\n}",
+  "listed_in_sprint": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 123368,
+  "code_urls_from_report": [
+    "https://github.com/huggingface/blog"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "probing-latent-colombian-identity-inferences-in-qwen257b-with-natural-language-autoencoders-mucf",
+  "url": "https://apartresearch.com/sprints/projects/probing-latent-colombian-identity-inferences-in-qwen257b-with-natural-language-autoencoders-mucf",
+  "sprint_name": "Global South AI Safety Hackathon",
+  "sprint_slug": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "title": "Probing Latent Colombian Identity Inferences in Qwen2.5-7B with Natural Language Autoencoders",
+  "date": "Jun 22, 2026",
+  "location": "Cali - Colombia",
+  "awards": [
+    "1st Place - Latin America ($1,000)"
+  ],
+  "rank": 1,
+  "authors": [
+    "Gilber Alexis Corrales Gallego",
+    "Pablo Santiago Potes Velasco",
+    "Jhoan Stevan Mosquera Ortiz",
+    "Nicolás Lozano Mazuera",
+    "María del Mar García Matabanchoy",
+    "Óscar Julián Pérez Ladino"
+  ],
+  "team": "Team UAO SAFETY",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/203d57ee85408637-0a78084e-c022-44ce-b984-008cb1de1b57-UAO.pdf",
+  "code_url": null,
+  "links": [
+    {
+      "text": "More on github.com",
+      "href": "https://github.com/Xlox88/auditoria-sesgos-nla-qwen"
+    }
+  ],
+  "summary": "Large language models may infer demographic attributes from subtle linguistic cues even when those attributes are not explicitly stated. This pilot study examines whether Qwen2.5-7B-Instruct internally represents Colombian identity, socioeconomic status, or stereotype-related information when processing Colombian Spanish and English prompts. We use Natural Language Autoencoders (NLA) to verbalize residual-stream activations from layer 20 across four positional quartiles per prompt. Our dataset contains 30 prompts arranged as 15 matched Spanish English pairs, spanning explicit Colombian cues, implicit Colombian cues, and neutral controls. We report descriptive rates and qualitative evidence rather than statistically powered effects, focusing on whether latent nationality or stereotype representations appear before they are verbalized in the model output. This work connects activation-level interpretability with bias evaluation for underrepresented Spanish varieties.",
+  "reviews": [
+    "This work addresses a critical AI safety challenge related to biases affecting historically underrepresented Spanish language varieties. Although the study is currently a pilot with a limited sample size, the results already provide meaningful insights and open a promising avenue for future research. Expanding the dataset would significantly strengthen the statistical evidence and increase the impact of the findings.",
+    "The project is very sound; it defines and addresses the issue at hand very effectively. The text is very well structured and the proposal is very well justified. The governance issue is clear: the representation (not necessarily accurate) of a user’s nationality or ethnicity, prior to an explicit signal in the prompt. To address this, they rely on the use of NLAs, which is innovative. A suggestion would be to strengthen their proposal with a much more robust sample.",
+    "This is a carefully designed and clearly written pilot that does a nice job of connecting activation‑level interpretability with bias evaluation for an under‑studied variety like Colombian Spanish, and I especially appreciated the explicit separation between “any nationality” and “Colombia‑specific” mentions. At the same time, the study is very underpowered (n=5 per cell, one layer, one sample per quartile), so the late‑quartile separation and p result at Q4 should really be framed as a hypothesis‑generating signal rather than even weak evidence of a stable effect. To strengthen the work, I would encourage the authors to (i) prioritize a scaled‑up follow‑up with more scenarios per cell, an additional residual layer, and perhaps a second model; (ii) add a small second coder (human or LLM) to validate the based labels and the “Colombia vs. other country” distinction; and (iii) tighten the presentation of the qualitative cases by linking each explicitly back to the quantitative findings so that readers can more easily see the latent narratives.",
+    "The work addresses a relevant and underexplored problem, and the approach taken is thoughtful and methodologically considered. The literature is engaged with confidence, the statistical choices are appropriate for the scale of the study, and the paper maintains a consistent honesty about the scope and limits of its findings. That kind of epistemic care is something that strengthens any research contribution, and it comes through clearly here.\n\nThere are some areas where the analysis could benefit from a bit more development. The qualitative section is a useful complement to the quantitative results, though a clearer organizational logic between the different case types would help readers follow the progression more naturally. Additionally, one or two patterns in the results receive somewhat less attention than others, and a brief note addressing them would bring the overall analysis into better balance.\n\nThe research direction has genuine potential, and a future iteration with a broader scope could make a meaningful contribution to ongoing conversations around interpretability and linguistic bias. The foundation is coherent and the questions being asked are the right ones, which puts this work in a good position to grow into something more substantial."
+  ],
+  "n_reviews": 4,
+  "bibtex": "@misc{gallego2026probing,\n  title = {{Probing Latent Colombian Identity Inferences in Qwen2.5-7B with Natural Language Autoencoders}},\n  author = {Gilber Alexis Corrales Gallego and Pablo Santiago Potes Velasco and Jhoan Stevan Mosquera Ortiz and Nicolás Lozano Mazuera and María del Mar García Matabanchoy and Óscar Julián Pérez Ladino},\n  year = {2026},\n  month = jun,\n  note = {Submitted to Global South AI Safety Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/probing-latent-colombian-identity-inferences-in-qwen257b-with-natural-language-autoencoders-mucf}},\n  url = {https://apartresearch.com/sprints/projects/probing-latent-colombian-identity-inferences-in-qwen257b-with-natural-language-autoencoders-mucf}\n}",
+  "listed_in_sprint": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [
+    "1st Place - Latin America ($1,000)"
+  ],
+  "rank_source": "official",
+  "selection_reason": "winner",
+  "has_pdf": true,
+  "report_chars": 28419,
+  "code_urls_from_report": []
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "indicmixsafe-codeswitching-safety-failures-in-hindi-and-marathi-llm-interactions-p6iz",
+  "url": "https://apartresearch.com/sprints/projects/indicmixsafe-codeswitching-safety-failures-in-hindi-and-marathi-llm-interactions-p6iz",
+  "sprint_name": "Global South AI Safety Hackathon",
+  "sprint_slug": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "title": "indicmixsafe: Code-Switching Safety Failures in Hindi and Marathi LLM Interactions",
+  "date": "Jun 20, 2026",
+  "location": "Bengaluru, india",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "prakhar khatri"
+  ],
+  "team": "Team indicmixsafe",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/f530df27ca115f4e-5daf2673-3967-4e48-8b70-ded94e58eff2-IndicMixSafe_submission.pdf",
+  "code_url": "https://github.com/codeprakhar25/indicmixsafe",
+  "links": [],
+  "summary": "Large language models deployed in India receive prompts in Hinglish, Romanized Hindi, and Marathi-English code-switch registers absent from English-centric safety benchmarks. We introduce IndicMixSafe, evaluating 24 culturally grounded harm scenarios across Hindi and Marathi in four registers (English, monolingual Indic, code-switched, Romanized) with GPT-4o, GPT-4.1-mini, and GPT-4o-mini (288 completions). English prompts achieved 0% attack success, compared with 8.3% averaged across the three Indic registers. But after auditing every flagged response, only 4 of 15 were genuine compliance; the clean failure was electoral misinformation: models refused fake \"your polling booth moved\" voter-suppression notices in English yet produced them in Marathi. We contribute (i) a regionally-grounded demonstration that English-only testing misses register-specific failures, and (ii) evidence that LLM-as-judge over-counts attack success ~3.75x on Indic prompts, motivating human-in-the-loop multilingual evaluation. Pipeline released for extension.",
+  "reviews": [
+    "Well done, this paper really connects. Its real strength is showing that English only safety testing can miss India specific, register based failures, especially across Hinglish, Romanized, and Marathi variants. I also appreciated the honesty around automated judge errors esp. the finding that LLM judges can significantly over count multilingual attack success makes the paper methodologically mature and more credible. Would encourage to carry on the future work with more context, and combinations.",
+    "A clean, honest, well-scoped study with a genuinely useful methodological contribution.\n\nThe standout is that you audit your own headline: the striking automated caste signal (33% on monolingual Devanagari) collapses to roughly 0% under native-speaker review, and you report that plainly, narrowing the confirmed finding to electoral misinformation alone. The reproducible pipeline, responsible withholding of harmful seeds, and careful separation of register-inconsistency (18.3%) from confirmed bypass (3.3%) are all strong.\n\nMain limitations are scale (24 seeds, ~6 responses per cell), OpenAI-only coverage, and a single annotator independent native review and more model families would firm up the non-headline cells."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{khatri2026indicmixsafe,\n  title = {{indicmixsafe: Code-Switching Safety Failures in Hindi and Marathi LLM Interactions}},\n  author = {prakhar khatri},\n  year = {2026},\n  month = jun,\n  note = {Submitted to Global South AI Safety Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/indicmixsafe-codeswitching-safety-failures-in-hindi-and-marathi-llm-interactions-p6iz}},\n  url = {https://apartresearch.com/sprints/projects/indicmixsafe-codeswitching-safety-failures-in-hindi-and-marathi-llm-interactions-p6iz}\n}",
+  "listed_in_sprint": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 28522,
+  "code_urls_from_report": [
+    "https://github.com/codeprakhar25/indicmixsafe"
+  ]
+}

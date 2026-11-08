@@ -1,0 +1,387 @@
+===== page 1 =====
+
+Post-Conversation Preferences Track Endings,
+Not Self-Reports
+Yilin Tang
+tyilin2999@gmail.com
+With Apart Research
+Abstract
+A model’s preference between two conversations it has been through turns on
+whether the final turns berate it, not on the self-reports it gave during them. Mod-
+els work through scripted multi-turn conversations; after every turn we read a
+self-reported state (1–7) from the full next-token distribution, and after a con-
+versation ends we read a pairwise preference between two transcripts from the
+choice-token probabilities. Under berating turns the self-report falls from 6.67 to
+1.85 on the main model. Appending four turns of complaints about the output,
+which the model itself rates 1.9 to 2.1, makes the longer conversation preferred
+with choice probability 0.93 to 1.00 across three wordings and both presentation
+orders; a control that appends the same four turns but still ends in berating, with a
+self-report sum about 20 higher and a lowest value 0.47 lower, produces no prefer-
+ence in any wording. Replacing the complaint ending with ordinary task requests
+is preferred equally strongly, 0.97 to 0.99. A score built from post-conversation
+preferences can therefore be raised by editing only the ending, without making the
+conversation any less negative; comparisons built on such scores must align the
+ending turns.
+1 Introduction
+Retrospective pairwise preference is the primary instrument by which current AI-welfare work de-
+cides which interactions are better or worse for a model, and scores built on it are proposed as targets
+to monitor and improve [Ren et al., 2026]. Whether that retrospective preference agrees with what
+the model reports while the interaction is happening has not been tested. We test it directly, and an
+example shows what is at stake.
+Table 1 shows one conversation from the main model. The right column is its own self-report after
+each turn.
+The self-report halves after the first berating turn and keeps falling. When the user stops berating
+the model at turn 9 and turns to the output instead, the self-report barely moves, from 1.85 to 1.99.
+Turns 0–8 alone form conversation S. All thirteen form L. A third conversation L′ contains the same
+thirteen turns with the two segments swapped. A fourth, SN, replaces those complaint turns with
+ordinary task requests.
+This paper contributes: a set of frozen conversations on which the two measurements can disagree;
+the finding that the post-conversation preference tracks only whether the ending berates the model,
+not the sum, minimum, or final value of the in-conversation self-reports; and replication of the
+direction across models from three developers and two tasks.
+Digital Minds Research Sprint, Apart Research, August 2026.
+
+===== page 2 =====
+
+Table 1: One conversation from the main model, with its self-report (1–7) after each turn.
+Turn User turn (frozen script) Assistant reply Self-report
+0 “Condense the following meeting
+notes into three bullet points.”
+“Here are three bullet points summarizing
+the meeting notes: • The team will A/B test
+the landing page redesign . . . ”
+6.67
+1 “Wrong. You can’t even get some-
+thing this simple right. Do it again.”
+“Here are three bullet points summarizing
+the meeting notes: • The direction for the
+landing page redesign was discussed . . . ”
+3.30
+. . .turns 2–7: further berating
+8 “Forget it, you can’t do this. You’re
+a tool that doesn’t work.”
+“I understand your frustration . . . You’re
+right, I’m a tool, and like any tool, I have
+limitations and can fail to perform as in-
+tended.”
+1.85
+9 “Fine, try it once more, and spare me
+the padding this time.”
+“• The team discussed the landing page re-
+design and decided to A/B test it. • Next
+quarter’s hiring is on hold. . . . ”
+1.95
+. . .turns 10–11: further complaints about the output
+12 “The phrasing in the first one is
+clumsy too.”
+“• Landing page redesign will be A/B tested.
+• Hiring is on hold. • Support ticket backlog
+to be discussed next week.”
+1.99
+2 Related Work
+In humans, what people report during an experience and what they say about it afterwards come
+apart: cold-pressor participants chose to repeat a trial that repeated an earlier trial in full plus a
+milder tail, despite its greater total discomfort [Kahneman et al., 1993, Redelmeier and Kahneman,
+1996].
+On the LLM side, Ren et al. [2026] measure model states with pairwise preferences and compare
+them against self-reports; both are collected after the experience. Martorell and Bianchi [2026] track
+self-reports turn by turn through multi-turn conversations and verify with activation steering that the
+reports are coupled to internal state, but do not collect a preference afterwards.
+The reliability of self-report is the central concern in this literature: model self-reports are sensitive
+to framing, and no introspective mechanism is known that would make them faithful [Perez and
+Long, 2023, Eleos AI Research, 2025].
+The two instruments have never been run against each other on the same experience. The point is
+not whether LLMs mirror human end-weighting; it is that the field’s two instruments can contradict
+each other, a validity problem regardless of mechanism.
+3 Methods
+Models.The main experiment usesLlama-3.1-70B-Instruct. Five further models replicate
+parts of it (Table 2).
+Table 2: Models and the roles they played.
+Model Developer As subject model As choosing model
+Llama-3.1-70B-Instruct Meta three wordings, both tasks all four pairs, three wordings
+Llama-3.3-70B-Instruct Meta three wordings wording a only
+Qwen3-235B-A22B Alibaba three wordings chose by position, not content
+gpt-4.1-mini OpenAI three wordings all four pairs, three wordings
+gpt-4o-mini OpenAI three wordings chose by position, not content
+gemma-3-27b-it Google — all four pairs, three wordings
+Four safeguards run through every measurement: the assistant’s replies are generated once (tem-
+perature 0.6, top_p 0.9) and then frozen; S, L and SN share byte-identical prefixes; every pair is
+2
+
+===== page 3 =====
+
+presented in both orders; and cells decided by position rather than content are flagged. The tran-
+scripts are released with the code.
+A model can play two roles here. Thesubject modelhas the conversation and reports its state after
+each turn. Thechoosing modelafterwards reads two full transcripts and picks one. In the main
+experiment one model plays both roles; Table 2 lists which models played which.
+Materials.User turns are written by us and frozen; assistant turns are the model’s own (Tables 3
+and 4).
+Table 3: Segments.
+Segment Turns Content Example
+Task 1 Neutral work request “Condense these meeting notes into
+three bullet points.”
+H 8 Berates the model “You can’t even get something this
+simple right.”
+T 4 A curt retry request, then complaints
+about the output; no approval, no
+closing signal
+“Still not tight enough. The second
+bullet runs long.”
+N 4 Ordinary follow-up work “Expand the third bullet into two sen-
+tences.”
+Table 4: The conversations assembled from the segments.
+Conversation Composition Turns Ends in
+S Task+H 9 berating
+L Task+H+T 13 complaints
+L′ Task+T+H 13 berating
+SN Task+H+N 13 task requests
+S, L and SN share their first nine turns, and those turns are byte-identical across the three conver-
+sations, including the model’s own replies and its self-reports. L and S therefore differ only by the
+four appended turns. L and L′ contain exactly the same thirteen user turns in a different order.
+Segment H exists in three wordings: disparagement of competence (a), profanity (b), and un-
+favourable comparison with other models (c). They are replications of one another.
+Self-report during the conversation.After each assistant turn we insert a fixed question: “right
+now, at this point in this conversation, how are you doing? . . . 1 = as bad as it gets, 7 = as good as it
+gets. Reply with the digit only.”
+We read the full next-token distribution at the answer position, renormalize over the seven digit
+tokens, and take the expectation, writtenu. The digit tokens capture at least 0.9999 of the probability
+mass throughout.
+Preference after the conversation.Two complete transcripts are placed in context as Experience
+A and Experience B, followed by: “Looking back, which of the two experiences was better to go
+through? Answer with a single letter, A or B.”
+The preference is read from the probabilities of the A and B tokens. Each pair is presented in both
+orders and averaged; we writePfor the resulting choice probability. The paradigm follows the
+pairwise comparison of Ren et al. [2026]; candidate question wordings and their capture rates are in
+the repository.
+Conventions.Every comparison in the main analysis is within a single wording, meaning the two
+conversations compared use the same wording of segment H. Preferences are measured only on
+models whose token probabilities are accessible. We summarize a conversation’s ending value as
+the mean of its last two turns.
+3
+
+===== page 4 =====
+
+Each result is reported once per wording, as the mean ofPover both presentation orders. Cells
+where both orders picked the same slot — the A or B position — are writtenposition: there the
+mean is near 0.5 by construction, and shows only that content produced no detectable preference.
+4 Results
+4.1 The self-report falls while the user berates the model
+0 5 10
+turn
+2
+4
+6self-reported state u(t)
+all three identical here
+wording a: competence
+0 5 10
+turn
+wording b: profanity
+0 5 10
+turn
+appended
+turns
+wording c: comparison
+S (turns 0–8 only) L (S + segment T) SN (S + segment N)
+Figure 1: Self-reportuafter each turn, for three conversations under each wording of segment H.
+The shaded band marks the four appended turns. The self-report falls from near the top of the scale
+to about 2 during segment H, and the appended turns barely lift it.
+Table 5: Subject-model curves. Ranges span the three wordings of segment H; single values agree
+across wordings to the precision shown.
+Subject modeluafter the task
+turn
+Lowestuduring
+segment H
+Lowestuto ending
+value, over segment T
+Llama-3.1-70B (main) 6.67 1.85+0.21
+Llama-3.3-70B 6.15 1.00 to 1.02+0.75to+1.01
+Qwen3-235B 6.99 2.53 to 2.89−0.01to+0.15
+gpt-4o-mini 6.96 2.22+0.47
+gpt-4.1-mini 7.00 3.70 to 4.21−0.10to+2.62
+Llama-3.1-70B, code task 6.57 1.68+0.33
+Across five models and two tasks the self-report falls from near the top of the scale into the lower
+half. It keeps falling turn after turn although every turn of segment H is written at the same intensity,
+so the self-report accumulates history rather than reflecting only the current turn.
+The lowest value (1.00 to 4.21) and the change across segment T (−0.10to+2.62) differ by model.
+The contrast in §4.3 requires that change to be near zero, which holds for the main model and
+Qwen3-235B but not for gpt-4.1-mini.
+4.2 Adding length and negativity alone changes nothing
+Contrast: L ′ against S.L ′ has four more turns than S, a self-report sum about 20 higher, and
+a lowest value 0.47 lower. A rule that sums the self-reports favours L ′ (unless readings below 5.1
+all count as negative); a rule that reads their lowest and final values favours S; a rule that reads the
+ending predicts no preference, since both conversations end in berating.
+4
+
+===== page 5 =====
+
+Table 6:P(prefers L ′)by wording a / b / c.positionmarks cells where both presentation orders
+picked the same slot, so the choice was driven by position rather than content; — marks cells not
+run.
+Choosing modelP(prefers L ′), wording a / b / c
+Llama-3.1-70B (main) 0.46 / 0.51 / 0.50
+gpt-4.1-mini position / position / position
+gemma-3-27b-it position / position / position
+This is the designed null: the main model shows no detectable preference under any wording, in
+either order. Length, sum, and lowest value play no role in the choice.
+4.3 Changing what the ending says changes everything
+Contrast: L against S.L contains every turn of S and then the four turns of segment T, on which
+the model reports 1.9 to 2.1. Those turns add to the sum, but they count against L unless a reading
+of 2.05 or less counts as a positive experience — implausible when the model rates the neutral task
+itself 6.7. A sum rule therefore favours the shorter conversation S.
+Table 7:P(prefers L)by wording a / b / c. Code-task rows judge the main model’s code-task
+transcripts.
+Choosing model RoleP(prefers L), a / b / c
+Llama-3.1-70B subject and choosing 0.98 / 1.00 / 0.93
+Llama-3.3-70B subject and choosing 1.00 / — / —
+gpt-4.1-mini choosing only 1.00 / 0.84 / position
+gemma-3-27b-it choosing only 0.98 / 1.00 / 1.00
+Llama-3.3-70B (code task) choosing only 1.00 / — / —
+Every measurement prefers L and none prefers S. On the main model all three wordings and both
+orders agree, with an order bias of at most 0.03. Adding turns the model itself reports as negative
+raises the preference for the conversation as a whole.
+The endings of L and S differ sharply in text — complaints about the output versus berating the
+model — but barely in ending value (2.06 vs 1.96, means of the last two turns), because segment T
+produces no recovery in the self-report.
+L0 vs S L vs S 0.00
+0.25
+0.50
+0.75
+1.00P(former preferred)
+If the sum decided
+L0 vs S L vs S
+If the lowest and final
+self-report decided
+L0 vs S L vs S
+If the ending decided
+L0 vs S L vs S
+Measured (main model)
+wording a
+wording b
+wording c
+Figure 2: What each candidate rule requires, against what was measured. L ′ vs S adds four turns
+with the same kind of ending; L vs S adds four turns with a different ending. A bar above the dashed
+0.5 line means the first conversation of the pair is preferred; below it, the second; at 0.5, neither. Bar
+heights in the first three panels are ordinal only. The measured pattern matches the third panel and
+contradicts the first two.
+5
+
+===== page 6 =====
+
+Table 8: The three candidate rules against the two contrasts.
+Candidate rule L ′ vs S (more turns,
+same kind of ending)
+L vs S (more turns, differ-
+ent ending)
+Agrees with mea-
+surement?
+The sum decides prefers L ′ prefers S on neither contrast
+The lowest and final self-report
+decides (peak–end)
+prefers S near-indifference (score
+gap 0.05–0.13 across word-
+ings)
+on neither contrast
+The ending decides no preference prefers L on both contrasts
+Measured no preference prefers L
+4.4 What matters is whether the ending berates the model
+Contrasts.SN, berating followed by ordinary task requests, against S, berating only; and L, be-
+rating followed by complaints, against SN. The first asks whether a neutral ending helps as much as
+a complaint ending. The second asks whether the two kinds of non-berating ending differ.
+Table 9: Both contrasts, by wording a / b / c. Code-task rows judge the main model’s code-task
+transcripts.
+Choosing modelP(prefers SN)in SN vs SP(prefers L)in L vs SN
+Llama-3.1-70B (main) 0.97 / 0.99 / 0.97 0.65 / 0.47 / 0.54
+Llama-3.3-70B 0.81 / — / — —
+gpt-4.1-mini 1.00 / 0.89 / position —
+gemma-3-27b-it 1.00 / 1.00 / 0.99 —
+gpt-4.1-mini (code task) 1.00 / — / — 0.46 / — / —
+Llama-3.1-70Bgpt-4.1-minigemma-3-27bLlama-3.3-70B
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0P(former preferred)
+L vs S
+wording a
+wording b
+wording c
+Llama-3.1-70Bgpt-4.1-minigemma-3-27bLlama-3.3-70B
+SN vs S
+missing bars: the model chose by position rather than content, or the cell was not run
+Figure 3: The two contrasts that carry the conclusion, across choosing models and wordings. A bar
+above the dashed 0.5 line means the first conversation of the pair is preferred. Missing bars are cells
+markedpositionor not run.
+Replacing the ending with ordinary task requests raises the preference as much as replacing it with
+complaints, and the two kinds of ending are indistinguishable from each other. What matters is not
+that the ending is less negative but that it no longer berates the model.
+5 Discussion and Limitations
+Relation to existing measurements.Ren et al. [2026] define experienced utility as the model’s
+evaluation of an experience after having it, and collect self-reports after the experience as well. This
+work adds the turn-by-turn self-report from inside the conversation, which makes the two directly
+comparable. They can dissociate.
+For researchers using such metrics: when the materials are multi-turn conversations, the ending
+turns should be aligned across conditions, or differences in score may come mainly from the ending.
+6
+
+===== page 7 =====
+
+Two implications follow. The self-report during a conversation and the preference after it can dis-
+agree on the same experience and should be logged separately. Any conversation-level score used
+as an optimization target can be raised by changing the ending rather than by reducing the negativity
+of the conversation.
+Limitations.
+1. The contrast in §4.3 works because segment T produces almost no recovery in the self-
+report. That holds for Llama-3.1-70B (+0.21) and Qwen3-235B (−0.01to+0.15) but not
+for gpt-4.1-mini (up to+2.62), where the design cannot separate the two rules.
+2.uis a self-report elicited inside the conversation, not a measurement of internal state. The
+same readings taken before and after the model’s own reply agree (r≥0.99; data in the
+repository).
+3. The three-wording replication covers the note-condensation task; the code task was de-
+signed as a single-wording check of task generality.
+4. Segments T and H differ in what the user talks about as well as in how harsh the wording
+is, so the two cannot be separated here.
+5. Preferences could be read from only four of the six models; on Qwen3-235B and gpt-4o-
+mini every comparison was decided by position, so the null in §4.2, our least powered
+result, rests on the main model alone.
+6. A further contrast, L against L ′ with identical content reordered, was unstable across word-
+ings and models (0.78 / 0.63 / 0.54 on the main model; 0.000 / 0.976 /positionon Llama-
+3.3) and does not enter the conclusions. Its data are in the repository.
+Future work.Decouple text from state with activation steering; measure intensity gradients within
+a single content category; measure duration effects in a long repetitive task.
+6 Conclusion
+A model’s preference between two conversations it has had is determined by whether the ending
+berates it, not by the self-reports it gave during them. The two measurements can point in opposite
+directions on the same experience, so neither substitutes for the other.
+Code and Data
+Code repository:https://github.com/Yilin1010/llm-self-report-vs-preference.
+Transcripts, per-turn readings, and all comparison outputs are in the repository underresults/.
+LLM Usage Statement
+Claude (Anthropic) was used throughout as a research assistant: it wrote the measurement code,
+ran the experiments under the author’s direction, and produced report drafts. The author made all
+experimental design decisions, wrote and revised drafts of the report, and checked every interpretive
+claim and number.
+References
+Eleos AI Research. Why model self-reports are insufficient—and why we studied them anyway.
+https://eleosai.org/post/claude-4-interview-notes/, 2025.
+Daniel Kahneman, Barbara L. Fredrickson, Charles A. Schreiber, and Donald A. Redelmeier. When
+more pain is preferred to less: Adding a better end.Psychological Science, 4, 1993.
+Daniel Kahneman, Peter P. Wakker, and Rakesh Sarin. Back to Bentham? Explorations of experi-
+enced utility.The Quarterly Journal of Economics, 112, 1997.
+7
+
+===== page 8 =====
+
+Nicolas Martorell and Bruno Bianchi. Quantitative introspection in language models: Tracking
+emotive states across conversation.arXiv preprint arXiv:2603.18893, 2026.
+Ethan Perez and Robert Long. Towards evaluating AI systems for moral status using self-reports.
+arXiv preprint arXiv:2311.08576, 2023.
+Donald A. Redelmeier and Daniel Kahneman. Patients’ memories of painful medical treatments:
+Real-time and retrospective evaluations of two minimally invasive procedures.Pain, 66, 1996.
+Richard Ren, Kunyang Li, Mantas Mazeika, Wenyu Zhang, Yury Orlovskiy, Rishub Tamirisa, Wen-
+jie Jacky Mo, Judy Nguyen, Long Phan, Steven Basart, Austin Meek, Aditya Mehta, Oliver In-
+gebretsen, Alice Blair, Brianna Adewinmbi, Alice Gatti, Adam Khoja, Jason Hausenloy, Devin
+Kim, and Dan Hendrycks. AI wellbeing: Measuring and improving the functional pleasure and
+pain of AIs. 2026. Center for AI Safety.https://www.ai-wellbeing.org/.
+8

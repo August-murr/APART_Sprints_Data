@@ -1,0 +1,41 @@
+{
+  "slug": "automated-jailbreak-redteaming-9l05",
+  "url": "https://apartresearch.com/sprints/projects/automated-jailbreak-redteaming-9l05",
+  "sprint_name": "Defensive Acceleration Hackathon",
+  "sprint_slug": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "title": "Automated Jailbreak Red-teaming",
+  "date": "Nov 23, 2025",
+  "location": "Edinburgh",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Adam Harrison",
+    "Edward Cant"
+  ],
+  "team": "Team AISHED",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/c79e628c7c94f396-38ffa531-aa16-4fb1-a2f1-9f45af97a675-def__acc.pdf",
+  "code_url": "https://github.com/rain-1/defacc_lakera_hack",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://drive.google.com/file/d/1vbemo7-GsYISmBztuilUXRZuwa5Jx9MZ/view"
+    },
+    {
+      "text": "More on docs.google.com",
+      "href": "https://docs.google.com/document/d/1hclGoS6JwAWITGy6y-cGNFoUyWMW91BsXb_M7LRaftU/edit?usp=sharing"
+    }
+  ],
+  "summary": "Automating jailbreak detection is crucial in making powerful model releases safe, to ensure they are patched prior to release. We constructed a prototype of an auto-jailbreaking tool, which completes the first 6 levels of the Lakera Gandalf challenge. Our prototype shows it is relatively easy to get LLMs to help with jailbreaking attempts.",
+  "reviews": [],
+  "n_reviews": 0,
+  "bibtex": "@misc{harrison2025automated,\n  title = {{Automated Jailbreak Red-teaming}},\n  author = {Adam Harrison and Edward Cant},\n  year = {2025},\n  month = nov,\n  note = {Submitted to Defensive Acceleration Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/automated-jailbreak-redteaming-9l05}},\n  url = {https://apartresearch.com/sprints/projects/automated-jailbreak-redteaming-9l05}\n}",
+  "listed_in_sprint": "def-acc-hackathon-2025-11-21-to-2025-11-23",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_unreviewed",
+  "has_pdf": true,
+  "report_chars": 12357,
+  "code_urls_from_report": []
+}

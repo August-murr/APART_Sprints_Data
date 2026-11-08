@@ -1,0 +1,38 @@
+{
+  "slug": "grounding-llms-with-standards-documents-ckul",
+  "url": "https://apartresearch.com/sprints/projects/grounding-llms-with-standards-documents-ckul",
+  "sprint_name": "The Secure Program Synthesis Hackathon",
+  "sprint_slug": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "title": "Grounding LLMs With Standards Documents",
+  "date": "May 25, 2026",
+  "location": "Indianola, Iowa and San Jose, California",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Chad Brewbaker",
+    "Suhaas Teja V."
+  ],
+  "team": "Team Specification Team",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/243e08b19b793b2d-8d049b94-6771-4c0e-9f0b-0d124c9dd9c0-submit.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "We grounded LLMs with POSIX, WC3, etc standards documents and the LEAN4 source code and in the course of the weekend they are able to elicit several bugs in the Rust MIT Coreutils and Safari/Webkit codebases.",
+  "reviews": [
+    "Would be useful to distinguish how trivial and non trivial the bugs are. Also, would be better to lead with saying how many proofs are complete instead of how many theorems are written.",
+    "The paper presents an experience report of providing LLM agents with authoritative specification documents (RFC, IETF etc.) and asking agents to reimplement tools with formal specifications matching these documents. While this approach is not itself strictly new (most larger verification efforts have been partially driven using existing specs), the results of this experiment are a useful datapoint in shaping the space of securing software using llms.\n\nA couple of comments regarding the results:\n\n- the paper mentions several specification bugs, such as \"BUG-SS-001\" a bug in RFC 8941, regarding SameSite values. When digging into this, it seems RFC 8941 is Structured Field Values for HTTP (https://datatracker.ietf.org/doc/html/rfc8941), and the rfc does not contain any mention to samesite. Similar observation for the FTP one. It could be that I misunderstood or found the wrong spec, but this ambiguity does not help build trust in the results of the formalisation. This could have been helped with more rigorous vetting or links for the bugs.\n- the second comment would be that it seems like a common pain point was around the parser, and the challenge unifying ABNF grammars with lean's functions? I would suggest the authors look into parser combinators. In particular, Lean happens to have a rather robust and flexible parser combinator library built in (this is actually what is used to parse lean code itself), and the library allows writing parsers closer to ABNF form. As a separate aside, there is a rich literature on formally verified parsers which it might be helpful to adapt for this purpose."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{brewbaker2026grounding,\n  title = {{Grounding LLMs With Standards Documents}},\n  author = {Chad Brewbaker and Suhaas Teja V.},\n  year = {2026},\n  month = may,\n  note = {Submitted to The Secure Program Synthesis Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/grounding-llms-with-standards-documents-ckul}},\n  url = {https://apartresearch.com/sprints/projects/grounding-llms-with-standards-documents-ckul}\n}",
+  "listed_in_sprint": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 13184,
+  "code_urls_from_report": [
+    "https://github.com/uutils/coreutils",
+    "https://github.com/suhaasteja/wc-formal-spec"
+  ]
+}

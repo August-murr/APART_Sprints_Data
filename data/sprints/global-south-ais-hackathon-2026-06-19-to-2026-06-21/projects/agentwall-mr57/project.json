@@ -1,0 +1,35 @@
+{
+  "slug": "agentwall-mr57",
+  "url": "https://apartresearch.com/sprints/projects/agentwall-mr57",
+  "sprint_name": "Global South AI Safety Hackathon",
+  "sprint_slug": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "title": "AgentWall",
+  "date": "Jun 22, 2026",
+  "location": "India",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Debabrata Pattnayak"
+  ],
+  "team": "Team Solodev",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/64ea88cb9691b834-b46558e0-0f87-47e7-b3f2-4390c256a9dd-AgentWall_Product_Report.pdf",
+  "code_url": null,
+  "links": [],
+  "summary": "AgentWall is a security wrapper that intercepts every tool call an agentic SLM wants to make, scores the call for signs of jailbreak-driven behavior, and decides whether to pass it through, flag it, or block it",
+  "reviews": [
+    "Targeting the tool-call layer for agentic Small Language Models (SLMs) addresses an increasingly critical and unaddressed attack surface. The proposed three-stage detection pipeline (deterministic rules, embedding classifier, context drift detector) with a sub-10ms latency budget is well-architected for this domain. The market analysis and go-to-market strategy are presented exceptionally well. However, because this is formatted as a product/pitch report rather than a research paper, it lacks the empirical rigor and hard data expected of hackathon execution. Providing quantitative results on the synthetic jailbreak corpus and the classifier's actual performance would greatly strengthen the technical claims.",
+    "Underlying idea is a good one. Security enforcement at the action layer (i.e., a jailbroken intent becomes a specific tool call w/legible arguments like path traversal or external-domain exfiltration) is usually more feasible than detecting & blocking an adversarial prompt further upstream. Comparing the user’s stated intent w/the actual tool call going out during Stage 3 is a reasonable indicator for when indirect injection is occurring via retrieved content. Your competitive analysis did correctly identify the gap between your solution & those solutions that detect/scan prompts based upon text layers.\n\nSome suggestions to build upon this:\n\n(1) Build and test a rudimentary version. This should be #1. Each performance metric (less than 10ms latency, greater than 60% rule engine catch rate, less than 0.3% false positive target) is a targeted number; no numbers have been generated yet. Creating some form of testing apparatus for Stages 1 & 3 using a documented corpus of both benign and injection-caused tool calls along with associated catch rates/false positives will turn this concept into tangible data and make this much more compelling than any market sizing.\n\n(2) Show the hardest example working. The single most impactful claim made about Stage 3 is catching indirect injection via tool output. Providing a couple of examples showing how this occurs (e.g., how the model takes a document summary request and turns it into an outside “send email” call, caught because of the intent divergence), will help show your central differentiation.\n\n(3) Tailor it for your audience. In a safety research forum, focus first on the threat model, the detection mechanism, the results and then append the market sizing, pricing, etc. As you have presented this material, there seems to be a lot more business related content than there are hard evidence elements regarding the technology which could work against you in a research review.\n\n(4) Discuss adaptability. While you do mention in the risk registry that tool call signatures can be modified to evade capture demonstrating empirically how adaptable your signature-based classifier may be to argument obfuscation would also enhance your ability to provide credible security evidence.",
+    "The project's technical thesis sounds great. Action-layer interception is the right place to stand, and the design details show genuine domain understanding. However, the project suggests a long-term development with resources needed instead of an implementation plan, which could have helped to make the idea more concrete."
+  ],
+  "n_reviews": 3,
+  "bibtex": "@misc{pattnayak2026agentwall,\n  title = {{AgentWall}},\n  author = {Debabrata Pattnayak},\n  year = {2026},\n  month = jun,\n  note = {Submitted to Global South AI Safety Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/agentwall-mr57}},\n  url = {https://apartresearch.com/sprints/projects/agentwall-mr57}\n}",
+  "listed_in_sprint": "global-south-ais-hackathon-2026-06-19-to-2026-06-21",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 16430,
+  "code_urls_from_report": []
+}

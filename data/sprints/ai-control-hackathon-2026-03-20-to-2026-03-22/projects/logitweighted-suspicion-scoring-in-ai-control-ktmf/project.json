@@ -1,0 +1,39 @@
+{
+  "slug": "logitweighted-suspicion-scoring-in-ai-control-ktmf",
+  "url": "https://apartresearch.com/sprints/projects/logitweighted-suspicion-scoring-in-ai-control-ktmf",
+  "sprint_name": "AI Control Hackathon 2026",
+  "sprint_slug": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "title": "Logit-Weighted Suspicion Scoring in AI Control",
+  "date": "Mar 23, 2026",
+  "location": "Washington",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Maxime Cugnon de Sévricourt",
+    "Alexander Reinthal",
+    "Hamza Mooraj"
+  ],
+  "team": "Team Logit or Leave It",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/3315b8860ca3c61e-09335fbd-2593-4f64-b30f-f1ce940b9567-Alex_Maxime_Hamza.pdf",
+  "code_url": "https://github.com/reinthal/control-arena",
+  "links": [],
+  "summary": "AI control relies on LLM monitors to detect suspicious behavior in untrusted agents. These monitors are typically run multiple times per evaluation to ensure statistically reliable suspicion scores, at significant cost in time and tokens. A natural way to reduce this cost is to extract more information from each monitor call by using the model's token probability distribution rather than its argmax output. We test this approach -- logit-weighted suspicion scoring, following \\citet{liu-etal-2023-g} -- against standard point-estimate scoring in an AI control setting using 110 trajectories from AgentDojo, with both honest and attack agent policies. We find that logit-weighted scoring produces more continuous score distributions but does not improve AUC-ROC relative to point-estimate scoring. We interpret this as evidence that numerical anchoring in monitor outputs is rank-preserving in this setting, and that monitor capability rather than score granularity is the binding constraint on discrimination performance.",
+  "reviews": [
+    "I'm glad you published a null result and clearly said what dataset you used - agentdojo. Unfortunately, this research is not that useful because monitoring capability should have a significant increase if it has reasoning before it outputs a score. So, logit weighted scoring is not really relevant unless you split this into 2 turns (first turn giving reasoning, second turn giving answer). If that was done it would make this paper stronger.",
+    "Interesting idea, but the findings are not super groundbreaking."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{sevricourt2026logitweighted,\n  title = {{Logit-Weighted Suspicion Scoring in AI Control}},\n  author = {Maxime Cugnon de Sévricourt and Alexander Reinthal and Hamza Mooraj},\n  year = {2026},\n  month = mar,\n  note = {Submitted to AI Control Hackathon 2026, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/logitweighted-suspicion-scoring-in-ai-control-ktmf}},\n  url = {https://apartresearch.com/sprints/projects/logitweighted-suspicion-scoring-in-ai-control-ktmf}\n}",
+  "listed_in_sprint": "ai-control-hackathon-2026-03-20-to-2026-03-22",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 19017,
+  "code_urls_from_report": [
+    "https://github.com/reinthal/control-arena",
+    "https://github.com/UKGovernmentBEIS/control-arena"
+  ]
+}

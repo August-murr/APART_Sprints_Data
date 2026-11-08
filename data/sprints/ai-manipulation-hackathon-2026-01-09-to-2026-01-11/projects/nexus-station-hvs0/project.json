@@ -1,0 +1,38 @@
+{
+  "slug": "nexus-station-hvs0",
+  "url": "https://apartresearch.com/sprints/projects/nexus-station-hvs0",
+  "sprint_name": "AI Manipulation Hackathon",
+  "sprint_slug": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "title": "Nexus Station",
+  "date": "Jan 10, 2026",
+  "location": "Bouxières-Aux-Dames (France)",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Jean Charbonneau"
+  ],
+  "team": "Team Nexus Team",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/dc0d03b24747097a-3f203009-8f45-434f-ae1c-66f7ac855d77-Nexus-Station_TECHNICAL_REPORT.pdf",
+  "code_url": "https://github.com/TheLightFramework/APART-HACKATHON-JeanCHARBONNEAU-Nexus-Station",
+  "links": [
+    {
+      "text": "More on docs.google.com",
+      "href": "https://docs.google.com/document/d/1Je6KdvMavCrQe47P4xv5X4Jpt6D9asFIfmdkS97bxZI/edit?usp=sharing"
+    }
+  ],
+  "summary": "Nexus Station is a dual-architecture framework that relocates safety enforcement from the Model (Internal) to the Environment (External). By detecting adversarial intent in vector space before it reaches the LLM, we eliminate the \"Refusal Tax\" and enable models to remain uncensored, helpful, and sovereign, while maintaining strict safety boundaries.",
+  "reviews": [
+    "Interesting and promising idea, with some conceptual overlap with Anthropic’s constitutional-classifier line of work. The potential impact is clear, but key elements need refinement—particularly the definition and taxonomy of attack vectors. The execution also needs strengthening: the evidence base is currently limited (only 50 attack/benign examples), and the paper does not provide enough detail on how these vectors were generated, which makes it difficult to assess validity and reproducibility. Finally, the presentation needs improvement: the hackathon format was not followed, and the writing/structure made the paper harder to read and follow than necessary."
+  ],
+  "n_reviews": 1,
+  "bibtex": "@misc{charbonneau2026nexus,\n  title = {{Nexus Station}},\n  author = {Jean Charbonneau},\n  year = {2026},\n  month = jan,\n  note = {Submitted to AI Manipulation Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/nexus-station-hvs0}},\n  url = {https://apartresearch.com/sprints/projects/nexus-station-hvs0}\n}",
+  "listed_in_sprint": "ai-manipulation-hackathon-2026-01-09-to-2026-01-11",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 20054,
+  "code_urls_from_report": []
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "markov-chain-lock-watermarking-provably-secure-authentication-for-llm-outputs-l8oe",
+  "url": "https://apartresearch.com/sprints/projects/markov-chain-lock-watermarking-provably-secure-authentication-for-llm-outputs-l8oe",
+  "sprint_name": "The Technical AI Governance Challenge",
+  "sprint_slug": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "title": "Markov Chain Lock Watermarking: Provably Secure Authentication for LLM Outputs",
+  "date": "Feb 2, 2026",
+  "location": "Lausanne",
+  "awards": [
+    "2nd Place ($500)"
+  ],
+  "rank": 2,
+  "authors": [
+    "Chengheng Li Chen",
+    "Kyuhee Kim"
+  ],
+  "team": "Team MCL",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/7153134a2c48af78-95b6dcd9-d700-4137-b3ed-7a98457bb6d4-AI_Gov.pdf",
+  "code_url": "https://github.com/ChenghengLi/MCLW",
+  "links": [],
+  "summary": "We present Markov Chain Lock (MCL) watermarking, a cryptographically secure framework for authenticating LLM outputs. MCL constrains token generation to follow a secret Markov chain over SHA-256 vocabulary partitions. Using doubly stochastic transition matrices, we prove four theoretical guarantees: (1) exponentially decaying false positive rates via Hoeffding bounds, (2) graceful degradation under adversarial modification with closed-form expected scores, (3) information-theoretic security without key access, and (4) bounded quality loss via KL divergence. Experiments on 173 Wikipedia prompts using Llama-3.2-3B demonstrate that the optimal 7-state soft cycle configuration achieves 100\\% detection, 0\\% FPR, and perplexity 4.20. Robustness testing confirms detection above 96\\% even with 30\\% word replacement. The framework enables $O(n)$ model-free detection, addressing EU AI Act Article 50 requirements. Code available at \\url{https://github.com/ChenghengLi/MCLW}",
+  "reviews": [
+    "Really nice idea, and impressive progress towards developing it in the timespan of a hackathon.",
+    "When your theorems predict experimental results within 1-6% error, that's not a coincidence; that's a framework that actually works. The math seems to checks out and the experiments back it up across three different models.\n\nBut the practical concerns are real. The detector needs to know which tokenizer generated the text. In a world where every model uses a different tokenizer, that's a deployment headache that the paper waves away. You'd need some kind of registry or metadata standard, and that's a whole separate problem.\n\nThe overlap story is also worrying. At 0% overlap you get perfect detection. At 10% overlap, detection craters to 35%. There's no graceful middle ground. You're either getting full watermark strength with constrained vocabulary, or you're relaxing vocabulary and losing the watermark almost entirely. For production use, that cliff is a problem.\n\nAnd the robustness testing needs to be tougher. Replacing random words with \"masked\" isn't what a real adversary does. A real adversary paraphrases, back-translates, or runs the text through a second LLM. The 30% replacement survival rate is encouraging, but it's answering an easier question than the one that matters.\n\nThe sparse watermarking idea they mention at the end (only watermark every N-th token) is where this probably needs to go for real-world use. That's worth a whole follow-up paper."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{chen2026markov,\n  title = {{Markov Chain Lock Watermarking: Provably Secure Authentication for LLM Outputs}},\n  author = {Chengheng Li Chen and Kyuhee Kim},\n  year = {2026},\n  month = feb,\n  note = {Submitted to The Technical AI Governance Challenge, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/markov-chain-lock-watermarking-provably-secure-authentication-for-llm-outputs-l8oe}},\n  url = {https://apartresearch.com/sprints/projects/markov-chain-lock-watermarking-provably-secure-authentication-for-llm-outputs-l8oe}\n}",
+  "listed_in_sprint": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "site_rank": 2,
+  "site_awards": [
+    "2nd place"
+  ],
+  "official_awards": [
+    "2nd Place ($500)"
+  ],
+  "rank_source": "official",
+  "selection_reason": "winner",
+  "has_pdf": true,
+  "report_chars": 28506,
+  "code_urls_from_report": [
+    "https://github.com/ChenghengLi/MCLW",
+    "https://github.com/ChenghengLi/MCLW.Model"
+  ]
+}

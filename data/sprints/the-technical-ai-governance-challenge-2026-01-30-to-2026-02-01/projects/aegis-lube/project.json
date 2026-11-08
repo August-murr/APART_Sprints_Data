@@ -1,0 +1,46 @@
+{
+  "slug": "aegis-lube",
+  "url": "https://apartresearch.com/sprints/projects/aegis-lube",
+  "sprint_name": "The Technical AI Governance Challenge",
+  "sprint_slug": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "title": "AEGIS",
+  "date": "Feb 2, 2026",
+  "location": "Kathmandu, Nepal",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Ankit Kayastha",
+    "Samshrita Ghimire"
+  ],
+  "team": "Team DisasterLens",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/f87344a2aeab1dc3-9b50c346-d7dd-4ab3-9045-b43c70590f13-tech_gov.pdf",
+  "code_url": "https://github.com/ankit-11/tech-gov",
+  "links": [
+    {
+      "text": "Recording",
+      "href": "https://drive.google.com/drive/folders/1xVPdf91A4BV9gbfpB5A-8D50hEnL7WUX?usp=drive_link"
+    },
+    {
+      "text": "More on streamlit-data--samshug.replit.app",
+      "href": "https://streamlit-data--samshug.replit.app/"
+    }
+  ],
+  "summary": "AEGIS solves the \"Trust Deadlock\" in global AI governance by enabling regulators to verify model safety without accessing proprietary weights. Acting as a \"Digital IAEA,\" it uses Trusted Execution Environments (TEEs) to perform \"blind\" inspections that check for 1025 FLOP compute thresholds and CBRN risks. This protocol generates tamper-proof cryptographic proofs of compliance, shifting international oversight from unreliable self-reporting to a secure, zero-trust technical standard.",
+  "reviews": [
+    "The idea is simple but reasonable and the execution makes sense as well. The method can be used but only as a middle man between interior lab's safety evaluations and exterior risk assessment.",
+    "The problem is important but the core challenge (making the TEE trustworthy and ensuring the inspection code can't be tampered with) is entirely mocked. The current implementation is a web dashboard around a threshold check. Please don't skip the hard part. I'd suggest reading up on actual TEE attestation protocols (e.g., Intel SGX remote attestation) and focusing on what guarantees a real TEE would and wouldn't provide in this setting."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{kayastha2026aegis,\n  title = {{AEGIS}},\n  author = {Ankit Kayastha and Samshrita Ghimire},\n  year = {2026},\n  month = feb,\n  note = {Submitted to The Technical AI Governance Challenge, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/aegis-lube}},\n  url = {https://apartresearch.com/sprints/projects/aegis-lube}\n}",
+  "listed_in_sprint": "the-technical-ai-governance-challenge-2026-01-30-to-2026-02-01",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 3370,
+  "code_urls_from_report": [
+    "https://github.com/ankit-11/tech-gov"
+  ]
+}

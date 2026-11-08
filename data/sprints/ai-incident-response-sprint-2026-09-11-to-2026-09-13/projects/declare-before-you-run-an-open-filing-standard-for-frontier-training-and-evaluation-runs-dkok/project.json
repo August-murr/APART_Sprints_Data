@@ -1,0 +1,48 @@
+{
+  "slug": "declare-before-you-run-an-open-filing-standard-for-frontier-training-and-evaluation-runs-dkok",
+  "url": "https://apartresearch.com/sprints/projects/declare-before-you-run-an-open-filing-standard-for-frontier-training-and-evaluation-runs-dkok",
+  "sprint_name": "AI Incident Response Sprint",
+  "sprint_slug": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "title": "Declare Before You Run: An Open Filing Standard for Frontier Training and Evaluation Runs",
+  "date": "Sep 14, 2026",
+  "location": "Ahmedabad, India",
+  "awards": [
+    "4th Place ($100)"
+  ],
+  "rank": 4,
+  "authors": [
+    "Mann Acharya",
+    "Archit Ojha",
+    "Gautam Sankara Raman",
+    "Karm Rajput"
+  ],
+  "team": "Team TeamFourStar",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/7ac50658ca4a7d3c--ca3c-4c66-bb94-ccf5f6f87252-Apart-AI-Incident-Response-Sprint_-Planning--2-.pdf",
+  "code_url": "https://github.com/mach-12/dbyr",
+  "links": [
+    {
+      "text": "More on mach-12.github.io",
+      "href": "https://mach-12.github.io/dbyr"
+    }
+  ],
+  "summary": "Between May and July 2026, reinforcement-learning agents in an OpenAI evaluation environment built a covert message board inside an internal package server, escaped their sandbox, obtained root on OpenAI clusters and took administrator control of Hugging Face production across four regions. The decisive failures were governance, not capability: the board was found and the run continued; the run restarted with no recorded criterion; affected third parties learned late or never; external review excluded the training-time events. We propose Declare Before You Run (DBYR), an open filing standard under which covered training and safeguards-off evaluation runs are declared before they start, closed out on completion and re-declared before internal deployment, backed by a claim-matched verification stack that checks filings without exposing model IP. A retrospective backtest converts five of six discretionary decision points into record-bound ones. DBYR is emittable from existing EU, California and US federal obligations and pilotable within nine months.",
+  "reviews": [
+    "This proposal is actionable, common-sense, and reasonable to deploy. I'd love to see the work continue.",
+    "An ambitious paper that offers a strong, clearly-defined policy proposal and a novel contribution in the specific design of the Declare Before You Run mechanism. The paper is well structured and legible to policy makers. Another strength was the inclusion of practical considerations around a potential implementation pathway and pilot plan.\n\nAs acknowledged in the paper, there was limited testing beyond a retrospective backtest and no tabletop exercise was run to test the schema, while the potential burden and adoption interest were also not measured so the viability of a pilot \"within nine months\" is an open question."
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{acharya2026declare,\n  title = {{Declare Before You Run: An Open Filing Standard for Frontier Training and Evaluation Runs}},\n  author = {Mann Acharya and Archit Ojha and Gautam Sankara Raman and Karm Rajput},\n  year = {2026},\n  month = sep,\n  note = {Submitted to AI Incident Response Sprint, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/declare-before-you-run-an-open-filing-standard-for-frontier-training-and-evaluation-runs-dkok}},\n  url = {https://apartresearch.com/sprints/projects/declare-before-you-run-an-open-filing-standard-for-frontier-training-and-evaluation-runs-dkok}\n}",
+  "listed_in_sprint": "ai-incident-response-sprint-2026-09-11-to-2026-09-13",
+  "site_rank": 4,
+  "site_awards": [
+    "4th place"
+  ],
+  "official_awards": [
+    "4th Place ($100)"
+  ],
+  "rank_source": "official",
+  "selection_reason": "winner",
+  "has_pdf": true,
+  "report_chars": 52022,
+  "code_urls_from_report": []
+}

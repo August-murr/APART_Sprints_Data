@@ -1,0 +1,34 @@
+{
+  "slug": "specsentinel-neyi",
+  "url": "https://apartresearch.com/sprints/projects/specsentinel-neyi",
+  "sprint_name": "The Secure Program Synthesis Hackathon",
+  "sprint_slug": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "title": "SpecSentinel",
+  "date": "May 22, 2026",
+  "location": "INDIA",
+  "awards": [],
+  "rank": null,
+  "authors": [
+    "Mudit Khater"
+  ],
+  "team": "Team UNIT - 108",
+  "pdf_url": "https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/4aabd209756e1d4a-702d4a37-1a52-48a5-9e56-74e038e657dc-SpecSentinel_Report.pdf",
+  "code_url": "https://github.com/mudit108-code/SpecSentinel",
+  "links": [],
+  "summary": "SpecSentinel is a professional-grade, single-file specification validation studio built in Python 3.10 and Streamlit.The application provides an end-to-end, interactive pipeline that evaluates whether a candidate specification truly and completely captures the intended behaviour of a software system.\n\nThe platform integrates four academically grounded validation methods — automated behavioral testing, mutation kill analysis, bidirectional cross-checking, and lightweight formal property verification — into a cohesive, professional UI that produces actionable grades, detailed diagnostics, and exportable JSON reports.\n\nSpecSentinel requires no external dependencies beyond Streamlit and runs instantly with a single terminal command. It ships with a fully worked demonstration example (a Safe Integer Stack specification) enabling reviewers to experience the full validation pipeline in under two minutes.",
+  "reviews": [
+    "Secure program synthesis calls for various spec and test methods. This project produced a tool that contains a battery of these methods within a neat user interface. A point to flag for future reference: some of the methods are not yet fully implemented (mutation-testing is just \"rand\" as far as I can tell), that is tolerable on a sprint and for a UI demo but must be declared in the write-up, especially when it feeds into a metric.",
+    "I like the intention of the spec tool, but it seems to promise beyond what it delivers. It also lacks the transparency/honesty about it's limitations.\n\nSpecSentinel is described to be \"professional-grade\", but their killed mutants are defined as \"killed = random.random() < (0.55 + intensity * 0.35)\".\n\nClaude did decent work and the box is pretty, but there's no engine in it. You have a good scaffold and next good steps are to work on making it functional, to validate it and to explore some case studies on its limitations. Keep up at it!"
+  ],
+  "n_reviews": 2,
+  "bibtex": "@misc{khater2026specsentinel,\n  title = {{SpecSentinel}},\n  author = {Mudit Khater},\n  year = {2026},\n  month = may,\n  note = {Submitted to The Secure Program Synthesis Hackathon, an Apart Research Sprint},\n  howpublished = {\\url{https://apartresearch.com/sprints/projects/specsentinel-neyi}},\n  url = {https://apartresearch.com/sprints/projects/specsentinel-neyi}\n}",
+  "listed_in_sprint": "secure-program-synthesis-hackathon-2026-05-22-to-2026-05-24",
+  "site_rank": null,
+  "site_awards": [],
+  "official_awards": [],
+  "rank_source": null,
+  "selection_reason": "sample_reviewed",
+  "has_pdf": true,
+  "report_chars": 19678,
+  "code_urls_from_report": []
+}

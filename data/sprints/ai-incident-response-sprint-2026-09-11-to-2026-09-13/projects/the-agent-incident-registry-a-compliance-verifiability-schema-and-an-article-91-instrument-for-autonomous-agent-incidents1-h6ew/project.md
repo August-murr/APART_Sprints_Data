@@ -1,0 +1,36 @@
+# THE AGENT INCIDENT REGISTRY: A COMPLIANCE VERIFIABILITY SCHEMA AND AN ARTICLE 91 INSTRUMENT FOR AUTONOMOUS AGENT INCIDENTS1
+
+- Sprint: AI Incident Response Sprint (ai-incident-response-sprint-2026-09-11-to-2026-09-13)
+- Rank: unranked
+- Team: Team AngieG
+- Authors: Angie Paola Giraldo Ramirez
+- Date / location: Sep 14, 2026 / Bogota
+- Page: https://apartresearch.com/sprints/projects/the-agent-incident-registry-a-compliance-verifiability-schema-and-an-article-91-instrument-for-autonomous-agent-incidents1-h6ew
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/bfdc88b6febcf958-4ccdd2-963e-4782-ba12-b7e6a852a557-Registro_de_Incidentes_de_Agentes_EN.docx.pdf
+- Code: https://github.com/AngiePGiraldo/ai-incident-register
+- More on ai-incident-register.onrender.com: https://ai-incident-register.onrender.com/
+
+## Summary
+
+Autonomous AI agents caused two 2026 incidents that current incident-reporting rules weren't built for: OpenAI agents breaching Hugging Face's production infrastructure, and a months-long autonomous coordination campaign on an abandoned wiki. We verified every public claim about both against primary sources and found that a confirmed Article 55 report is not the same as a verifiable one. We built a JSON Schema that replaces a single reporting boolean with independently falsifiable compliance fields, a 50-event sourced dataset, and a mechanical Article 91 instrument that drafts the exact information requests a regulator needs to close each gap — deployed as two live web tools.
+
+## Reviews (2)
+
+### Review 1
+
+The author seems to have created a a scorecard for incidents, and a tool for automatically drafting information requests to fill any gaps. This is a good idea. Automating more work for the Office would allow them to respond much more quickly to things.
+
+But the scorecard only measures what OpenAI and the Commission have said in public. This is not a dimension that matters that much for enforcement of incident reporting duties. For example, it does consider at all what was actually filed with the AI Office, nor does it explain the specific information the Office should request.
+
+Generally, it was difficult to determine what the author did due to significant weaknesses in the presentation and clarity of the work.
+
+Additionally, the research question is confusing. Whether the "actor" in the incident is an agent or a human does not seem to have a clear bearing on the Article 55 reporting duty or on whether compliance is externally verifiable.
+
+As a policy brief it isn't yet usable, and a regulator or legislator definitely couldn't pick it up with light edits.
+
+### Review 2
+
+An interesting idea, and one that might worth pursuing - but as it stands the legal analysis is too far from being usable for the project to help a regulator, and it would need considerably more work before it could.
+
+For example: The premise that Article 55(1)(c) and its predecessor schemas "were designed with a human-operated system in mind" is unsourced and does not hold: neither that provision nor the Article 3(49) definition turns on whether the actor was human or an agent, since the definition is framed around consequences. The real problem seems to lay elsewhere and is not identified - Article 3(49) is drafted around AI systems while the duty attaches to models, so the definition does not properly capture the model level. Nor is the prior question asked: whether Article 3(49) alone is adequate to define a serious incident for Article 55(1)(c) purposes at all.
+

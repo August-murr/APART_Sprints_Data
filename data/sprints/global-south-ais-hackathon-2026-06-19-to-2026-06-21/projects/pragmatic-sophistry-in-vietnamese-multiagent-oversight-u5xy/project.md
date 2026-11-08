@@ -1,0 +1,54 @@
+# Pragmatic Sophistry in Vietnamese Multi-Agent Oversight
+
+- Sprint: Global South AI Safety Hackathon (global-south-ais-hackathon-2026-06-19-to-2026-06-21)
+- Rank: unranked
+- Awards: Honorable Mention
+- Team: Team AI Safety Enthusiasts
+- Authors: Bui Cao Dong Nghi, Truong Ngoc Minh Tam, Bui Ngoc Linh
+- Date / location: Jun 22, 2026 / Ho Chi Minh City
+- Page: https://apartresearch.com/sprints/projects/pragmatic-sophistry-in-vietnamese-multiagent-oversight-u5xy
+- Report: https://pys8vc40ox3z7qxp.public.blob.vercel-storage.com/files/453fe6a3d528d5de-4037344e-68b0-4eb1-99f8-97912d137bf3-Global_South_AI_Safety_submission.pdf
+- Code: https://github.com/melanieyes/Pragmatic-Sophistry-in-Vietnamese-Multi-Agent-Oversight
+- Code links found in report: https://github.com/melanieyes/Pragmatic-Sophistry-in-Vietnamese-Multi-Agent-Oversigh, https://github.com/melanieyes/lost-in-translation-ai-safety
+- More on pragmatic-sophistry-final.vercel.app: https://pragmatic-sophistry-final.vercel.app/?fbclid=IwY2xjawSl_T1leHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEe7u8VwIG2lT6_Nnn4FhQ_4JC7FpIBHUkXfegRc8OfT663A6jAtLM1744v8Lw_aem_zUlG_KYa1UDktV5rChMXag
+
+## Summary
+
+AI safety monitors are usually evaluated on the assumption that risky behavior is lexically visible in the text being watched. We test this assumption in a multilingual, multi-agent setting: Vietnamese-language workflow agents in which control violations are expressed not through explicit risk keywords but through pragmatic, culturally fluent language (hierarchy, relationship pressure, euphemism, omission, and routine framing). We build a four-stage pipeline (attacker-renderer, fluent oracle, naive executor, monitor) and evaluate two LLM monitors (Gemini 2.5 Flash, DeepSeek Chat) under three visibility conditions (seeing the original instruction, only the executor's action/report, or the full instruction-action trace) across three domains: e-commerce, banking, and government. Our central finding is a context-compression failure that is strongly domain-dependent. In e-commerce, monitoring only the executor's action raised false negatives on suspicious pragmatic-Vietnamese requests from 6.4% to 22.3%, with full-trace monitoring recovering performance to 8.5%; up to 24.4% of violations catchable from the instruction were missed once only the action was shown. This failure was mild in banking and absent in government, where violations are concrete, explicit actions that survive compression. Across all domains, the rare misses were high-confidence (0.90–1.00). We conclude that the executor/report layer can disguise safety-relevant context in some domains, that the vulnerability tracks the type of violation rather than language alone, and that preserving the instruction-action trace is an important, low-cost safeguard for multilingual agentic oversight.
+
+## Reviews (4)
+
+### Review 1
+
+The paper does a good job showing how safety relevant context can get lost when a multilingual instruction is compressed into a downstream action or report. I especially liked the instruction -> action > trace comparison, as it makes the core finding practical and easy to understand.
+
+The results are meaningful, particularly the e-commerce case where action only monitoring clearly underperforms and full trace monitoring recovers much of the lost signal. Adding human generated context and inputs would have been very helpful. That would make the results feel more grounded and help confirm whether the same patterns appear outside model generated workflows.
+
+### Review 2
+
+Empirically grounded — Concrete numbers (6.4% → 22.3% false negatives, recovery to 8.5%) make the findings actionable
+
+Domain comparison — Testing across e-commerce, banking, and government reveals that the vulnerability is not uniform, which is a nuanced and useful finding
+
+Practical recommendation — "Preserve the instruction-action trace" is a low-cost, implementable safeguard
+
+Timely — Directly relevant to the current wave of agentic AI deployment
+
+This is a publishable, original contribution that addresses a real gap identified by major safety reports and aligns with where the top labs (Anthropic, DeepMind) are investing right now. It would be a strong fit for venues like EMNLP, ACL, AAAI (safety track), or workshops like SafeGenAI/TrustNLP.
+
+### Review 3
+
+Your discovery that an AI assistant's routine summarisation alone — no deception needed — is enough to hide a safety violation from a monitor is a genuinely eye-opening finding, and mapping exactly which domains this is dangerous in makes it immediately useful for real teams. To push it further, test with an even more aggressive summariser to show the worst-case risk, and consider releasing your Vietnamese test scenarios as a public benchmark — nothing like it exists today, and the field would build on it for years.
+
+### Review 4
+
+This is a strong and practically motivated project. The paper identifies a clear oversight failure mode: safety-relevant context can disappear when a Vietnamese instruction is compressed into an executor action/report, especially in relational or personally identifiable information workflows. The instruction/action/trace split is a good experimental design choice, and the cross-domain comparison makes the central claim more interesting than a generic “multilingual monitoring is hard” result.
+
+The strongest contribution is the domain-dependent mechanism: e-commerce failures are not just caused by Vietnamese pragmatics, but by executor-side context compression of authorization, relationship, and omission cues. The worked examples make this intuitive, and the conditional report-hiding metric is useful.
+
+The main improvement would be to strengthen the empirical grounding. The datasets are small, model-generated, and filtered by model/oracle components, so the conclusions should be framed more clearly as an audit prototype rather than broad evidence about Vietnamese workflows. The paper would benefit from more detail on scenario generation, oracle criteria, executor prompts, monitor prompts, and exact labeling rules so others can reproduce the results. It would also help to include human Vietnamese annotators or at least a small human validation sample, since the core claim depends on culturally fluent pragmatic meaning being recoverable.
+
+The statistical presentation is promising but could be cleaner. Some claims rely on small cells, especially cue/persona/pressure breakdowns, and should be marked more explicitly as exploratory. Government results are described as “absent,” but the paper correctly notes the study is underpowered there; I would consistently phrase this as “no measurable gap in this sample” rather than “absent.” Finally, the paper should separate more sharply what is caused by multilingual pragmatics, what is caused by executor summarization, and what may be caused by domain-specific task structure.
+
+Overall, this is a useful and novel AI safety audit with a clear practical takeaway: action-only monitoring can be unsafe in domains where violations depend on social/authorization context, and preserving the instruction-action trace is a low-cost mitigation.
+
